@@ -1,0 +1,39 @@
+
+/* ======================================== amp-form-group-container ======================================== */
+#floor-mgt-left .amp-form-group-container{padding:0 12px 15px 12px;}
+#floor-mgt-left .amp-form-group{
+    padding-top:15px;
+}
+
+#floor-mgt-left .amp-form-group .amp-form-group-title{
+    height:22px;
+    line-height: 22px;
+    font-size:12px;
+    color:#8592a2;
+}
+
+#floor-mgt-left .amp-form-group  .amp-form-group-content{
+    position:relative;
+}
+#floor-mgt-left .amp-datetimepicker{
+    position:relative;
+    width:80px;
+    z-index: 99;
+}
+#floor-mgt-left .amp-datetimepicker input{padding-left:5px;}
+
+#floor-mgt-left .block-element{
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    height:32px;
+    line-height: 32px;
+    text-align: center;
+    z-index: 0;
+}
+
+
+#floor-mgt-left .amp-btn{display:block;width:100%;height:26px;line-height: 26px;}
+
+#floor-mgt-left .amp-btn-group a{width:82px;padding:0;text-align: center;}

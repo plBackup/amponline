@@ -1,0 +1,198 @@
+<!-- 自有CSS -->
+<link href="../static/css/mgt_analysis/contract_main.css" rel="stylesheet">
+
+<div class="amp-main-panel"  id="contract-main">
+    <div class="amp-content-header clearfix">
+        <ul class="amp-tab-menu-list pull-left">
+            <li class="amp-tab-menu-item"><a class="active">合同</a></li>
+            <li class="amp-tab-menu-item"><a href="#/business_main">营收</a></li>
+        </ul><!-- amp-tab-menu-list -->
+
+        <ul class="amp-status-item-list pull-right">
+            <li class="amp-status-item"><span>合同总数</span><em>230</em></li>
+            <li class="amp-status-item"><span>合同总金额(万)</span><em>{{485782581.19|number}}</em></li>
+        </ul>
+    </div>
+    <div class="amp-content-panel">
+
+        <div class="ys-table-block">
+            <div class="amp-collapse-table">
+                <div class="amp-thead">
+                    <div class="amp-table-row">
+                        <ul class="amp-table-row-content">
+                            <li class="amp-table-cell">品牌</li>
+                            <li class="amp-table-cell">合同编号</li>
+                            <li class="amp-table-cell">合同起始</li>
+                            <li class="amp-table-cell">合同结束</li>
+                            <li class="amp-table-cell">期限(月)</li>
+                            <li class="amp-table-cell">免租期</li>
+                            <li class="amp-table-cell">面积(㎡)</li>
+                            <li class="amp-table-cell">租金方式</li>
+                        </ul>
+                    </div>
+                </div><!-- amp-thead -->
+
+                <div class="amp-tbody">
+                    <div class="amp-table-row" ng-repeat="item in paginationInfo.records">
+                        <ul class="amp-table-row-content">
+	                        <li class="amp-table-cell">{{item.brandName}}</li>
+							<li class="amp-table-cell">{{item.contractId}}</li>
+							<li class="amp-table-cell">{{item.contractStartTime}}</li>
+							<li class="amp-table-cell">{{item.contractEndTime}}</li>
+							<li class="amp-table-cell">{{item.period|number:0}}</li>
+							<li class="amp-table-cell">{{item.rentFreePeriod|number:0}}</li>
+							<li class="amp-table-cell">{{item.square|number}}</li>
+							<li class="amp-table-cell">{{item.rentType}}</li>
+                        </ul>
+                        <div class="amp-table-row-collapse">
+                            <table>
+                                <colgroup>
+                                    <col width="20%"/>
+                                    <col width="20%"/>
+                                    <col width="20%"/>
+                                    <col width="20%"/>
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <span>品牌</span>
+                                        <div class="amp-input amp-input-default amp-input-32"><input value="{{item.brandName}}"/></div>
+                                    </td>
+                                    <td>
+                                        <span>合同编号</span>
+                                        <div class="amp-input amp-input-default amp-input-32"><input value="{{item.contractId}}"/></div>
+                                    </td>
+                                    <td>
+                                        <span>合同起始</span>
+                                        <div class="amp-datetimepicker amp-datetimepicker-default">
+                                            <input class="form-control" size="16" type="text" value="{{item.contractStartTime}}" readonly=""/>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>合同结束</span>
+                                        <div class="amp-datetimepicker amp-datetimepicker-default">
+                                            <input class="form-control" size="16" type="text" value="{{item.contractEndTime}}" readonly=""/>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>免租期期限</span>
+                                        <div class="amp-input amp-input-default amp-input-32"><input value="{{item.rentFreePeriod|number:0}}"/></div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span>楼层</span>
+                                        <div class="amp-select amp-select-default">
+                                            <input readonly value="{{item.floorNo}}"/>
+                                            <ul>
+                                                <li>5F</li>
+                                                <li>4F</li>
+                                                <li>3F</li>
+                                                <li>2F</li>
+                                                <li>1F</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>铺位号</span>
+                                        <div class="amp-input amp-input-default amp-input-32"><input value="{{item.storeNo}}"/></div>
+                                    </td>
+                                    <td>
+                                        <span>面积</span>
+                                        <div class="amp-input amp-input-default amp-input-32"><input value="{{item.square}}"/></div>
+                                    </td>
+                                    <td>
+                                        <span>业态</span>
+                                        <div class="amp-select amp-select-default">
+                                            <input readonly value="{{item.commercialType}}"/>
+                                            <ul>
+                                                <li>超市</li>
+                                                <li>影院</li>
+                                                <li>餐饮</li>
+                                                <li>儿童</li>
+                                                <li>服装</li>
+                                                <li>配套</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+
+                                    <td>
+                                        <span>租金方式</span>
+                                        <div class="amp-select amp-select-default">
+                                            <input readonly value="{{item.rentType}}"/>
+                                            <ul>
+                                                <li>固定租金</li>
+                                                <li>提成租金</li>
+                                                <li>两者取高</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>租金总额</span>
+                                        <div class="amp-input amp-input-default amp-input-32"><input data-type="number" value="{{item.rentTotal|number}}"/></div>
+                                    </td>
+                                    <td>
+                                        <span>提成百分比</span>
+                                        <div class="amp-input amp-input-default amp-input-32"><input value="{{item.deductPercent}}"/></div>
+                                    </td>
+                                    <td>
+                                        <span>物管费总额</span>
+                                        <div class="amp-input amp-input-default amp-input-32"><input data-type="number" value="{{item.propertyFeeTotal|number}}"/></div>
+                                    </td>
+                                    <td>
+                                        <span>付款方式</span>
+                                        <div class="amp-select amp-select-default">
+                                            <input readonly value="{{item.paymentType}}"/>
+                                            <ul>
+                                                <li>月付</li>
+                                                <li>季付</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <a class="amp-btn amp-btn-default cancel-btn">取消</a>
+                                    </td>
+                                    <td>
+                                        <a class="amp-btn amp-btn-green ok-btn">确定</a>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div><!-- amp-row-collapse -->
+                    </div><!-- amp-table-collapse-row -->
+
+
+
+                </div><!-- amp-tbody -->
+
+            </div><!-- amp-table-collapse -->
+
+            <div class="amp-pagination-toolbar-wrapper clearfix">
+                <div class="amp-pagination-toolbar pull-right" pagination-info="paginationInfo" fetch-data="fetchData()"></div>
+
+                <!--<div class="amp-pagination-toolbar pull-right">-->
+                    <!--<span>共{{recordCount}}条记录,当前1/{{pageCount}}页</span>-->
+                    <!--<div class="pagination-nav-group">-->
+                        <!--<a>&lt;</a>-->
+                        <!--<a>&gt;</a>-->
+                        <!--<input type="number" value="1"/>-->
+                    <!--</div>-->
+                    <!--<a class="pagination-ok-btn">确定</a>-->
+                <!--</div>-->
+            </div><!-- amp-pagination-toolbar-wrapper -->
+        </div><!-- ys-table-block -->
+
+    </div><!-- amp-content-panel -->
+</div><!-- amp-main-panel -->
+

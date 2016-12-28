@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="" lang="zh-cn"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!--
+    <meta name="viewport" content="width=1680, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+    <meta name="viewport" content="width=1680">
+    <title>悦商AMP</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+
+    <!-- 导入CSS -->
+
+    <link href="../static/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/dist/css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/dist/css/bootstrap-datetimepicker.min.css">
+    <link href="../static/dist/css/animate.css" rel="stylesheet">
+    <!--<link href="../static/dist/css/ng-animation.css" rel="stylesheet">-->
+    <link href="../static/css/common/common.css" rel="stylesheet">
+    <link href="../static/css/common/static_table.css" rel="stylesheet">
+
+    <!-- 自有CSS -->
+    <link href="../static/css/main/amp_main.css" rel="stylesheet">
+    <!--<link href="../static/css/main/me-pageloading.css" rel="stylesheet">-->
+    <link href="../static/css/views/noi.css" rel="stylesheet">
+    <link href="../components/toolbar/filter.css" rel="stylesheet">
+    <link href="../static/css/views/datatools.css" rel="stylesheet">
+
+    <link href="../static/css/common/amp_common.css" rel="stylesheet">
+    <link href="../static/css/common/amp_page_structure.css" rel="stylesheet">
+    <link href="../static/css/common/component.css" rel="stylesheet">
+    <link href="../static/css/common/amp_animation.css" rel="stylesheet">
+
+
+    <!-- 风控分析 -->
+    <link rel="stylesheet" type="text/css" href="../static/css/views/riskctrl/riskctrl.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/views/riskctrl/riskctrl-detail.css"/>
+
+    <script src="../static/dist/js/jquery-1.11.3.min.js"></script>
+    <script src="../static/dist/js/angular.js"></script>
+    <script src="../static/dist/js/angular-animate.min.js"></script>
+    <script src="../static/dist/js/angular-ui-router.js"></script>
+
+
+    <!--<script src="../static/dist/js/snap.svg-min.js"></script>-->
+    <script src="../static/dist/js/bootstrap.min.js"></script>
+    <script src="../static/dist/js/swiper.jquery.js"></script>
+    <script src="../static/dist/js/iscroll.js"></script>
+    <script src="../static/dist/js/jquery.pin.js"></script>
+    <script src="../static/dist/js/echarts.common.min.js"></script>
+    <script src="../static/dist/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../static/dist/js/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="../static/js/views/datatools/finacial.js"></script>
+    
+    <!--<script src="../static/js/main/me-pageloading.js"></script>-->
+    <script src="../static/js/common/common.js"></script>
+    <script src="../static/js/common/global_storage.js"></script>
+    <script src="../static/js/plugin/amp_pagination_bar.js"></script>
+
+    <script src="../static/js/main/menu_list.js"></script>
+    <script src="../static/js/main/amp_main.js"></script>
+    <script src="../static/js/main/amp_ag.js"></script>
+    <script src="../static/js/views/datatools/svgeditor.js"></script>
+
+    <script src="../static/js/main/timecount.js"></script>
+    <script src="../static/js/main/filters.js"></script>
+	<script src="../static/js/common/service/amp_common_service.js"></script>
+    <script src="../static/js/views/noi_analyse/noi_controller.js"></script>
+    <script src="../static/js/views/noi_analyse/noi_services.js"></script>
+    <script src="../static/js/views/noi_analyse/noi_filters.js"></script>
+    <script src="../static/js/views/noi_analyse/noi_directives.js"></script>
+
+    <script src="../components/toolbar/filter_controller.js"></script>
+    <script src="../components/toolbar/filter_directives.js"></script>
+
+    <script src="../static/js/views/datatools/datatool_controller.js"></script>
+    <script src="../static/js/views/datatools/datatool_service.js"></script>
+    <script src="../static/js/views/datatools/datatool_filters.js"></script>
+    <script src="../static/js/views/datatools/datatool_directive.js"></script>
+
+    <script src="../static/js/investment_analysis/controller/simulation_calculation_main_controller.js"></script>
+
+    <script src="../static/js/main/snap.svg.js"></script>
+    <script src="../static/js/mgt_analysis/controller/contract_main_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/contract_main_left_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/contract_main_right_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/cost_main_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/cost_main_left_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/cost_enrolment_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/cost_manual_work_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/cost_manual_work_left_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/cost_manual_work_enrolment_controller.js"></script>
+
+    <script src="../static/js/mgt_analysis/controller/passenger_flow_main_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/passenger_flow_main_left_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/passenger_flow_main_enrolment_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/passenger_flow_main_enrolment_left_controller.js"></script>
+
+    <script src="../static/js/mgt_analysis/controller/merchant_sale_main_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/merchant_sale_main_left_controller.js"></script>
+
+    <script src="../static/js/mgt_analysis/controller/rent_main_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/rent_main_left_controller.js"></script>
+
+    <script src="../static/js/mgt_analysis/controller/arrears_main_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/arrears_main_left_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/arrears_detail_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/arrears_detail_left_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/arrears_enrolment_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/arrears_merchant_detail_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/arrears_merchant_detail_left_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/arrears_merchant_detail_receiving_controller.js"></script>
+
+    <script src="../static/js/mgt_analysis/controller/shop_sale_type_list_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/shop_sale_type_list_left_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/shop_sale_type_enrolment_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/shop_sale_rank_controller.js"></script>
+
+    <script src="../static/js/mgt_analysis/controller/business_main_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/business_main_left_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/business_merchant_list_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/business_merchant_list_left_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/business_merchant_detail_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/business_merchant_detail_left_controller.js"></script>
+    <script src="../static/js/mgt_analysis/controller/business_merchant_detail_enrolment_controller.js"></script>
+
+    <!-- 风控分析 -->
+    <script src="../static/js/riskctrl/controller/riskctrl_controller.js"></script>
+    <script src="../static/js/riskctrl/controller/riskctrl_detail_controller.js"></script>
+
+    <!-- noi -->
+    <script src="../static/js/noi_analysis/controller/noi_enrolment_left_controller.js"></script>
+    <script src="../static/js/noi_analysis/controller/noi_enrolment_controller.js"></script>
+
+    <script>
+        $(window).load(function() {
+            amp_main.placeholder_init();
+        });
+        var i=0;
+        $(document).ready(function(){
+            setInterval(function(){
+                ampTimeCountDown(2016,11,6)
+            },1000);
+        });
+    </script>
+
+    <style>
+
+    </style>
+</head>
+<body class="">
+
+<!--[if lt IE 9]>
+<p class="updateBrowser">您的浏览器太旧了，请更新最新浏览器，以获得最佳效果.</p>
+<![endif]-->
+
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
+</div>
+<main class="page page-main ys-amp animated" id="page-main" role="main" ng-app="amp" ng-controller="MainController">
+      <!--ng-class="{'view-back': state.back, 'view-to-home': state.toHome, 'view-exit': state.exit, 'fadeOutLeft': state.exit, 'view-enter': state.enter, 'view-loading': state.loading}"-->
+
+    <div class="leftpanel">
+        <div class="logopanel">
+            <!--<h1>悦商<span>AMP</span>系统</h1>-->
+            <a href="main.html" target="_self"><em class="ys-icon ys-icon-amp-s"></em></a>
+        </div><!-- logopanel -->
+        <div class="leftpanelinner">
+            <div>
+                <h5 class="sidebartitle">
+                    <a href="javascript:void(0)" class="menutoggle"><em class="ys-icon-spirit ys-icon-togglebar"></em></a>
+                </h5>
+                <div class="amp-side-toolbar active">
+                    <div class="animated" ui-view="toolbar" ng-show="state.enter" ng-hide="state.exit">
+                        <!--ng-class="{'animated':true,'view-back': state.back, 'view-to-home': state.toHome, 'view-exit': state.exit, 'fadeOut': state.exit,'fadeIn': state.enter, 'view-enter': state.enter, 'view-loading': state.loading}"-->
+                    </div>
+                </div><!--amp-side-toolbar-->
+                <ul class="nav nav-pills nav-stacked nav-bracket">
+
+                </ul>
+
+            </div>
+            <div class="system-toggle">
+                <span id="beta">AMP PAAS Beta1.0 2016</span>
+            </div>
+        </div><!-- leftpanelinner -->
+    </div><!-- leftpanel -->
+    <div class="headerpanel">
+        <div class="headerbar">
+            <div class="head-main-menu">
+                <!-- Nav tabs -->
+            </div>
+
+            <div class="header-right">
+                <a class="ys-user" id="ys-user">用户名</a>
+                <a class="ys-logout" id="ys-logout">退出</a>
+            </div>
+
+
+          <!--  <div class="header-right" id="countdown-wrapper">
+                &lt;!&ndash;<span class="ys-figure ys-useer-figure"></span>&ndash;&gt;
+                <span id="countdown"><em class="ys-amp-icon ys-icon-clock"></em>(12月6日)全部功能启用，开放新建项目和投资分析模拟测算,还剩<span id="countdown-nums"><i class="countdown-num">0</i><i class="countdown-num">0</i></span><em class="unit">天</em></span>
+            </div>
+-->
+
+
+        </div><!-- headerbar -->
+    </div>
+    <div class="mainpanel">
+      <!-- <ui-view name="content"></ui-view>-->
+        <div ui-view="content" class=""
+             ng-class="{'view-back': state.back, 'view-to-home': state.toHome, 'view-exit': state.exit, 'fadeOut': state.exit,'fadeIn': state.enter, 'view-enter': state.enter, 'view-loading': state.loading}"></div>
+    </div><!-- mainpanel -->
+
+    <!-- rightpanel -->
+    <div class="rightpanel">
+        <ui-view name="right"></ui-view>
+    </div>
+    <!--modal parts-->
+    <ui-view name="enrolment"></ui-view>
+    <!--end modal parts-->
+    <!--backdrop loading-->
+    <div class="backdrop"></div>
+    <!--end backdrop loading-->
+    <div class="amp-loading">
+        <div class="loading-wrapper">
+            <div class="loading-ani">
+                <img src="../static/images/main/loading.gif">
+            </div>
+            <span>处理中...</span>
+        </div>
+    </div>
+</main>
+<script src="../static/js/common/component.js"></script>
+</body>
+</html>

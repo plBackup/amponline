@@ -1,0 +1,23 @@
+#floor-mgt{background-color:#fff;}
+#floor-mgt .amp-content-header{margin:0;}
+#floor-mgt .amp-content-panel{padding:20px 0 20px 0;}
+
+/* ======================================== ys-table-block ======================================== */
+
+#floor-mgt .ys-table-block .amp-table-cell{width:50%;}
+
+
+#floor-mgt .ys-table-block .amp-table-row-collapse{padding-bottom:24px;}
+#floor-mgt .ys-table-block .amp-table-row-collapse table{width:100%;}
+#floor-mgt .ys-table-block .amp-table-row-collapse table td{padding:10px 12px 0 12px;}
+#floor-mgt .ys-table-block .amp-table-row-collapse table td>span{
+    display:block;
+    height:28px;
+    line-height: 28px;
+    font-size:12px;
+    color:#8592a2;
+}
+#floor-mgt .ys-table-block .amp-table-row-collapse table td .amp-input-black{display:block;width:100%;}
+#floor-mgt .ys-table-block .amp-table-row-collapse table td .amp-btn{display:block;width:100%;}
+#floor-mgt .ys-table-block .amp-table-row-collapse table tr:last-child td{padding-top:24px;}
+

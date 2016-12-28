@@ -1,0 +1,259 @@
+#riskctrl .risk-content-panel {
+	padding: 20px 0 50px 0;
+}
+
+#riskctrl .return-rate-chart {
+	width: 18%;
+	padding-left: 28px;
+}
+
+#riskctrl .amp-section-title {
+	height: 44px;
+	line-height: 44px;
+}
+
+#riskctrl .return-rate-data {
+	width: 82%;
+	padding-left: 80px;
+	border-left: 1px solid #ececec;
+}
+
+#riskctrl .label-group>em {
+	display: block;
+	height: 14px;
+	line-height: 14px;
+	font-size: 12px;
+	color: #737e8c;
+}
+
+#riskctrl .label-group>div {
+	font-size: 28px;
+	line-height: 1;
+	padding-top: 5px;
+	padding-bottom: 30px;
+}
+
+#riskctrl .label-group:nth-child(3)>div,
+#riskctrl .label-group:nth-child(4)>div {
+	padding-bottom: 0;
+}
+
+#riskctrl .return-rate {
+	padding-bottom: 40px;
+}
+
+#riskctrl .return-rate-bar {
+	width: 140px;
+	border-radius: 0;
+	height: 16px;
+	background-color: #d9dedf;
+	cursor: pointer;
+}
+
+#riskctrl .return-rate-chart-title {
+	height: 24px;
+	line-height: 24px;
+	font-size: 12px;
+	color: #737e8c;
+	margin-bottom: 5px;
+}
+
+#riskctrl .amp-progress-text {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 155px;
+	height: 16px;
+	line-height: 16px;
+	font-size: 12px;
+	color: #373c42;
+}
+
+#riskctrl .rate-chart {
+	position: relative;
+}
+
+#riskctrl .rate-noi-title {
+	margin-left: 28px;
+	margin-right: 28px;
+}
+
+#riskctrl .rate-noi-btn {
+	padding-left: 48px;
+	float: left;
+}
+
+#riskctrl .rate-noi-btn>em {
+	display: inline-block;
+	height: 44px;
+	line-height: 44px;
+	font-size: 14px;
+	color: #737e8c;
+}
+
+#riskctrl .amp-section-title span {
+	float: left;
+}
+
+#riskctrl .amp-section-title .btn-right {
+	position: absolute;
+	right: 0;
+	top: 0;
+	line-height: 44px;
+}
+
+#riskctrl .amp-section-title .btn-active {
+	color: #5ab46d;
+}
+
+#riskctrl .rate-noi-btn .pull-left {
+	margin-right: 20px;
+}
+
+
+/*表格1*/
+
+#riskctrl .text-bold {
+	font-weight: 700;
+}
+
+#riskctrl .risk-table .border-right {
+	border-right: 1px solid #ececec;
+	padding-right: 57px;
+}
+
+#riskctrl .text-green {
+	color: #66d581;
+}
+
+#riskctrl .text-red {
+	color: #e54f4b;
+}
+
+#riskctrl .risk-table {
+	width: 100%;
+}
+
+#riskctrl .risk-table thead {
+	width: 100%;
+	color: #8592a3;
+	font-size: 12px;
+	background-color: #f3f4f8;
+	border-bottom: 1px solid #d9dde0;
+}
+
+#riskctrl .risk-noi .risk-table .text-green,
+#riskctrl .risk-noi .risk-table .text-red {
+	padding-right: 30px;
+}
+
+#riskctrl .risk-table thead td {
+	text-align: right;
+	height: 28px;
+	line-height: 28px;
+}
+
+#riskctrl .risk-table tbody td {
+	text-align: right;
+	height: 40px;
+	padding: 0 10px;
+}
+
+#riskctrl .risk-table tbody .text-left {
+	text-align: left;
+	padding-left: 28px;
+}
+
+#riskctrl .risk-roi>div:nth-child(2) table td {
+	padding-left: 5px;
+}
+
+#riskctrl .text-grey {
+	font-size: 12px;
+	color: #737e8c;
+}
+
+#riskctrl .risk-roi {
+	overflow: hidden;
+}
+
+#riskctrl .risk-roi>div {
+	width: 48%;
+	float: left;
+	margin-top: 50px;
+}
+
+#riskctrl .risk-roi>div:first-child .amp-section-title,
+#riskctrl .risk-roi>div:last-child .amp-section-title {
+	margin-left: 28px;
+}
+
+#riskctrl .risk-roi tbody td {
+	text-align: right;
+}
+
+#riskctrl .risk-roi table tbody tr:nth-child(1) td {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+#riskctrl .risk-noi table tbody tr:nth-child(2) td {
+	font-weight: 700;
+}
+
+#riskctrl .risk-table tbody td.arrow-up,
+#riskctrl .risk-table tbody td.arrow-down {
+	position: relative;
+	padding-right: 15px;
+}
+
+#riskctrl .arrow-down em {
+	display: inline-block;
+	width: 8px;
+	height: 12px;
+	background: url(../../../images/arrow_down.png) no-repeat center center;
+	background-size: contain;
+}
+
+#riskctrl .arrow-up em {
+	display: inline-block;
+	width: 8px;
+	height: 12px;
+	background: url(../../../images/arrow_up.png) no-repeat center center;
+	background-size: contain;
+}
+
+#riskctrl .return-rate-data ul li {
+	float: left;
+}
+
+#riskctrl .return-rate-data ul li:nth-child(odd) {
+	width: 28%;
+	float: left;
+}
+
+#riskctrl .return-rate-data ul li:nth-child(even) {
+	width: 72%;
+	float: left;
+}
+
+#riskctrl .risk-table tbody .padright {
+	padding-right: 30px;
+}
+
+#riskctrl .rate-noi-btn em {
+	cursor: pointer;
+}
+
+#riskctrl table  td.padding-right {
+	padding-right: 32px;
+}
+
+#riskctrl .risk-table td span{display: inline-block; padding-right: 32%; width: 100%;}
+#riskctrl .risk-noi .risk-table thead td{text-align: center;}
+#riskctrl .risk-table  td{padding: 0 10px;}
+/*td span{border: 1px solid red;}
+td{border: 1px solid blue;}*/
+#riskctrl  .amp-roe td:last-child{padding-right: 30px;}
+#riskctrl  .amp-roi {margin-right: 4%;}
+#riskctrl  .amp-roi td:last-child,#riskctrl  .amp-forecast td:last-child{padding-right: 27px;}

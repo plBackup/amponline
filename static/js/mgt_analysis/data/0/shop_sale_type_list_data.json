@@ -1,0 +1,43 @@
+{
+  "allData":{
+    "catering":[{"saleAmount":"10750.9","performanceValue":"597.27222222222224","rentSaleRate":"39%","brandName":"商户013"},{"saleAmount":"26924","performanceValue":"1121.8333333333333","rentSaleRate":"40%","brandName":"商户020"},{"saleAmount":"49136.76","performanceValue":"432.1994898407952","rentSaleRate":"51%","brandName":"商户026"},{"saleAmount":"24933","performanceValue":"1003.743961352657","rentSaleRate":"38%","brandName":"商户028"},{"saleAmount":"22298.880000000001","performanceValue":"912.01963190184051","rentSaleRate":"44%","brandName":"商户029"},{"saleAmount":"3055","performanceValue":"126.2396694214876","rentSaleRate":"256%","brandName":"商户031"},{"saleAmount":"35913.19","performanceValue":"329.78135904499544","rentSaleRate":"41%","brandName":"商户034"},{"saleAmount":"14191.4","performanceValue":"457.78709677419351","rentSaleRate":"34%","brandName":"商户035"},{"saleAmount":"156323","performanceValue":"2233.1857142857143","rentSaleRate":"9%","brandName":"商户041"}],
+    "mating":[{"saleAmount":"10187.84","performanceValue":"213.67114093959731","rentSaleRate":"6%","brandName":"商户007"},{"saleAmount":"21310","performanceValue":"259.8780487804878","rentSaleRate":"9%","brandName":"商户010"},{"saleAmount":"30670","performanceValue":"134","rentSaleRate":"25%","brandName":"商户011"},{"saleAmount":"74082","performanceValue":"107","rentSaleRate":"26%","brandName":"商户016"},{"saleAmount":"18607","performanceValue":"138.75466070096942","rentSaleRate":"8%","brandName":"商户017"},{"saleAmount":"4320","performanceValue":"198.16513761467888","rentSaleRate":"26%","brandName":"商户018"},{"saleAmount":"62595.9","performanceValue":"146.8456612006475","rentSaleRate":"30%","brandName":"商户019"},{"saleAmount":"24315.5","performanceValue":"98.14530776992936","rentSaleRate":"21%","brandName":"商户022"},{"saleAmount":"16432","performanceValue":"186.51532349602726","rentSaleRate":"17%","brandName":"商户025"},{"saleAmount":"11770.5","performanceValue":"105","rentSaleRate":"28%","brandName":"商户027"}],
+    "clothing":[{"saleAmount":"142700.20000000001","performanceValue":"777.40357376334714","rentSaleRate":"0%","brandName":"商户052"},{"saleAmount":"452991","performanceValue":"748.26310312360624","rentSaleRate":"0%","brandName":"商户088"},{"saleAmount":"657620.69999999995","performanceValue":"569.86195840554592","rentSaleRate":"0%","brandName":"商户089"},{"saleAmount":"235534","performanceValue":"1770.9323308270677","rentSaleRate":"0%","brandName":"商户117"},{"saleAmount":"151147.9","performanceValue":"946.92331787996488","rentSaleRate":"0%","brandName":"商户127"},{"saleAmount":"121438.44","performanceValue":"1175.4761397734972","rentSaleRate":"0%","brandName":"商户150"},{"saleAmount":"236929.6","performanceValue":"754.0005728288196","rentSaleRate":"0%","brandName":"商户154"},{"saleAmount":"408797","performanceValue":"668.64634106447704","rentSaleRate":"0%","brandName":"商户157"},{"saleAmount":"208049","performanceValue":"588.99017637233533","rentSaleRate":"0%","brandName":"商户165"}],
+    "children":[{"saleAmount":"60120","performanceValue":"333.25942350332593","rentSaleRate":"0%","brandName":"商户002"},{"saleAmount":"141300","performanceValue":"262.76150627615061","rentSaleRate":"0%","brandName":"商户004"},{"saleAmount":"292983","performanceValue":"1803.6382664368382","rentSaleRate":"0%","brandName":"商户021"},{"saleAmount":"23960","performanceValue":"58.988625732433896","rentSaleRate":"0%","brandName":"商户030"},{"saleAmount":"21094","performanceValue":"51.331094563683266","rentSaleRate":"0%","brandName":"商户042"},{"saleAmount":"630536","performanceValue":"1132.0215439856374","rentSaleRate":"0%","brandName":"商户044"},{"saleAmount":"298941","performanceValue":"549.40270528559881","rentSaleRate":"0%","brandName":"商户066"},{"saleAmount":"151115","performanceValue":"644.88115051423199","rentSaleRate":"0%","brandName":"商户075"},{"saleAmount":"129420","performanceValue":"274.80040767793446","rentSaleRate":"41%","brandName":"商户160"}],
+    "cinema":[{"saleAmount":"454728","performanceValue":"137.56583664344294","rentSaleRate":"11%","brandName":"商户015"}]
+  },
+  "allType":{
+    "catering":"餐饮",
+    "mating":"配套",
+    "clothing":"服装",
+    "children":"儿童",
+    "cinema":"影院"
+  },
+  "allCommercialTypeSummary":{
+    "cinema": {
+      "saleAmount": 45.47,
+      "performanceValue": 138,
+      "rentSaleRate": "0%"
+    },
+    "catering": {
+      "saleAmount": 1648.65,
+      "performanceValue": 711,
+      "rentSaleRate": "2.38%"
+    },
+    "children": {
+      "saleAmount": 203.25,
+      "performanceValue": 319,
+      "rentSaleRate": "3.36%"
+    },
+    "clothing": {
+      "saleAmount": 572.16,
+      "performanceValue": 654,
+      "rentSaleRate": "0%"
+    },
+    "mating": {
+      "saleAmount": 578.74,
+      "performanceValue": 644,
+      "rentSaleRate": "1.90%"
+    }
+  }
+}

@@ -1,0 +1,133 @@
+<link href="../static/css/mgt_analysis/business_main.css" rel="stylesheet">
+
+<div class="amp-main-panel"  id="business-main" >
+
+    <div class="amp-content-header clearfix">
+        <ul class="amp-tab-menu-list pull-left">
+            <li class="amp-tab-menu-item"><a href="#/contract_main">合同</a></li>
+            <li class="amp-tab-menu-item"><a class="active">营收</a></li>
+        </ul><!-- amp-tab-menu-list -->
+    </div>
+    <div class="amp-content-panel">
+        <!-- 租金 -->
+        <div class="rent-income-block">
+            <div class="amp-section-title"><span>{{dataType}}</span></div>
+
+            <div class="rent-income-section-group clearfix">
+                <div class="rent-income-section-chart pull-left">
+                    <div class="amp-chart-content" id="rent-income-bar-chart"></div>
+                </div><!-- rent-income-section-chart -->
+                <div class="rent-income-section-digital pull-left">
+                    <ul class="clearfix">
+						<li ng-repeat="item in records|filter:{'hide':true}"><em>{{item.commercialType}}</em><span>{{item.curOfficialReceipts|numberFormatDefault:2}}</span><em>{{item.rate}}</em></li>
+                    </ul>
+                </div><!-- rent-income-section-digital -->
+            </div><!-- rent-income-section-group -->
+        </div><!-- rent-income-block -->
+
+        <!-- 业态 -->
+        <div class="commercial-type-block">
+            <div class="amp-section-title"><span>业态</span></div>
+			<div class="cost-manual-work-pin-wrapper table-block">
+	            <div class="dept-table-head">
+	                <table class="assets-table amp-table-2">
+	                    <colgroup>
+	                        <col width="16%">
+	                        <col width="14%">
+	                        <col width="14%">
+	                       	<col width="14%">
+	                        <col width="14%">
+	                        <col width="14%">
+	                        <col width="14%">
+	                    </colgroup>
+	                    <tbody>
+		                    <tr class="body-title">
+	                            <td></td>
+	                            <td colspan="3">当月实际(万元)</td>
+	                            <td colspan="3">全年累计(万元)</td>
+		                    </tr>
+		                    <tr class="empty-record">
+	                            <td></td>
+	                            <td>实际</td>
+	                            <td>预算</td>
+	                            <td>差异额</td>
+	                            <td>实际</td>
+	                            <td>预算</td>
+	                            <td>差异额</td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+	            </div><!-- dept-table-head -->
+	
+	            <div class="dept-table project-assets-table">
+	                <table class="assets-table amp-table-2 content-table">
+	                    <colgroup>
+							<col width="16%">
+							<col width="14%">
+							<col width="14%">
+							<col width="14%">
+							<col width="14%">
+							<col width="14%">
+							<col width="14%">
+	                    </colgroup>
+	                    <tbody>
+							<tr ng-class="{'parent-record':item.hasCollapseBtn,'amp-display-hide':item.hide}" data-group="{{item.dataGroup}}"  ng-repeat="item in records">
+								<td ng-class="{'amp-font-color-blue':!item.hasCollapseBtn}" data-type="{{item.commercialType}}">{{item.commercialType}}<a ng-if="item.hasCollapseBtn" class="collapse-btn" data-group="{{item.dataGroup}}"></a></td>
+								<td>{{item.curOfficialReceipts|numberFormatDefault:2}}</td>
+								<td>{{item.curReceivable|numberFormatDefault:2}}</td>
+								<td>{{item.curBalance|numberFormatDefault:2}}</td>
+								<td>{{item.calOfficialReceipts|numberFormatDefault:2}}</td>
+								<td>{{item.calReceivable|numberFormatDefault:2}}</td>
+								<td>{{item.calBalance|numberFormatDefault:2}}</td>
+							</tr>
+
+	                    </tbody>
+	                </table>
+	            </div><!-- dept-table -->
+	        </div><!-- cost-manual-work-pin-wrapper -->
+            
+        </div><!-- commercial-type-block -->
+
+
+		<!-- 提成租金商户占比 -->
+		<div class="deduct-rent-store-rate-block">
+			<div class="amp-section-title">
+				<span>提成租金商户占比</span>
+				<ul class="chart-legend clearfix">
+					<li>保底租金</li>
+					<li>提成租金</li>
+				</ul>
+			</div>
+
+			<div class="chart-block"></div>
+
+			<div class="table-block">
+				<table class="amp-table-2">
+					<thead>
+					<tr>
+						<th>商家</th>
+						<th>商户数</th>
+						<th>占比</th>
+						<th>租金总额</th>
+						<th>占比</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="item in deductRentStoreRateTable">
+							<td>{{item.type}}</td>
+							<td>{{item.storeNo|number}}</td>
+							<td>{{item.storeRate}}</td>
+							<td>{{item.rentTotal|number}}</td>
+							<td>{{item.rentRate}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div><!-- table-block -->
+		</div><!-- deduct-rent-store-rate-block -->
+
+    </div><!-- amp-content-panel -->
+
+
+</div><!-- amp-main-panel -->
+
+

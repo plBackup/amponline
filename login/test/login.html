@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>悦商AMP</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <!-- 导入CSS -->
+    <link href="../static/css/login/login.css" rel="stylesheet">
+</head>
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
+</div>
+
+    <div class="main">
+        <div class="header">
+            <span class="ys-logo"></span>
+        </div>
+        <div class="login-wrapper">
+            <h3><em class="ys-icon ys-icon-amp"></em></h3>
+            <div class="form-wrapper">
+                <form name="veriform" id="veriform" action="mainPage.html" method="post">
+                    <div class="input-group user-wrapper">
+                        <input id="user" name="user" type="text" placeholder="用户名" autocomplete="off"/>
+                    </div>
+                    <div class="input-group password-wrapper">
+                        <input id="password" name="password" type="password" placeholder="密码" />
+                        <!--<a href="#" id="btn-veri" class="ys-btn">获取验证码</a>-->
+                    </div>
+
+                    <div class="input-group">
+                        <a href="#" id="btn-login" class="ys-btn amp-btn">登录</a>
+                    </div>
+
+                    <div class="login-addon clearfix">
+                        <div class="pull-left"><a href="forgetpwd.html">忘记密码</a></div>
+                        <div class="input-addon pull-right">
+
+                            <input id="save-cookie" name="save_cookie" type="checkbox" />
+                            <label id="cookie" for="save-cookie" class="no-select">记住用户名</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<script src="../static/dist/js/jquery-1.11.3.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#preloader').delay(350).fadeOut(function(){
+            //start
+        });
+    });
+</script>
+</body>
+</html>

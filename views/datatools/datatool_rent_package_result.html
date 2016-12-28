@@ -1,0 +1,119 @@
+
+<div class="amp-content-panel" id="rent-package-result">
+    <div class="amp-content-header">
+
+        <div class="amp-header-filter clearfix">
+            <!--<a type="button" class="btn btn-default amp-btn pull-right" ui-sref="rpgpin" href="#/rpgpin" id="btn-rpg-save">保存</a>-->
+            <a type="button" class="btn btn-default amp-btn pull-right ys-tips" id="btn-rpg-save" data-toggle="tooltip" data-placement="bottom"  title="将于12月15日开放使用">关闭</a>
+            <span class="amp-tipsnote" style="position: relative;float:right; top:5px;background-color:transparent;margin-right:36px;"><em class="ys-amp-icon ys-icon-tips ys-icon-tips-hover" style="left:5px;margin-top:-11px;"></em>体验版数据为模拟数据，请勿引用。可提供数据整合服务</span>
+
+        </div>
+    </div><!--amp-content-header-->
+    <div class="amp-block-pd">
+        <div class="amp-block-title">
+            <h3 class="col-xs-3">租金包预览</h3>
+        </div>
+            <div class="amp-table-wrapper-swiper" id="rpg-result-table-wrapper" style="height:470px;">
+                <div class="ys-table-fixed-top" style="padding-left:100px;">
+                    <div class="ys-table-static ys-table-static-left" style="width:100px;">
+                        <table class="table  amp-table table-hover table-header-fixed" style="width:100%;">
+                            <thead>
+                                <tr>
+                                    <th>铺位号</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+
+                    <div class="swiper-container" style="width:100%;" id="rpg-result-table-head">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <table class="table  amp-table table-hover table-header-fixed" style="width:2000px;" >
+                                    <thead>
+                                        <tr>
+                                            <th>楼层</th>
+                                            <th>建筑面积（m&sup2）</th>
+                                            <th>套内面积（m&sup2）</th>
+                                            <th>业态</th>
+                                            <th>产权性质</th>
+                                           
+                                            <th class="text-right">第一年租金</th>
+                                            <th class="text-right">第二年租金</th>
+                                            <th class="text-right">第三年租金</th>
+                                            <th class="text-right">第四年租金</th>
+                                            <th class="text-right">第五年租金</th>
+                                            <th class="text-right">第六年租金</th>
+                                            <th class="text-right">第七年租金</th>
+                                            <th class="text-right">第八年租金</th>
+                                            <th class="text-right">第九年租金</th>
+                                            <th class="text-right">第十年租金</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div><!--swiper-slide-->
+                        </div><!--swiper-wrapper-->
+                        <!-- Add Scroll Bar -->
+                        <!-- <div class="swiper-scrollbar"></div>-->
+                    </div><!--swiper container-->
+                </div>
+                <div class="ys-table-main" style="padding-left:100px;">
+                    <div class="ys-table-static ys-table-static-left" style="width:100px;">
+                        <table class="table  amp-table table-hover" style="width:100%;">
+                           <tbody>
+                           <tr  ng-repeat="shop in rCtrl.rpgResultData| take : rCtrl.paginator.currentOffset : rCtrl.pageLimit  track by $index" class="data-index data-index-{{$index}}">
+                               <th><span title="{{shop.shopIndex}}">{{shop.shopIndex}}</span></th>
+                           </tr>
+                           </tbody>
+                        </table>
+                    </div>
+
+                    <div class="swiper-container" style="width:100%;" id="rpg-result-main-table">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <table class="table  amp-table table-hover"  style="width:2000px;">
+                                    <tbody>
+                                    <tr ng-repeat="shop in rCtrl.rpgResultData| take : rCtrl.paginator.currentOffset : rCtrl.pageLimit  track by $index" class="data-index data-index-{{$index}}">
+                                        <!--<td><span title="{{shop.shopIndex}}">{{shop.shopIndex}}</span></td>-->
+                                        <td><span>{{shop.floor}}</span></td>
+                                        <td><span>{{shop.floorArea | number:2}}</span></td>
+                                        <td><span>{{shop.indoorArea | number:2}}</span></td>
+                                        <td><span>{{shop.form}}</span></td>
+                                        <td><span>{{shop.property}}</span></td>
+
+                                        <td class="text-right" ng-repeat="(k,v) in shop.rentStandard track by k"><span><i>{{v | number:2}}</i></span></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div><!--swiper-slide-->
+                        </div><!--swiper-wrapper-->
+                        <!-- Add Scroll Bar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div><!--swiper container-->
+
+
+                </div>
+            </div>
+        <div class="amp-pagination clearfix">
+            <div class="btn-wrapper pull-right">
+                <span style="margin-right:10px;"><em class="page-index-bottom">共<i>{{rCtrl.recordsNum}}</i>条记录，当前第<i>{{rCtrl.paginator.curPageIndex}}</i>/<i>{{rCtrl.pageNum}}</i>页</em></span>
+                <div class="btn-group" role="group" aria-label="">
+                    <button type="button" class="btn btn-default" id="btn-pre-bottom" ng-click="rCtrl.paginator.prev()"  ng-class="{'btn-disabled':!rCtrl.paginator.hasPrevious()}" ng-disabled="!rCtrl.paginator.hasPrevious()">&lt;</button>
+                    <button type="button" class="btn btn-default" id="btn-next-bottom" ng-click="rCtrl.paginator.next()" ng-class="{'btn-disabled':!rCtrl.paginator.hasNext() }" ng-disabled="!rCtrl.paginator.hasNext()" >&gt;</button>
+                    <input type="text" value="1" class="page-num-input" ng-model="rCtrl.paginator.pageTarget">
+                </div>
+
+                <button type="button" class="btn btn-default amp-btn" id="btn-go" ng-click="rCtrl.loadPage(rCtrl.paginator.pageTarget)">确定</button>
+            </div>
+        </div>
+    </div><!--ys-block-->
+</div><!-- contentpanel -->
+<!--
+
+<script src="../static/js/views/datatools/rpg_result_index.js"></script>
+<script>
+    jQuery(document).ready(function(){
+        rpg_result_table.init();
+    });
+</script>
+
+-->

@@ -1,0 +1,51 @@
+这时候我们就需要用到 $scope.$on $scope.$broadcast $scope.$emit 这几个函数
+
+$scope.$on 为监听事件函数，含name和listener两个参数，顾名思义就是当controller捕获到名字为name的事件时，调用listener回调函数。
+
+$scope.$broadcast 即广播，含name和可选数量的参数，调用后会发送事件给所有该controller的直接子controller，并携带参数。
+
+$scope.$emit 也是发送事件，不同的是由子controller向上发送给父controller。如果期间没有controller主动去取消这个事件，时间会一直冒泡到RootScope。
+
+
+function MainController($scope) {
+    $scope.refresh = function () {
+        $scope.$broadcast('refresh');
+    };
+
+    $scope.$on('boom', function (e, argv) {
+        console.log('event from ' + e.targetScope);
+        console.log('event name ' + e.name);
+    };
+}
+
+function TabPanel1Controller($scope) {
+    $scope.$on('refresh', function (e, argv) {
+        console.log('event from ' + e.targetScope);
+        console.log('event name ' + e.name);
+    };
+
+    $scope.boom = function () {
+        $scope.$emit('boom', {'hello': 'world'});
+    };
+}
+
+如果要实现兄弟controller之间通讯，则需要借助父controller转发
+
+function MainController($scope) {
+    $scope.$on('bro', function (e, argv) {
+        $scope.$broadcast('bro', argv);
+        e.stopPropagation(); // stop bubble
+    };
+}
+
+function TabPanel1Controller($scope) {
+    $scope.sendToTab2 = function () {
+        $scope.$emit('bro', {'hello': 'world'});
+    };
+}
+
+function TabPanel2Controller($scope) {
+    $scope.$on('bro', function (e, argv) {
+        //
+    };
+}

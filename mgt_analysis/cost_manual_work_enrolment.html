@@ -1,0 +1,83 @@
+<link href="../static/css/mgt_analysis/cost_manual_work_enrolment.css" rel="stylesheet">
+
+<div class="amp-right-panel amp-display-hide"  id="cost-manual-work-enrolment">
+
+    <div class="contract-enrolment">
+        <div class="enrolment-title"><a class="close-panel-btn"></a>录入</div>
+
+        <div class="enrolment-content">
+            <div class="amp-check-btn-group">
+                <div class="amp-check-btn active">管理层</div>
+                <div class="amp-check-btn">行政人事部</div>
+                <div class="amp-check-btn">财务部</div>
+                <div class="amp-check-btn">企划部</div>
+                <div class="amp-check-btn">招商部</div>
+                <div class="amp-check-btn">运营部</div>
+                <div class="amp-check-btn">商管部</div>
+                <div class="amp-check-btn">工程部</div>
+                <div class="amp-check-btn">其他</div>
+            </div><!-- amp-check-btn-group -->
+
+            <div class="table-block">
+                <table class="amp-table-2">
+                    <colgroup>
+                        <col width="25%">
+                        <col width="25%">
+                        <col width="25%">
+                        <col width="25%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>本年实际</th>
+                            <th>本年预算</th>
+                            <th>空缺数</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>总经理</td>
+                            <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="mgt.real1"></div></td>
+                            <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="mgt.budget1"></div></td>
+                            <td>{{(mgt.budget1*1-mgt.real1*1)|number|stringFormat:"":"-"}}</td>
+                        </tr>
+                        <tr>
+                            <td>行政人事副总</td>
+                            <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="mgt.real2"></div></td>
+                            <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="mgt.budget2"></div></td>
+                            <td>{{(mgt.budget2*1-mgt.real2*1)|number|stringFormat:"":"-"}}</td>
+                        </tr>
+                        <tr>
+                            <td>招商副总经理</td>
+                            <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="mgt.real3"></div></td>
+                            <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="mgt.budget3"></div></td>
+                            <td>{{(mgt.budget3*1-mgt.real3*1)|number|stringFormat:"":"-"}}</td>
+                        </tr>
+                        <tr>
+                            <td>营运副总经理</td>
+                            <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="mgt.real4"></div></td>
+                            <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="mgt.budget4"></div></td>
+                            <td>{{(mgt.budget4*1-mgt.real4*1)|number|stringFormat:"":"-"}}</td>
+                        </tr>
+                        <tr>
+                            <td>工程副总经理</td>
+                            <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="mgt.real5"></div></td>
+                            <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="mgt.budget5"></div></td>
+                            <td>{{(mgt.budget5*1-mgt.real5*1)|number|stringFormat:"":"-"}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div><!-- table-block -->
+
+            <div class="btn-group-wrapper clearfix">
+                <a class="amp-btn amp-btn-green pull-right amp-btn-long save-btn">保存</a>
+                <a class="amp-btn amp-btn-default pull-right amp-btn-long nav-back-btn">返回</a>
+            </div>
+        </div><!-- enrolment-content -->
+
+
+
+    </div><!-- contract-enrolment -->
+
+</div><!-- amp-main-panel -->

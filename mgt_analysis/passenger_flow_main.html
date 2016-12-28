@@ -1,0 +1,77 @@
+<link href="../static/css/mgt_analysis/passenger_flow_main.css" rel="stylesheet">
+
+<div class="amp-main-panel"  id="passenger-flow-main">
+    <div class="amp-content-header">
+		<ul class="amp-tab-menu-list">
+			<li class="amp-tab-menu-item"><a class="active">客流</a></li>
+		</ul>
+    </div><!-- amp-content-header -->
+
+	<div class="amp-content-panel">
+
+
+		<div class="passenger-flow-info-group clearfix">
+			<div class="passenger-flow-info-left pull-left">
+				<div class="label-group"><em>当月客流</em><div>{{info.currentMonthCount|number}}</div></div>
+
+				<ul class="clearfix label-group-list">
+					<li><div class="label-group"><em>同比</em><div>{{info.yearToYear}}%<em ng-if="info.yearToYear<0" class="arrow-down"></em><em ng-if="info.yearToYear>0" class="arrow-up"></em></div></div></li>
+					<li><div class="label-group"><em>环比</em><div>{{info.linkRelative}}%<em ng-if="info.linkRelative<0" class="arrow-down"></em><em ng-if="info.linkRelative>0" class="arrow-up"></em></div></div></li>
+					<li><div class="label-group"><em>达成率</em><div>{{info.targetRate}}%</div></div></li>
+					<li><div class="label-group"><em>渗透率</em><div>{{info.penetranceRate}}</div></div></li>
+				</ul>
+
+				<div class="amp-progress" data-tooltip="{{info.currentMonthDayTooltip}}" data-value="{{info.currentMonthDayRate}}">
+					<div class="amp-progress-title">本月天数</div>
+					<div class="amp-progress-bar">
+						<div class="amp-progress-bar-finished amp-progress-bar-color-blue"></div>
+						<em class="amp-progress-text">{{info.currentMonthDayRate}}%</em>
+					</div>
+				</div><!-- progress-bar -->
+
+				<div class="amp-progress" data-tooltip="{{info.currentMonthIndexTooltip|number}}" data-value="{{info.currentMonthIndexRate}}">
+					<div class="amp-progress-title">本月指标</div>
+					<div class="amp-progress-bar">
+						<div class="amp-progress-bar-finished amp-progress-bar-color-green"></div>
+						<em class="amp-progress-text">{{info.currentMonthIndexRate}}%</em>
+					</div>
+				</div><!-- progress-bar -->
+
+			</div><!-- passenger-flow-info-left -->
+
+
+			<div class="passenger-flow-info-right pull-left">
+				<div class="label-group"><em>全年累计</em><div>{{info.fullYearTotalCount|number}}</div></div>
+				<div class="label-group"><em>预测(实际+预算)</em><div>{{info.fullYearCount|number}}</div></div>
+
+				<div class="amp-progress" data-tooltip="{{info.currentYearDayTooltip}}" data-value="{{info.currentYearDayRate}}">
+					<div class="amp-progress-title">本年天数</div>
+					<div class="amp-progress-bar">
+						<div class="amp-progress-bar-finished amp-progress-bar-color-blue"></div>
+						<em class="amp-progress-text">{{info.currentYearDayRate}}%</em>
+					</div>
+				</div><!-- progress-bar -->
+
+				<div class="amp-progress" data-tooltip="{{info.currentYearIndexTooltip|number}}" data-value="{{info.currentYearIndexRate}}">
+					<div class="amp-progress-title">本年指标</div>
+					<div class="amp-progress-bar">
+						<div class="amp-progress-bar-finished amp-progress-bar-color-green"></div>
+						<em class="amp-progress-text">{{info.currentYearIndexRate}}%</em>
+					</div>
+				</div><!-- progress-bar -->
+
+			</div><!-- passenger-flow-info-right -->
+		</div><!-- passenger-flow-info-group -->
+
+
+		<div class="passenger-flow-chart">
+			<div class="passenger-flow-chart-content"></div>
+		</div><!-- passenger-flow-chart -->
+
+	</div><!-- amp-content-panel -->
+
+	<div class="amp-progress-tooltip" style="left:300px;top:400px;">
+		<span></span>
+	</div>
+
+</div><!-- amp-main-panel -->

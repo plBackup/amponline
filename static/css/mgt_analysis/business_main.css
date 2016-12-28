@@ -1,0 +1,176 @@
+#business-main{background-color:#fff;}
+
+#business-main .amp-content-header{
+    margin:0;
+}
+#business-main .amp-content-panel{padding:20px 0 40px 0;}
+#business-main .amp-section-title{position:relative;margin:0 24px;}
+/* ======================================== rent-income-block ======================================== */
+
+/* ---------------------------------------- rent-income-section-chart ---------------------------------------- */
+#business-main .rent-income-section-chart{
+    position:relative;
+    width:50%;
+    padding:35px 50px 40px 50px;
+}
+
+#business-main .rent-income-section-chart:before{
+    content:"(万元)";
+    position:absolute;
+    left:40px;
+    top:25px;
+    color:#8592a3;
+    font-size:12px;
+}
+
+#business-main .rent-income-section-chart:after{
+    content:"(按业态)";
+    position:absolute;
+    right:5px;
+    bottom:38px;
+    color:#8592a3;
+    font-size:12px;
+}
+
+#business-main .rent-income-section-chart .amp-chart-content{
+    height:200px;
+}
+
+/* ---------------------------------------- rent-income-section-digital ---------------------------------------- */
+#business-main .rent-income-section-digital{width:50%;padding-left:50px;}
+#business-main .rent-income-section-digital ul li{
+    width:33.333%;
+    padding-top:40px;
+    float:left;
+}
+
+#business-main .rent-income-section-digital ul li em{
+    display:block;
+    height:24px;
+    line-height: 24px;
+    font-size:12px;
+    color:#8592a3;
+}
+
+#business-main .rent-income-section-digital ul li span{
+    display:block;
+    height:28px;
+    line-height: 28px;
+    font-size:24px;
+}
+
+
+/* ======================================== commercial-type-block ======================================== */
+#business-main .table-block .assets-table th{text-align: center;border-right: 1px solid #dae1e7;}
+#business-main .table-block table th:last-child{border-right:none;}
+#business-main .table-block table tbody td:first-child{cursor:pointer;}
+#business-main .table-block  td:nth-child(1),
+#business-main .table-block  td:nth-child(4){
+    border-right: 1px solid #dae1e7;
+}
+
+#business-main .table-block table tbody tr td{text-align: right;padding-right:40px;}
+#business-main .table-block table tbody tr td:first-child{text-align: left;padding-left:24px;}
+
+#business-main .table-block table tbody tr.parent-record td{
+    font-weight: bold;
+
+}
+
+#business-main .table-block table tbody tr.parent-record{cursor:pointer;}
+
+
+#business-main .table-block table tbody tr.parent-record .collapse-btn{
+    display:inline-block;
+    width:17px;
+    height:17px;
+    background:url(../../images/common/collapse-down-btn-icon.png) no-repeat;
+    background-size:contain;
+    vertical-align: text-bottom;
+    margin-left:6px;
+    cursor: pointer;
+}
+#business-main .table-block table tbody tr.parent-record .collapse-btn.collapsed{
+    background-image:url(../../images/common/collapse-up-btn-icon.png);
+}
+#business-main  table.content-table tbody tr:last-child td{
+    font-weight: bold;
+    font-style: italic;
+    color:#373c42!important;
+}
+#business-main  table.content-table tbody tr:last-child td:first-child{color:#373c42;}
+
+
+
+
+#business-main .table-block .dept-table-head  .body-title td{text-align: center;}
+#business-main .table-block .dept-table-head  .empty-record {background: #fff; font-size:12px;color:#8592a3;}
+#business-main .assets-table{width: 100%;}
+#business-main .dept-table-head {right: 0;left: 0;z-index: 9;}
+#business-main .assets-table  .body-title {color: #8592a3;font-size: 12px;background-color: #f3f4f8;  border-bottom: 1px solid #d9dde0;}
+
+#business-main .assets-table  .body-title  td{height: 28px;}
+#business-main .body-title td:nth-child(2){border-right: 1px solid #dae1e7;}
+
+
+/* ======================================== deduct-rent-store-rate-block ======================================== */
+#business-main .deduct-rent-store-rate-block{padding:44px 0 0 0;}
+
+#business-main .deduct-rent-store-rate-block .chart-legend{
+    position:absolute;
+    right:0;
+    top:2px;
+    height:44px;
+    line-height: 44px;
+}
+#business-main .deduct-rent-store-rate-block .chart-legend li{
+    position:relative;
+    height:100%;
+    color:#8592a3;
+    font-size:12px;
+    float:left;
+    padding-left:24px;
+}
+
+#business-main .deduct-rent-store-rate-block .chart-legend li:before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    width:10px;
+    height:10px;
+    margin:auto;
+}
+#business-main .deduct-rent-store-rate-block .chart-legend li:first-child{padding-right:60px;}
+#business-main .deduct-rent-store-rate-block .chart-legend li:first-child:before{background-color:#627d9b;}
+#business-main .deduct-rent-store-rate-block .chart-legend li:last-child:before{background-color:#00b1f0;}
+
+
+/* ---------------------------------------- amp-chart-block ---------------------------------------- */
+
+#business-main .deduct-rent-store-rate-block .chart-block{
+    position:relative;
+    height:300px;
+}
+#business-main .deduct-rent-store-rate-block .chart-block:before{
+    content:"商户数";
+    position:absolute;
+    left:45px;
+    top:0;
+    font-size:12px;
+    color:#8592a3;
+}
+
+/* ---------------------------------------- table-block ---------------------------------------- */
+#business-main .deduct-rent-store-rate-block .table-block{padding-top:10px;}
+#business-main .deduct-rent-store-rate-block .table-block td{border:none;}
+#business-main .deduct-rent-store-rate-block .table-block th,
+#business-main .deduct-rent-store-rate-block .table-block td{text-align: right;padding:0 24px;}
+
+#business-main .deduct-rent-store-rate-block .table-block th:first-child,
+#business-main .deduct-rent-store-rate-block .table-block td:first-child{text-align:left;}
+#business-main .deduct-rent-store-rate-block .table-block td:nth-child(1),
+#business-main .deduct-rent-store-rate-block .table-block td:nth-child(3){
+    border-right:1px solid #ececec;
+}

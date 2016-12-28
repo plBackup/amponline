@@ -1,0 +1,169 @@
+<link href="../static/css/mgt_analysis/rent_main.css" rel="stylesheet">
+
+<div class="amp-main-panel"  id="rent-main">
+    <div class="amp-content-header clearfix">
+        <ul class="amp-tab-menu-list pull-left">
+            <li class="amp-tab-menu-item"><a class="active">租赁</a></li>
+            <li class="amp-tab-menu-item"><a href="#/merchant_sale_main">商户销售</a></li>
+            <li class="amp-tab-menu-item"><a href="#/arrears_main">欠费</a></li>
+        </ul><!-- amp-tab-menu-list -->
+
+        <ul class="amp-status-item-list pull-right">
+            <li class="amp-status-item"><span>已出租面积</span><em>{{hasRentedSquare|numberFormatDefault}}㎡</em></li>
+            <li class="amp-status-item"><span>未出租面积</span><em>{{notRentedSquare|numberFormatDefault}}㎡</em></li>
+            <li class="amp-status-item"><span>租约数</span><em>{{rentContractCount|numberFormatDefault}}</em></li>
+        </ul>
+
+    </div>
+    <div class="amp-content-panel">
+        <div class="pie-chart-block-group clearfix">
+            <div class="amp-chart-block rent-income-percent-pie-chart">
+                <div class="amp-chart-content"></div>
+                <div class="amp-legend-title">各业态租金收入占比</div>
+                <div class="amp-chart-legend">
+                    <ul class="clearfix">
+                        <li ng-repeat="item in saleRatePie">{{item.name}}{{item.value}}%</li>
+                    </ul>
+                </div><!-- amp-chart-legend -->
+            </div><!-- amp-chart-block -->
+
+            <div class="amp-chart-block square-percent-pie-chart">
+                <div class="amp-chart-content"></div>
+                <div class="amp-legend-title">各业态面积占比</div>
+                <div class="amp-chart-legend">
+                    <ul class="clearfix">
+                        <li ng-repeat="item in squareRatePie">{{item.name}}{{item.value}}%</li>
+                    </ul>
+                </div><!-- amp-chart-legend -->
+            </div><!-- amp-chart-block -->
+
+        </div><!-- chart-group -->
+		<div class="rent-main-pin-wrapper  table-block">
+	        <div class="dept-table-head">
+	            <table class="assets-table amp-table-2">
+	            	<colgroup>
+	            		<col  width="20%"/>
+	            		<col  width="16%"/>
+	            		<col  width="16%"/>
+	            		<col  width="16%"/>
+	            		<col  width="16%"/>
+	            		<col  width="16%"/>
+	            	</colgroup>
+	                <tbody class="body-title">
+	                    <tr>
+	                        <td>
+                                <div class="amp-rent-btn-group">
+                                    <a class="active" data-name="commercial-type">业态</a>
+                                    <a data-name="floor">楼层</a>
+                                </div><!-- amp-rent-btn-group -->
+	                        </td>
+	                        <td>总出租面积(㎡)</td>
+	                        <td>已出租面积(㎡)</td>
+	                        <td>出租率(%)</td>
+	                        <td>租约数</td>
+	                        <td>租金单价(元/㎡/月)</td>
+	                    </tr>
+	                </tbody>
+	             </table>   
+	         </div>
+            <div class="dept-table project-assets-table">
+              	<table class="assets-table amp-table-2 collapse-table">
+	                <colgroup>
+                        <col  width="20%"/>
+                        <col  width="16%"/>
+                        <col  width="16%"/>
+                        <col  width="16%"/>
+                        <col  width="16%"/>
+                        <col  width="16%"/>
+	            	</colgroup>
+	                <tbody>
+                        <tr ng-class="{'amp-display-hide':item.hide,'collapsed-record':item.hasChildren}" data-id="{{item.id}}" data-parent-id="{{item.parentId}}" ng-repeat="item in collapseTable">
+                            <td ng-class="{'amp-font-weight-bold':!item.parentId,'amp-font-color-blue':!item.hasChildren&&item.parentId,'padding-level-2':item.level2,'padding-level-3':item.level3}" data-type="{{item.projectName}}">
+                                {{item.projectName}}
+                                <a class="collapse-btn" ng-if="item.hasChildren" ></a>
+                            </td>
+                            <td ng-class="{'amp-font-weight-bold':!item.parentId}">{{item.totalRentSquare|numberFormatDefault}}</td>
+                            <td ng-class="{'amp-font-weight-bold':!item.parentId}">{{item.rentSquare|numberFormatDefault}}</td>
+                            <td ng-class="{'amp-font-weight-bold':!item.parentId}">{{item.rentRate}}</td>
+                            <td ng-class="{'amp-font-weight-bold':!item.parentId}">{{item.rentCount|numberFormatDefault}}</td>
+                            <td ng-class="{'amp-font-weight-bold':!item.parentId}">{{item.rentPriceAvg|numberFormatDefault}}</td>
+                        </tr>
+                    </tbody>
+           		</table>
+             </div> 
+        </div><!-- table-block -->
+
+        <div class="amp-section-title"><span>租约到期</span></div>
+
+        <div class="lease-expired-bar-chart">
+            <div class="amp-chart-content"></div>
+            <div class="amp-chart-legend">
+                <ul class="clearfix">
+                    <li>租金(万元)</li>
+                    <li>面积(㎡)</li>
+                </ul>
+            </div>
+        </div><!-- lease-expired-bar-chart -->
+
+        <div class="table-block">
+            <table class="amp-table-2">
+                <thead>
+                    <tr>
+                        <th>时间</th>
+                        <th>租金(万元)</th>
+                        <th>租金占比(%)</th>
+                        <th>平均租金(元/㎡/月)</th>
+                        <th>面积(㎡)</th>
+                        <th>面积占比(%)</th>
+                        <th>租约数</th>
+                        <th>租约数占比</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in rentList">
+                        <td>{{item.dateItem}}</td>
+                        <td>{{item.rentIncome|numberFormatDefault}}</td>
+                        <td>{{item.rentIncomeRate}}</td>
+                        <td>{{item.rentIncomeAvg|numberFormatDefault}}</td>
+                        <td>{{item.square|numberFormatDefault}}</td>
+                        <td>{{item.squareRate}}</td>
+                        <td>{{item.rentCount}}</td>
+                        <td>{{item.rentCountRate}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><!-- table-block -->
+
+        <div class="amp-section-title"><span>招商</span></div>
+
+        <div class="investment-line-chart">
+            <div class="amp-chart-content"></div>
+            <div class="amp-chart-title">租金包达成情况</div>
+        </div><!-- investment-line-chart -->
+
+        <div class="table-block">
+            <table class="amp-table-2">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>预算(㎡)</th>
+                        <th>实际(㎡)</th>
+                        <th>完成率(%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in investmentList">
+                        <td>{{item.itemLabel}}</td>
+                        <td>{{item.budget|number}}</td>
+                        <td>{{item.real|number}}</td>
+                        <td>{{item.finishRate}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><!-- table-block -->
+
+
+    </div><!-- amp-content-panel -->
+
+</div><!-- amp-main-panel -->
+

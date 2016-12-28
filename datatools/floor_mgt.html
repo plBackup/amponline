@@ -1,0 +1,73 @@
+<!-- 自有CSS -->
+<link href="../static/css/datatools/floor_mgt.css" rel="stylesheet">
+
+<div class="amp-main-panel"  id="floor-mgt">
+    <div class="amp-content-header clearfix">
+        <ul class="amp-tab-menu-list pull-left">
+            <li class="amp-tab-menu-item"><a class="active">楼层</a></li>
+        </ul><!-- amp-tab-menu-list -->
+    </div>
+
+    <div class="amp-content-panel">
+
+        <div class="ys-table-block">
+            <div class="amp-collapse-table">
+                <div class="amp-thead">
+                    <div class="amp-table-row">
+                        <ul class="amp-table-row-content">
+                            <li class="amp-table-cell">楼层号</li>
+                            <li class="amp-table-cell">楼层</li>
+                        </ul>
+                    </div>
+                </div><!-- amp-thead -->
+
+                <div class="amp-tbody">
+                    <div class="amp-table-row" ng-repeat="item in records">
+                        <ul class="amp-table-row-content">
+	                        <li class="amp-table-cell">{{item.floorNo}}</li>
+							<li class="amp-table-cell">{{item.floorName}}</li>
+                        </ul>
+                        <div class="amp-table-row-collapse">
+                            <table>
+                                <colgroup>
+                                    <col width="20%"/>
+                                    <col width="20%"/>
+                                    <col width="20%"/>
+                                    <col width="20%"/>
+                                    <col width="20%"/>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span>品牌</span>
+                                            <div class="amp-input amp-input-default amp-input-32"><input value="{{item.brandName}}"/></div>
+                                        </td>
+                                        <td>
+                                            <span>合同编号</span>
+                                            <div class="amp-input amp-input-default amp-input-32"><input value="{{item.contractId}}"/></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <a class="amp-btn amp-btn-default cancel-btn">取消</a>
+                                        </td>
+                                        <td>
+                                            <a class="amp-btn amp-btn-green ok-btn">确定</a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div><!-- amp-row-collapse -->
+                    </div><!-- amp-table-collapse-row -->
+                </div><!-- amp-tbody -->
+            </div><!-- amp-table-collapse -->
+        </div><!-- ys-table-block -->
+
+    </div><!-- amp-content-panel -->
+</div><!-- amp-main-panel -->
+

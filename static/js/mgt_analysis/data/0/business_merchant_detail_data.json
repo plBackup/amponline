@@ -1,0 +1,3211 @@
+{
+  "initData": [
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户037",
+      "chargeDate": "2016-10-15",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户037",
+      "chargeDate": "2016-11-15",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户037",
+      "chargeDate": "2016-12-15",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "50000",
+      "month": "2016-09",
+      "merchantName": "商户037",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "4346.8",
+      "month": "2016-09",
+      "merchantName": "商户037",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "724.47",
+      "month": "2016-09",
+      "merchantName": "商户037",
+      "chargeDate": "2016-09-27",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "5433.5",
+      "month": "2016-10",
+      "merchantName": "商户037",
+      "chargeDate": "2016-10-05",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "5433.5",
+      "month": "2016-11",
+      "merchantName": "商户037",
+      "chargeDate": "2016-11-05",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "5433.5",
+      "month": "2016-12",
+      "merchantName": "商户037",
+      "chargeDate": "2016-12-05",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "10291.049999999999",
+      "month": "2016-09",
+      "merchantName": "商户034",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "14701.5",
+      "month": "2016-10",
+      "merchantName": "商户034",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "4410.45",
+      "month": "2016-11",
+      "merchantName": "商户034",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户034",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "31581",
+      "month": "2016-09",
+      "merchantName": "商户034",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "14157",
+      "month": "2016-09",
+      "merchantName": "商户034",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "2178",
+      "month": "2016-09",
+      "merchantName": "商户034",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "7078.5",
+      "month": "2016-09",
+      "merchantName": "商户034",
+      "chargeDate": "2016-09-01",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "7078.5",
+      "month": "2016-10",
+      "merchantName": "商户034",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户034",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户034",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户111",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户111",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户111",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户111",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "47068",
+      "month": "2016-09",
+      "merchantName": "商户111",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "14924",
+      "month": "2016-09",
+      "merchantName": "商户111",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "2296",
+      "month": "2016-09",
+      "merchantName": "商户111",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "5223.3999999999996",
+      "month": "2016-09",
+      "merchantName": "商户111",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "7462",
+      "month": "2016-10",
+      "merchantName": "商户111",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "7462",
+      "month": "2016-11",
+      "merchantName": "商户111",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "7462",
+      "month": "2016-12",
+      "merchantName": "商户111",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户111",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "合同违约金"
+    },
+    {
+      "amount": "9195.9",
+      "month": "2016-09",
+      "merchantName": "商户115",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "13137",
+      "month": "2016-10",
+      "merchantName": "商户115",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "13137",
+      "month": "2016-11",
+      "merchantName": "商户115",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "13137",
+      "month": "2016-12",
+      "merchantName": "商户115",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "26274",
+      "month": "2016-09",
+      "merchantName": "商户115",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "3926",
+      "month": "2016-09",
+      "merchantName": "商户115",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "604",
+      "month": "2016-09",
+      "merchantName": "商户115",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "1374.1",
+      "month": "2016-09",
+      "merchantName": "商户115",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "1963",
+      "month": "2016-10",
+      "merchantName": "商户115",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "1963",
+      "month": "2016-11",
+      "merchantName": "商户115",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "1963",
+      "month": "2016-12",
+      "merchantName": "商户115",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "7560",
+      "month": "2016-09",
+      "merchantName": "商户020",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "10800",
+      "month": "2016-10",
+      "merchantName": "商户020",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "3240",
+      "month": "2016-11",
+      "merchantName": "商户020",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户020",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "23040",
+      "month": "2016-09",
+      "merchantName": "商户020",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "3120",
+      "month": "2016-09",
+      "merchantName": "商户020",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "480",
+      "month": "2016-09",
+      "merchantName": "商户020",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "704.52",
+      "month": "2016-08",
+      "merchantName": "商户020",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "1560",
+      "month": "2016-09",
+      "merchantName": "商户020",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "855.48",
+      "month": "2016-10",
+      "merchantName": "商户020",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户020",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户020",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "11838.81",
+      "month": "2016-09",
+      "merchantName": "商户096",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "16912.59",
+      "month": "2016-10",
+      "merchantName": "商户096",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "5073.78",
+      "month": "2016-11",
+      "merchantName": "商户096",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户096",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "34818.32",
+      "month": "2016-09",
+      "merchantName": "商户096",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "3797.3",
+      "month": "2016-09",
+      "merchantName": "商户096",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "584.20000000000005",
+      "month": "2016-09",
+      "merchantName": "商户096",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "857.45",
+      "month": "2016-08",
+      "merchantName": "商户096",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "1898.65",
+      "month": "2016-09",
+      "merchantName": "商户096",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "1041.2",
+      "month": "2016-10",
+      "merchantName": "商户096",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户096",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户096",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "4110.12",
+      "month": "2016-09",
+      "merchantName": "商户214",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "5871.6",
+      "month": "2016-10",
+      "merchantName": "商户214",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "1761.48",
+      "month": "2016-11",
+      "merchantName": "商户214",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户214",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "11743.2",
+      "month": "2016-09",
+      "merchantName": "商户214",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "2120.3000000000002",
+      "month": "2016-09",
+      "merchantName": "商户214",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "326.2",
+      "month": "2016-09",
+      "merchantName": "商户214",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "478.78",
+      "month": "2016-08",
+      "merchantName": "商户214",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "1060.1500000000001",
+      "month": "2016-09",
+      "merchantName": "商户214",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "581.37",
+      "month": "2016-10",
+      "merchantName": "商户214",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户214",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户214",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户064",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户064",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "30919",
+      "month": "2016-11",
+      "merchantName": "商户064",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "44170",
+      "month": "2016-12",
+      "merchantName": "商户064",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "97174",
+      "month": "2016-09",
+      "merchantName": "商户064",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "28710.5",
+      "month": "2016-09",
+      "merchantName": "商户064",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "4417",
+      "month": "2016-09",
+      "merchantName": "商户064",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "10048.67",
+      "month": "2016-09",
+      "merchantName": "商户064",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "14355.25",
+      "month": "2016-10",
+      "merchantName": "商户064",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "4306.58",
+      "month": "2016-11",
+      "merchantName": "商户064",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户064",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户064",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "合同违约金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户092",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户092",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户092",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "40062",
+      "month": "2016-12",
+      "merchantName": "商户092",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "125284.8",
+      "month": "2016-09",
+      "merchantName": "商户092",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "47346",
+      "month": "2016-09",
+      "merchantName": "商户092",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "7284",
+      "month": "2016-09",
+      "merchantName": "商户092",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "10691.03",
+      "month": "2016-08",
+      "merchantName": "商户092",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "23673",
+      "month": "2016-09",
+      "merchantName": "商户092",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "23673",
+      "month": "2016-10",
+      "merchantName": "商户092",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "12981.97",
+      "month": "2016-11",
+      "merchantName": "商户092",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户092",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户141",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户141",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户141",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "38140.699999999997",
+      "month": "2016-12",
+      "merchantName": "商户141",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "161410.5",
+      "month": "2016-09",
+      "merchantName": "商户141",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "46629.7",
+      "month": "2016-09",
+      "merchantName": "商户141",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "7173.8",
+      "month": "2016-09",
+      "merchantName": "商户141",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "16320.39",
+      "month": "2016-09",
+      "merchantName": "商户141",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "23314.85",
+      "month": "2016-10",
+      "merchantName": "商户141",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "6994.46",
+      "month": "2016-11",
+      "merchantName": "商户141",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户141",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户010",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "21347.33",
+      "month": "2016-10",
+      "merchantName": "商户010",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "29110",
+      "month": "2016-11",
+      "merchantName": "商户010",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "7762.67",
+      "month": "2016-12",
+      "merchantName": "商户010",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户010",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户010",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户010",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "3731",
+      "month": "2016-09",
+      "merchantName": "商户010",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "5330",
+      "month": "2016-10",
+      "merchantName": "商户010",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "1599",
+      "month": "2016-11",
+      "merchantName": "商户010",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户010",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户018",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户018",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户018",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户018",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户018",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户018",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户018",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-08",
+      "merchantName": "商户018",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户018",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户018",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户018",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户018",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "36419.25",
+      "month": "2016-09",
+      "merchantName": "商户022",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "52027.5",
+      "month": "2016-10",
+      "merchantName": "商户022",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "15608.25",
+      "month": "2016-11",
+      "merchantName": "商户022",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户022",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "106532.5",
+      "month": "2016-09",
+      "merchantName": "商户022",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "12387.5",
+      "month": "2016-09",
+      "merchantName": "商户022",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "4955",
+      "month": "2016-09",
+      "merchantName": "商户022",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "4335.62",
+      "month": "2016-09",
+      "merchantName": "商户022",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "6193.75",
+      "month": "2016-10",
+      "merchantName": "商户022",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "1858.13",
+      "month": "2016-11",
+      "merchantName": "商户022",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户022",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "14060.76",
+      "month": "2016-09",
+      "merchantName": "商户025",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "20086.8",
+      "month": "2016-10",
+      "merchantName": "商户025",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "6026.04",
+      "month": "2016-11",
+      "merchantName": "商户025",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户025",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "40173.599999999999",
+      "month": "2016-09",
+      "merchantName": "商户025",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "11453",
+      "month": "2016-09",
+      "merchantName": "商户025",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "1762",
+      "month": "2016-09",
+      "merchantName": "商户025",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "4390.32",
+      "month": "2016-09",
+      "merchantName": "商户025",
+      "chargeDate": "2016-09-08",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "5726.5",
+      "month": "2016-10",
+      "merchantName": "商户025",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "1336.18",
+      "month": "2016-11",
+      "merchantName": "商户025",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户025",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户027",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "3260.4",
+      "month": "2016-10",
+      "merchantName": "商户027",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "4446",
+      "month": "2016-11",
+      "merchantName": "商户027",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "4446",
+      "month": "2016-12",
+      "merchantName": "商户027",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "8892",
+      "month": "2016-09",
+      "merchantName": "商户027",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "1690",
+      "month": "2016-09",
+      "merchantName": "商户027",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户027",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "381.61",
+      "month": "2016-08",
+      "merchantName": "商户027",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "845",
+      "month": "2016-09",
+      "merchantName": "商户027",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "845",
+      "month": "2016-10",
+      "merchantName": "商户027",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "463.39",
+      "month": "2016-11",
+      "merchantName": "商户027",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户027",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "9035.2800000000007",
+      "month": "2016-09",
+      "merchantName": "商户051",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "12907.55",
+      "month": "2016-10",
+      "merchantName": "商户051",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "6184.07",
+      "month": "2016-11",
+      "merchantName": "商户051",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户051",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "30053.4",
+      "month": "2016-09",
+      "merchantName": "商户051",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "5008.8999999999996",
+      "month": "2016-09",
+      "merchantName": "商户051",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "770.6",
+      "month": "2016-09",
+      "merchantName": "商户051",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "1131.04",
+      "month": "2016-08",
+      "merchantName": "商户051",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "2504.4499999999998",
+      "month": "2016-09",
+      "merchantName": "商户051",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "1373.41",
+      "month": "2016-10",
+      "merchantName": "商户051",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户051",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户051",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "8353.7999999999993",
+      "month": "2016-09",
+      "merchantName": "商户059",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "11934",
+      "month": "2016-10",
+      "merchantName": "商户059",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "3580.2",
+      "month": "2016-11",
+      "merchantName": "商户059",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户059",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "23868",
+      "month": "2016-09",
+      "merchantName": "商户059",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "6084",
+      "month": "2016-09",
+      "merchantName": "商户059",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户059",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "2230.8000000000002",
+      "month": "2016-09",
+      "merchantName": "商户059",
+      "chargeDate": "2016-09-09",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "3042",
+      "month": "2016-10",
+      "merchantName": "商户059",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "811.2",
+      "month": "2016-11",
+      "merchantName": "商户059",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户059",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "3094",
+      "month": "2016-09",
+      "merchantName": "商户062",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "4420",
+      "month": "2016-10",
+      "merchantName": "商户062",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "1326",
+      "month": "2016-11",
+      "merchantName": "商户062",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户062",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "8840",
+      "month": "2016-09",
+      "merchantName": "商户062",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "1690",
+      "month": "2016-09",
+      "merchantName": "商户062",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "260",
+      "month": "2016-09",
+      "merchantName": "商户062",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "272.58",
+      "month": "2016-08",
+      "merchantName": "商户062",
+      "chargeDate": "2016-08-22",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "845",
+      "month": "2016-09",
+      "merchantName": "商户062",
+      "chargeDate": "2016-08-22",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "572.41999999999996",
+      "month": "2016-10",
+      "merchantName": "商户062",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户062",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户062",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "4536",
+      "month": "2016-09",
+      "merchantName": "商户063",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "6480",
+      "month": "2016-10",
+      "merchantName": "商户063",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "1944",
+      "month": "2016-11",
+      "merchantName": "商户063",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户063",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "12960",
+      "month": "2016-09",
+      "merchantName": "商户063",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "2106",
+      "month": "2016-09",
+      "merchantName": "商户063",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户063",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "737.1",
+      "month": "2016-09",
+      "merchantName": "商户063",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "1053",
+      "month": "2016-10",
+      "merchantName": "商户063",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "315.89999999999998",
+      "month": "2016-11",
+      "merchantName": "商户063",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户063",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户078",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "21849.67",
+      "month": "2016-10",
+      "merchantName": "商户078",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "29795",
+      "month": "2016-11",
+      "merchantName": "商户078",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "29795",
+      "month": "2016-12",
+      "merchantName": "商户078",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "63226",
+      "month": "2016-09",
+      "merchantName": "商户078",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "13130",
+      "month": "2016-09",
+      "merchantName": "商户078",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "2020",
+      "month": "2016-09",
+      "merchantName": "商户078",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "4595.5",
+      "month": "2016-09",
+      "merchantName": "商户078",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "6565",
+      "month": "2016-10",
+      "merchantName": "商户078",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "6565",
+      "month": "2016-11",
+      "merchantName": "商户078",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "6565",
+      "month": "2016-12",
+      "merchantName": "商户078",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "10325",
+      "month": "2016-09",
+      "merchantName": "商户001",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "14750",
+      "month": "2016-10",
+      "merchantName": "商户001",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "14750",
+      "month": "2016-11",
+      "merchantName": "商户001",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "14750",
+      "month": "2016-12",
+      "merchantName": "商户001",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "31860",
+      "month": "2016-09",
+      "merchantName": "商户001",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "7670",
+      "month": "2016-09",
+      "merchantName": "商户001",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "1180",
+      "month": "2016-09",
+      "merchantName": "商户001",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "1731.94",
+      "month": "2016-08",
+      "merchantName": "商户001",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "3835",
+      "month": "2016-09",
+      "merchantName": "商户001",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "3835",
+      "month": "2016-10",
+      "merchantName": "商户001",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "3835",
+      "month": "2016-11",
+      "merchantName": "商户001",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "3835",
+      "month": "2016-12",
+      "merchantName": "商户001",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户002",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户002",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户002",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "21166.93",
+      "month": "2016-12",
+      "merchantName": "商户002",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "63500.800000000003",
+      "month": "2016-09",
+      "merchantName": "商户002",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "23452",
+      "month": "2016-09",
+      "merchantName": "商户002",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "3608",
+      "month": "2016-09",
+      "merchantName": "商户002",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "4539.1000000000004",
+      "month": "2016-08",
+      "merchantName": "商户002",
+      "chargeDate": "2016-08-20",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "11726",
+      "month": "2016-09",
+      "merchantName": "商户002",
+      "chargeDate": "2016-08-20",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "11726",
+      "month": "2016-10",
+      "merchantName": "商户002",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "11726",
+      "month": "2016-11",
+      "merchantName": "商户002",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "11726",
+      "month": "2016-12",
+      "merchantName": "商户002",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户004",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户004",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户004",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户004",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "123508.82",
+      "month": "2016-09",
+      "merchantName": "商户004",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户004",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "10754.8",
+      "month": "2016-09",
+      "merchantName": "商户004",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "7528.5",
+      "month": "2016-09",
+      "merchantName": "商户004",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "10755",
+      "month": "2016-10",
+      "merchantName": "商户004",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "3226.1",
+      "month": "2016-11",
+      "merchantName": "商户004",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户004",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户021",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户021",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户021",
+      "chargeDate": "2016-10-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "27993.83",
+      "month": "2016-12",
+      "merchantName": "商户021",
+      "chargeDate": "2016-11-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "77971.199999999997",
+      "month": "2016-09",
+      "merchantName": "商户021",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "21117.200000000001",
+      "month": "2016-09",
+      "merchantName": "商户021",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "3248.8",
+      "month": "2016-09",
+      "merchantName": "商户021",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "7391.02",
+      "month": "2016-09",
+      "merchantName": "商户021",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "10558.6",
+      "month": "2016-10",
+      "merchantName": "商户021",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "10558.6",
+      "month": "2016-11",
+      "merchantName": "商户021",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "10558.6",
+      "month": "2016-12",
+      "merchantName": "商户021",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户030",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户030",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户030",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户030",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户030",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户030",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "8123.6",
+      "month": "2016-09",
+      "merchantName": "商户030",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "11923.35",
+      "month": "2016-08",
+      "merchantName": "商户030",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "18076.650000000001",
+      "month": "2016-09",
+      "merchantName": "商户030",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户030",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户030",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户030",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户042",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户042",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户042",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "34655.94",
+      "month": "2016-12",
+      "merchantName": "商户042",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "138897.72",
+      "month": "2016-09",
+      "merchantName": "商户042",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "53422.2",
+      "month": "2016-09",
+      "merchantName": "商户042",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "8218.7999999999993",
+      "month": "2016-09",
+      "merchantName": "商户042",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "18697.77",
+      "month": "2016-09",
+      "merchantName": "商户042",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "26711.1",
+      "month": "2016-10",
+      "merchantName": "商户042",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "26711.1",
+      "month": "2016-11",
+      "merchantName": "商户042",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "26711.1",
+      "month": "2016-12",
+      "merchantName": "商户042",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户044",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户044",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户044",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "49832.93",
+      "month": "2016-12",
+      "merchantName": "商户044",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "187152",
+      "month": "2016-09",
+      "merchantName": "商户044",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "72410",
+      "month": "2016-09",
+      "merchantName": "商户044",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "11140",
+      "month": "2016-09",
+      "merchantName": "商户044",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "25343.5",
+      "month": "2016-09",
+      "merchantName": "商户044",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "36205",
+      "month": "2016-10",
+      "merchantName": "商户044",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "36205",
+      "month": "2016-11",
+      "merchantName": "商户044",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "36205",
+      "month": "2016-12",
+      "merchantName": "商户044",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户066",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户066",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户066",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "82597.42",
+      "month": "2016-12",
+      "merchantName": "商户066",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "304707.20000000001",
+      "month": "2016-09",
+      "merchantName": "商户066",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "27206",
+      "month": "2016-09",
+      "merchantName": "商户066",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "10882.4",
+      "month": "2016-09",
+      "merchantName": "商户066",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "9522.1",
+      "month": "2016-09",
+      "merchantName": "商户066",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "13603",
+      "month": "2016-10",
+      "merchantName": "商户066",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "13603",
+      "month": "2016-11",
+      "merchantName": "商户066",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "13603",
+      "month": "2016-12",
+      "merchantName": "商户066",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户075",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户075",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户075",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "24573.41",
+      "month": "2016-12",
+      "merchantName": "商户075",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "81078.179999999993",
+      "month": "2016-09",
+      "merchantName": "商户075",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "30462.82",
+      "month": "2016-09",
+      "merchantName": "商户075",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "4686.6000000000004",
+      "month": "2016-09",
+      "merchantName": "商户075",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "10662.01",
+      "month": "2016-09",
+      "merchantName": "商户075",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "15231.45",
+      "month": "2016-10",
+      "merchantName": "商户075",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "15231.45",
+      "month": "2016-11",
+      "merchantName": "商户075",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "15231.45",
+      "month": "2016-12",
+      "merchantName": "商户075",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户160",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "53532.45",
+      "month": "2016-10",
+      "merchantName": "商户160",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "72998.8",
+      "month": "2016-11",
+      "merchantName": "商户160",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "30769.39",
+      "month": "2016-12",
+      "merchantName": "商户160",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "103972.32",
+      "month": "2016-09",
+      "merchantName": "商户160",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "30612.400000000001",
+      "month": "2016-09",
+      "merchantName": "商户160",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "9419.2000000000007",
+      "month": "2016-09",
+      "merchantName": "商户160",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "21428.68",
+      "month": "2016-09",
+      "merchantName": "商户160",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "30612.400000000001",
+      "month": "2016-10",
+      "merchantName": "商户160",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "9183.7199999999993",
+      "month": "2016-11",
+      "merchantName": "商户160",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户160",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户038",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户038",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户038",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户038",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "42130",
+      "month": "2016-09",
+      "merchantName": "商户038",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "12447.5",
+      "month": "2016-09",
+      "merchantName": "商户038",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "1915",
+      "month": "2016-09",
+      "merchantName": "商户038",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "2810.73",
+      "month": "2016-08",
+      "merchantName": "商户038",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "6223.75",
+      "month": "2016-09",
+      "merchantName": "商户038",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "6223.75",
+      "month": "2016-10",
+      "merchantName": "商户038",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "6223.75",
+      "month": "2016-11",
+      "merchantName": "商户038",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "6223.75",
+      "month": "2016-12",
+      "merchantName": "商户038",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户052",
+      "chargeDate": "2016-10-05",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户052",
+      "chargeDate": "2016-11-05",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户052",
+      "chargeDate": "2016-12-05",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "55068",
+      "month": "2016-09",
+      "merchantName": "商户052",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "23862.799999999999",
+      "month": "2016-09",
+      "merchantName": "商户052",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "7342.4",
+      "month": "2016-09",
+      "merchantName": "商户052",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "5388.37",
+      "month": "2016-08",
+      "merchantName": "商户052",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "11931.4",
+      "month": "2016-09",
+      "merchantName": "商户052",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "11931.4",
+      "month": "2016-10",
+      "merchantName": "商户052",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "11931.4",
+      "month": "2016-11",
+      "merchantName": "商户052",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "2963.61",
+      "month": "2016-12",
+      "merchantName": "商户052",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户088",
+      "chargeDate": "2016-12-05",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "81727.649999999994",
+      "month": "2016-11",
+      "merchantName": "商户088",
+      "chargeDate": "2016-11-07",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户088",
+      "chargeDate": "2016-11-07",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "12107.8",
+      "month": "2016-11",
+      "merchantName": "商户088",
+      "chargeDate": "2016-11-07",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "19675.18",
+      "month": "2016-09",
+      "merchantName": "商户088",
+      "chargeDate": "2016-09-16",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "39350.35",
+      "month": "2016-10",
+      "merchantName": "商户088",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "39350.35",
+      "month": "2016-11",
+      "merchantName": "商户088",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "39350.35",
+      "month": "2016-12",
+      "merchantName": "商户088",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户089",
+      "chargeDate": "2016-10-05",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户089",
+      "chargeDate": "2016-11-05",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户089",
+      "chargeDate": "2016-12-05",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "300000",
+      "month": "2016-09",
+      "merchantName": "商户089",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "6924",
+      "month": "2016-09",
+      "merchantName": "商户089",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "15634.84",
+      "month": "2016-08",
+      "merchantName": "商户089",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "34620",
+      "month": "2016-09",
+      "merchantName": "商户089",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "34620",
+      "month": "2016-10",
+      "merchantName": "商户089",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "34620",
+      "month": "2016-11",
+      "merchantName": "商户089",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "34620",
+      "month": "2016-12",
+      "merchantName": "商户089",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户117",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户117",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户117",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "20482",
+      "month": "2016-12",
+      "merchantName": "商户117",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "55860",
+      "month": "2016-09",
+      "merchantName": "商户117",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "17290",
+      "month": "2016-09",
+      "merchantName": "商户117",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "2660",
+      "month": "2016-09",
+      "merchantName": "商户117",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "2788.71",
+      "month": "2016-08",
+      "merchantName": "商户117",
+      "chargeDate": "2016-08-22",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "8645",
+      "month": "2016-09",
+      "merchantName": "商户117",
+      "chargeDate": "2016-08-22",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "8645",
+      "month": "2016-10",
+      "merchantName": "商户117",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "8645",
+      "month": "2016-11",
+      "merchantName": "商户117",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "8645",
+      "month": "2016-12",
+      "merchantName": "商户117",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户117",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "合同违约金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户127",
+      "chargeDate": "2016-10-15",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户127",
+      "chargeDate": "2016-11-15",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户127",
+      "chargeDate": "2016-12-15",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "47886",
+      "month": "2016-09",
+      "merchantName": "商户127",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "20750.599999999999",
+      "month": "2016-09",
+      "merchantName": "商户127",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "6384.8",
+      "month": "2016-09",
+      "merchantName": "商户127",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "7262.71",
+      "month": "2016-09",
+      "merchantName": "商户127",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "10375.299999999999",
+      "month": "2016-10",
+      "merchantName": "商户127",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "10375.299999999999",
+      "month": "2016-11",
+      "merchantName": "商户127",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "10375.299999999999",
+      "month": "2016-12",
+      "merchantName": "商户127",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户150",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户150",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户150",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "18182.560000000001",
+      "month": "2016-12",
+      "merchantName": "商户150",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "58886.7",
+      "month": "2016-09",
+      "merchantName": "商户150",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "13430.3",
+      "month": "2016-09",
+      "merchantName": "商户150",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "2066.1999999999998",
+      "month": "2016-09",
+      "merchantName": "商户150",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "3032.65",
+      "month": "2016-08",
+      "merchantName": "商户150",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "6715.15",
+      "month": "2016-09",
+      "merchantName": "商户150",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "3682.5",
+      "month": "2016-10",
+      "merchantName": "商户150",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户150",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户150",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户154",
+      "chargeDate": "2016-10-05",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户154",
+      "chargeDate": "2016-11-05",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户154",
+      "chargeDate": "2016-12-05",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "154601.16",
+      "month": "2016-09",
+      "merchantName": "商户154",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "40849.9",
+      "month": "2016-09",
+      "merchantName": "商户154",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户154",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "14297.46",
+      "month": "2016-09",
+      "merchantName": "商户154",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "20424.95",
+      "month": "2016-10",
+      "merchantName": "商户154",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "20424.95",
+      "month": "2016-11",
+      "merchantName": "商户154",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "20424.95",
+      "month": "2016-12",
+      "merchantName": "商户154",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户157",
+      "chargeDate": "2016-10-15",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户157",
+      "chargeDate": "2016-11-15",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户157",
+      "chargeDate": "2016-12-15",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "171186.4",
+      "month": "2016-09",
+      "merchantName": "商户157",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "79479.399999999994",
+      "month": "2016-09",
+      "merchantName": "商户157",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "综合管理费履约保证金"
+    },
+    {
+      "amount": "24455.200000000001",
+      "month": "2016-09",
+      "merchantName": "商户157",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "17946.96",
+      "month": "2016-08",
+      "merchantName": "商户157",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "39739.699999999997",
+      "month": "2016-09",
+      "merchantName": "商户157",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "39739.699999999997",
+      "month": "2016-10",
+      "merchantName": "商户157",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "39739.699999999997",
+      "month": "2016-11",
+      "merchantName": "商户157",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "10255.41",
+      "month": "2016-12",
+      "merchantName": "商户157",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户165",
+      "chargeDate": "2016-10-05",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户165",
+      "chargeDate": "2016-11-05",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户165",
+      "chargeDate": "2016-12-05",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "20000",
+      "month": "2016-09",
+      "merchantName": "商户165",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "7064.6",
+      "month": "2016-09",
+      "merchantName": "商户165",
+      "chargeDate": "2016-09-10",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-08",
+      "merchantName": "商户165",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户165",
+      "chargeDate": "2016-08-18",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户165",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户165",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户165",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "0",
+      "month": "2016-10",
+      "merchantName": "商户015",
+      "chargeDate": "2016-10-05",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-11",
+      "merchantName": "商户015",
+      "chargeDate": "2016-11-05",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-12",
+      "merchantName": "商户015",
+      "chargeDate": "2016-12-05",
+      "projectItemName": "租金"
+    },
+    {
+      "amount": "0",
+      "month": "2016-09",
+      "merchantName": "商户015",
+      "chargeDate": "2016-09-02",
+      "projectItemName": "租金履约保证金"
+    },
+    {
+      "amount": "39360",
+      "month": "2016-09",
+      "merchantName": "商户015",
+      "chargeDate": "2016-09-02",
+      "projectItemName": "装修管理费"
+    },
+    {
+      "amount": "19172.07",
+      "month": "2016-09",
+      "merchantName": "商户015",
+      "chargeDate": "2016-09-02",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "19833.18",
+      "month": "2016-10",
+      "merchantName": "商户015",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "19833.18",
+      "month": "2016-11",
+      "merchantName": "商户015",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    },
+    {
+      "amount": "19833.18",
+      "month": "2016-12",
+      "merchantName": "商户015",
+      "chargeDate": "2016-09-25",
+      "projectItemName": "物业管理费"
+    }
+  ],
+  "allType": {
+    "catering": "餐饮",
+    "mating": "配套",
+    "clothing": "服装",
+    "children": "儿童",
+    "cinema": "影院"
+  },
+  "merchantSummaryList":[{"contractStartTime":"2016-09-10","rentPeriod":"120","merchantName":"商户089","rentType":"两者取高"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户003","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户215","rentType":"固定租金"},{"contractStartTime":"2017-02-27","rentPeriod":"60","merchantName":"商户231","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户171","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户024","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户042","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户191","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"12","merchantName":"商户214","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户216","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户160","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"240","merchantName":"商户212","rentType":"提成租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户058","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"12","merchantName":"商户115","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户223","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"96","merchantName":"商户199","rentType":"两者取高"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户025","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户010","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户190","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户048","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户221","rentType":"两者取高"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户074","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户062","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户130","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户112","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户150","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户044","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户125","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户134","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户082","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户071","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户110","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户072","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户104","rentType":"两者取高"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户128","rentType":"两者取高"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户156","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户232","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户052","rentType":"两者取高"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户219","rentType":"固定租金"},{"contractStartTime":"2017-01-17","rentPeriod":"120","merchantName":"商户233","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户041","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户068","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户026","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户063","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户175","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户022","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户098","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户076","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户096","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户121","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户113","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户040","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户179","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户039","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户228","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户094","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户227","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户213","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户162","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户075","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户034","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户007","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户164","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户093","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户047","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户107","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户144","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"120","merchantName":"商户183","rentType":"提成租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户028","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户209","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户181","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户208","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"96","merchantName":"商户204","rentType":"两者取高"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户099","rentType":"两者取高"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户056","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户124","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户172","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户033","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户203","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户195","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户152","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"96","merchantName":"商户145","rentType":"提成租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户186","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户210","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户090","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户031","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户224","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户008","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户055","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户234","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户051","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户102","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户120","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户069","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"96","merchantName":"商户097","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户136","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"96","merchantName":"商户032","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户122","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户139","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"72","merchantName":"商户116","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户207","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户192","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户036","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户126","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户053","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户137","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户140","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户059","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户087","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户169","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户184","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户079","rentType":"固定租金"},{"contractStartTime":"2016-09-2","rentPeriod":"180","merchantName":"商户015","rentType":"两者取高"},{"contractStartTime":"2016-09-10","rentPeriod":"96","merchantName":"商户226","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户100","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户018","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户078","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户067","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户174","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户030","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户049","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户230","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户187","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户217","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户133","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"96","merchantName":"商户119","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户173","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"120","merchantName":"商户037","rentType":"提成租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户101","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户141","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"120","merchantName":"商户193","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户185","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户046","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户103","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户061","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户202","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户131","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"72","merchantName":"商户143","rentType":"固定租金"},{"contractStartTime":"2017-01-01","rentPeriod":"60","merchantName":"商户235","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户020","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户043","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户149","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户127","rentType":"两者取高"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户177","rentType":"固定租金"},{"contractStartTime":"2016-11-07","rentPeriod":"120","merchantName":"商户088","rentType":"两者取高"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户070","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户111","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户146","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户194","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户086","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户178","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户021","rentType":"固定租金"},{"contractStartTime":"2016-10-01","rentPeriod":"36","merchantName":"商户014","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户165","rentType":"提成租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户231","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户002","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户189","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户159","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户080","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户151","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户006","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户105","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户117","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"120","merchantName":"商户005","rentType":"提成租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户154","rentType":"两者取高"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户035","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户114","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户017","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户197","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户170","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户095","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户066","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户157","rentType":"两者取高"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户182","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户001","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户166","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"96","merchantName":"商户229","rentType":"两者取高"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户108","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户091","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户158","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户135","rentType":"固定租金"},{"contractStartTime":"2016-10-25","rentPeriod":"60","merchantName":"商户060","rentType":"两者取高"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户196","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户148","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户038","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户045","rentType":"两者取高"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户013","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"120","merchantName":"商户037","rentType":"提成租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户211","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户153","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户027","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户180","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户019","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户138","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户012","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户161","rentType":"固定租金"},{"contractStartTime":"2016-09-24","rentPeriod":"36","merchantName":"商户201","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户218","rentType":"固定租金"},{"contractStartTime":"2016-09-16","rentPeriod":"60","merchantName":"商户073","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户092","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户206","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户129","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户004","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户081","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户163","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户009","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户123","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户188","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户147","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户106","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户029","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户083","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户118","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户057","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户155","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户077","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户011","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户167","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户065","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户054","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户016","rentType":"两者取高"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户200","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户084","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户109","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"36","merchantName":"商户168","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"72","merchantName":"商户023","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户085","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"24","merchantName":"商户198","rentType":"固定租金"},{"contractStartTime":"2016-11-15","rentPeriod":"60","merchantName":"商户236","rentType":"固定租金"},{"contractStartTime":"2016-09-10","rentPeriod":"60","merchantName":"商户064","rentType":"固定租金"}]
+}

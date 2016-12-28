@@ -1,0 +1,92 @@
+#merchant-sale-main{background-color:#fff;}
+
+#merchant-sale-main .amp-content-header{
+    margin:0;
+}
+#merchant-sale-main .amp-content-panel{padding:0 0 40px 0;}
+
+/* ======================================== chart-block-group ======================================== */
+#merchant-sale-main .chart-block-group{
+    width:950px;
+    margin:auto;
+}
+#merchant-sale-main .amp-chart-block{
+    width:50%;
+    float:left;
+    padding:40px 0 20px 0;
+}
+
+#merchant-sale-main .amp-chart-block .amp-chart-content{position:relative;height:200px;}
+#merchant-sale-main .amp-chart-block .amp-chart-content>div.pie-text{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    width: 140px;
+    height: 140px;
+    margin: auto;
+    line-height: 140px;
+    z-index: 9;
+    text-align: center;
+    font-size:16px;
+    cursor:pointer;
+}
+
+#merchant-sale-main .amp-chart-block  .amp-chart-title{
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    font-size:14px;
+    color:#8592a3;
+}
+
+/* ======================================== table-block ======================================== */
+#merchant-sale-main .table-block table thead th{text-align: center;border-right: 1px solid #c2cdd7;}
+#merchant-sale-main .table-block table thead th:last-child{border-right:none;}
+
+#merchant-sale-main .table-block table tbody td:nth-child(1),
+#merchant-sale-main .table-block table tbody td:nth-child(4){
+    border-right: 1px solid #dae1e7;
+}
+
+#merchant-sale-main .table-block table tbody tr td{text-align: right;padding-right:40px;}
+#merchant-sale-main .table-block table tbody tr td:first-child{text-align: left;padding-left:24px;cursor:pointer;}
+
+#merchant-sale-main .table-block table tbody tr.parent-record td{
+    font-weight: bold;
+    cursor:pointer;
+}
+
+
+#merchant-sale-main .table-block table tbody tr.parent-record .collapse-btn{
+    display:inline-block;
+    width:17px;
+    height:17px;
+    background:url(../../images/common/collapse-down-btn-icon.png) no-repeat;
+    background-size:contain;
+    vertical-align: text-bottom;
+    margin-left:6px;
+    cursor: pointer;
+}
+
+#merchant-sale-main .table-block table tbody tr.parent-record .collapse-btn.collapsed{
+    background-image:url(../../images/common/collapse-up-btn-icon.png);
+}
+
+#merchant-sale-main .table-block table.main-table tbody tr:last-child td{
+    font-style: italic;
+    font-weight: bold;
+    color:#55bbe6;
+}
+
+#merchant-sale-main .table-block table.main-table tbody tr:last-child td:first-child{color:#373c42;}
+
+#merchant-sale-main .table-block .dept-table-head table tbody tr:first-child{font-size:12px;color:#8592a3;}
+#merchant-sale-main  .table-block .assets-table th{text-align: center;border-right: 1px solid #dae1e7;}
+#merchant-sale-main .table-block table th:last-child{border-right:none;}
+#merchant-sale-main  .table-block .dept-table-head tbody tr:last-child{background: #fff; font-size:12px;color:#8592a3;}
+#merchant-sale-main .assets-table{width: 100%;}
+#merchant-sale-main .dept-table-head {right: 0;left: 0;z-index: 9;}
+#merchant-sale-main .assets-table  .body-title {color: #8592a3;font-size: 12px;background-color: #f3f4f8; height: 28px;  border-bottom: 1px solid #d9dde0;}

@@ -1,0 +1,95 @@
+body{background: #fff;}
+#passenger-flow-main{background-color:#fff;    padding-bottom: 40px;}
+
+/* ======================================== amp-content-header ======================================== */
+#passenger-flow-main .amp-content-header{padding: 0;margin:0;}
+
+#passenger-flow-main .arrow-up{
+    display: inline-block;
+    width: 8px;
+    height: 12px;
+    background: url(../../images/arrow_up.png) no-repeat center center;
+    background-size: contain;
+    margin-left: 5px;
+}
+
+#passenger-flow-main .arrow-down{
+    display: inline-block;
+    width: 8px;
+    height: 12px;
+    background: url(../../images/arrow_down.png) no-repeat center center;
+    background-size: contain;
+    margin-left: 5px;
+}
+
+/* ======================================== amp-content-panel ======================================== */
+#passenger-flow-main .amp-content-panel{padding:20px 0 40px 0;}
+#passenger-flow-main .passenger-flow-info-group>div{width:50%;}
+#passenger-flow-main .passenger-flow-info-group .passenger-flow-info-left{padding-left:40px;}
+#passenger-flow-main .passenger-flow-info-group .passenger-flow-info-right{padding-left:40px;border-left:1px solid #ededed;}
+
+/*label-group*/
+#passenger-flow-main .label-group>em{
+    display:block;
+    height:14px;
+    line-height: 14px;
+    font-size:12px;
+    color:#737e8c;
+}
+#passenger-flow-main .label-group>div{
+    height:59px;
+    line-height: 44px;
+    font-size:28px;
+    padding-bottom:15px;
+}
+
+/*label-group-list*/
+#passenger-flow-main .label-group-list li{float:left;padding-right:24px;}
+#passenger-flow-main .label-group-list li .label-group>div{font-size:20px;}
+
+/*amp-progress*/
+#passenger-flow-main .amp-progress{padding-bottom:16px;}
+#passenger-flow-main .amp-progress .amp-progress-title{height:24px;line-height: 24px;font-size:12px;color:#737e8c;}
+#passenger-flow-main .amp-progress .amp-progress-bar{
+    position:relative;
+    width:200px;
+    height:16px;
+    background-color:#d9dedf;
+    cursor:pointer;
+}
+
+#passenger-flow-main .amp-progress .amp-progress-bar .amp-progress-bar-finished{
+    width:0;
+    height:16px;
+    transition: width 1s;
+    -moz-transition: width 1s;
+    -webkit-transition: width 1s;
+    -o-transition: width 1s;
+}
+
+#passenger-flow-main .amp-progress .amp-progress-bar-color-blue{background-color:#5cd4f4;}
+#passenger-flow-main .amp-progress .amp-progress-bar-color-green{background-color:#5ab46d;}
+
+#passenger-flow-main .amp-progress .amp-progress-text{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:-38px;
+    height:16px;
+    line-height: 16px;
+    font-size:12px;
+}
+
+#passenger-flow-main .amp-progress-tooltip{
+    position:absolute;
+    display:none;
+    height:44px;
+    line-height: 44px;
+    padding:0 15px;
+    color:#fff;
+    font-size:14px;
+    background-color:rgba(0,0,0,0.7);
+}
+
+/*passenger-flow-chart*/
+#passenger-flow-main .passenger-flow-chart-content{height:300px;}

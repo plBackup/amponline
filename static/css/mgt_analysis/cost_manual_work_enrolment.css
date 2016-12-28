@@ -1,0 +1,62 @@
+#cost-manual-work-enrolment{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:rgba(0,0,0,0.4);
+    z-index: 999;
+    padding-left:400px;
+}
+
+#cost-manual-work-enrolment .contract-enrolment{
+    height:100%;
+    background-color:#fff;
+}
+
+/* ======================================== enrolment-title ======================================== */
+#cost-manual-work-enrolment .enrolment-title{
+    position:relative;
+    height:44px;
+    line-height: 44px;
+    text-align: center;
+    background-color:#dae2e7;
+}
+#cost-manual-work-enrolment .enrolment-title a.close-panel-btn{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    width:44px;
+    height:44px;
+    background:url(../../images/common/right-panel-title-close-icon.png) no-repeat center center;
+    margin:auto;
+    cursor: pointer;
+}
+
+/* ======================================== enrolment-content ======================================== */
+#cost-manual-work-enrolment .enrolment-content{
+    padding:20px 24px;
+}
+
+#cost-manual-work-enrolment .table-block{padding-top:20px;}
+
+#cost-manual-work-enrolment table th{border-bottom: 1px solid #c2cdd7;}
+#cost-manual-work-enrolment table th,
+#cost-manual-work-enrolment table td{padding-left:20px;text-align: right;}
+
+#cost-manual-work-enrolment table th:nth-child(1),
+#cost-manual-work-enrolment table td:nth-child(1){
+    text-align: left;
+}
+#cost-manual-work-enrolment table th:nth-child(2),
+#cost-manual-work-enrolment table th:nth-child(3){padding-right:20px;}
+
+#cost-manual-work-enrolment table .amp-input input{text-align: right;}
+
+#cost-manual-work-enrolment table tr:first-child td{height:44px;padding-top:4px;}
+
+#cost-manual-work-enrolment .btn-group-wrapper{padding-top:20px;}
+
+#cost-manual-work-enrolment .btn-group-wrapper a{margin-left:10px;}

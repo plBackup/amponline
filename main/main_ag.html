@@ -1,0 +1,96 @@
+<!-- Add your site or application content here -->
+<main class="ys-amp" id="ys-amp-main" role="main">
+    <!-- 主面板 -->
+    <div class="ys-main-panel">
+        <div class="ys-content-header">
+            <h1><em class="ys-icon ys-icon-amp"></em></h1>
+            <div class="header-right">
+                <a class="ys-user" id="ys-user">用户名</a>
+                <a class="ys-logout" id="ys-logout">退出</a>
+            </div>
+        </div>
+        <div class="ys-content-panel container clearfix">
+
+            <table class="table table-hover amp-table" ng-show="listCtrl.projects.length>0" id="amp-projects-table">
+                <colgroup>
+                    <col width="16%">
+                    <col width="12%">
+                    <col width="17%">
+                    <col width="17%">
+                    <col width="17%">
+                    <col width="21%">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>项目</th>
+                    <th class="text-right">面积/开业率</th>
+                    <th class="text-right">总收入</th>
+                    <th class="text-right">NOI</th>
+                    <th class="text-right">资产估值</th>
+                    <th style="padding-left:85px;">负责人</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="project in listCtrl.projects" data-link="amp_main_ag.html?projectid={{$index}}#/noi" ng-click='listCtrl.linkTo($event,"amp_main_ag.html?projectid="+$index+"#/noi")'>
+                    <th>
+                        <h5 id={{$index}}>{{project.name}}</h5>
+                        <span class="t-sub text-left">{{project.position}}</span>
+                        <div class="t-opt">
+                            <span><a href="#/update/{{$index}}">修改信息</a></span>
+                        </div>
+                    </th>
+                    <td>
+                        <span class="t-main">{{project.proportion|default:"-"}}</span>
+                        <span class="t-sub">{{project.openRate| default:"-" | percentFormat}}</span>
+                    </td>
+                    <td>
+                        <span class="t-main">{{project.income|number:2}}</span>
+                        <span class="t-sub">回报率:<i>{{project.irr| default:"-" | percentFormat}}</i></span>
+                        <span class="t-sub">完成率:<i>{{project.complete | default:"-" | percentFormat}}</i></span>
+                    </td>
+                    <td>
+                        <span class="t-main">{{project.noi.monthly|default:"-"}}</span>
+                        <span class="t-sub">{{project.noi.yearly|default:"-"}}</span>
+                    </td>
+                    <td>
+                        <span class="t-main">{{project.asset.value|default:"-"}}</span>
+                        <span class="t-sub">{{project.asset.rate| default:"-" | percentFormat}}</span>
+                    </td>
+                    <td class="amp-pm-td">
+                        <div class="amp-pm">
+                            <em class="ys-figure" style="background-image:url(../static/images/{{project.pm.figure}});"></em>
+                            <div class="amp-pm-info">
+                                <h5 class="text-note">{{project.pm.name|default:"-"}}</h5>
+                                <span class="t-sub">{{project.pm.title|default:"-"}}</span>
+                                <span class="t-sub">团队人数<i>{{project.pm.teamNum}}</i></span>
+                                <!--<div class="t-opt">
+                                    <span class="not-allowed"><a href="#">联系他</a>|<a href="#">查看简历</a></span>
+                                </div>-->
+                            </div>
+                        </div>
+                    </td>
+                </tr><!--tr-->
+                </tbody>
+            </table>
+             <div class="ys-block amp-create-project" ng-show="listCtrl.projects.length==0">
+                 <h3>还没有在AMP创建任何项目</h3>
+                 <p>AMP为您提供专业的资产估值服务<br>
+                    是最有效的资产管理平台和数据增值系统<br></p>
+            </div>
+            <div class="amp-opt-block">
+                <a href="#/create" class="btn amp-btn amp-btn-lg ys-tips" data-toggle="tooltip" data-placement="top"  title="新建项目功能将于12月6日开通">新建项目
+                    <em class="ys-amp-icon ys-icon-tips"style="margin-top: -11px;left: 50%;margin-left:145px;"></em>
+                </a>
+               <!-- <em class="ys-amp-icon ys-icon-tips ys-tips" data-toggle="tooltip" data-placement="right" title="新建项目功能将于12月6日开通" style="margin-top: -11px;left: 50%;margin-left:145px;"></em>-->
+            </div>
+        </div><!--end content-panel-->
+
+    </div><!--end main-panel-->
+
+    <div class="ys-footer">
+        <div class="container">
+            <span>AMP PAAS Beta1.0 2016</span>
+        </div>
+    </div><!--ys-footer-->
+</main><!--end main-->
+

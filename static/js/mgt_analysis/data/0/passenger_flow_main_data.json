@@ -1,0 +1,21 @@
+{
+  "info":{
+    "currentMonthCount":122140,
+    "fullYearTotalCount":1858152,
+    "fullYearCount":1858152,
+    "yearToYear":"-",
+    "linkRelative":"-2%",
+    "targetRate":"-",
+    "penetranceRate":"0.34",
+    "currentMonthIndexRate":"0",
+    "currentYearIndexRate":"0",
+    "currentMonthIndexTooltip":"0",
+    "currentYearIndexTooltip":"0",
+    "square":114829.25
+  },
+  "chart":{
+    "real":[2850342,2409394,2348244,2459397,2488162,2326941,2630901,2579120,2528271,2859562,1666560,0],
+    "budget":[2820006,2639993,2610001,2502000,2610011,2340000,2440000,2460011,2349996,2840002,2665006,2750000],
+    "lastYear":[2693480,2516514,2486117,2346777,2491414,2231989,2322465,2351558,2238380,2709340,2287606,2250613]
+  }
+}

@@ -1,0 +1,30 @@
+#investment-detail{background-color:#fff;}
+
+#investment-detail .amp-content-header{margin:0;}
+#investment-detail .amp-content-panel{padding:20px 0 20px 0;}
+/* ======================================== amp-content-header ======================================== */
+#investment-detail .amp-content-header{padding: 0 24px;}
+/* ======================================== ys-table-block ======================================== */
+#investment-detail .ys-table-block .amp-table-cell{width:28%;text-align: right;}
+#investment-detail .ys-table-block .amp-table-cell:first-child{width:16%;text-align: left;}
+
+
+#investment-detail .ys-table-block .amp-pagination-toolbar-wrapper{padding:20px 12px;}
+#investment-detail .amp-breadcrumb li:first-child a {padding-right: 16px;background: url(../../images/common/nav-right-icon.png) right center no-repeat;}
+#investment-detail .amp-thead{right:0;left:0;z-index: 990;}
+
+
+
+#investment-detail .ys-table-block .amp-table-row-collapse{padding-bottom:24px;}
+#investment-detail .ys-table-block .amp-table-row-collapse table{width:100%;}
+#investment-detail .ys-table-block .amp-table-row-collapse table td{padding:10px 12px 0 12px;}
+#investment-detail .ys-table-block .amp-table-row-collapse table td>span{
+    display:block;
+    height:28px;
+    line-height: 28px;
+    font-size:12px;
+    color:#8592a2;
+}
+#investment-detail .ys-table-block .amp-table-row-collapse table td .amp-input-black{display:block;width:100%;}
+#investment-detail .ys-table-block .amp-table-row-collapse table td .amp-btn{display:block;width:100%;}
+#investment-detail .ys-table-block .amp-table-row-collapse table tr:last-child td{padding-top:24px;}

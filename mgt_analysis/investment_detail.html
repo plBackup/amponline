@@ -1,0 +1,94 @@
+<link href="../static/css/mgt_analysis/investment_detail.css" rel="stylesheet">
+
+<div class="amp-main-panel"  id="investment-detail">
+    <div class="amp-content-header clearfix">
+        <div class="pull-left">
+            <ul class="amp-breadcrumb">
+                <li><a href="#/rent_main">租赁分析</a></li>
+                <li><a href="#/rent_main">租赁</a></li>
+                <li><a>招商详情</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="amp-content-panel">
+
+        <div class="ys-table-block">
+            <div class="amp-collapse-table">
+                <div class="amp-thead">
+                    <div class="amp-table-row">
+                        <ul class="amp-table-row-content">
+                            <li class="amp-table-cell">项目</li>
+                            <li class="amp-table-cell">预算(㎡)</li>
+                            <li class="amp-table-cell">实际(㎡)</li>
+                            <li class="amp-table-cell">完成率(㎡)</li>
+                        </ul>
+                    </div>
+                </div><!-- amp-thead -->
+
+                <div class="amp-tbody">
+
+                    <div class="amp-table-row" ng-repeat="item in records">
+                        <ul class="amp-table-row-content">
+                            <li class="amp-table-cell">{{item.projectItemName}}</li>
+                            <li class="amp-table-cell">{{item.budget|number:2}}</li>
+                            <li class="amp-table-cell">{{item.real|number:2}}</li>
+                            <li class="amp-table-cell">{{item.rate|stringFormat:"":"-"}}</li>
+                        </ul>
+                        <div class="amp-table-row-collapse">
+                            <table>
+                                <colgroup>
+                                    <col width="25%"/>
+                                    <col width="25%"/>
+                                    <col width="25%"/>
+                                    <col width="25%"/>
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <span>品牌</span>
+                                        <div class="amp-input amp-input-default amp-input-32"><input value="{{item.projectItemName}}"/></div>
+                                    </td>
+                                    <td>
+                                        <span>预算(㎡)</span>
+                                        <div class="amp-input amp-input-default amp-input-32"><input value="{{item.budget}}"/></div>
+                                    </td>
+                                    <td>
+                                        <span>实际(㎡)</span>
+                                        <div class="amp-input amp-input-default amp-input-32"><input value="{{item.real}}"/></div>
+                                    </td>
+                                    <td>
+                                        <span>完成率(㎡)</span>
+                                        <div class="amp-input amp-input-default amp-input-32"><input value="{{item.rate|stringFormat:'':'-'}}"/></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <a class="amp-btn amp-btn-default cancel-btn">取消</a>
+                                    </td>
+                                    <td>
+                                        <a class="amp-btn amp-btn-green ok-btn">确定</a>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div><!-- amp-row-collapse -->
+                    </div><!-- amp-table-row -->
+
+
+                </div><!-- amp-tbody -->
+
+            </div><!-- amp-table-collapse -->
+
+            <!--<div class="amp-pagination-toolbar-wrapper clearfix">-->
+                <!--<div class="amp-pagination-toolbar pull-right" pagination-info="paginationInfo" fetch-data="fetchData()"></div>-->
+            <!--</div>&lt;!&ndash; amp-pagination-toolbar-wrapper &ndash;&gt;-->
+
+        </div><!-- ys-table-block -->
+
+    </div><!-- amp-content-panel -->
+
+</div><!-- amp-main-panel -->

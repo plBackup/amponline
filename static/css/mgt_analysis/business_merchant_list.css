@@ -1,0 +1,11 @@
+#business-merchant-list{background-color:#fff;}
+
+#business-merchant-list .amp-content-header{margin:0;}
+#business-merchant-list .amp-content-panel{padding:20px 0 20px 0;}
+/* ======================================== amp-content-header ======================================== */
+#business-merchant-list .amp-content-header{padding: 0 24px;}
+/* ======================================== ys-table-block ======================================== */
+#business-merchant-list .ys-table-block .amp-table-cell{width:25%;}
+#business-merchant-list .ys-table-block .amp-pagination-toolbar-wrapper{padding:20px 12px;}
+#business-merchant-list li.amp-table-cell.text-right {padding-right: 150px;}
+#business-merchant-list .amp-thead{left: 0; right: 0; z-index: 990;}

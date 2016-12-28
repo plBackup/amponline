@@ -1,0 +1,84 @@
+#cost-main{background-color:#fff;}
+
+#cost-main .amp-content-header{
+    margin:0;
+}
+#cost-main .amp-content-panel{padding:0 0 40px 0;}
+/* ======================================== amp-chart-group ======================================== */
+
+/* ---------------------------------------- amp-chart ---------------------------------------- */
+#cost-main .amp-chart{
+    position:relative;
+    width:50%;
+    padding:35px 50px 40px 50px;
+}
+
+#cost-main .amp-chart:before{
+    content:"(万元)";
+    position:absolute;
+    left:40px;
+    top:25px;
+    color:#8592a3;
+    font-size:12px;
+}
+
+#cost-main .amp-chart .amp-chart-content{
+    height:225px;
+}
+
+/* ---------------------------------------- amp-chart-legend ---------------------------------------- */
+#cost-main .amp-chart-legend{width:50%;padding-left:50px;}
+#cost-main .amp-chart-legend ul{
+    padding-top:35px;
+}
+#cost-main .amp-chart-legend ul li{
+    position:relative;
+    height:48px;
+    line-height: 48px;
+    font-size:12px;
+    color:#8592a3;
+    padding-left:24px;
+}
+#cost-main .amp-chart-legend ul li:before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    width:14px;
+    height:14px;
+    margin:auto;
+}
+
+#cost-main .amp-chart-legend ul li:nth-child(1):before{background-color:#00b2ef;}
+#cost-main .amp-chart-legend ul li:nth-child(2):before{background-color:#a5ee67;}
+#cost-main .amp-chart-legend ul li:nth-child(3):before{background-color:#038bd8;}
+#cost-main .amp-chart-legend ul li:nth-child(4):before{background-color:#2bd9dd;}
+
+
+/* ======================================== amp-table-block ======================================== */
+#cost-main .amp-table-block .amp-table-cell{
+    width:16%;
+    text-align: right;
+}
+
+#cost-main .amp-table-block .amp-table-cell:first-child{text-align: left;}
+#cost-main .amp-table-block .amp-table-cell:last-child{width:20%;}
+
+#cost-main .amp-table-block .amp-tbody .amp-table-cell{
+    height:75px;
+    padding-top:20px;
+}
+#cost-main .amp-table-block .amp-tbody .amp-table-cell>div{
+    height:20px;
+    line-height: 20px;
+}
+
+#cost-main .amp-table-block .amp-tbody .amp-table-cell>em{
+    display:block;
+    height:15px;
+    line-height: 15px;
+    font-size:12px;
+    color:#737e8c;
+}
+#cost-main .amp-thead{right:0;left:0;z-index: 990;}

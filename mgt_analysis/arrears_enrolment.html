@@ -1,0 +1,56 @@
+<link href="../static/css/mgt_analysis/arrears_enrolment.css" rel="stylesheet">
+
+<div class="amp-right-panel amp-display-hide"  id="arrears-enrolment">
+    <div class="contract-enrolment">
+        <div class="enrolment-title"><a class="close-panel-btn"></a>录入</div>	
+        <div class="enrolment-body">
+            <table>
+                <colgroup>
+                    <col width="25%"/>
+                    <col width="25%"/>
+                    <col width="25%"/>
+                    <col width="25%"/>                   
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span>商家</span>
+                            <div class="amp-input amp-input-default amp-input-32" amp-input-validate="required"><input data-name="merchantName" type="text"/></div>
+                        </td>
+                        <td>
+                            <span>欠费类型</span>
+                            <div class="amp-select amp-select-default">
+							    <input readonly placeholder="" data-name="arrearsType"/>
+                                <ul>
+                                    <li>租金</li>
+                                    <li>物管</li>
+                                    <li>其他</li>
+                                </ul>
+							</div>
+                        </td>
+                        <td>
+                            <span>应收日期</span>
+                            <div class="amp-datetimepicker amp-datetimepicker-default">
+                                <input class="form-control" size="16" type="text" data-name="receivableDate" readonly=""/>
+                            </div>
+                        </td>
+                       <td>
+                            <span>金额</span>
+                            <div class="amp-input amp-input-default amp-input-32" amp-input-validate="required,number"><input type="text" data-name="arrearsTotalAmount"/></div>
+                       </td>                                    
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="amp-btn-group clearfix">
+                <a class="pull-right amp-btn amp-btn-green save-btn">保存</a>
+            	<a class="pull-right amp-btn amp-btn-default continue-save-btn">继续录入</a>
+            </div>
+			
+        </div><!-- enrolment-form-container -->
+
+    </div><!-- contract-enrolment -->
+
+</div><!-- amp-main-panel -->
+
+

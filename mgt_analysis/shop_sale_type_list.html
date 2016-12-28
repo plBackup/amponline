@@ -1,0 +1,57 @@
+<link href="../static/css/mgt_analysis/shop_sale_type_list.css" rel="stylesheet">
+
+<div class="amp-main-panel"  id="shop-sale-type-list">
+    <div class="amp-content-header clearfix">
+        <div class="pull-left">
+            <ul class="amp-breadcrumb">
+                <li><a href="#/rent_main">租赁分析</a></li>
+                <li><a href="#/merchant_sale_main">商户销售</a></li>
+                <li><a>{{commercialType}}</a></li>
+            </ul>
+        </div>
+       <ul class="amp-status-item-list pull-right">
+        	<li class="amp-status-item"><span>销售额</span><em>{{commercialTypeSummary.saleAmount|numberFormatDefault}}</em></li>
+        	<li class="amp-status-item"><span>平效</span><em>{{commercialTypeSummary.performanceValue|numberFormatDefault}}</em></li>
+        	<li class="amp-status-item"><span>租售比</span><em>{{commercialTypeSummary.rentSaleRate|numberFormatDefault}}</em></li>
+  		</ul>
+    </div>
+    <div class="amp-content-panel">
+
+        <div class="ys-table-block">
+            <div class="amp-collapse-table">
+                <div class="amp-thead">
+                    <div class="amp-table-row">
+                        <ul class="amp-table-row-content">
+                            <li class="amp-table-cell">商家</li>
+                            <li class="amp-table-cell">销售额</li>
+                            <li class="amp-table-cell">平效</li>
+                            <li class="amp-table-cell">租售比</li>   
+                        </ul>
+                    </div>
+                </div><!-- amp-thead -->
+
+                <div class="amp-tbody">
+
+                    <div class="amp-table-row" ng-repeat="item in paginationInfo.records">
+                        <ul class="amp-table-row-content">
+                            <li class="amp-table-cell">{{item.brandName}}</li>
+                            <li class="amp-table-cell">{{item.saleAmount|number}}</li>
+                            <li class="amp-table-cell">{{item.performanceValue|number:0}}</li>
+                            <li class="amp-table-cell">{{item.rentSaleRate}}</li>
+                        </ul>
+                    </div><!-- amp-table-collapse-row -->
+
+
+                </div><!-- amp-tbody -->
+
+            </div><!-- amp-table-collapse -->
+
+            <div class="amp-pagination-toolbar-wrapper clearfix">
+                <div class="amp-pagination-toolbar pull-right" pagination-info="paginationInfo" fetch-data="fetchData()"></div>
+            </div><!-- amp-pagination-toolbar-wrapper -->
+
+        </div><!-- ys-table-block -->
+
+    </div><!-- amp-content-panel -->
+
+</div><!-- amp-main-panel -->

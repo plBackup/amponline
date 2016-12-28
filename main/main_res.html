@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="" lang="zh-cn"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>悦商AMP</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=1180, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/common/common.css">
+    <!--扩展 css-->
+    <link rel="stylesheet" href="../static/css/main/main.css">
+    <style type="text/css">
+        /* Good CSS */
+    </style>
+    <!-- JavaScript -->
+    <!-- 第三方js -->
+</head>
+<body style="background-color:#eceff4;">
+<!--[if lt IE 9]>
+<p class="updateBrowser">您的浏览器太旧了，请更新最新浏览器，以获得最佳效果.</p>
+<![endif]-->
+
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
+</div>
+
+<!-- Add your site or application content here -->
+<main class="ys-amp" id="ys-amp-main" role="main">
+    <!-- 主面板 -->
+    <div class="ys-main-panel">
+        <div class="ys-content-header">
+            <h1><em class="ys-icon ys-icon-amp"></em></h1>
+        </div>
+        <div class="ys-content-panel container clearfix">
+
+            <!--<table class="table table-hover amp-table" id="amp-projects-table">
+                <colgroup>
+                    <col width="16%">
+                    <col width="12%">
+                    <col width="17%">
+                    <col width="17%">
+                    <col width="17%">
+                    <col width="21%">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>项目</th>
+                    <th class="text-right">面积/开业率</th>
+                    <th class="text-right">总收入</th>
+                    <th class="text-right">NOI</th>
+                    <th class="text-right">资产估值</th>
+                    <th style="padding-left:85px;">负责人</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="project in projects">
+                    <th>
+                        <h5>1号项目</h5>
+                        <div class="t-opt">
+                            <span><a href="amp_main_ag.html">进入详情</a>|<a href="create_project.html">修改信息</a></span>
+                        </div>
+                    </th>
+                    <td>
+                        <span class="t-main">50,462.01</span>
+                        <span class="t-sub">89.12%</span>
+                    </td>
+                    <td>
+                        <span class="t-main">435.88</span>
+                        <span class="t-sub">回报率:<i>6.12%</i></span>
+                        <span class="t-sub">完成率:<i>90.32%</i></span>
+                    </td>
+                    <td>
+                        <span class="t-main">216.57</span>
+                        <span class="t-sub">2,652.32</span>
+                    </td>
+                    <td>
+                        <span class="t-main">45,569</span>
+                        <span class="t-sub">5.82%</span>
+                    </td>
+                    <td class="amp-pm-td">
+                        <div class="amp-pm">
+                            <em class="ys-figure" style="background-image:url(../static/images/male.png);"></em>
+                            <div class="amp-pm-info">
+                                <h5 class="text-note">王总</h5>
+                                <span class="t-sub">营运经理</span>
+                                <span class="t-sub">团队人数<i>12</i></span>
+                                <div class="t-opt">
+                                    <span class="not-allowed"><a href="#">联系他</a>|<a href="#">查看简历</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>&lt;!&ndash;tr&ndash;&gt;
+                </tbody>
+            </table>-->
+            <div class="ys-block amp-create-project">
+                <h3>还没有在AMP创建任何项目</h3>
+                <p>AMP为您提供专业的资产估值服务<br>
+                    是最有效的资产管理平台和数据增值系统<br></p>
+            </div>
+            <div class="amp-opt-block">
+                <a href="create_project.html" class="btn amp-btn amp-btn-lg">新建项目</a>
+            </div>
+        </div><!--end content-panel-->
+
+    </div><!--end main-panel-->
+
+    <div class="ys-footer">
+        <div class="container">
+            <span>AMP PAAS Beta1.0 2016</span>
+        </div>
+    </div><!--ys-footer-->
+</main><!--end main-->
+
+<!-- Script 导入部分 -->
+<script src="../static/dist/js/jquery-1.11.3.min.js"></script>
+<script src="../static/dist/js/bootstrap.min.js"></script>
+<!--<script src="static/dist/js/echarts-all.js"></script>-->
+<script src="../static/dist/js/plugins.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#preloader').delay(350).fadeOut(function(){
+            //start
+        });
+    });
+</script>
+</body>
+</html>

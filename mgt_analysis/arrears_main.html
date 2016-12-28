@@ -1,0 +1,67 @@
+<link href="../static/css/mgt_analysis/arrears_main.css" rel="stylesheet">
+
+<div class="amp-main-panel"  id="arrears-main">
+    <div class="amp-content-header">
+	    <ul class="amp-tab-menu-list">
+		   <li class="amp-tab-menu-item"><a href="#/rent_main">租赁</a></li>
+		   <li class="amp-tab-menu-item"><a href="#/merchant_sale_main">商户销售</a></li>
+		   <li class="amp-tab-menu-item"><a class="active">欠费</a></li>
+		</ul>  
+    </div>
+    <div class="amp-content-panel">
+
+    	<div class="arrears-main-pin-wrapper">
+	    	<div class="dept-table-head">
+		        <table class="assets-table">
+		        	<colgroup>
+		        		<col  width="14.285%"/>
+		        		<col  width="14.285%"/>
+		        		<col  width="14.285%"/>
+		        		<col  width="14.285%"/>
+		        		<col  width="14.285%"/>
+		        		<col  width="14.285%"/>
+		        		<col  width="14.285%"/>
+		        	</colgroup>
+					<tbody class="body-title">
+						<tr>
+							<td class="border-right"></th>
+							<td  class="text-right border-right">总额（万元）</td>
+							<td  class="text-right border-right">&le;30天</td>
+							<td  class="text-right border-right">31-60天</td>
+							<td  class="text-right border-right">61-90天</td>
+							<td  class="text-right border-right">&gt;90天</td>
+							<td  class="text-right">占80%押金的商家数</th>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="dept-table project-assets-table">
+				<table class="amp-table-2 content-table">
+					<colgroup>
+		        		<col  width="14.285%"/>
+		        		<col  width="14.285%"/>
+		        		<col  width="14.285%"/>
+		        		<col  width="14.285%"/>
+		        		<col  width="14.285%"/>
+		        		<col  width="14.285%"/>
+		        		<col  width="14.285%"/>
+		        	</colgroup>
+					<tbody>
+
+						<tr ng-repeat="item in records">
+							<td>{{item.itemName}}</td>
+							<td>{{item.totalAccount|numberFormatDefault:2}}</td>
+							<td>{{item.dateItem1|numberFormatDefault:2}}</td>
+							<td>{{item.dateItem2|numberFormatDefault:2}}</td>
+							<td>{{item.dateItem3|numberFormatDefault:2}}</td>
+							<td>{{item.dateItem4|numberFormatDefault:2}}</td>
+							<td>{{item.merchantCount}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+    </div><!-- amp-content-panel -->
+
+</div><!-- amp-main-panel -->
+

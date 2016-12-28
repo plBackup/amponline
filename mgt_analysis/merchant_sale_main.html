@@ -1,0 +1,85 @@
+<link href="../static/css/mgt_analysis/merchant_sale_main.css" rel="stylesheet">
+
+<div class="amp-main-panel"  id="merchant-sale-main">
+    <div class="amp-content-header clearfix">
+        <ul class="amp-tab-menu-list">
+            <li class="amp-tab-menu-item"><a href="#/rent_main">租赁</a></li>
+            <li class="amp-tab-menu-item"><a class="active">商户销售</a></li>
+            <li class="amp-tab-menu-item"><a href="#/arrears_main">欠费</a></li>
+        </ul><!-- amp-tab-menu-list -->
+    </div>
+    <div class="amp-content-panel">
+        <div class="chart-block-group clearfix">
+            <div class="amp-chart-block">
+                <div class="amp-chart-content" id="sale-percent-pie"></div>
+                <div class="amp-chart-title">排名前10%的商家销售占比</div>
+            </div><!-- amp-chart-block -->
+
+            <div class="amp-chart-block">
+                <div class="amp-chart-content" id="merchant-percent-pie"></div>
+                <div class="amp-chart-title">90%销售贡献的商家占比</div>
+            </div><!-- amp-chart-block -->
+
+        </div><!-- chart-group -->
+
+		<div class="cost-manual-work-pin-wrapper table-block">
+            <div class="dept-table-head">
+                <table class="assets-table amp-table-2">
+                    <colgroup>
+                        <col width="16%">
+                        <col width="14%">
+                        <col width="14%">
+                        <col width="14%">
+                        <col width="14%">
+                        <col width="14%">
+                        <col width="14%">
+                    </colgroup>
+                    <tbody>
+                        <tr class="body-title">
+                            <th></th>
+                            <th colspan="3" class="amp-font-weight-normal">当月实际</th>
+                            <th colspan="3" class="amp-font-weight-normal">全年累计</th>
+                        </tr>
+                        <tr class="empty-record">
+                            <td></td>
+                            <td>销售额(万元)</td>
+                            <td>平效</td>
+                            <td>租售比</td>
+                            <td>销售额(万元)</td>
+                            <td>月均平效</td>
+                            <td>月均租售比</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div><!-- dept-table-head -->
+
+            <div class="dept-table project-assets-table">
+                <table class="assets-table amp-table-2 main-table">
+                    <colgroup>
+                        <col width="16%">
+                        <col width="14%">
+                        <col width="14%">
+                        <col width="14%">
+                        <col width="14%">
+                        <col width="14%">
+                        <col width="14%">
+                    </colgroup>
+                    <tbody>
+                        <tr ng-class="{'parent-record':item.hasCollapseBtn,'amp-display-hide':item.hide}" data-group="{{item.dataGroup}}" ng-repeat="item in records">
+                            <td data-type="{{item.commercialTypeName}}">{{item.commercialTypeName}}<a ng-if="item.hasCollapseBtn" class="collapse-btn"  data-group="{{item.dataGroup}}"></a></td>
+                            <td>{{item.curSaleCount|numberFormatDefault:0}}</td>
+                            <td>{{item.curPerformance|numberFormatDefault:0}}</td>
+                            <td>{{item.curRentSaleRate}}</td>
+                            <td>{{item.calSaleCount|numberFormatDefault:0}}</td>
+                            <td>{{item.calPerformance|numberFormatDefault:0}}</td>
+                            <td>{{item.calRentSaleRate}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div><!-- dept-table -->
+        </div><!-- cost-manual-work-pin-wrapper -->
+
+    </div><!-- amp-content-panel -->
+
+</div><!-- amp-main-panel -->
+

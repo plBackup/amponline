@@ -1,0 +1,54 @@
+#shop-sale-rank{background-color:#fff;}
+
+#shop-sale-rank .amp-content-header{
+    padding:0 24px;
+    margin:0;
+}
+#shop-sale-rank .amp-content-panel{padding:20px 24px 20px 24px;}
+
+/* ======================================== commercial-item-list ======================================== */
+#shop-sale-rank .commercial-item-list .commercial-item{
+    float:left;
+    padding-left:16px;
+}
+
+#shop-sale-rank .commercial-item-list .commercial-item a{
+    font-size:14px;
+    color:#8592a2;
+}
+#shop-sale-rank .commercial-item-list .commercial-item a:hover{
+    color:#5ab46e;
+}
+#shop-sale-rank .commercial-item-list .commercial-item a.active{
+    color:#5ab46e;
+}
+
+/* ======================================== amp-table-block ======================================== */
+#shop-sale-rank .amp-table-block table th{
+    text-align: center;
+    border-right:1px solid #c2cdd7;
+    border-bottom:1px solid #c2cdd7;
+}
+#shop-sale-rank .amp-table-block table th:last-child{border-right:none;}
+#shop-sale-rank .amp-table-block table td{padding:0 24px;}
+#shop-sale-rank .amp-table-block table td:nth-child(2n){
+    border-right:1px solid #c2cdd7;
+    text-align: right;
+}
+#shop-sale-rank .amp-table-block table td:last-child{
+    border-right:none;
+}
+
+#shop-sale-rank .amp-table-block table td.index-column{
+    position:relative;
+    padding-left:48px;
+}
+
+#shop-sale-rank .amp-table-block table td.index-column span{
+    position:absolute;
+    left:24px;
+    top:0;
+    bottom:0;
+    line-height: 40px;
+
+}

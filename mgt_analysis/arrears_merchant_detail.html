@@ -1,0 +1,63 @@
+<link href="../static/css/mgt_analysis/arrears_merchant_detail.css" rel="stylesheet">
+
+<div class="amp-main-panel"  id="arrears-merchant-detail">
+    <div class="amp-content-header clearfix">
+        <div class="pull-left">
+            <ul class="amp-breadcrumb">
+                <li><a href="#/rent_main">租赁分析</a></li>
+                <li><a href="#/arrears_main">欠费</a></li>
+                <li><a href="#/arrears_detail">欠费明细</a></li>
+                <li><a>{{merchantName}}</a></li>
+            </ul>
+        </div>
+       <ul class="amp-status-item-list pull-right">
+       		<li class="amp-status-item"><span>欠费总额</span><em>{{arrearsTotalAmount|number:2}}</em></li>
+        	<li class="amp-status-item"><span>押金</span><em>{{deposit|number}}</em></li>
+        	<li class="amp-status-item"><span>欠费笔数</span><em>{{arrearsCount|number}}</em></li>
+        	<li class="amp-status-item"><span>累计欠费次数</span><em>{{arrearsCount|number}}</em></li>
+  		</ul>
+    </div>
+    <div class="amp-content-panel">
+
+
+        <div class="ys-table-block">
+            <div class="amp-collapse-table">
+                <div class="amp-thead">
+                    <div class="amp-table-row">
+                        <ul class="amp-table-row-content">
+                            <li class="amp-table-cell">欠费类型</li>
+                            <li class="amp-table-cell">金额</li>
+                            <li class="amp-table-cell">欠费天数</li>
+                            
+                        </ul>
+                    </div>
+                </div><!-- amp-thead -->
+
+                <div class="amp-tbody">
+
+                    <div class="amp-table-row" ng-repeat="item in paginationInfo.records">
+                        <ul class="amp-table-row-content">
+                            <li class="amp-table-cell">
+                                <em class="amp-checkbox"></em>
+                                <span>{{item.arrearsType}}</span>
+                            </li>
+                            <li class="amp-table-cell" data-value="{{item.arrearsAmount}}">{{item.arrearsAmount|number}}</li>
+                            <li class="amp-table-cell">{{item.arrearsDayCount|number}}</li>
+                        </ul>
+                    </div><!-- amp-table-row -->
+
+                </div><!-- amp-tbody -->
+            </div><!-- amp-table-collapse -->
+
+            <div class="amp-pagination-toolbar-wrapper clearfix">
+                <div class="amp-pagination-toolbar pull-right" pagination-info="paginationInfo" fetch-data="fetchData()"></div>
+            </div><!-- amp-pagination-toolbar-wrapper -->
+
+        </div><!-- ys-table-block -->
+
+    </div><!-- amp-content-panel -->
+
+</div><!-- amp-main-panel -->
+
+
+

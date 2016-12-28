@@ -1,0 +1,18 @@
+#business-merchant-detail{background-color:#fff;}
+
+#business-merchant-detail .amp-content-header{margin:0;}
+#business-merchant-detail .amp-content-panel{padding:20px 0 20px 0;}
+/* ======================================== amp-content-header ======================================== */
+#business-merchant-detail .amp-content-header{padding: 0 24px;}
+/* ======================================== ys-table-block ======================================== */
+#business-merchant-detail  .amp-pagination-toolbar-wrapper{padding:20px 12px;}
+
+#business-merchant-detail table th,
+#business-merchant-detail table td{padding-left:24px;}
+
+#business-merchant-detail table th:nth-child(3),
+#business-merchant-detail table td:nth-child(3){
+    text-align: right;
+    padding-right:100px;
+}
+#business-merchant-detail .dept-table-head{right:0;left:0;z-index: 9;}

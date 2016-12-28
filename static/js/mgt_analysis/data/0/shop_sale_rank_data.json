@@ -1,0 +1,374 @@
+{
+  "commercialDataAll": {
+    "top": [
+      {
+        "saleMerchantName": "商户032",
+        "saleAmount": "1795515.6",
+        "orderNo": "1",
+        "performanceAmount": "8218",
+        "rentSaleMerchantName": "商户078",
+        "performanceMerchantName": "商户156",
+        "rentSaleRate": "4%"
+      },
+      {
+        "saleMerchantName": "商户183",
+        "saleAmount": "1178433.1599999999",
+        "orderNo": "2",
+        "performanceAmount": "7231",
+        "rentSaleMerchantName": "商户170",
+        "performanceMerchantName": "商户196",
+        "rentSaleRate": "8%"
+      },
+      {
+        "saleMerchantName": "商户156",
+        "saleAmount": "1003369",
+        "orderNo": "3",
+        "performanceAmount": "5348",
+        "rentSaleMerchantName": "商户099",
+        "performanceMerchantName": "商户078",
+        "rentSaleRate": "8%"
+      },
+      {
+        "saleMerchantName": "商户003",
+        "saleAmount": "924897.72",
+        "orderNo": "4",
+        "performanceAmount": "4055",
+        "rentSaleMerchantName": "商户152",
+        "performanceMerchantName": "商户170",
+        "rentSaleRate": "8%"
+      },
+      {
+        "saleMerchantName": "商户210",
+        "saleAmount": "899710.78",
+        "orderNo": "5",
+        "performanceAmount": "3974",
+        "rentSaleMerchantName": "商户041",
+        "performanceMerchantName": "商户111",
+        "rentSaleRate": "9%"
+      },
+      {
+        "saleMerchantName": "商户204",
+        "saleAmount": "879322.8",
+        "orderNo": "6",
+        "performanceAmount": "3903",
+        "rentSaleMerchantName": "商户130",
+        "performanceMerchantName": "商户152",
+        "rentSaleRate": "11%"
+      },
+      {
+        "saleMerchantName": "商户229",
+        "saleAmount": "864248.3",
+        "orderNo": "7",
+        "performanceAmount": "3260",
+        "rentSaleMerchantName": "商户015",
+        "performanceMerchantName": "商户105",
+        "rentSaleRate": "11%"
+      },
+      {
+        "saleMerchantName": "商户073",
+        "saleAmount": "845299.4",
+        "orderNo": "8",
+        "performanceAmount": "2889",
+        "rentSaleMerchantName": "商户174",
+        "performanceMerchantName": "商户074",
+        "rentSaleRate": "13%"
+      },
+      {
+        "saleMerchantName": "商户212",
+        "saleAmount": "783736.23",
+        "orderNo": "9",
+        "performanceAmount": "2754",
+        "rentSaleMerchantName": "商户102",
+        "performanceMerchantName": "商户210",
+        "rentSaleRate": "14%"
+      },
+      {
+        "saleMerchantName": "商户116",
+        "saleAmount": "757591.29",
+        "orderNo": "10",
+        "performanceAmount": "2546",
+        "rentSaleMerchantName": "商户079",
+        "performanceMerchantName": "商户032",
+        "rentSaleRate": "14%"
+      }
+    ],
+    "bottom": [
+      {
+        "saleMerchantName": "商户188",
+        "saleAmount": "300",
+        "orderNo": "1",
+        "performanceAmount": "19",
+        "rentSaleMerchantName": "商户031",
+        "performanceMerchantName": "商户166",
+        "rentSaleRate": "256%"
+      },
+      {
+        "saleMerchantName": "商户080",
+        "saleAmount": "2491.8000000000002",
+        "orderNo": "2",
+        "performanceAmount": "19",
+        "rentSaleMerchantName": "商户022",
+        "performanceMerchantName": "商户188",
+        "rentSaleRate": "214%"
+      },
+      {
+        "saleMerchantName": "商户062",
+        "saleAmount": "2900",
+        "orderNo": "3",
+        "performanceAmount": "34",
+        "rentSaleMerchantName": "商户227",
+        "performanceMerchantName": "商户231",
+        "rentSaleRate": "203%"
+      },
+      {
+        "saleMerchantName": "商户031",
+        "saleAmount": "3055",
+        "orderNo": "4",
+        "performanceAmount": "35",
+        "rentSaleMerchantName": "商户062",
+        "performanceMerchantName": "商户167",
+        "rentSaleRate": "152%"
+      },
+      {
+        "saleMerchantName": "商户167",
+        "saleAmount": "3223",
+        "orderNo": "5",
+        "performanceAmount": "45",
+        "rentSaleMerchantName": "商户082",
+        "performanceMerchantName": "商户077",
+        "rentSaleRate": "151%"
+      },
+      {
+        "saleMerchantName": "商户072",
+        "saleAmount": "4223",
+        "orderNo": "6",
+        "performanceAmount": "48",
+        "rentSaleMerchantName": "商户191",
+        "performanceMerchantName": "商户080",
+        "rentSaleRate": "142%"
+      },
+      {
+        "saleMerchantName": "商户018",
+        "saleAmount": "4320",
+        "orderNo": "7",
+        "performanceAmount": "51",
+        "rentSaleMerchantName": "商户100",
+        "performanceMerchantName": "商户042",
+        "rentSaleRate": "138%"
+      },
+      {
+        "saleMerchantName": "商户166",
+        "saleAmount": "4806",
+        "orderNo": "8",
+        "performanceAmount": "59",
+        "rentSaleMerchantName": "商户018",
+        "performanceMerchantName": "商户030",
+        "rentSaleRate": "126%"
+      },
+      {
+        "saleMerchantName": "商户077",
+        "saleAmount": "5216.41",
+        "orderNo": "9",
+        "performanceAmount": "70",
+        "rentSaleMerchantName": "商户025",
+        "performanceMerchantName": "商户227",
+        "rentSaleRate": "122%"
+      },
+      {
+        "saleMerchantName": "商户198",
+        "saleAmount": "6260.6",
+        "orderNo": "10",
+        "performanceAmount": "73",
+        "rentSaleMerchantName": "商户043",
+        "performanceMerchantName": "商户193",
+        "rentSaleRate": "115%"
+      }
+    ]
+  },
+  "commercialDataCatering": {
+    "top": [
+      {
+        "saleMerchantName": "商户032",
+        "saleAmount": "1795515.6",
+        "orderNo": "1",
+        "performanceAmount": "7230",
+        "rentSaleMerchantName": "商户170",
+        "performanceMerchantName": "商户196",
+        "rentSaleRate": "8%"
+      },
+      {
+        "saleMerchantName": "商户003",
+        "saleAmount": "924897.72",
+        "orderNo": "2",
+        "performanceAmount": "4055",
+        "rentSaleMerchantName": "商户152",
+        "performanceMerchantName": "商户170",
+        "rentSaleRate": "8%"
+      },
+      {
+        "saleMerchantName": "商户210",
+        "saleAmount": "899710.78",
+        "orderNo": "3",
+        "performanceAmount": "3974",
+        "rentSaleMerchantName": "商户041",
+        "performanceMerchantName": "商户111",
+        "rentSaleRate": "9%"
+      },
+      {
+        "saleMerchantName": "商户229",
+        "saleAmount": "864248.3",
+        "orderNo": "4",
+        "performanceAmount": "3904",
+        "rentSaleMerchantName": "商户102",
+        "performanceMerchantName": "商户152",
+        "rentSaleRate": "14%"
+      },
+      {
+        "saleMerchantName": "商户073",
+        "saleAmount": "845299.4",
+        "orderNo": "5",
+        "performanceAmount": "3260",
+        "rentSaleMerchantName": "商户172",
+        "performanceMerchantName": "商户105",
+        "rentSaleRate": "15%"
+      },
+      {
+        "saleMerchantName": "商户116",
+        "saleAmount": "757591.29",
+        "orderNo": "6",
+        "performanceAmount": "2889",
+        "rentSaleMerchantName": "商户181",
+        "performanceMerchantName": "商户074",
+        "rentSaleRate": "18%"
+      },
+      {
+        "saleMerchantName": "商户023",
+        "saleAmount": "673002",
+        "orderNo": "7",
+        "performanceAmount": "2754",
+        "rentSaleMerchantName": "商户186",
+        "performanceMerchantName": "商户210",
+        "rentSaleRate": "18%"
+      },
+      {
+        "saleMerchantName": "商户037",
+        "saleAmount": "648241",
+        "orderNo": "8",
+        "performanceAmount": "2546",
+        "rentSaleMerchantName": "商户061",
+        "performanceMerchantName": "商户032",
+        "rentSaleRate": "19%"
+      },
+      {
+        "saleMerchantName": "商户092",
+        "saleAmount": "624316",
+        "orderNo": "9",
+        "performanceAmount": "2348",
+        "rentSaleMerchantName": "商户134",
+        "performanceMerchantName": "商户102",
+        "rentSaleRate": "19%"
+      },
+      {
+        "saleMerchantName": "商户112",
+        "saleAmount": "576656",
+        "orderNo": "10",
+        "performanceAmount": "2233",
+        "rentSaleMerchantName": "商户209",
+        "performanceMerchantName": "商户041",
+        "rentSaleRate": "20%"
+      }
+    ],
+    "bottom": [
+      {
+        "saleMerchantName": "商户080",
+        "saleAmount": "2491.8000000000002",
+        "orderNo": "1",
+        "performanceAmount": "34",
+        "rentSaleMerchantName": "商户031",
+        "performanceMerchantName": "商户231",
+        "rentSaleRate": "256%"
+      },
+      {
+        "saleMerchantName": "商户031",
+        "saleAmount": "3055",
+        "orderNo": "2",
+        "performanceAmount": "35",
+        "rentSaleMerchantName": "商户227",
+        "performanceMerchantName": "商户167",
+        "rentSaleRate": "203%"
+      },
+      {
+        "saleMerchantName": "商户167",
+        "saleAmount": "3223",
+        "orderNo": "3",
+        "performanceAmount": "45",
+        "rentSaleMerchantName": "商户082",
+        "performanceMerchantName": "商户077",
+        "rentSaleRate": "151%"
+      },
+      {
+        "saleMerchantName": "商户077",
+        "saleAmount": "5216.41",
+        "orderNo": "4",
+        "performanceAmount": "48",
+        "rentSaleMerchantName": "商户043",
+        "performanceMerchantName": "商户080",
+        "rentSaleRate": "115%"
+      },
+      {
+        "saleMerchantName": "商户227",
+        "saleAmount": "7615.58",
+        "orderNo": "5",
+        "performanceAmount": "70",
+        "rentSaleMerchantName": "商户140",
+        "performanceMerchantName": "商户227",
+        "rentSaleRate": "83%"
+      },
+      {
+        "saleMerchantName": "商户153",
+        "saleAmount": "7624.6",
+        "orderNo": "6",
+        "performanceAmount": "82",
+        "rentSaleMerchantName": "商户068",
+        "performanceMerchantName": "商户043",
+        "rentSaleRate": "83%"
+      },
+      {
+        "saleMerchantName": "商户171",
+        "saleAmount": "8810.9",
+        "orderNo": "7",
+        "performanceAmount": "95",
+        "rentSaleMerchantName": "商户208",
+        "performanceMerchantName": "商户070",
+        "rentSaleRate": "71%"
+      },
+      {
+        "saleMerchantName": "商户138",
+        "saleAmount": "9373",
+        "orderNo": "8",
+        "performanceAmount": "114",
+        "rentSaleMerchantName": "商户114",
+        "performanceMerchantName": "商户200",
+        "rentSaleRate": "70%"
+      },
+      {
+        "saleMerchantName": "商户083",
+        "saleAmount": "9507.2999999999993",
+        "orderNo": "9",
+        "performanceAmount": "126",
+        "rentSaleMerchantName": "商户184",
+        "performanceMerchantName": "商户031",
+        "rentSaleRate": "69%"
+      },
+      {
+        "saleMerchantName": "商户139",
+        "saleAmount": "10362.5",
+        "orderNo": "10",
+        "performanceAmount": "146",
+        "rentSaleMerchantName": "商户139",
+        "performanceMerchantName": "商户153",
+        "rentSaleRate": "62%"
+      }
+    ]
+  }
+}

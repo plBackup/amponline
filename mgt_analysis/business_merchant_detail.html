@@ -1,0 +1,64 @@
+<link href="../static/css/mgt_analysis/business_merchant_detail.css" rel="stylesheet">
+
+<div class="amp-main-panel"  id="business-merchant-detail">
+    <div class="amp-content-header clearfix">
+        <ul class="amp-breadcrumb pull-left">
+            <li><a href="#/contract_main">收入分析</a></li>
+             <li><a href="#/business_main">营收</a></li>
+            <li><a href="#/business_merchant_list">{{commercialType}}</a></li>
+            <li><a>{{merchantName}}</a></li>
+        </ul>
+        <ul class="amp-status-item-list pull-right">
+            <li class="amp-status-item"><span>合同起始</span><em>{{merchantSummary.contractStartTime}}</em></li>
+            <li class="amp-status-item"><span>期限(月)</span><em>{{merchantSummary.rentPeriod}}</em></li>
+            <li class="amp-status-item"><span>租金类型</span><em>{{merchantSummary.rentType}}</em></li>
+        </ul>
+    </div><!-- amp-content-header -->
+    <div class="amp-content-panel">
+        <div class="ys-table-block ">
+        	<div  class="dept-table-head">
+	            <table class="amp-table-1 assets-table">
+	                <colgroup>
+	                    <col width="20%"/>
+	                    <col width="30%"/>
+	                    <col width="20%"/>
+	                    <col width="30%"/>
+	                </colgroup>
+	                <thead>
+	                    <tr>
+	                        <th>权责月</th>
+	                        <th>科目</th>
+	                        <th>金额</th>
+	                        <th>收费日期</th>
+	                    </tr>
+	                </thead>
+	            </table>                     		
+        	</div>
+        	<div  class="dept-table project-assets-table">	        		
+	            <table class="amp-table-1 assets-table">
+					<colgroup>
+						<col width="20%"/>
+						<col width="30%"/>
+						<col width="20%"/>
+						<col width="30%"/>
+					</colgroup>
+	                <tbody>
+						<tr ng-repeat="item in paginationInfo.records">
+							<td>{{item.month}}</td>
+							<td>{{item.projectItemName}}</td>
+							<td>{{item.amount|number}}</td>
+							<td>{{item.chargeDate}}</td>
+						</tr>
+	                </tbody>
+	            </table>
+     		</div>
+     	</div><!-- ys-table-block -->
+
+		<div class="amp-pagination-toolbar-wrapper clearfix">
+			<div class="amp-pagination-toolbar pull-right" pagination-info="paginationInfo" fetch-data="fetchData()"></div>
+		</div><!-- amp-pagination-toolbar-wrapper -->
+    </div><!-- amp-content-panel -->
+
+
+</div><!-- amp-main-panel -->
+

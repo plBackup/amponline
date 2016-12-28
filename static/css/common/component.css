@@ -1,0 +1,903 @@
+.amp-display-hide{display:none!important;}
+.amp-page-end-tag{display:none!important;}
+
+
+/* ======================================== amp-tab-menu-list ======================================== */
+.amp-tab-menu-list{}
+.amp-tab-menu-list:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+.amp-tab-menu-list li.amp-tab-menu-item{float:left;padding-left:24px;}
+.amp-tab-menu-list li.amp-tab-menu-item a{
+    display:block;
+    height:44px;
+    line-height: 42px;
+    border-bottom:2px solid transparent;
+    color:#8592a2;
+    text-decoration: none;
+}
+.amp-tab-menu-list li.amp-tab-menu-item a.active{
+    border-bottom-color: #5ab46d;
+    color:#373c42;
+}
+
+/* ======================================== amp-status-item-list ======================================== */
+.amp-status-item-list{padding:6px 0 6px 0;}
+.amp-status-item-list:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+.amp-status-item-list li.amp-status-item{height:100%;padding:0 20px;float:left;border-left:1px solid #dae2e7;text-align: right;}
+.amp-status-item-list li.amp-status-item:first-child{border:none;}
+.amp-status-item-list li.amp-status-item span{
+    display:block;
+    height:16px;
+    line-height: 16px;
+    color:#8592a2;
+    font-size:12px;
+}
+.amp-status-item-list li.amp-status-item em{
+    display:block;
+    height:16px;
+    line-height: 16px;
+    color:#373c42;
+    font-size:12px;
+}
+
+
+/* ======================================== amp-breadcrumb ======================================== */
+.amp-breadcrumb:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+.amp-breadcrumb li{float:left;}
+.amp-breadcrumb li a{
+    position:relative;
+    display:block;
+    height:44px;
+    line-height: 44px;
+    color: #737e8c;
+    font-size:14px;
+    padding-right:16px;
+    background:url(../../images/common/nav-right-icon.png) right center no-repeat;
+    background-size:16px 16px;
+}
+.amp-breadcrumb li:first-child a{}
+.amp-breadcrumb li:first-child a.amp-nav-back{
+    width:30px;
+    background:url(../../images/common/nav-back-icon.png) left center no-repeat;
+    background-size:20px 20px;
+    padding-right:0;
+}
+
+
+.amp-breadcrumb li:last-child a{color:#373c42;padding-right:0;background:none;}
+
+
+/* ======================================== amp-font ======================================== */
+/* amp-font-style */
+.amp-font-style-normal{font-style: normal!important;}
+.amp-font-style-italic{font-style:italic!important;}
+
+/* amp-font-weight */
+.amp-font-weight-normal{font-weight: normal!important;}
+.amp-font-weight-bold{font-weight: bold!important;}
+
+/* amp-font-color */
+.amp-font-color-white{color:#fff!important;}
+.amp-font-color-main{color:#373c42!important;}
+.amp-font-color-support{color:#737e8c!important;}
+.amp-font-color-tooltip{color:#8592a3!important;}
+.amp-font-color-green{color:#5ab46e!important;}
+.amp-font-color-blue{color:#55bbe6!important;}
+
+/* amp-font-color */
+.amp-font-size-12{font-size:12px!important;}
+.amp-font-size-30{font-size:30px!important;}
+
+/* text-align-left */
+.amp-text-align-left{text-align: left!important;}
+.amp-text-align-right{text-align: right!important;}
+.amp-text-align-center{text-align: center!important;}
+
+/* ======================================== amp-btn ======================================== */
+.amp-btn{
+    display:inline-block;
+    height:32px;
+    line-height: 32px;
+    font-size:14px;
+    padding:0 30px;
+    text-decoration: none!important;
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center;
+}
+.amp-btn-long{
+    padding:0 60px;
+}
+.amp-btn-default{
+    background-color:transparent;
+    color:#4f9a5f;
+    border:1px solid #4f9a5f;
+}
+
+.amp-btn-default:hover,.amp-btn-default:focus,.amp-btn-default:active{
+    background-color:transparent;
+    color:#4f9a5f;
+}
+
+.amp-btn-green{
+    background-color:#5ab46d;
+    color:#fff;
+}
+
+.amp-btn-green:hover,.amp-btn-green:focus,.amp-btn-green:active{
+    background-color:#4f9a5f;
+    color:#fff;
+}
+
+
+/* ======================================== amp-icons ======================================== */
+.amp-icon{display:inline-block;background:no-repeat;background-size:contain;}
+
+
+/* ======================================== amp-text-input ======================================== */
+.amp-text-input{
+    display:inline-block;
+    width:24px;
+    height:32px;
+    border:none;
+    outline-style: none;
+    padding:0 5px;
+    text-align: right;
+    font-size:12px;
+    color:#fff;
+    background-color:#394252;
+}
+.amp-text-input-min-short{width:28px;}
+.amp-text-input-short{width:44px;}
+.amp-text-input-middle{width:60px;}
+.amp-text-input-long{width:162px;}
+
+/* ======================================== amp-nav-1 ======================================== */
+.amp-nav-1{
+    height:46px;
+    box-sizing: border-box;
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    border-bottom:2px solid #c2cdd7;
+}
+
+.amp-nav-1:after{
+    content:"";display:block;height:0;clear:both;visibility:hidden;
+}
+
+.amp-nav-1 li{
+    height:100%;
+    float: left;
+    padding:0 0 0 24px;
+
+}
+.amp-nav-1 li a{
+    display:block;
+    height:46px;
+    line-height: 44px;
+    text-decoration: none;
+    cursor: pointer;
+    color:#737e8c;
+}
+.amp-nav-1 li a.active{
+    color:#373c42;
+    border-bottom:2px solid #5ab46d;
+}
+
+/* ======================================== amp-table-1 ======================================== */
+table.amp-table-1{
+    width:100%;
+}
+
+table.amp-table-1 thead th{
+    height:28px;
+    background-color:#f3f4f8;
+    font-weight: normal;
+    color:#737e8c;
+    padding:0 10px;
+    border-bottom:1px solid #d9dde0;
+    font-size:12px;
+}
+
+table.amp-table-1 tbody td{
+    height:40px;
+    padding:0 10px;
+    border-bottom:1px solid #f3f4f8;
+;
+}
+
+/* ======================================== amp-table-2 ======================================== */
+table.amp-table-2{
+    width:100%;
+}
+
+table.amp-table-2 thead th{
+    height:28px;
+    background-color:#f3f4f8;
+     border-bottom:1px solid #d9dde0;
+    font-weight: normal;
+    color:#737e8c;
+    padding:0 10px;
+    font-size:12px;
+}
+
+table.amp-table-2 tbody td{
+    height:40px;
+    padding:0 10px;
+}
+
+
+
+/* ======================================== amp-check-btn-group ======================================== */
+.amp-check-btn-group{
+
+}
+
+.amp-check-btn-group:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+
+.amp-check-btn-group .amp-check-btn{
+    display:block;
+    height:32px;
+    line-height: 30px;
+    color:#373c42;
+    text-decoration: none;
+    float:left;
+    padding:0 20px;
+    border-top:1px solid #dfe5e9;
+    border-right:1px solid #dfe5e9;
+    border-bottom:1px solid #dfe5e9;
+    cursor: pointer;
+}
+
+.amp-check-btn-group .amp-check-btn:hover{
+    background-color:#eaeaea;
+}
+
+.amp-check-btn-group .amp-check-btn.active{
+    background-color:#8493a3;
+    color:#fff;
+    border-color:#a0aab4;
+}
+
+.amp-check-btn-group .amp-check-btn:first-child{
+    border-left:1px solid #dfe5e9;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.ys-check-btn-group .amp-check-btn:last-child{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+/* ================================================== amp-table-collapse  ======================================== */
+.amp-collapse-table{
+    font-size:14px;
+    color:#222;
+}
+.amp-collapse-table ul{
+    list-style-type: none;
+    margin-bottom:0;
+    padding:0;
+}
+.amp-collapse-table  .amp-table-row .amp-table-row-content:after{
+    content:"";display:block;height:0;clear:both;visibility:hidden;
+}
+.amp-collapse-table  .amp-table-row .amp-table-row-content:hover{
+    background-color:#f3f4f8;
+}
+
+.amp-collapse-table  .amp-table-row .amp-table-row-content .amp-table-cell{
+    float:left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding:0 12px;
+}
+
+/*amp-thead*/
+.amp-collapse-table .amp-thead{
+    background-color:#f3f4f8;
+    border-bottom:1px solid #d9dde0;
+}
+.amp-collapse-table .amp-thead .amp-table-row .amp-table-row-content{
+    padding:0 12px;
+}
+.amp-collapse-table .amp-thead .amp-table-row .amp-table-row-content .amp-table-cell{
+    height:28px;
+    line-height: 28px;
+    font-size:12px;
+    color:#8592a3;
+}
+
+/*amp-tbody*/
+.amp-collapse-table .amp-tbody{padding:0 12px;}
+.amp-collapse-table .amp-tbody .amp-table-row .amp-table-row-content{
+    border-bottom:1px solid #f4f4f7;
+}
+.amp-collapse-table .amp-tbody .amp-table-row .amp-table-row-content .amp-table-cell{
+    height:40px;
+    line-height:40px;
+    cursor: pointer;
+    font-size:14px;
+    color:#373c42;
+}
+
+
+/*amp-table-row*/
+.amp-collapse-table .amp-table-row.amp-table-row-selected .amp-table-row-content{border-bottom:none;}
+.amp-collapse-table .amp-table-row.amp-table-row-selected .amp-table-row-content .amp-table-cell{
+    color:#fff;
+    background-color:#4a5468;
+}
+
+/* amp-row-collapse */
+.amp-collapse-table .amp-table-row .amp-table-row-collapse{
+    background-color:transparent;
+    border-left:3px solid #4a5468;
+    border-right:3px solid #4a5468;
+    border-bottom:3px solid #4a5468;
+    display:none;
+}
+
+/* ======================================== amp-pagination-toolbar ======================================== */
+.amp-pagination-toolbar{height:32px;line-height: 32px;}
+.amp-pagination-toolbar:after{
+    content:"";display:block;height:0;clear:both;visibility:hidden;
+}
+.amp-pagination-toolbar span{float:left;color:#8592a3;font-size:14px;}
+
+.amp-pagination-toolbar .pagination-nav-group:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+
+.amp-pagination-toolbar .pagination-nav-group{
+    display:inline-block;
+    height:100%;
+    margin:0 10px;
+    border:1px solid #d7e2e7;
+    float:left;
+}
+
+.amp-pagination-toolbar .pagination-nav-group>a{
+    display:block;
+    width:50px;
+    height:100%;
+    text-align: center;
+    border-right:1px solid #d7e2e7;
+    float:left;
+    color:#8592a3;
+    cursor:pointer;
+    text-decoration: none;
+}
+.amp-pagination-toolbar .pagination-nav-group>a:hover{
+    background-color:#f2f5f7;
+}
+.amp-pagination-toolbar .pagination-nav-group>input{
+    display:block;
+    width:50px;
+    height:100%;
+    border:none;
+    float:left;
+    padding:0 5px;
+    text-align: center;
+    color:#373c42;
+    outline-style: none;
+}
+
+.amp-pagination-toolbar .pagination-ok-btn{
+    display:block;
+    width:70px;
+    height:32px;
+    line-height: 32px;
+    float:left;
+    background-color:#5ab46d;
+    color:#fff;
+    text-align: center;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+/* ######################################## amp-input ######################################## */
+.amp-input{position:relative}
+.amp-input input{
+    display:block;
+    width:100%;
+    height:100%;
+    border:1px solid #dae2e7;
+    padding:0 10px;
+    background-color:#f2f5f7;
+    font-size:14px;
+    color:#737e8c;
+    cursor: pointer;
+    outline: none;
+    border-radius: 1px;
+}
+
+.amp-input input:focus{
+    outline: 4px solid #91c0f1;
+    cursor: pointer;
+    border-radius: 0;
+    border:none;
+}
+
+/*amp-input-error*/
+.amp-input .error-msg{
+    content:"";
+    position:absolute;
+    right:1px;
+    top:1px;
+    display:none;
+    width:24px;
+    height:24px;
+    background:url(../../images/common/input-error-icon.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+.amp-input.amp-input-error .error-msg{display:block;}
+
+.amp-input .error-msg span{
+    position:absolute;
+    top:-26px;
+    right:0;
+    height:20px;
+    display:none;
+    line-height: 20px;
+    color:#fff;
+    background-color:#394252;
+    padding:0 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size:12px;
+}
+.amp-input .error-msg span:after{
+    content:"";
+    position:absolute;
+    right:6px;
+    bottom:-4px;
+    border-left:4px solid transparent;
+    border-right:4px solid transparent;
+    border-top:4px solid #394252;
+}
+.amp-input .error-msg:hover span{display:block;}
+
+.amp-input.amp-input-error input{border-color:#e64e4d;}
+
+/*amp-input-display-span*/
+.amp-input .amp-input-display-span{
+    display:none;
+    width:100%;
+    border: 1px solid #dae2e7;
+    background-color: #f2f5f7;
+    padding:0 10px;
+    font-size:12px;
+    overflow: hidden;
+    text-align: right;
+}
+
+.amp-input.amp-multiple-input.text-show .amp-input-display-span{
+    display: block;
+}
+.amp-input.amp-multiple-input.text-show input{
+    display: none;
+}
+
+/*amp-input-26*/
+.amp-input-26 {height:26px;}
+.amp-input-26 input {font-size:12px;}
+.amp-input.amp-input-26 .error-msg{width:20px;height:20px;}
+.amp-input.amp-input-26 .error-msg span:after{right:3px;}
+.amp-input.amp-input-26 .amp-input-display-span{height:26px;line-height: 24px;cursor:pointer;}
+
+/*amp-input-32*/
+.amp-input-32 {height:32px;}
+.amp-input.amp-input-32 .error-msg{width:20px;height:20px;}
+.amp-input.amp-input-32 .error-msg span:after{right:3px;}
+.amp-input.amp-input-32 .amp-input-display-span{height:32px;line-height: 30px;cursor:pointer;}
+
+/*amp-input-40*/
+.amp-input-40 {height:40px;}
+.amp-input.amp-input-40 .amp-input-display-span{height:40px;line-height: 38px;cursor:pointer;}
+
+/* ======================================== amp-input-black ======================================== */
+.amp-input-black input{
+    background-color:#394252;
+    color:#fff;
+}
+
+.amp-input-black input{border-color:#394252;}
+
+
+/* ======================================== amp-input-default ======================================== */
+.amp-input-default input{}
+
+
+
+
+/* ######################################## amp-select ######################################## */
+.amp-select{
+    position:relative;
+    cursor:pointer;
+    height:32px;
+}
+
+.amp-select:after{
+    content:"";
+    position:absolute;
+    right:10px;
+    top:0;
+    bottom:0;
+    width:13px;
+    height:8px;
+    margin:auto;
+    background:url(../../images/component/select-black-down-icon.png) no-repeat;
+    background-size:contain;
+}
+
+.amp-select>input{
+    display:block;
+    width:100%;
+    height:100%;
+    padding-left:10px;
+    padding-right:33px;
+    cursor:pointer;
+    border:none;
+    border-radius: 1px;
+}
+
+.amp-select>input:focus{
+    outline: 4px solid #91c0f1;
+}
+
+.amp-select>ul{
+    display:none;
+    position:absolute;
+    left:0;
+    right:0;
+    top:100%;
+    padding:0;
+    list-style:none;
+    margin:2px 0 0 0 ;
+    z-index: 9999;
+}
+.amp-select.open:after{
+    background-image:url(../../images/component/select-black-up-icon.png);
+}
+.amp-select.open>ul{
+    display:block;
+}
+
+.amp-select>ul>li{
+    height:32px;
+    line-height: 32px;
+    padding-left:10px;
+}
+
+.amp-select>ul>li:hover{
+
+}
+
+.amp-select.amp-select-disabled input{color:#737e8c;}
+
+/*amp-select-black-26*/
+.amp-select.amp-select-black-26{
+    height:26px;
+}
+.amp-select.amp-select-black-26 input{font-size:12px;}
+
+.amp-select.amp-select-black-26>ul>li{
+    height:26px;
+    line-height: 26px;
+    font-size:12px;
+}
+
+/* ======================================== amp-select-default ======================================== */
+.amp-select-default>input{
+    border:1px solid #dbdede;
+    background-color:#f2f5f7;
+    color:#737e8c;
+}
+
+.amp-select-default>ul{
+    background-color: #f4f7f6;
+    border:1px solid #c8cbca;
+}
+
+.amp-select-default>ul>li:hover{
+    background-color:#dae1e7;
+}
+.amp-select-default>ul>li.active{
+    background-color:#dae1e7;
+}
+
+/* ======================================== amp-select-black ======================================== */
+.amp-select-black>input{
+    background-color:#394052;
+    color:#fff;
+}
+.amp-select-black>ul{
+    background-color: #4a5468;
+    border:1px solid #384354;
+    color:#fff;
+}
+
+.amp-select-black>ul>li:hover{
+    background-color:#394252;
+}
+.amp-select-black>ul>li.active{
+    background-color:#394252;
+}
+
+/* ######################################## amp-search ######################################## */
+.amp-search{
+    position:relative;
+    height:32px;
+
+}
+.amp-search>input{
+    display:block;
+    width:100%;
+    height:100%;
+    border:none;
+    background-color:transparent;
+    border-radius: 1px;
+    padding:0 42px 0 10px;
+}
+
+
+.amp-search>span{
+    position:absolute;
+    right:0;
+    top:0;
+    bottom:0;
+    width:32px;
+    background:no-repeat center center;
+    background-size:16px 16px;
+    cursor: pointer;
+}
+.amp-search.amp-search-active{    outline: 4px solid #91c0f1;}
+
+.amp-search-26{
+    height:26px;
+}
+/* ======================================== amp-search-black ======================================== */
+.amp-search-black>input{
+    background-color:#3b4152;
+    color:#fff;
+}
+
+.amp-search-black>span{border-left:1px solid #475060; background-image:url(../../images/common/search-grey-icon.png);}
+
+.amp-search-black.amp-search-active span{
+    background-color:#5ab46e;
+    background-image:url(../../images/common/search-white-icon.png);
+}
+
+
+
+
+/* ######################################## amp-datetimepicker-default ######################################## */
+.amp-datetimepicker{
+    position:relative;
+    width:100%;
+    height:32px;
+    cursor:pointer;
+    box-sizing: border-box;
+}
+.amp-datetimepicker:hover{ outline:4px solid #91c0f1;}
+
+.amp-datetimepicker>input{
+    display:block;
+    width:100%;
+    height:100%;
+    border-radius: 0;
+    cursor:pointer;
+    border:none;
+    padding-left:10px;
+    padding-right:10px;
+    font-size:14px;
+    -webkit-appearance: none;
+    box-shadow: none;
+}
+
+.amp-datetimepicker:after{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    display:block;
+    width:32px;
+    height:100%;
+    background: no-repeat center center;
+    background-size:15px 15px;
+}
+
+.amp-datetimepicker.simple:after{display:none;}
+
+.amp-datetimepicker-26{height:26px;}
+.amp-datetimepicker-26 input{font-size:12px;}
+
+
+/* ======================================== amp-datetimepicker-default ======================================== */
+.amp-datetimepicker-default{}
+
+.amp-datetimepicker-default>input.form-control{
+    color:#373c42;
+    border: 1px solid #dae2e7;
+    background-color: #f2f5f7;
+}
+
+
+.amp-datetimepicker-default:after{
+    background-image: url(../../images/component/datetime-default-icon.png);
+}
+
+/* ======================================== amp-datetimepicker-black ======================================== */
+.amp-datetimepicker-black{}
+
+.amp-datetimepicker-black>input.form-control{
+    background-color:#394252;
+    color:#fff;
+}
+
+
+.amp-datetimepicker-black:after{
+    background-image: url(../../images/component/datetime-icon.png);
+}
+
+.datetimepicker.datetimepicker-dropdown-bottom-right.dropdown-menu .datetimepicker-minutes .minute.active,
+.datetimepicker.datetimepicker-dropdown-bottom-right.dropdown-menu .datetimepicker-hours .hour.active,
+.datetimepicker.datetimepicker-dropdown-bottom-right.dropdown-menu .datetimepicker-days .day.active,
+.datetimepicker.datetimepicker-dropdown-bottom-right.dropdown-menu .datetimepicker-months .month.active,
+.datetimepicker.datetimepicker-dropdown-bottom-right.dropdown-menu .datetimepicker-years .year.active{
+    background-image:none;
+    background-color:#5ab46e;
+}
+
+
+
+/* ######################################## amp-date-selector ######################################## */
+.amp-date-selector {
+    position: relative;
+    height: 32px;
+    padding:0 32px;
+    border-radius: 1px;
+}
+.amp-date-selector > em {
+    position: absolute;
+    top:0;
+    bottom:0;
+    display: block;
+    height: 100%;
+    width: 32px;
+    cursor: pointer;
+    background:no-repeat center center;
+    background-size:16px 16px;
+}
+.amp-date-selector > input {
+    display:block;
+    width: 100%;
+    height:100%;
+    border:none;
+    text-align: center;
+    padding:0 10px;
+    outline: none;
+}
+
+.amp-date-selector-26{height:26px;}
+.amp-date-selector-26 input{font-size:12px;}
+
+/* ======================================== amp-date-selector-black ======================================== */
+.amp-date-selector-black{
+    background-color: #394252;
+}
+
+.amp-date-selector-black > em.amp-date-selector-prev{
+    left:0;
+    background-image:url(../../images/component/arrow-left-black-icon.png);
+    border-right: 1px solid #475060;
+}
+.amp-date-selector-black > em.amp-date-selector-prev:hover{
+    background-color:#5ab46e;
+    background-image:url(../../images/component/arrow-left-white-icon.png);
+}
+
+.amp-date-selector-black > em.amp-date-selector-next{
+    right:0;
+    background-image:url(../../images/component/arrow-right-black-icon.png);
+    border-left: 1px solid #475060;
+}
+
+.amp-date-selector-black > em.amp-date-selector-next:hover{
+    background-color:#5ab46e;
+    background-image:url(../../images/component/arrow-right-white-icon.png);
+}
+
+.amp-date-selector-black > input{
+    background-color: transparent;
+    color:#fff;
+}
+
+/* ======================================== amp-section-title ======================================== */
+.amp-section-title{position:relative;height:46px;line-height:44px;padding-top:2px;font-size:18px;color:#373c42;}
+.amp-section-title:before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    width:100%;
+    height:2px;
+    background-color:#dfe6e9;
+}
+
+.amp-section-title:after{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:64px;
+    height:2px;
+    background-color:#5ab46e;
+}
+
+/* ======================================== ys-check-btn-group ======================================== */
+.amp-check-btn-group{
+
+}
+
+.amp-check-btn-group:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+
+.amp-check-btn-group .amp-check-btn{
+    display:block;
+    height:32px;
+    line-height: 30px;
+    color:#757575;
+    text-decoration: none;
+    float:left;
+    padding:0 20px;
+    border-top:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    cursor: pointer;
+}
+
+.amp-check-btn-group .amp-check-btn:hover{
+    background-color:#eaeaea;
+}
+
+.amp-check-btn-group .amp-check-btn.active{
+    background-color:#808c92;
+    color:#fff;
+    border-color:#808c92;
+}
+
+.amp-check-btn-group .amp-check-btn:first-child{
+    border-left:1px solid #ccc;
+}
+
+/* ======================================== amp-checkbox ======================================== */
+.amp-checkbox{
+    display:inline-block;
+    width:14px;
+    height:14px;
+    background:url(../../images/unchecked.png) no-repeat center center;
+    background-size:contain;
+    cursor: pointer;
+}
+.amp-checkbox.checked{
+    background-image:url(../../images/checked.png);
+}
+
+/* ======================================== amp-warning ======================================== */
+.amp-warning{
+    height:40px;
+    line-height: 40px;
+    color:#fd7170;
+    padding:0 20px 0 48px;
+    background: url(../../images/common/warning-red.png) no-repeat 24px center;
+    background-size:17px 18px;
+}
+
+.amp-warning.amp-warning-32{
+    height:32px;
+    line-height: 32px;
+}

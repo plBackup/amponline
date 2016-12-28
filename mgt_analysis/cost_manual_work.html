@@ -1,0 +1,155 @@
+<link href="../static/css/mgt_analysis/cost_manual_work.css" rel="stylesheet">
+
+<div class="amp-main-panel"  id="cost-manual-work">
+    <div class="amp-content-header clearfix">
+        <div class="pull-left">
+            <ul class="amp-breadcrumb">
+                <li><a href="#/cost_main">支出分析</a></li>
+                 <li><a href="#/cost_main">成本</a></li>
+                <li><a>人工</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="amp-content-panel">
+
+        <div class="amp-section-title"><span>人工</span></div>
+
+        <div class="cost-manual-work-pin-wrapper">
+
+            <div class="dept-table-head">
+                <table class="assets-table">
+                    <colgroup>
+                        <col width="30%">
+                        <col width="17.5%">
+                        <col width="17.5%">
+                        <col width="17.5%">
+                        <col width="17.5%">
+                    </colgroup>
+                    <tbody>
+                    <tr class="body-title">
+                        <td></td>
+                        <td>去年实际</td>
+                        <td>本年实际</td>
+                        <td>本年预算</td>
+                        <td>空缺数</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div><!-- dept-table-head -->
+
+            <div class="dept-table project-assets-table">
+                <table class="assets-table">
+                    <colgroup>
+                        <col width="30%">
+                        <col width="17.5%">
+                        <col width="17.5%">
+                        <col width="17.5%">
+                        <col width="17.5%">
+                    </colgroup>
+                    <tbody>
+                    <tr class="collapse-record" data-group="1">
+                        <td class="amp-font-weight-bold">实际员工总数<a class="collapse-btn"></a></td>
+                        <td class="amp-font-weight-bold">{{data.total.lastReal|numberFormatDefault}}</td>
+                        <td class="amp-font-weight-bold">{{data.total.curReal|numberFormatDefault}}</td>
+                        <td class="amp-font-weight-bold">{{data.total.curBudget|numberFormatDefault}}</td>
+                        <td class="amp-font-weight-bold">{{data.total.emptyNo|numberFormatDefault}}</td>
+                    </tr>
+
+                    <tr class="sub-record amp-display-hide" data-group="1" ng-repeat="item in data.mgtDept">
+                        <td>{{item.deptName}}<span class="sub-td-text" ng-class="{'amp-font-weight-bold':item.title}">{{item.positionName}}</span></td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.lastReal|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.curReal|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.curBudget|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.emptyNo|numberFormatDefault}}</td>
+                    </tr>
+
+                    <tr class="sub-record  amp-display-hide records-separator-line" data-group="1"><td colspan="5"></td></tr>
+
+                    <tr class="sub-record amp-display-hide" data-group="1" ng-repeat="item in data.adminDept">
+                        <td>{{item.deptName}}<span class="sub-td-text" ng-class="{'amp-font-weight-bold':item.title}">{{item.positionName}}</span></td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.lastReal|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.curReal|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.curBudget|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.emptyNo|numberFormatDefault}}</td>
+                    </tr>
+
+                    <tr class="sub-record amp-display-hide records-separator-line" data-group="1"><td colspan="5"></td></tr>
+
+                    <tr class="sub-record amp-display-hide" data-group="1" ng-repeat="item in data.financeDept">
+                        <td>{{item.deptName}}<span class="sub-td-text" ng-class="{'amp-font-weight-bold':item.title}">{{item.positionName}}</span></td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.lastReal|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.curReal|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.curBudget|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.emptyNo|numberFormatDefault}}</td>
+                    </tr>
+
+                    <tr class="sub-record amp-display-hide records-separator-line" data-group="1"><td colspan="5"></td></tr>
+
+                    <tr class="sub-record amp-display-hide" data-group="1" ng-repeat="item in data.planningDept">
+                        <td>{{item.deptName}}<span class="sub-td-text" ng-class="{'amp-font-weight-bold':item.title}">{{item.positionName}}</span></td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.lastReal|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.curReal|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.curBudget|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.emptyNo|numberFormatDefault}}</td>
+                    </tr>
+
+                    <tr class="sub-record amp-display-hide records-separator-line" data-group="1"><td colspan="5"></td></tr>
+
+                    <tr class="sub-record amp-display-hide" data-group="1" ng-repeat="item in data.investmentDept">
+                        <td>{{item.deptName}}<span class="sub-td-text" ng-class="{'amp-font-weight-bold':item.title}">{{item.positionName}}</span></td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.lastReal|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.curReal|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.curBudget|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.emptyNo|numberFormatDefault}}</td>
+                    </tr>
+
+                    <tr class="sub-record amp-display-hide records-separator-line" data-group="1"><td colspan="5"></td></tr>
+
+                    <tr class="sub-record amp-display-hide" data-group="1" ng-repeat="item in data.serviceDept">
+                        <td>{{item.deptName}}<span class="sub-td-text" ng-class="{'amp-font-weight-bold':item.title}">{{item.positionName}}</span></td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.lastReal|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.curReal|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.curBudget|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.emptyNo|numberFormatDefault}}</td>
+                    </tr>
+
+                    <tr class="sub-record amp-display-hide records-separator-line" data-group="1"><td colspan="5"></td></tr>
+
+                    <tr class="sub-record amp-display-hide" data-group="1" ng-repeat="item in data.businessDept">
+                        <td>{{item.deptName}}<span class="sub-td-text" ng-class="{'amp-font-weight-bold':item.title}">{{item.positionName}}</span></td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.lastReal|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.curReal|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.curBudget|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.emptyNo|numberFormatDefault}}</td>
+                    </tr>
+
+                    <tr class="sub-record amp-display-hide records-separator-line" data-group="1"><td colspan="5"></td></tr>
+
+                    <tr class="sub-record amp-display-hide" data-group="1" ng-repeat="item in data.engineeringDept">
+                        <td>{{item.deptName}}<span class="sub-td-text" ng-class="{'amp-font-weight-bold':item.title}">{{item.positionName}}</span></td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.lastReal|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.curReal|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.curBudget|numberFormatDefault}}</td>
+                        <td ng-class="{'amp-font-weight-bold':item.title}">{{item.emptyNo|numberFormatDefault}}</td>
+                    </tr>
+
+
+                    <tr class="sub-record amp-display-hide records-separator-line" data-group="1"><td colspan="5"></td></tr>
+
+                    <tr ng-repeat="item in data.others">
+                        <td>{{item.deptName}}</td>
+                        <td>{{item.lastReal|numberFormatDefault}}</td>
+                        <td>{{item.curReal|numberFormatDefault}}</td>
+                        <td>{{item.curBudget|numberFormatDefault}}</td>
+                        <td>{{item.emptyNo|numberFormatDefault}}</td>
+                    </tr>
+
+
+
+                    </tbody>
+                </table>
+            </div><!-- dept-table -->
+        </div><!-- cost-manual-work-pin-wrapper -->
+    </div><!-- amp-content-panel -->
+
+</div><!-- amp-main-panel -->

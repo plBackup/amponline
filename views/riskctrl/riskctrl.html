@@ -1,0 +1,160 @@
+
+	<div id="riskctrl" class="amp-main-panel">
+		<div class="amp-content-header clearfix">
+	        <ul class="amp-tab-menu-list pull-left">
+	            <li class="amp-tab-menu-item"><a class="active">投资分析方案</a></li>
+	        </ul>
+	        <ul class="amp-status-item-list pull-right">
+	            <li class="amp-status-item"><span>GFA</span><em>{{481.19|number}}</em></li>
+	            <li class="amp-status-item"><span>GLA</span><em>{{4857825|number}}</em></li>
+	            <li class="amp-status-item"><span>投资成本</span><em>{{485782|number}}</em></li>	            
+	        </ul>
+   	 	</div>
+   	 	<div class="risk-content-panel">
+   	 		<div class="return-rate clearfix">
+   	 			<div class="pull-left return-rate-chart">
+   	 				<div class="label-group"><em>业主要求的收益率</em><div>111</div></div>
+   	 				<!--<div class="return-rate-chart-title">退出率</div>
+   	 				<div class="rate-chart">
+   	 					<div ng-class="{progress: true, 'progress-striped': vm.striped}" class="return-rate-bar">
+		       			 <div ng-class="['progress-bar', vm.style]" ng-style="{width: vm.value + '%'}">
+		            		<div ng-if="vm.showLabel">{{vm.value}}%</div>
+		            		<em class="amp-progress-text">{{vm.value}}%</em>
+		       			 </div>
+ 						</div>
+   	 				</div>-->
+	   			</div>
+	   			<div class="pull-left return-rate-data">
+	   				<ul class="clearfix">
+						<li ng-repeat="item in records" class="label-group"><em>{{item.title}}</em><div>{{item.data|number:2}}</div></li>
+                   </ul>
+	   			</div>
+   	 		</div>
+   	 		<div class="rate-noi-title">
+   	 			<div class="amp-section-title"><span>NOI</span>   	 				
+   	 				<div class="rate-noi-btn label-group">
+	   	 				<em class="pull-left" ng-click="setType('NoionYearBasis','noi')"  ng-class="{'btn-active':noiType=='NoionYearBasis'}">同比</em>
+	   	 				<em class="pull-left"  ng-click="setType('NoiLinkRelativeRatio','noi')" ng-class="{'btn-active':noiType=='NoiLinkRelativeRatio'}">环比</em>
+	   	 				<em class="pull-left btn-active"  ng-click="setType('NoiBudget','noi')" ng-class="{'btn-active':noiType=='NoiBudget'}">预算</em>
+	   	 				<em class="btn-right">显示所有月份</em>
+   	 				</div>
+   	 			</div>
+   	 		</div>   	 		
+   	 		<div class="risk-noi">
+				<table class="risk-table">
+					<colgroup>
+                        <col width="16%"/>
+                        <col width="17%"/>
+                        <col width="17%"/>
+                        <col width="17%"/>
+                        <col width="16%"/>
+                       	<col width="17%"/>
+		        	</colgroup>
+		        	<thead>
+		        		<tr>
+							<td class="border-right"></td>
+                            <td  colspan="2"  class=" border-right"><2016-08（万元）</td>
+                            <td  colspan="3" >全年累计（万元）</td> 
+						</tr>
+		        	</thead>
+					<tbody>
+						<tr>
+							<td class="border-right"></td>
+							<td class="text-grey padding-right"><span>实际</span></td>
+							<td class="text-grey border-right"><span>参考值</span></td>
+							<td class="text-grey padding-right"><span>实际</span></td>
+							<td class="text-grey"><span>参考值</span></td>
+							<td class="text-grey" style="padding-right: 30px;"><span>差异</span></td>
+						</tr>
+						<tr ng-repeat="item in noi[noiType]">
+							<td class="border-right text-left">{{item.name}}</td>
+							<td ng-class='setStyleIcon(item.noiActualMonth,item.noiReferMonth)'><span>{{item.noiActualMonth|number:2}} <em></em></span></td> 
+							<td class="border-right"><span>{{item.noiReferMonth|number:2}}</span></td> 
+							<td  ng-class='setStyleIcon(item.noiActualYear,item.noiReferYear)'><span>{{item.noiActualYear|number:2}} <em></em></span></td> 
+							<td class=""><span>{{item.noiReferYear|number:2}}</span></td> 
+							<td  ng-class='setStyleText(item.noiActualYear-item.noiReferYear)' class="padright"><span>{{item.noiActualYear-item.noiReferYear|number:2}}</span></td> 
+						</tr>
+		            </tbody>
+					</table>
+   	 		</div>
+			<div class="risk-roi">
+				<div  class="amp-roi">
+					<div class="amp-section-title"><span>ROI</span></div>
+					<table class="risk-table">
+						<colgroup>
+	                        <col width="33%"/>
+	                        <col width="33.5%"/>
+	                          <col width="33.5%"/>                       
+			        	</colgroup>
+			        	<thead>
+			        		<tr>
+								<td class="border-right"></td>
+	                             <td class="padding-right"><span>实际</span></td>
+	                            <td ><span>参考</span></td> 
+							</tr>
+			        	</thead>
+						<tbody>
+							<tr ng-repeat="item in roi">
+								<td class="border-right text-left">{{item.name}}</td>
+  								<td ng-class='setStyleIcon(item.roiActual,item.roiRefer)'><span>{{item.roiActual|number:2}} <em></em></span></td> 
+  								<td ><span>{{item.roiRefer|number:2}}</span></td> 
+							</tr>
+		                </tbody>
+					</table>
+					
+				</div>
+				<div class="amp-roe">
+					<div class="amp-section-title"><span>ROE</span></div>
+					<table class="risk-table">
+						<colgroup>
+	                        <col width="33%"/>
+	                        <col width="33.5%"/>
+	                          <col width="33.5%"/>                       
+			        	</colgroup>
+			        	<thead>
+			        		<tr>
+								<td class="border-right"></td>
+	                              <td class="padding-right"><span>实际</span></td>
+	                            <td ><span>参考</span></td> 
+							</tr>
+			        	</thead>
+						<tbody>
+							<tr ng-repeat="item in roe">
+								<td class="border-right text-left">{{item.name}}</td>
+  								<td ng-class='setStyleIcon(item.roeActual,item.roeRefer)'><span>{{item.roeActual|number:2}} <em></em></span></td> 
+  								<td ><span>{{item.roeRefer|number:2}}</span></td> 
+							</tr>
+		                    
+							
+		                </tbody>
+					</table>
+				</div>
+				<div class="amp-forecast">
+					<div class="amp-section-title"><span>累计税前现金流预测</span></div>
+					
+					<table class="risk-table">
+						<colgroup>
+	                        <col width="33%"/>
+	                        <col width="33.5%"/>
+	                          <col width="33.5%"/>                       
+			        	</colgroup>
+			        	<thead>
+			        		<tr>
+								<td class="border-right"></td>
+	                              <td class="padding-right"><span>实际</span></td>
+	                            <td ><span>参考</span></td> 
+							</tr>
+			        	</thead>
+						<tbody>
+							<tr ng-repeat="item in forecast">
+								<td class="border-right text-left">{{item.name}}</td>
+  								<td ng-class='setStyleIcon(item.forecastActual,item.forecastRefer)'><span>{{item.forecastActual|number:2}} <em></em></span></td> 
+  								<td><span>{{item.forecastRefer|number:2}}</span></td> 
+							</tr>
+		                </tbody>
+					</table>
+				</div>
+			</div>
+			</div>
+   	 </div>	    
+</div>	

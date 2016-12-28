@@ -1,0 +1,17 @@
+#arrears-detail{background-color:#fff;}
+#arrears-detail .amp-content-header{margin:0;}
+#arrears-detail .amp-content-panel{padding:20px 0 20px 0;}
+/* ======================================== amp-content-header ======================================== */
+#arrears-detail .amp-content-header{padding: 0 24px;}
+/* ======================================== ys-table-block ======================================== */
+#arrears-detail .ys-table-block .amp-table-cell{width:9%;text-align: right;}
+
+#arrears-detail .ys-table-block .amp-table-cell:nth-child(1){width:12%;text-align: left;}
+#arrears-detail .ys-table-block .amp-table-cell:nth-child(4),
+#arrears-detail .ys-table-block .amp-table-cell:nth-child(5){width:7%;}
+#arrears-detail .ys-table-block .amp-table-cell:last-child{width:11%;}
+
+
+#arrears-detail .ys-table-block .amp-pagination-toolbar-wrapper{padding:20px 12px;}
+#arrears-detail .amp-breadcrumb li:first-child a {padding-right: 16px;background: url(../../images/common/nav-right-icon.png) right center no-repeat;}
+#arrears-detail .amp-thead{left: 0;right: 0;z-index: 990;}

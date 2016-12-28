@@ -1,0 +1,46 @@
+<link href="../static/css/mgt_analysis/business_merchant_detail_enrolment.css" rel="stylesheet">
+
+<div class="amp-right-panel amp-display-hide"  id="business-merchant-detail-enrolment">
+
+    <div class="contract-enrolment">
+        <div class="enrolment-title"><a class="close-panel-btn"></a>录入</div>
+
+        <div class="enrolment-form-container">
+            <ul class="clearfix">
+                <li>
+                    <span>权责月</span>
+                    <div class="amp-datetimepicker amp-datetimepicker-default">
+                        <input data-name="month" class="form-control" size="16" type="text" value="" readonly="">
+                    </div>
+                </li>
+                <li>
+                    <span>科目</span>
+                    <div class="amp-select amp-select-default">
+                        <input data-name="projectItemName" readonly value="">
+                        <ul>
+                            <li>租金</li>
+                            <li>租金履约保证金</li>
+                            <li>装修管理费</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <span>金额</span>
+                    <div class="amp-input amp-input-default amp-input-32" amp-input-validate="number">
+                        <input data-name="amount" value="">
+                    </div>
+                </li>
+            </ul>
+
+            <div class="amp-btn-group clearfix">
+                <a class="amp-btn amp-btn-green pull-right save-btn">保存</a>
+                <a class="amp-btn amp-btn-default pull-right continue-save-btn">继续录入</a>
+            </div>
+
+        </div><!-- enrolment-form-container -->
+
+    </div><!-- contract-enrolment -->
+
+</div><!-- amp-main-panel -->
+
+

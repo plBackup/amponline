@@ -1,0 +1,135 @@
+<link href="../static/css/mgt_analysis/passenger_flow_main_enrolment.css" rel="stylesheet">
+
+<div class="amp-main-panel"  id="passenger-flow-main-enrolment">
+    <div class="amp-content-header clearfix">
+        <ul class="amp-breadcrumb pull-left">
+            <li><a href="#/passenger_flow_main">运营分析</a></li>
+            <li><a href="#/passenger_flow_main">客流</a></li>
+            <li><a>xx项目(2016)</a></li>
+        </ul>
+
+    </div><!-- amp-content-header -->
+    <div class="amp-content-panel">
+
+
+
+        <div class="table-block">
+            <table class="amp-table-2">
+                <colgroup>
+                    <col width="20%"/>
+                    <col width="20%"/>
+                    <col width="20%"/>
+                    <col width="20%"/>
+                    <col width="20%"/>
+                </colgroup>
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>实际</th>
+                    <th>预算</th>
+                    <th>完成率</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1月</td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.real1" type="text"></div></td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.budget1" type="text"></div></td>
+                    <td>{{(result.real1/result.budget1)*100|number:2|stringFormat:"%":"-"}}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2月</td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.real2" type="text"></div></td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.budget2" type="text"></div></td>
+                    <td>{{(result.real2/result.budget2)*100|number:2|stringFormat:"%":"-"}}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3月</td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.real3" type="text"></div></td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.budget3" type="text"></div></td>
+                    <td>{{(result.real3/result.budget3)*100|number:2|stringFormat:"%":"-"}}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>4月</td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.real4" type="text"></div></td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.budget4" type="text"></div></td>
+                    <td>{{(result.real4/result.budget4)*100|number:2|stringFormat:"%":"-"}}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5月</td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.real5" type="text"></div></td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.budget5" type="text"></div></td>
+                    <td>{{(result.real5/result.budget5)*100|number:2|stringFormat:"%":"-"}}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>6月</td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.real6" type="text"></div></td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.budget6" type="text"></div></td>
+                    <td>{{(result.real6/result.budget6)*100|number:2|stringFormat:"%":"-"}}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>7月</td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.real7" type="text"></div></td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.budget7" type="text"></div></td>
+                    <td>{{(result.real7/result.budget7)*100|number:2|stringFormat:"%":"-"}}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8月</td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.real8" type="text"></div></td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.budget8" type="text"></div></td>
+                    <td>{{(result.real8/result.budget8)*100|number:2|stringFormat:"%":"-"}}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9月</td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.real9" type="text"></div></td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.budget9" type="text"></div></td>
+                    <td>{{(result.real9/result.budget9)*100|number:2|stringFormat:"%":"-"}}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10月</td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.real10" type="text"></div></td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.budget10" type="text"></div></td>
+                    <td>{{(result.real10/result.budget10)*100|number:2|stringFormat:"%":"-"}}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11月</td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.real11" type="text"></div></td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.budget11" type="text"></div></td>
+                    <td>{{(result.real11/result.budget11)*100|number:2|stringFormat:"%":"-"}}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12月</td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.real12" type="text"></div></td>
+                    <td><div amp-input-validate="number" class="amp-input amp-input-default amp-input-32"><input ng-model="result.budget12" type="text"></div></td>
+                    <td>{{(result.real12/result.budget12)*100|number:2|stringFormat:"%":"-"}}</td>
+                    <td></td>
+                </tr>
+
+                </tbody>
+            </table>
+
+        </div><!-- table-block -->
+
+        <div class="btn-group-wrapper clearfix">
+            <a class="amp-btn amp-btn-green pull-right amp-btn-long save-btn">保存</a>
+            <a class="amp-btn amp-btn-default pull-right amp-btn-long nav-back-btn">返回</a>
+        </div>
+
+    </div><!-- amp-content-panel -->
+
+</div><!-- amp-main-panel -->
+
+
+

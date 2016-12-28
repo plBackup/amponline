@@ -1,0 +1,136 @@
+<link href="../static/css/mgt_analysis/contract_main_right.css" rel="stylesheet">
+
+<div class="amp-right-panel amp-display-hide"  id="contract-main-right">
+
+    <div class="contract-enrolment">
+        <div class="enrolment-title"><a class="close-panel-btn"></a>录入</div>
+
+        <div class="enrolment-form-container">
+            <ul class="clearfix">
+                <li>
+                    <span>品牌</span>
+                    <!--<div class="amp-auto-complete amp-auto-complete-default" source="source" reload="loadSource(inputMsg)"></div>-->
+                    <div class="amp-input amp-input-default amp-input-32" amp-input-validate="required">
+                        <input data-name="brandName" value="" />
+                    </div>
+                </li>
+                <li>
+                    <span>合同编号</span>
+                    <div class="amp-input amp-input-default amp-input-32" amp-input-validate="required">
+                        <input data-name="contractId" value="" />
+                    </div>
+                </li>
+                <li>
+                    <span>合同起始</span>
+                    <div class="amp-datetimepicker amp-datetimepicker-default">
+                        <input data-name="contractStartTime" class="form-control" size="16" type="text" value="" readonly=""/>
+                    </div>
+                </li>
+                <li>
+                    <span>合同结束</span>
+                    <div class="amp-datetimepicker amp-datetimepicker-default">
+                        <input data-name="contractEndTime" class="form-control" size="16" type="text" value="" readonly=""/>
+                    </div>
+                </li>
+                
+                
+                <li>
+                    <span>免租期</span>
+                    <div class="amp-input amp-input-default amp-input-32" amp-input-validate="required,number">
+                        <input data-name="rentFreePeriod" value=""/>
+                    </div>
+                </li>
+                 <li>
+                    <span>楼层</span>
+                    <div class="amp-select amp-select-default">
+                        <input data-name="floorNo" readonly value=""/>
+                        <ul>
+                            <li>5F</li>
+                            <li>4F</li>
+                            <li>3F</li>
+                            <li>2F</li>
+                            <li>1F</li>
+                        </ul>
+                    </div>
+                </li>
+                  <li>
+                    <span>铺位号</span>
+                    <div class="amp-input amp-input-default amp-input-32" amp-input-validate="required">
+                        <input data-name="storeNo" value="" />
+                    </div>
+                </li>
+                <li>
+                    <span>面积(㎡)</span>
+                    <div class="amp-input amp-input-default amp-input-32" amp-input-validate="required,number">
+                        <input data-name="square" value="" />
+                    </div>
+                </li>
+    			<li>
+                    <span>业态</span>
+                    <div class="amp-select amp-select-default">
+                        <input data-name="commercialType" readonly value=""/>
+                        <ul>
+                            <li>超市</li>
+                            <li>影院</li>
+                            <li>餐饮</li>
+                            <li>儿童</li>
+                            <li>服装</li>
+                            <li>配套</li>
+                        </ul>
+                    </div>
+                </li>
+                <li style="height: 75px;"></li>
+                <li>
+                    <span>租金方式</span>
+                    <div class="amp-select amp-select-default">
+                        <input data-name="rentType" readonly value=""/>
+                        <ul>
+                            <li>固定租金</li>
+                            <li>提成租金</li>
+                            <li>两者取高</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <span>租金总额</span>
+                    <div class="amp-input amp-input-default amp-input-32" amp-input-validate="required,number">
+                        <input data-name="rentTotal" value=""/>
+                    </div>
+                </li>
+
+                <li>
+                    <span>提成百分比</span>
+                    <div class="amp-input amp-input-default amp-input-32" amp-input-validate="required,number">
+                        <input data-name="deductPercent" value=""/>
+                    </div>
+                </li>
+				 <li>
+                    <span>物管费总额</span>
+                    <div class="amp-input amp-input-default amp-input-32" amp-input-validate="required,number">
+                        <input data-name="propertyFeeTotal" value=""/>
+                    </div>
+                </li>
+                <li>
+                    <span>付款方式</span>
+                    <div class="amp-select amp-select-default">
+                        <input data-name="paymentType" readonly value=""/>
+                        <ul>
+                            <li>月付</li>
+                            <li>季付</li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+
+            <div class="amp-btn-group clearfix">
+                <a class="amp-btn amp-btn-green save-btn pull-right">保存</a>
+                <a class="amp-btn amp-btn-default continue-save-btn pull-right">继续录入</a>
+            </div>
+
+        </div><!-- enrolment-form-container -->
+
+    </div><!-- contract-enrolment -->
+
+</div><!-- amp-main-panel -->

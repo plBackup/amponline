@@ -1,0 +1,51 @@
+<link href="../static/css/mgt_analysis/business_merchant_list.css" rel="stylesheet">
+
+<div class="amp-main-panel"  id="business-merchant-list">
+    <div class="amp-content-header clearfix">
+        <div class="pull-left">
+            <ul class="amp-breadcrumb">
+                <li><a href="#/contract_main">收入分析</a></li>
+                <li><a href="#/business_main">营收</a></li>
+                <li><a>{{commercialType}}</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="amp-content-panel">
+
+        <div class="ys-table-block">
+            <div class="amp-collapse-table">
+                <div class="amp-thead">
+                    <div class="amp-table-row">
+                        <ul class="amp-table-row-content">
+                            <li class="amp-table-cell">品牌</li>
+                            <li class="amp-table-cell">商铺号</li>
+                            <li class="amp-table-cell text-right">当月实际</li>
+                            <li class="amp-table-cell text-right">全年累计</li>                           
+                        </ul>
+                    </div>
+                </div><!-- amp-thead -->
+
+                <div class="amp-tbody">
+                    <div class="amp-table-row" ng-repeat="item in paginationInfo.records">
+                        <ul class="amp-table-row-content">
+                            <li class="amp-table-cell">{{item.brandName}}</li>
+                            <li class="amp-table-cell">{{item.storeNo}}</li>
+                            <li class="amp-table-cell text-right">{{item.curMonthAmount|numberFormatDefault}}</li>
+                            <li class="amp-table-cell text-right">{{item.curYearAmount|numberFormatDefault}}</li>
+                        </ul>
+                    </div><!-- amp-table-row -->
+
+                </div><!-- amp-tbody -->
+
+            </div><!-- amp-table-collapse -->
+
+            <div class="amp-pagination-toolbar-wrapper clearfix">
+                <div class="amp-pagination-toolbar pull-right" pagination-info="paginationInfo" fetch-data="fetchData()"></div>
+            </div><!-- amp-pagination-toolbar-wrapper -->
+
+        </div><!-- ys-table-block -->
+
+    </div><!-- amp-content-panel -->
+
+</div><!-- amp-main-panel -->
+

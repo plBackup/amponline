@@ -1,0 +1,39 @@
+<link href="../static/css/investment_analysis/simulation_calculation_main.css" rel="stylesheet">
+
+<div class="amp-main-panel"  id="simulation-calculation-main">
+
+    <div class="amp-content-panel">
+        <div class="amp-case-block">
+            <div class="amp-case-list clearfix">
+
+                <div class="amp-case-item" ng-repeat="item in records">
+                    <div class="case-content" data-case-id="{{item.caseId}}" data-case-name="{{item.caseName}}">
+                        <div class="case-name">{{item.caseName}}</div>
+                        <ul class="case-info-item-list">
+                            <li class="case-item"><em>IRR</em><span class="special-span">{{item.irrPercent}}</span></li>
+                            <li class="case-item"><em>净现值</em><span>{{item.netPresentValue|number}}(万元)</span></li>
+                            <li class="case-item"><em>增值</em><span>{{item.appreciation|number}}(万元)</span></li>
+                            <li class="case-item"><em>收购价</em><span>{{item.purchasingPrice|number}}(万元)</span></li>
+                            <li class="case-item"><em>贷款</em><span>{{item.loan|number}}(万元)</span></li>
+                            <li class="case-item"><em>退出年数</em><span>{{item.yearCount|number}}(年)</span></li>
+                        </ul>
+                    </div><!-- case-content -->
+                </div><!-- amp-case-item -->
+
+                <div class="amp-case-item" ng-hide="hideAdd">
+                    <div class="case-content case-add-btn">
+
+                        <div class="add-case">
+                            <a>新增模拟测算</a>
+                            <span>(最多模拟3个方案)</span>
+                        </div><!-- add-case -->
+                    </div><!-- case-content -->
+                </div><!-- amp-case-item -->
+
+
+            </div><!-- amp-case-list -->
+        </div><!-- amp-case-block -->
+
+    </div><!-- amp-content-panel -->
+
+</div><!-- amp-main-panel -->

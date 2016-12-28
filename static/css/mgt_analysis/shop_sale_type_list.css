@@ -1,0 +1,14 @@
+#shop-sale-type-list{background-color:#fff;}
+
+#shop-sale-type-list .amp-content-header{margin:0;}
+#shop-sale-type-list .amp-content-panel{padding:20px 0 20px 0;}
+/* ======================================== amp-content-header ======================================== */
+#shop-sale-type-list .amp-content-header{padding: 0 24px;}
+/* ======================================== ys-table-block ======================================== */
+#shop-sale-type-list .ys-table-block .amp-table-cell{width:28%;text-align: right;}
+#shop-sale-type-list .ys-table-block .amp-table-cell:first-child{width:16%;text-align: left;}
+
+
+#shop-sale-type-list .ys-table-block .amp-pagination-toolbar-wrapper{padding:20px 12px;}
+#shop-sale-type-list .amp-breadcrumb li:first-child a {padding-right: 16px;background: url(../../images/common/nav-right-icon.png) right center no-repeat;}
+#shop-sale-type-list .amp-thead{right:0;left:0;z-index: 990;}

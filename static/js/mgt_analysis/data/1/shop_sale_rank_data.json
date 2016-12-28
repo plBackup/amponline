@@ -1,0 +1,932 @@
+{
+  "commercialDataAll": {
+    "top": [
+      {
+        "saleMerchantName": "南京大排档",
+        "saleAmount": "1795515.6",
+        "orderNo": "1",
+        "performanceAmount": "8218",
+        "rentSaleMerchantName": "老鳯祥黄金",
+        "performanceMerchantName": "金数码",
+        "rentSaleRate": "4%"
+      },
+      {
+        "saleMerchantName": "无印良品",
+        "saleAmount": "1178433.1599999999",
+        "orderNo": "2",
+        "performanceAmount": "7231",
+        "rentSaleMerchantName": "香港十三座",
+        "performanceMerchantName": "冰冰糖糖",
+        "rentSaleRate": "8%"
+      },
+      {
+        "saleMerchantName": "金数码",
+        "saleAmount": "1003369",
+        "orderNo": "3",
+        "performanceAmount": "5348",
+        "rentSaleMerchantName": "热风",
+        "performanceMerchantName": "老鳯祥黄金",
+        "rentSaleRate": "8%"
+      },
+      {
+        "saleMerchantName": "古炉",
+        "saleAmount": "924897.72",
+        "orderNo": "4",
+        "performanceAmount": "4055",
+        "rentSaleMerchantName": "快乐柠檬",
+        "performanceMerchantName": "香港十三座",
+        "rentSaleRate": "8%"
+      },
+      {
+        "saleMerchantName": "塔哈尔",
+        "saleAmount": "899710.78",
+        "orderNo": "5",
+        "performanceAmount": "3974",
+        "rentSaleMerchantName": "和风铁板烧",
+        "performanceMerchantName": "巴黎贝甜",
+        "rentSaleRate": "9%"
+      },
+      {
+        "saleMerchantName": "旖彩城",
+        "saleAmount": "879322.8",
+        "orderNo": "6",
+        "performanceAmount": "3903",
+        "rentSaleMerchantName": "AMANI造型",
+        "performanceMerchantName": "快乐柠檬",
+        "rentSaleRate": "11%"
+      },
+      {
+        "saleMerchantName": "避风塘",
+        "saleAmount": "864248.3",
+        "orderNo": "7",
+        "performanceAmount": "3260",
+        "rentSaleMerchantName": "百老汇",
+        "performanceMerchantName": "都可茶饮",
+        "rentSaleRate": "11%"
+      },
+      {
+        "saleMerchantName": "徽语",
+        "saleAmount": "845299.4",
+        "orderNo": "8",
+        "performanceAmount": "2889",
+        "rentSaleMerchantName": "如意馄饨",
+        "performanceMerchantName": "蘭芳园",
+        "rentSaleRate": "13%"
+      },
+      {
+        "saleMerchantName": "H&M",
+        "saleAmount": "783736.23",
+        "orderNo": "9",
+        "performanceAmount": "2754",
+        "rentSaleMerchantName": "小杨生煎",
+        "performanceMerchantName": "塔哈尔",
+        "rentSaleRate": "14%"
+      },
+      {
+        "saleMerchantName": "爱食馆美食广场",
+        "saleAmount": "757591.29",
+        "orderNo": "10",
+        "performanceAmount": "2546",
+        "rentSaleMerchantName": "ABS",
+        "performanceMerchantName": "南京大排档",
+        "rentSaleRate": "14%"
+      }
+    ],
+    "bottom": [
+      {
+        "saleMerchantName": "薇薇摄影",
+        "saleAmount": "300",
+        "orderNo": "1",
+        "performanceAmount": "19",
+        "rentSaleMerchantName": "茂棒",
+        "performanceMerchantName": "橙爱玩国",
+        "rentSaleRate": "256%"
+      },
+      {
+        "saleMerchantName": "烘焙实验室",
+        "saleAmount": "2491.8000000000002",
+        "orderNo": "2",
+        "performanceAmount": "19",
+        "rentSaleMerchantName": "墨上品",
+        "performanceMerchantName": "薇薇摄影",
+        "rentSaleRate": "214%"
+      },
+      {
+        "saleMerchantName": "名表维修",
+        "saleAmount": "2900",
+        "orderNo": "3",
+        "performanceAmount": "34",
+        "rentSaleMerchantName": "罗帝可可",
+        "performanceMerchantName": "WARAWARA",
+        "rentSaleRate": "203%"
+      },
+      {
+        "saleMerchantName": "茂棒",
+        "saleAmount": "3055",
+        "orderNo": "4",
+        "performanceAmount": "35",
+        "rentSaleMerchantName": "名表维修",
+        "performanceMerchantName": "女王之宠",
+        "rentSaleRate": "152%"
+      },
+      {
+        "saleMerchantName": "女王之宠",
+        "saleAmount": "3223",
+        "orderNo": "5",
+        "performanceAmount": "45",
+        "rentSaleMerchantName": "优蜜",
+        "performanceMerchantName": "龙炎",
+        "rentSaleRate": "151%"
+      },
+      {
+        "saleMerchantName": "思乐得",
+        "saleAmount": "4223",
+        "orderNo": "6",
+        "performanceAmount": "48",
+        "rentSaleMerchantName": "城隍庙金福银楼",
+        "performanceMerchantName": "烘焙实验室",
+        "rentSaleRate": "142%"
+      },
+      {
+        "saleMerchantName": "金煜珠宝",
+        "saleAmount": "4320",
+        "orderNo": "7",
+        "performanceAmount": "51",
+        "rentSaleMerchantName": "万合至配",
+        "performanceMerchantName": "咕噜咕噜",
+        "rentSaleRate": "138%"
+      },
+      {
+        "saleMerchantName": "橙爱玩国",
+        "saleAmount": "4806",
+        "orderNo": "8",
+        "performanceAmount": "59",
+        "rentSaleMerchantName": "金煜珠宝",
+        "performanceMerchantName": "爱尚英语",
+        "rentSaleRate": "126%"
+      },
+      {
+        "saleMerchantName": "龙炎",
+        "saleAmount": "5216.41",
+        "orderNo": "9",
+        "performanceAmount": "70",
+        "rentSaleMerchantName": "足装秀",
+        "performanceMerchantName": "罗帝可可",
+        "rentSaleRate": "122%"
+      },
+      {
+        "saleMerchantName": "T400",
+        "saleAmount": "6260.6",
+        "orderNo": "10",
+        "performanceAmount": "73",
+        "rentSaleMerchantName": "懒咖",
+        "performanceMerchantName": "地球尔",
+        "rentSaleRate": "115%"
+      }
+    ]
+  },
+  "commercialDataCatering": {
+    "top": [
+      {
+        "saleMerchantName": "南京大排档",
+        "saleAmount": "1795515.6",
+        "orderNo": "1",
+        "performanceAmount": "7230",
+        "rentSaleMerchantName": "香港十三座",
+        "performanceMerchantName": "冰冰糖糖",
+        "rentSaleRate": "8%"
+      },
+      {
+        "saleMerchantName": "古炉",
+        "saleAmount": "924897.72",
+        "orderNo": "2",
+        "performanceAmount": "4055",
+        "rentSaleMerchantName": "快乐柠檬",
+        "performanceMerchantName": "香港十三座",
+        "rentSaleRate": "8%"
+      },
+      {
+        "saleMerchantName": "塔哈尔",
+        "saleAmount": "899710.78",
+        "orderNo": "3",
+        "performanceAmount": "3974",
+        "rentSaleMerchantName": "和风铁板烧",
+        "performanceMerchantName": "巴黎贝甜",
+        "rentSaleRate": "9%"
+      },
+      {
+        "saleMerchantName": "避风塘",
+        "saleAmount": "864248.3",
+        "orderNo": "4",
+        "performanceAmount": "3904",
+        "rentSaleMerchantName": "小杨生煎",
+        "performanceMerchantName": "快乐柠檬",
+        "rentSaleRate": "14%"
+      },
+      {
+        "saleMerchantName": "徽语",
+        "saleAmount": "845299.4",
+        "orderNo": "5",
+        "performanceAmount": "3260",
+        "rentSaleMerchantName": "绝味鸭脖",
+        "performanceMerchantName": "都可茶饮",
+        "rentSaleRate": "15%"
+      },
+      {
+        "saleMerchantName": "爱食馆美食广场",
+        "saleAmount": "757591.29",
+        "orderNo": "6",
+        "performanceAmount": "2889",
+        "rentSaleMerchantName": "桂源铺",
+        "performanceMerchantName": "蘭芳园",
+        "rentSaleRate": "18%"
+      },
+      {
+        "saleMerchantName": "云海肴",
+        "saleAmount": "673002",
+        "orderNo": "7",
+        "performanceAmount": "2754",
+        "rentSaleMerchantName": "丸来玩趣",
+        "performanceMerchantName": "塔哈尔",
+        "rentSaleRate": "18%"
+      },
+      {
+        "saleMerchantName": "星巴克",
+        "saleAmount": "648241",
+        "orderNo": "8",
+        "performanceAmount": "2546",
+        "rentSaleMerchantName": "鲜之恋情榨汁",
+        "performanceMerchantName": "南京大排档",
+        "rentSaleRate": "19%"
+      },
+      {
+        "saleMerchantName": "巴实火锅",
+        "saleAmount": "624316",
+        "orderNo": "9",
+        "performanceAmount": "2348",
+        "rentSaleMerchantName": "豆花开了",
+        "performanceMerchantName": "小杨生煎",
+        "rentSaleRate": "19%"
+      },
+      {
+        "saleMerchantName": "味三亭",
+        "saleAmount": "576656",
+        "orderNo": "10",
+        "performanceAmount": "2233",
+        "rentSaleMerchantName": "萨莉亚意式餐厅",
+        "performanceMerchantName": "和风铁板烧",
+        "rentSaleRate": "20%"
+      }
+    ],
+    "bottom": [
+      {
+        "saleMerchantName": "烘焙实验室",
+        "saleAmount": "2491.8000000000002",
+        "orderNo": "1",
+        "performanceAmount": "34",
+        "rentSaleMerchantName": "茂棒",
+        "performanceMerchantName": "WARAWARA",
+        "rentSaleRate": "256%"
+      },
+      {
+        "saleMerchantName": "茂棒",
+        "saleAmount": "3055",
+        "orderNo": "2",
+        "performanceAmount": "35",
+        "rentSaleMerchantName": "罗帝可可",
+        "performanceMerchantName": "女王之宠",
+        "rentSaleRate": "203%"
+      },
+      {
+        "saleMerchantName": "女王之宠",
+        "saleAmount": "3223",
+        "orderNo": "3",
+        "performanceAmount": "45",
+        "rentSaleMerchantName": "优蜜",
+        "performanceMerchantName": "龙炎",
+        "rentSaleRate": "151%"
+      },
+      {
+        "saleMerchantName": "龙炎",
+        "saleAmount": "5216.41",
+        "orderNo": "4",
+        "performanceAmount": "48",
+        "rentSaleMerchantName": "懒咖",
+        "performanceMerchantName": "烘焙实验室",
+        "rentSaleRate": "115%"
+      },
+      {
+        "saleMerchantName": "罗帝可可",
+        "saleAmount": "7615.58",
+        "orderNo": "5",
+        "performanceAmount": "70",
+        "rentSaleMerchantName": "雪冰",
+        "performanceMerchantName": "罗帝可可",
+        "rentSaleRate": "83%"
+      },
+      {
+        "saleMerchantName": "吧块吧",
+        "saleAmount": "7624.6",
+        "orderNo": "6",
+        "performanceAmount": "82",
+        "rentSaleMerchantName": "大益茶庭",
+        "performanceMerchantName": "懒咖",
+        "rentSaleRate": "83%"
+      },
+      {
+        "saleMerchantName": "大通冰室",
+        "saleAmount": "8810.9",
+        "orderNo": "7",
+        "performanceAmount": "95",
+        "rentSaleMerchantName": "酒窝甜品",
+        "performanceMerchantName": "度小月生活馆",
+        "rentSaleRate": "71%"
+      },
+      {
+        "saleMerchantName": "玉品番达",
+        "saleAmount": "9373",
+        "orderNo": "8",
+        "performanceAmount": "114",
+        "rentSaleMerchantName": "鹅颈桥",
+        "performanceMerchantName": "音乐天空",
+        "rentSaleRate": "70%"
+      },
+      {
+        "saleMerchantName": "茶桔便",
+        "saleAmount": "9507.2999999999993",
+        "orderNo": "9",
+        "performanceAmount": "126",
+        "rentSaleMerchantName": "阿秦家味",
+        "performanceMerchantName": "茂棒",
+        "rentSaleRate": "69%"
+      },
+      {
+        "saleMerchantName": "杜茜",
+        "saleAmount": "10362.5",
+        "orderNo": "10",
+        "performanceAmount": "146",
+        "rentSaleMerchantName": "杜茜",
+        "performanceMerchantName": "吧块吧",
+        "rentSaleRate": "62%"
+      }
+    ]
+  },
+  "commercialDataChildren": {
+    "top": [
+      {
+        "saleMerchantName": "金宝贝",
+        "saleAmount": "630536",
+        "orderNo": "1",
+        "performanceAmount": "1803.6382664368382",
+        "rentSaleMerchantName": "象上小学生",
+        "performanceMerchantName": "热气球",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "宝大祥",
+        "saleAmount": "338054",
+        "orderNo": "2",
+        "performanceAmount": "1132.0215439856374",
+        "rentSaleMerchantName": "韦哲国际创意中心",
+        "performanceMerchantName": "金宝贝",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "悦宝园",
+        "saleAmount": "298941",
+        "orderNo": "3",
+        "performanceAmount": "1120.9048996564816",
+        "rentSaleMerchantName": "悦宝园",
+        "performanceMerchantName": "孩之宝",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "热气球",
+        "saleAmount": "292983",
+        "orderNo": "4",
+        "performanceAmount": "851.09060402684565",
+        "rentSaleMerchantName": "巴拉巴拉",
+        "performanceMerchantName": "Carrera卡雷拉路轨赛车",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "巴拉巴拉",
+        "saleAmount": "151115",
+        "orderNo": "5",
+        "performanceAmount": "644.88115051423199",
+        "rentSaleMerchantName": "Carrera卡雷拉路轨赛车",
+        "performanceMerchantName": "巴拉巴拉",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "象上小学生",
+        "saleAmount": "141300",
+        "orderNo": "6",
+        "performanceAmount": "553.47457627118649",
+        "rentSaleMerchantName": "孩之宝",
+        "performanceMerchantName": "江博士",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "乐乐派",
+        "saleAmount": "129420",
+        "orderNo": "7",
+        "performanceAmount": "549.40270528559881",
+        "rentSaleMerchantName": "金宝贝",
+        "performanceMerchantName": "悦宝园",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "孩之宝",
+        "saleAmount": "123994.5",
+        "orderNo": "8",
+        "performanceAmount": "333.25942350332593",
+        "rentSaleMerchantName": "热气球",
+        "performanceMerchantName": "韦哲国际创意中心",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "地球尔",
+        "saleAmount": "112573.1",
+        "orderNo": "9",
+        "performanceAmount": "274.80040767793446",
+        "rentSaleMerchantName": "乐乐派",
+        "performanceMerchantName": "乐乐派",
+        "rentSaleRate": "41%"
+      },
+      {
+        "saleMerchantName": "麦娜杰瑞",
+        "saleAmount": "81997",
+        "orderNo": "10",
+        "performanceAmount": "262.76150627615061",
+        "rentSaleMerchantName": "江博士",
+        "performanceMerchantName": "象上小学生",
+        "rentSaleRate": "45%"
+      }
+    ],
+    "bottom": [
+      {
+        "saleMerchantName": "橙爱玩国",
+        "saleAmount": "4806",
+        "orderNo": "1",
+        "performanceAmount": "18.521658702019423",
+        "rentSaleMerchantName": "江博士",
+        "performanceMerchantName": "橙爱玩国",
+        "rentSaleRate": "45%"
+      },
+      {
+        "saleMerchantName": "咕噜咕噜",
+        "saleAmount": "21094",
+        "orderNo": "2",
+        "performanceAmount": "51.331094563683266",
+        "rentSaleMerchantName": "乐乐派",
+        "performanceMerchantName": "咕噜咕噜",
+        "rentSaleRate": "41%"
+      },
+      {
+        "saleMerchantName": "爱尚英语",
+        "saleAmount": "23960",
+        "orderNo": "3",
+        "performanceAmount": "58.988625732433896",
+        "rentSaleMerchantName": "培正逗点",
+        "performanceMerchantName": "爱尚英语",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "江博士",
+        "saleAmount": "32655",
+        "orderNo": "4",
+        "performanceAmount": "72.662965951266742",
+        "rentSaleMerchantName": "橙爱玩国",
+        "performanceMerchantName": "地球尔",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "Carrera卡雷拉路轨赛车",
+        "saleAmount": "40580",
+        "orderNo": "5",
+        "performanceAmount": "224.59970501082955",
+        "rentSaleMerchantName": "咕噜咕噜",
+        "performanceMerchantName": "宝大祥",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "韦哲国际创意中心",
+        "saleAmount": "60120",
+        "orderNo": "6",
+        "performanceAmount": "252.31398855314171",
+        "rentSaleMerchantName": "爱尚英语",
+        "performanceMerchantName": "麦娜杰瑞",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "麦娜杰瑞",
+        "saleAmount": "81997",
+        "orderNo": "7",
+        "performanceAmount": "262.76150627615061",
+        "rentSaleMerchantName": "地球尔",
+        "performanceMerchantName": "象上小学生",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "地球尔",
+        "saleAmount": "112573.1",
+        "orderNo": "8",
+        "performanceAmount": "274.80040767793446",
+        "rentSaleMerchantName": "宝大祥",
+        "performanceMerchantName": "乐乐派",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "孩之宝",
+        "saleAmount": "123994.5",
+        "orderNo": "9",
+        "performanceAmount": "333.25942350332593",
+        "rentSaleMerchantName": "麦娜杰瑞",
+        "performanceMerchantName": "韦哲国际创意中心",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "乐乐派",
+        "saleAmount": "129420",
+        "orderNo": "10",
+        "performanceAmount": "549.40270528559881",
+        "rentSaleMerchantName": "象上小学生",
+        "performanceMerchantName": "悦宝园",
+        "rentSaleRate": "0%"
+      }
+    ]
+  },
+  "commercialDataClothing": {
+    "top": [
+      {
+        "saleMerchantName": "无印良品",
+        "saleAmount": "1178433.1599999999",
+        "orderNo": "1",
+        "performanceAmount": "1770.9323308270677",
+        "rentSaleMerchantName": "海天空",
+        "performanceMerchantName": "美丽档案",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "旖彩城",
+        "saleAmount": "879322.8",
+        "orderNo": "2",
+        "performanceAmount": "1607.2465357337696",
+        "rentSaleMerchantName": "H&M",
+        "performanceMerchantName": "无印良品",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "H&M",
+        "saleAmount": "783736.23",
+        "orderNo": "3",
+        "performanceAmount": "1175.4761397734972",
+        "rentSaleMerchantName": "AOK MART",
+        "performanceMerchantName": "听说",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "U&R",
+        "saleAmount": "657620.69999999995",
+        "orderNo": "4",
+        "performanceAmount": "946.92331787996488",
+        "rentSaleMerchantName": "Lagogo",
+        "performanceMerchantName": "斯莱德",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "UA",
+        "saleAmount": "452991",
+        "orderNo": "5",
+        "performanceAmount": "898.4371584699453",
+        "rentSaleMerchantName": "旖彩城",
+        "performanceMerchantName": "ONLY",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "VERO MODA",
+        "saleAmount": "408797",
+        "orderNo": "6",
+        "performanceAmount": "777.40357376334714",
+        "rentSaleMerchantName": "U&R",
+        "performanceMerchantName": "杰克琼斯",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "MTEE",
+        "saleAmount": "236929.6",
+        "orderNo": "7",
+        "performanceAmount": "754.0005728288196",
+        "rentSaleMerchantName": "江南布衣",
+        "performanceMerchantName": "MTEE",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "美丽档案",
+        "saleAmount": "235534",
+        "orderNo": "8",
+        "performanceAmount": "748.26310312360624",
+        "rentSaleMerchantName": "伊芙丽",
+        "performanceMerchantName": "UA",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "江南布衣",
+        "saleAmount": "208049",
+        "orderNo": "9",
+        "performanceAmount": "701.48106748637701",
+        "rentSaleMerchantName": "VERO MODA",
+        "performanceMerchantName": "嘉里奥",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "ONLY",
+        "saleAmount": "164414",
+        "orderNo": "10",
+        "performanceAmount": "681.50845864661653",
+        "rentSaleMerchantName": "欧时力",
+        "performanceMerchantName": "欧时力",
+        "rentSaleRate": "0%"
+      }
+    ],
+    "bottom": [
+      {
+        "saleMerchantName": "海天空",
+        "saleAmount": "26516",
+        "orderNo": "1",
+        "performanceAmount": "276.92950391644911",
+        "rentSaleMerchantName": "海天空",
+        "performanceMerchantName": "海天空",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "嘉里奥",
+        "saleAmount": "50205",
+        "orderNo": "2",
+        "performanceAmount": "373.20772857142856",
+        "rentSaleMerchantName": "H&M",
+        "performanceMerchantName": "H&M",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "Lagogo",
+        "saleAmount": "55258",
+        "orderNo": "3",
+        "performanceAmount": "395.013300512169",
+        "rentSaleMerchantName": "AOK MART",
+        "performanceMerchantName": "AOK MART",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "伊芙丽",
+        "saleAmount": "82501",
+        "orderNo": "4",
+        "performanceAmount": "418.71637493369707",
+        "rentSaleMerchantName": "Lagogo",
+        "performanceMerchantName": "Lagogo",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "欧时力",
+        "saleAmount": "87015",
+        "orderNo": "5",
+        "performanceAmount": "460.61476569129712",
+        "rentSaleMerchantName": "旖彩城",
+        "performanceMerchantName": "旖彩城",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "AOK MART",
+        "saleAmount": "99492",
+        "orderNo": "6",
+        "performanceAmount": "569.86195840554592",
+        "rentSaleMerchantName": "U&R",
+        "performanceMerchantName": "U&R",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "听说",
+        "saleAmount": "121438.44",
+        "orderNo": "7",
+        "performanceAmount": "588.99017637233533",
+        "rentSaleMerchantName": "江南布衣",
+        "performanceMerchantName": "江南布衣",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "杰克琼斯",
+        "saleAmount": "142700.20000000001",
+        "orderNo": "8",
+        "performanceAmount": "610.44025157232704",
+        "rentSaleMerchantName": "伊芙丽",
+        "performanceMerchantName": "伊芙丽",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "斯莱德",
+        "saleAmount": "151147.9",
+        "orderNo": "9",
+        "performanceAmount": "668.64634106447704",
+        "rentSaleMerchantName": "VERO MODA",
+        "performanceMerchantName": "VERO MODA",
+        "rentSaleRate": "0%"
+      },
+      {
+        "saleMerchantName": "ONLY",
+        "saleAmount": "164414",
+        "orderNo": "10",
+        "performanceAmount": "681.50845864661653",
+        "rentSaleMerchantName": "欧时力",
+        "performanceMerchantName": "欧时力",
+        "rentSaleRate": "0%"
+      }
+    ]
+  },
+  "commercialDataMating": {
+    "top": [
+      {
+        "saleMerchantName": "金数码",
+        "saleAmount": "1003369",
+        "orderNo": "1",
+        "performanceAmount": "8218.2734048652637",
+        "rentSaleMerchantName": "老鳯祥黄金",
+        "performanceMerchantName": "金数码",
+        "rentSaleRate": "4%"
+      },
+      {
+        "saleMerchantName": "老鳯祥黄金",
+        "saleAmount": "540158",
+        "orderNo": "2",
+        "performanceAmount": "5348.0990099009905",
+        "rentSaleMerchantName": "热风",
+        "performanceMerchantName": "老鳯祥黄金",
+        "rentSaleRate": "8%"
+      },
+      {
+        "saleMerchantName": "汤姆熊",
+        "saleAmount": "457016",
+        "orderNo": "3",
+        "performanceAmount": "2464.7674418604652",
+        "rentSaleMerchantName": "AMANI造型",
+        "performanceMerchantName": "果粉store",
+        "rentSaleRate": "11%"
+      },
+      {
+        "saleMerchantName": "AMANI造型",
+        "saleAmount": "440298",
+        "orderNo": "4",
+        "performanceAmount": "2312.6110562685094",
+        "rentSaleMerchantName": "如意馄饨",
+        "performanceMerchantName": "阿吉豆",
+        "rentSaleRate": "13%"
+      },
+      {
+        "saleMerchantName": "热风",
+        "saleAmount": "421250.08",
+        "orderNo": "5",
+        "performanceAmount": "1797.23",
+        "rentSaleMerchantName": "ABS",
+        "performanceMerchantName": "水星家纺",
+        "rentSaleRate": "14%"
+      },
+      {
+        "saleMerchantName": "屈臣氏",
+        "saleAmount": "370808.1",
+        "orderNo": "6",
+        "performanceAmount": "1728.8283335950996",
+        "rentSaleMerchantName": "果粉store",
+        "performanceMerchantName": "AMANI造型",
+        "rentSaleRate": "16%"
+      },
+      {
+        "saleMerchantName": "名创优品",
+        "saleAmount": "335174.09999999998",
+        "orderNo": "7",
+        "performanceAmount": "1551.8019337825958",
+        "rentSaleMerchantName": "零食多",
+        "performanceMerchantName": "林清轩",
+        "rentSaleRate": "17%"
+      },
+      {
+        "saleMerchantName": "威尔士健身",
+        "saleAmount": "324938",
+        "orderNo": "8",
+        "performanceAmount": "1430.825479363016",
+        "rentSaleMerchantName": "樱佐",
+        "performanceMerchantName": "如意馄饨",
+        "rentSaleRate": "28%"
+      },
+      {
+        "saleMerchantName": "微软",
+        "saleAmount": "206628",
+        "orderNo": "9",
+        "performanceAmount": "1416.323639075317",
+        "rentSaleMerchantName": "六六顺",
+        "performanceMerchantName": "中国黄金",
+        "rentSaleRate": "30%"
+      },
+      {
+        "saleMerchantName": "中国黄金",
+        "saleAmount": "189929",
+        "orderNo": "10",
+        "performanceAmount": "1361.389520714866",
+        "rentSaleMerchantName": "oppo",
+        "performanceMerchantName": "名创优品",
+        "rentSaleRate": "33%"
+      }
+    ],
+    "bottom": [
+      {
+        "saleMerchantName": "薇薇摄影",
+        "saleAmount": "300",
+        "orderNo": "1",
+        "performanceAmount": "18.867924528301888",
+        "rentSaleMerchantName": "墨上品",
+        "performanceMerchantName": "薇薇摄影",
+        "rentSaleRate": "214%"
+      },
+      {
+        "saleMerchantName": "名表维修",
+        "saleAmount": "2900",
+        "orderNo": "2",
+        "performanceAmount": "98.14530776992936",
+        "rentSaleMerchantName": "名表维修",
+        "performanceMerchantName": "墨上品",
+        "rentSaleRate": "152%"
+      },
+      {
+        "saleMerchantName": "思乐得",
+        "saleAmount": "4223",
+        "orderNo": "3",
+        "performanceAmount": "127.96969696969697",
+        "rentSaleMerchantName": "城隍庙金福银楼",
+        "performanceMerchantName": "思乐得",
+        "rentSaleRate": "142%"
+      },
+      {
+        "saleMerchantName": "金煜珠宝",
+        "saleAmount": "4320",
+        "orderNo": "4",
+        "performanceAmount": "135.12232125924521",
+        "rentSaleMerchantName": "万合至配",
+        "performanceMerchantName": "阿玛尼",
+        "rentSaleRate": "138%"
+      },
+      {
+        "saleMerchantName": "T400",
+        "saleAmount": "6260.6",
+        "orderNo": "5",
+        "performanceAmount": "138.75466070096942",
+        "rentSaleMerchantName": "金煜珠宝",
+        "performanceMerchantName": "柯莹珠宝",
+        "rentSaleRate": "126%"
+      },
+      {
+        "saleMerchantName": "和绣堂",
+        "saleAmount": "7600",
+        "orderNo": "6",
+        "performanceAmount": "146.8456612006475",
+        "rentSaleMerchantName": "足装秀",
+        "performanceMerchantName": "BOBO宠物空间",
+        "rentSaleRate": "122%"
+      },
+      {
+        "saleMerchantName": "万合至配",
+        "saleAmount": "8986",
+        "orderNo": "7",
+        "performanceAmount": "155.53970609353311",
+        "rentSaleMerchantName": "天宝龙凤",
+        "performanceMerchantName": "威尔士健身",
+        "rentSaleRate": "100%"
+      },
+      {
+        "saleMerchantName": "YONEX等",
+        "saleAmount": "9242",
+        "orderNo": "8",
+        "performanceAmount": "165.39895600298286",
+        "rentSaleMerchantName": "阿玛尼",
+        "performanceMerchantName": "城隍庙金福银楼",
+        "rentSaleRate": "96%"
+      },
+      {
+        "saleMerchantName": "了一茶莊",
+        "saleAmount": "10124",
+        "orderNo": "9",
+        "performanceAmount": "170.02741603838246",
+        "rentSaleMerchantName": "爱学习",
+        "performanceMerchantName": "lesairs生活馆",
+        "rentSaleRate": "79%"
+      },
+      {
+        "saleMerchantName": "青沐美睫",
+        "saleAmount": "10187.84",
+        "orderNo": "10",
+        "performanceAmount": "173.14065510597302",
+        "rentSaleMerchantName": "YONEX等",
+        "performanceMerchantName": "万合至配",
+        "rentSaleRate": "66%"
+      }
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+#simulation-calculation-main{background-color:#fff;}
+
+#simulation-calculation-main .amp-content-panel{padding:20px 0 40px 0;}
+/* ======================================== amp-case-block ======================================== */
+
+#simulation-calculation-main .amp-case-list{
+    padding-left:24px;
+}
+
+#simulation-calculation-main  .amp-case-item{
+    width:33.33333%;
+    padding-right:24px;
+    float:left;
+}
+
+#simulation-calculation-main .case-content{
+    position:relative;
+    height:286px;
+    padding:20px 24px;
+    border:1px solid #dae2e7;
+    cursor: pointer;
+}
+
+#simulation-calculation-main .case-content .case-name{
+    height:32px;
+    line-height: 32px;
+    font-size:20px;
+}
+#simulation-calculation-main  .case-info-item-list{
+    padding-top:20px;
+}
+#simulation-calculation-main  .case-info-item-list .case-item{
+    position:relative;
+    height:32px;
+    line-height: 32px;
+
+    padding-left:75px;
+}
+#simulation-calculation-main  .case-info-item-list .case-item em{
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    height:32px;
+    line-height: 32px;
+    color:#8592a3;
+    font-size:12px;
+}
+
+#simulation-calculation-main  .case-info-item-list .case-item .special-span{
+    position:absolute;
+    left:75px;
+    bottom:10px;
+    color:#5ab46e;
+    font-weight: bold;
+    font-size:30px;
+}
+
+#simulation-calculation-main .case-content .add-case{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    height:50px;
+    text-align: center;
+    margin:auto;
+}
+#simulation-calculation-main .case-content .add-case a{
+    display:block;
+    height:30px;
+    line-height: 30px;
+    font-size:18px;
+    color:#5ab46e;
+}
+#simulation-calculation-main .case-content .add-case span{
+    display:block;
+    height:20px;
+    line-height: 20px;
+    color:#8592a3;
+}

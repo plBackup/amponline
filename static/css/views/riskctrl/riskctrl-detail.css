@@ -1,0 +1,366 @@
+#riskctrl-detail .risk-detail-content-panel {
+	padding: 24px 0 50px 0;
+}
+
+#riskctrl-detail .label-group>em {
+	display: block;
+	height: 14px;
+	line-height: 14px;
+	font-size: 12px;
+	color: #737e8c;
+}
+
+#riskctrl-detail .label-group>div {
+	font-size: 28px;
+	padding-bottom: 30px;
+	line-height: 1;
+	padding-top: 5px;
+}
+
+#riskctrl-detail .rate-detail-title {
+	margin-left: 28px;
+	margin-right: 28px;
+}
+#riskctrl-detail .amp-section-title{height: 44px; line-height: 44px;}
+#riskctrl-detail .riskctrl-btn {
+	padding-left: 65px;
+	float: left;
+}
+
+#riskctrl-detail .riskctrl-btn>em {
+	display: inline-block;
+	height: 44px;
+	line-height: 44px;
+	font-size: 12px;
+	color: #737e8c;
+}
+
+#riskctrl-detail .amp-section-title span {
+	float: left;
+}
+
+#riskctrl-detail .amp-section-title .btn-right {
+	position: absolute;
+	right: 0;
+	top: 0;
+	line-height: 44px;
+}
+
+#riskctrl-detail .amp-section-title .btn-active {
+	color: #5ab46d;
+}
+
+#riskctrl-detail .riskctrl-btn .pull-left {
+	margin-right: 20px;
+	font-size: 14px;
+}
+#riskctrl-detail .label-group .btn-right{font-size: 14px;}
+/*表格1*/
+
+#riskctrl-detail .risk-cost,
+#riskctrl-detail .risk-roi {
+}
+
+
+#riskctrl-detail table .border-right {
+	border-right: 1px solid #ececec;
+}
+
+#riskctrl-detail table .padright {
+	padding-right: 48px;
+}
+
+#riskctrl-detail .text-green {
+	color: #66d581;
+}
+
+#riskctrl-detail .text-red {
+	color: #e54f4b;
+}
+
+#riskctrl-detail table {
+	width: 100%;
+}
+
+#riskctrl-detail table thead {
+	width: 100%;
+	color: #8592a3;
+	font-size: 12px;
+	background-color: #f3f4f8;
+	border-bottom: 1px solid #d9dde0;
+}
+
+#riskctrl-detail .risk-cost .risk-detail-table-1 .text-green,
+#riskctrl-detail .risk-cost .risk-detail-table-1 .text-red {
+	padding-right: 48px;
+}
+
+#riskctrl-detail table thead td {
+	text-align: center;
+	height: 28px;
+	line-height: 28px;
+}
+
+#riskctrl-detail .risk-detail-table-1 tbody td {
+	text-align: right;
+}
+
+#riskctrl-detail table tbody td {
+	height: 40px;
+	padding: 0 10px;
+}
+#riskctrl-detail table tbody td:nth-child(1){
+	padding-left: 28px;
+}
+.risk-cost{padding-bottom: 50px;}
+#riskctrl-detail .risk-detail-table-1 tbody td.text-left {
+	text-align: left;
+}
+
+#riskctrl-detail .text-grey {
+	font-size: 12px;
+	color: #737e8c;
+}
+
+#riskctrl-detail .risk-roi {
+	overflow: hidden;
+}
+
+#riskctrl-detail .risk-roi>div {
+	width: 48%;
+	float: left;
+	margin-top: 65px;
+}
+
+#riskctrl-detail .risk-cost .risk-detail-table-2 tbody td>span{
+	text-align: right;
+	padding-right: 40%;
+	display: inline-block;
+	width: 100%;
+}
+
+#riskctrl-detail .return-rate-detail {
+	padding: 0 28px 10px 28px;
+}
+
+#riskctrl-detail .return-rate-detail-data {
+	padding-right: 40px;
+}
+
+#riskctrl-detail .return-rate-detail-data>div {
+	width: 20%;
+}
+
+#riskctrl-detail .risk-detail-table-1 td div {
+	height: 20px;
+	line-height: 20px;
+}
+
+#riskctrl-detail .risk-detail-table-1 td em {
+	display: block;
+	height: 15px;
+	line-height: 15px;
+	font-size: 12px;
+	color: #737e8c;
+}
+
+#riskctrl-detail .padbottom {
+	padding-bottom: 15px;
+}
+
+#riskctrl-detail table tbody td.arrow-up,
+#riskctrl-detail table tbody td.arrow-down {
+	position: relative;
+	padding-right: 15px;
+}
+
+#riskctrl-detail .arrow-down i {
+	display: inline-block;
+	width: 8px;
+	height: 12px;
+	background: url(../../../images/arrow_down.png) no-repeat center center;
+	background-size: contain;
+}
+
+#riskctrl-detail .arrow-up i {
+	display: inline-block;
+	width: 8px;
+	height: 12px;
+	background: url(../../../images/arrow_up.png) no-repeat center center;
+	background-size: contain;
+}
+
+#riskctrl-detail .arrow-down i {
+	display: inline-block;
+	width: 8px;
+	height: 12px;
+	background: url(../../../images/arrow_down.png) no-repeat center center;
+	background-size: contain;
+	    margin-left: 5px;
+}
+
+#riskctrl-detail .arrow-up i {
+	display: inline-block;
+	width: 8px;
+	height: 12px;
+	background: url(../../../images/arrow_up.png) no-repeat center center;
+	background-size: contain;
+	    margin-left: 5px;
+}
+#riskctrl-detail  .percentage span span:after{
+	content: "%";
+	display: inline-block;
+	
+}
+td {
+	position: relative;
+}
+#riskctrl-detail .risk-detail-content-panel .return-rate-table>div:nth-child(1) table tbody tr:nth-child(8) td:nth-child(5),
+#riskctrl-detail .risk-detail-content-panel .return-rate-table>div:nth-child(1) table tbody tr:nth-child(8) td:nth-child(2) {
+	padding-bottom: 0
+}
+
+#riskctrl-detail .risk-detail-content-panel .return-rate-table>div:nth-child(1) table tbody tr:nth-child(8) td {
+	line-height: 15px;
+	padding-top: 0;
+	padding-bottom: 10px;
+}
+
+/*#riskctrl-detail .risk-detail-content-panel .return-rate-table>div:nth-child(1) table tbody tr:nth-child(7) td {
+	padding-bottom: 50px;
+	    padding-top: 10px;
+}*/
+
+
+
+#riskctrl-detail .risk-detail-content-panel .return-rate-table>div:nth-child(1) table tbody tr:nth-child(8) td:nth-child(1):after {
+	content: "（平方/元）";
+	display: inline-block;
+	bottom: 0;
+	font-size: 12px;
+	color: #737e8c;
+
+}
+
+#riskctrl-detail .risk-detail-content-panel .return-rate-table>div:nth-child(4) table tbody tr:nth-child(2) td:first-child:before {
+	width: 100%;
+	text-align: left;
+	padding-left: 53px;
+	content: "（万元）";
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	line-height: 40px;
+	bottom: 0;
+	font-size: 12px;
+	color: #737e8c;
+}
+
+#riskctrl-detail .risk-detail-content-panel .return-rate-table>div:nth-child(5) table tbody tr:nth-child(2) td:first-child:after {
+	width: 100%;
+	text-align: left;
+	padding-left: 53px;
+	content: "（m²）";
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	line-height: 40px;
+	bottom: 0;
+	font-size: 12px;
+	color: #737e8c;
+}
+
+#riskctrl-detail .risk-detail-content-panel .return-rate-table>div:nth-child(5) table tbody tr:nth-child(4) td:first-child:after {
+	width: 100%;
+	text-align: left;
+	padding-left: 96px;
+	content: "（m²）";
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	line-height: 40px;
+	bottom: 0;
+	font-size: 12px;
+	color: #737e8c;
+}
+
+
+
+
+#riskctrl-detail .risk-cost .risk-detail-table-2 tr .text-left {
+	text-align: left;
+}
+
+#riskctrl-detail .return-rate-detail-data ul li {
+	float: left;
+	width: 20%;
+}
+
+#riskctrl-detail .riskctrl-btn em {
+	cursor: pointer;
+}
+
+#riskctrl-detail .amp-display-none {
+	display: none;
+}
+
+#riskctrl-detail #cost .risk-detail-table-1 tbody tr:nth-child(2) td:first-child:after,
+#riskctrl-detail #salesvolume .risk-detail-table-2 tbody tr:nth-child(2) td:first-child:after,
+#riskctrl-detail #efficient .risk-detail-table-2 tbody tr:nth-child(2) td:first-child:after,
+#riskctrl-detail #efficient .risk-detail-table-2 tbody tr:nth-child(10) td:first-child:after {
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: url(../../../images/common/collapse-down-btn-icon.png) no-repeat center center;
+	background-size: contain;
+	margin-left: 8px;
+	vertical-align: -5px;
+}
+#riskctrl-detail #cost .risk-detail-table-1 tbody tr:nth-child(2) td.btn-up:after,
+#riskctrl-detail #salesvolume .risk-detail-table-2 tbody tr:nth-child(2) td.btn-up:after,
+#riskctrl-detail #efficient .risk-detail-table-2 tbody tr:nth-child(2) td.btn-up:after,
+#riskctrl-detail #efficient .risk-detail-table-2 tbody tr:nth-child(10) td.btn-up:after
+ {
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: url(../../../images/common/collapse-up-btn-icon.png) no-repeat center center;
+	background-size: contain;
+	margin-left: 8px;
+	vertical-align: -5px;
+}
+#riskctrl-detail #efficient .risk-detail-table-2 tbody tr:nth-child(2) td:first-child:after {
+	margin-left: 45px;
+}
+
+#riskctrl-detail .risk-detail-table-2 tbody tr:first-child td:nth-child(2),
+#riskctrl-detail .risk-detail-table-2 tbody tr:first-child td:nth-child(4)
+{
+	padding-right: 44px;
+}
+#riskctrl-detail .risk-detail-table-1 tbody tr:first-child td:nth-child(2),
+#riskctrl-detail .risk-detail-table-1 tbody tr:first-child td:nth-child(5) {
+	padding-right: 32px;
+}
+#riskctrl-detail  table tbody td.padding-right{padding-right: 27px;}
+#riskctrl-detail .risk-detail-content-panel .return-rate-table #collectionrate table tbody tr:nth-child(3) td:first-child span{
+	font-weight: 700;
+}
+
+#riskctrl-detail #investment table td:first-child,#riskctrl-detail #passenger table td:first-child{font-weight: 700;}
+#riskctrl-detail .text-bold,#riskctrl-detail .text-bold~td,#riskctrl-detail .text-bold~td span,#riskctrl-detail .text-bold span{font-weight: 700;}
+#riskctrl-detail #lease  table td{text-align: right;
+}
+#riskctrl-detail #lease  table td:first-child{text-align: left;
+}
+#riskctrl-detail #lease table thead td:nth-child(1){
+padding-left: 28px;	
+}
+ #riskctrl-detail #lease table thead td{padding: 0 10px;}
+#riskctrl-detail #lease  table td:last-child{padding-right: 28px;}
+#riskctrl-detail #lease #leasechart{padding: 0 28px;height: 325px; }

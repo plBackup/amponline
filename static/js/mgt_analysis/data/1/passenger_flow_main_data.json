@@ -1,0 +1,21 @@
+{
+  "info":{
+    "currentMonthCount":487388,
+    "fullYearTotalCount":2223400,
+    "fullYearCount":2223400,
+    "yearToYear":"-",
+    "linkRelative":"-2%",
+    "targetRate":"-",
+    "penetranceRate":"0.34",
+    "currentMonthIndexRate":"0",
+    "currentYearIndexRate":"0",
+    "currentMonthIndexTooltip":"0",
+    "currentYearIndexTooltip":"0",
+    "square":75149
+  },
+  "chart":{
+    "real":[0,0,0,0,0,0,0,171030,789756,775226,487388,0],
+    "budget":[0,0,0,0,0,0,0,0,0,0,0,0],
+    "lastYear":[0,0,0,0,0,0,0,0,0,0,0,0]
+  }
+}

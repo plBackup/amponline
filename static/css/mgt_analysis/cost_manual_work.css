@@ -1,0 +1,89 @@
+#cost-manual-work{background-color:#fff;}
+
+#cost-manual-work .amp-content-panel{padding:20px 0 20px 0}
+/* ======================================== amp-content-header ======================================== */
+#cost-manual-work .amp-content-header{padding: 0 24px;margin:0;}
+/* ======================================== ys-table-block ======================================== */
+#cost-manual-work .amp-section-title{margin:0 24px 0 24px;}
+
+#cost-manual-work .project-assets-table{
+    position:relative;
+}
+#cost-manual-work .project-assets-table .separator-line{
+    position:absolute;
+    top:40px;
+    bottom:10px;
+    width:1px;
+    background-color:#e6e6e6;
+}
+
+#cost-manual-work .assets-table{
+    width:100%;
+}
+#cost-manual-work .assets-table td{
+    height:40px;
+    padding-right:60px;
+}
+
+
+
+
+
+#cost-manual-work .assets-table tbody .body-title{
+    color:#8592a3;
+    font-size:12px;
+    background-color: #f3f4f8;
+    border-bottom: 1px solid #dae1e7;
+}
+
+#cost-manual-work .assets-table tbody .body-title td{height:28px;}
+
+#cost-manual-work .assets-table tbody td{
+    position:relative;
+    text-align: right;
+}
+#cost-manual-work .assets-table tbody td:first-child{
+    text-align: left;
+    padding-left:12px;
+}
+
+
+#cost-manual-work .assets-table tbody tr a.collapse-btn{
+    content:"";
+    display:inline-block;
+    width:17px;
+    height:17px;
+    background:url(../../images/common/collapse-down-btn-icon.png) no-repeat;
+    background-size: contain;
+    margin-left:6px;
+    vertical-align: -3px;
+}
+#cost-manual-work .assets-table tbody tr a.collapse-btn.collapsed{
+    background-image:url(../../images/common/collapse-up-btn-icon.png);
+}
+
+
+#cost-manual-work  .dept-table table td span.sub-td-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100px;
+    line-height: 40px;
+}
+
+
+#cost-manual-work  .dept-table .records-separator-line:hover{cursor:default;background-color: transparent;}
+#cost-manual-work  .dept-table .records-separator-line td{height:8px;}
+#cost-manual-work  .dept-table .records-separator-line td:before{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    height:1px;
+    background-color:#e6e6e6;
+    margin:auto;
+}
+
+#cost-manual-work .dept-table-head{right:0;left:0;z-index: 9;}

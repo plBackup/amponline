@@ -1,0 +1,1489 @@
+<div class="amp-content-panel" id="rgp-set">
+    <div class="amp-content-header">
+        <div class="amp-header-breadcrumb">
+            <a href="#" class="amp-solo-close"></a>
+            <ol class="breadcrumb">
+                <li><a ui-sref="rpgindex" href="#/rpgindex"  target="_parent">数据工具</a></li>
+                <li><a ui-sref="rpgindex" href="#/rpgindex"  target="_parent">租金包</a></li>
+                <li class="active">设定</li>
+            </ol>
+        </div>
+        <div class="amp-header-filter clearfix">
+            <button type="button" class="btn btn-default amp-dropdown-btn amp-btn-disabled pull-left" disabled>
+                项目<span class="glyphicon glyphicon-menu-down"></span>
+            </button>
+            <div class="col-xs-3 amp-date-wrapper">
+                <label>开业时间</label>
+                <div class="amp-date-picker pull-left" data-date="" data-date-format="yyyy-mm-dd" >
+                    <input class="" size="16" type="text" placeholder="2016-10" disabled>
+                </div>
+            </div>
+        </div>
+    </div><!--amp-content-header-->
+
+    <div class="amp-block-pd clearfix">
+        <div class="amp-block-title">
+            <h3 class="col-xs-3">参考租金计算</h3>
+            <span class="col-xs-8 pull-right amp-block-title-notify">注：参考租金为参考项目MALL 1F 主通道两侧面积100-150平米左右服装零售店铺的租金</span>
+        </div>
+        <div class="amp-table-wrapper-swiper" id="rpg-set-table-wrapper">
+            <div class="ys-table-fixed-top" style="padding-left:302px;">
+                <div class="ys-table-static ys-table-static-left" style="width:302px;">
+                    <table class="table table-bordered amp-table table-hover table-header-fixed" style="width:100%;">
+                        <thead>
+                        <tr style="">
+                            <th class="th-fake"></th>
+                            <th colspan="2" rowspan="2"><span>分析因素</span></th>
+                            <th rowspan="2"><span>因素权重</span></th>
+                        </tr>
+                        <tr>
+                            <th class="th-fake"></th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+
+                <div class="swiper-container" style="width:100%;" id="rpg-set-main-table-head">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <table class="table table-bordered amp-table table-hover table-header-fixed" style="width:1500px;" >
+                                <thead>
+                                <tr>
+
+                                    <td colspan="2"><span>项目A</span></td>
+                                    <td colspan="2"><span>项目B</span></td>
+                                    <td colspan="2"><span>项目C</span></td>
+                                    <td colspan="2" class="text-center">本项目</td>
+                                </tr>
+                                <tr>                                 
+                                    <td><span>比较</span></td>
+                                    <td><span>比较本案的描述</span></td>
+                                    <td><span>比较</span></td>
+                                    <td><span>比较本案的描述</span></td>
+                                    <td><span>比较</span></td>
+                                    <td><span>比较本案的描述</span></td>
+                                    <td><span>比较</span></td>
+                                    <td><span>描述</span></td>
+                                </tr>
+                                </thead>
+                            </table>
+                        </div><!--swiper-slide-->
+                    </div><!--swiper-wrapper-->
+                    <!-- Add Scroll Bar -->
+                    <!-- <div class="swiper-scrollbar"></div>-->
+                </div><!--swiper container-->
+            </div>
+            <div class="ys-table-main" style="padding-left:302px;">
+                <div class="ys-table-static ys-table-static-left" style="width:302px;">
+                    <table class="table table-bordered amp-table table-hover" style="width:100%;">
+                        <tbody>
+                        <tr>
+                            <th class="td-fake"></th>
+                            <td rowspan="4"><span>地段条件</span></td>
+                            <td><span>区域属性</span></td>
+                            <td>
+                                <div class="td-input-wrapper num-input" >
+                                    <input type="text" placeholder="/" value="8">
+                                    <span class="number-format">8<i class="unit-addon">%</i></span>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="td-fake"></th>
+                            <td><span>交通通达性</span></td>
+
+                            <td>
+                                <div class="td-input-wrapper">
+                                    <input type="text" value="12%"  data-date="" placeholder=""/>
+                                    <span class="number-format"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="td-fake"></th>
+                            <td><span>配套完善度</span></td>
+
+                            <td>
+                                <div class="td-input-wrapper">
+                                    <input type="text" value="8%"  data-date="" placeholder=""/>
+                                    <span class="number-format"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="td-fake"></th>
+                            <td><span>人口条件</span></td>
+
+                            <td>
+                                <div class="td-input-wrapper">
+                                    <input type="text" value="15%"  data-date="" placeholder=""/>
+                                    <span class="number-format"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="td-fake"></th>
+                            <td rowspan="4"><span>产品条件</span></td>
+                            <td><span>店型优势</span></td>
+
+                            <td>
+                                <div class="td-input-wrapper">
+                                    <input type="text" value="7%"  data-date="" placeholder=""/>
+                                    <span class="number-format"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="td-fake"></th>
+                            <td><span>动线规划</span></td>
+
+                            <td>
+                                <div class="td-input-wrapper">
+                                    <input type="text" value="8%"  data-date="" placeholder=""/>
+                                    <span class="number-format"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="td-fake"></th>
+                            <td><span>硬件档次</span></td>
+
+                            <td>
+                                <div class="td-input-wrapper">
+                                    <input type="text" value="8%"  data-date="" placeholder=""/>
+                                    <span class="number-format"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="td-fake"></th>
+                            <td><span>停车位数量</span></td>
+
+                            <td>
+                                <div class="td-input-wrapper">
+                                    <input type="text" value="5%"  data-date="" placeholder=""/>
+                                    <span class="number-format"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="td-fake"></th>
+                            <td rowspan="3"><span>其他条件</span></td>
+                            <td><span>租户品质</span></td>
+
+                            <td>
+                                <div class="td-input-wrapper">
+                                    <input type="text" value="12%"  data-date="" placeholder=""/>
+                                    <span class="number-format"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="td-fake"></th>
+                            <td><span><span>企业品牌度</span></span></td>
+
+                            <td>
+                                <div class="td-input-wrapper">
+                                    <input type="text" value="10%"  data-date="" placeholder=""/>
+                                    <span class="number-format"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="td-fake"></th>
+                            <td><span>免租期</span></td>
+
+                            <td>
+                                <div class="td-input-wrapper">
+                                    <input type="text" value="7%"  data-date="" placeholder=""/>
+                                    <span class="number-format"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="td-fake"></th>
+                            <td colspan="2"><span>因素权重打分小计</span></td>
+
+                            <td>
+                                <div class="td-input-wrapper">
+                                    <input type="text" value="100%"  data-date="" placeholder=""/>
+                                    <span class="number-format"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="td-fake"></th>
+                            <td colspan="2"><span>参考租金（元/平米/月，GLA）</span></td>
+
+                            <td>
+                                <div class="td-input-wrapper">
+                                    <input type="text" value=""  data-date="" placeholder=""/>
+                                    <span class="number-format"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="td-fake"></th>
+                            <td colspan="2"><span>加权租金（元/平米/月，GLA）</span></td>
+
+                            <td>
+                                <div class="td-input-wrapper">
+                                    <input type="text" value=""  data-date="" placeholder=""/>
+                                    <span class="number-format"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="td-fake"></th>
+                            <td colspan="2"><span>参考权重（近似的比重高）</span></td>
+
+                            <td>
+                                <div class="td-input-wrapper">
+                                    <input type="text" value=""  data-date="" placeholder=""/>
+                                    <span class="number-format"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="swiper-container" style="width:100%;" id="rpg-set-main-table">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <table class="table table-bordered amp-table table-hover"  style="width:1500px;">
+                                <tbody>
+                                <tr>                                  
+                                    <td>
+                                        <div class="td-input-wrapper num-input" >
+                                            <input type="text" placeholder="/" value="7">
+                                            <span class="number-format">7</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="地处闵行七宝，离市区较远"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="7"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="地处闵行七宝，离市区较远"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="10"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="位于市中心人民广场附件，地理位置极佳"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="8"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="距离七宝地铁站和公交站一段距离，交通比较便利"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="9"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="位于七宝地铁口，交通极其便利"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="10"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="位于人民广场地铁口，交通极其便利"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                   
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="8"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="地处七宝成熟商圈，配套较完善"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="8"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="地处七宝成熟商圈，配套较完善"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="9"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="地处人民广场商圈，配套完善"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="8"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="周边小区多，人口密集"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="8"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="周边小区多，人口密集"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="9"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="位于市区黄金地段，人流量极大"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="8"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="7"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="7"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                   
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="8"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="宝龙广场动线设计较合理，人流移动顺畅"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="8"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="万科广场动线设计较合理，人流移动顺畅"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="7"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="来福士电梯位置较偏僻，场内移动体验较差"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                   
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="9"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="硬件配套完善，设备全新，配有当下热门的室内wifi，导购屏等"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="9"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="硬件配套完善，设备全新，配有当下热门的室内wifi，导购屏等"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="7"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="属较老广场，硬件设施陈旧落后"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                   
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="9"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="停车位充裕"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="9"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="停车位充裕"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="7"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="车位紧张"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                   
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="8"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="有较多知名品牌"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="8"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="有较多知名品牌"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="9"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="知名品牌多，很多年轻人喜欢的潮牌及一些奢侈品品牌"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="8"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="国内知名商业地产，品牌度较好"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="9"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="国内名列前茅品牌"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="8"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="知名度较高，但有一定的地域局限性"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="8"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="8.05"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="8.20"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="8.33"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                   
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td class="td-acount">
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder="" disabled/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                   
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                   
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value=""  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div><!--swiper-slide-->
+                    </div><!--swiper-wrapper-->
+                    <!-- Add Scroll Bar -->
+                    <div class="swiper-scrollbar"></div>
+                </div><!--swiper container-->
+
+            </div>
+        </div>
+    </div><!--ys-block-->
+
+    <div class="amp-block-pd">
+        <div class="amp-block-title clearfix">
+            <h3 class="col-xs-4">首年租金折扣</h3>
+        </div>
+        <div class="table-input amp-table-wrapper clearfix" id="rent-first-year-set">
+            <table class="table table-bordered amp-table" style="width:50%;">
+                <tbody>
+                <tr>
+                    <th style="width:120px;">首年租金折扣</th>
+                    <td class="required">
+                        <div class="td-input-wrapper num-input" >
+                            <input type="text" placeholder="/" value="8">
+                            <span class="number-format">8<i class="unit-addon">%</i></span>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div><!--end row-->
+    </div><!--end ys-block-->
+
+
+    <div class="amp-block-pd">
+        <div class="amp-block-title clearfix">
+            <h3 class="col-xs-4">租金递增率</h3>
+        </div>
+        <div class="amp-table-wrapper-swiper" id="rent-update-table-wrapper">
+            <div class="ys-table-main" style="padding-left:160px;">
+                <div class="ys-table-static ys-table-static-left" style="width:160px;">
+                    <table class="table table-no-bordered amp-table table-hover" style="width:160px;">
+                        <thead>
+                        <tr><th class="text-left">开业年份</th></tr>
+                        </thead>
+                        <tbody>
+                        <tr><th class="text-left">主力店</th></tr>
+                        <tr><th class="text-left">次主力店</th></tr>
+                        <tr><th class="text-left">中小商铺</th></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="swiper-container" style="width:100%;" id="rent-update-main-table">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <table class="table table-right-bordered amp-table table-hover"  style="width:1200px">
+                                <thead>
+                                <tr>
+                                    <th>2016</th>
+                                    <th>2017</th>
+                                    <th>2018</th>
+                                    <th>2019</th>
+                                    <th>2020</th>
+                                 
+
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="td-input-wrapper num-input" >
+                                            <input type="text" placeholder="/" value="2">
+                                            <span class="number-format">2<i class="unit-addon">%</i></span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="4.96%"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="5.02%"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="4.97%"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="5.07%"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="4.80%"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="4.96%"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="5.02%"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="4.97%"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="5.07%"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="1.98%"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="4.99%"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="15.10%"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="4.99%"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="-"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    
+
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div><!--swiper-slide-->
+                    </div><!--swiper-wrapper-->
+                    <!-- Add Scroll Bar -->
+                    <div class="swiper-scrollbar swiper-scrollbar-b"></div>
+                </div><!--swiper container-->
+            </div>
+        </div>
+
+    </div><!--end ys-block-->
+
+    <div class="amp-block-pd"  id="rent-affect-table-wrapper">
+        <div class="amp-block-title clearfix">
+            <h3 class="col-xs-4">影响系数</h3>
+        </div>
+        <div class="amp-table-wrapper-swiper" id="rent-affect-area">
+            <h5 class="amp-sub-title">面积分解系数</h5>
+            <div class="ys-table-main" style="padding-left:120px;">
+
+                <div class="ys-table-static ys-table-static-left" style="width:120px;">
+                    <table class="table table-right-bordered amp-table table-hover" style="width:120px;">
+                        <tbody>
+                        <tr><th class="text-left">面积范围</th></tr>
+                        <tr><th class="text-left">面积系数</th></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="swiper-container" style="width:100%;" id="rent-affect-main-table">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <table class="table table-right-bordered amp-table table-hover"  style="width:1100px;">
+                                <tbody>
+                                <tr>
+                                    <td>0-20</td>
+                                    <td>20-50</td>
+                                    <td>50-100</td>
+                                    <td>100-200</td>
+                                    <td>200-300</td>
+                                    <td>300-500</td>
+                                    <td>500-800</td>
+                                    <td>800-1000</td>
+                                    <td>1000＋</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="td-input-wrapper num-input" >
+                                            <input type="text" placeholder="/" value="2">
+                                            <span class="number-format">2</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="1.7"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="1.2"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="1"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="0.8"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="0.7"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="0.5"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="0.5"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper text-input">
+                                            <input type="text" value="0.5"  data-date="" placeholder=""/>
+                                            <!--<span class="number-format"></span>-->
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div><!--swiper-slide-->
+                    </div><!--swiper-wrapper-->
+                    <!-- Add Scroll Bar -->
+                    <div class="swiper-scrollbar swiper-scrollbar-a"></div>
+                </div><!--swiper container-->
+            </div>
+        </div>
+
+        <div class="clearfix" id="rent-affect-floors">
+            <div class="col-xs-6 table-input" style="padding-left:0;">
+                <h5 class="amp-sub-title">楼层系数</h5>
+                <table class="table table-hover amp-table">
+
+                    <thead>
+                    <tr>
+                        <th class="text-left">楼层</th>
+                        <th class="text-right">楼层系数</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th class="text-left">F1</th>
+                        <td class="text-right">
+                            <div class="td-input-wrapper text-input">
+                                <input type="text" value="1"  data-date="" placeholder=""/>
+                                <!--<span class="number-format"></span>-->
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="text-left">F2</th>
+                        <td class="text-right">
+                            <div class="td-input-wrapper text-input">
+                                <input type="text" value="0.6"  data-date="" placeholder=""/>
+                                <!--<span class="number-format"></span>-->
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="text-left">F3</th>
+                        <td class="text-right">
+                            <div class="td-input-wrapper text-input">
+                                <input type="text" value="0.4"  data-date="" placeholder=""/>
+                                <!--<span class="number-format"></span>-->
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="text-left">F4</th>
+                        <td class="text-right">
+                            <div class="td-input-wrapper text-input">
+                                <input type="text" value="0.4"  data-date="" placeholder=""/>
+                                <!--<span class="number-format"></span>-->
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div><!--end row-->
+
+            <div class="col-xs-6 table-input" style="padding-right:0;">
+                <h5 class="amp-sub-title">位置系数</h5>
+                <table class="table table-hover amp-table">
+
+                    <thead>
+                    <tr>
+                        <th class="text-left">位置</th>
+                        <th class="text-right">位置系数</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th class="text-left">主入口</th>
+                        <td class="text-right">
+                            <div class="td-input-wrapper text-input">
+                                <input type="text" value="1.5"  data-date="" placeholder=""/>
+                                <!--<span class="number-format"></span>-->
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="text-left">主立面外墙</th>
+                        <td class="text-right">
+                            <div class="td-input-wrapper text-input">
+                                <input type="text" value="1.3"  data-date="" placeholder=""/>
+                                <!--<span class="number-format"></span>-->
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="text-left">次入口</th>
+                        <td class="text-right">
+                            <div class="td-input-wrapper text-input">
+                                <input type="text" value="1.3"  data-date="" placeholder=""/>
+                                <!--<span class="number-format"></span>-->
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="text-left">主通道</th>
+                        <td class="text-right">
+                            <div class="td-input-wrapper text-input">
+                                <input type="text" value="1"  data-date="" placeholder=""/>
+                                <!--<span class="number-format"></span>-->
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="text-left">侧面面街</th>
+                        <td class="text-right">
+                            <div class="td-input-wrapper text-input">
+                                <input type="text" value="1"  data-date="" placeholder=""/>
+                                <!--<span class="number-format"></span>-->
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="text-left">后街</th>
+                        <td class="text-right">
+                            <div class="td-input-wrapper text-input">
+                                <input type="text" value="0.9"  data-date="" placeholder=""/>
+                                <!--<span class="number-format"></span>-->
+                            </div>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div><!--end row-->
+        </div>
+
+    </div><!--end ys-block-->
+    <div class="amp-block-pd bottom-block clearfix">
+        <div class="btn-wrapper pull-right">
+            <a ui-sref="rpgresult" ui-sref-active="active" href="#/rpgresult" class="btn btn-default amp-btn" id="btn-create">生成租金包</a>
+        </div>
+    </div>
+</div><!-- contentpanel -->
+<!--<script src="../static/js/views/datatools/rpg_set.js"></script>
+<script>
+    jQuery(document).ready(function(){
+        swiper_table.init();
+    });
+</script>-->

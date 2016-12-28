@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="" lang="zh-cn"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>悦商AMP</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+
+    <!-- 导入CSS -->
+    <link href="../static/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/dist/css/swiper.min.css" rel="stylesheet">
+
+    <!-- 自有CSS -->
+    <link href="../static/css/common/common.css" rel="stylesheet">
+
+    <link href="../static/css/common/amp_common.css" rel="stylesheet">
+    <link href="../static/css/common/amp_page_structure.css" rel="stylesheet">
+    <link href="../static/css/common/component.css" rel="stylesheet">
+    <link href="../static/css/investment_analysis/simulation_calculation.css" rel="stylesheet">
+
+    <script src="../static/dist/js/jquery-1.11.3.min.js"></script>
+    <script src="../static/dist/js/angular.min.js"></script>
+    <script src="../static/dist/js/jquery.tmpl.js"></script>
+    <script src="../static/dist/js/swiper.jquery.min.js"></script>
+    <script src="../static/dist/js/bootstrap.min.js"></script>
+    <script src="../static/dist/js/finance.js"></script>
+
+    <script src="../static/js/common/common.js"></script>
+    <script src="../static/js/common/global_storage.js"></script>
+
+    <script src="../static/js/main/filters.js"></script>
+
+    <script src="../static/js/investment_analysis/controller/simulation_calculation_common.js"></script>
+    <script src="../static/js/investment_analysis/controller/simulation_calculation_tool.js"></script>
+    <script src="../static/js/investment_analysis/controller/simulation_calculation_service.js"></script>
+    <script src="../static/js/investment_analysis/controller/simulation_calculation_support.js"></script>
+    <script src="../static/js/investment_analysis/controller/simulation_calculation_controller.js"></script>
+
+
+</head>
+<body ng-app="simulationApp">
+
+<div id="preloader">
+    <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
+</div>
+
+<div class="ys-amp" id="simulation-calculation" ng-controller="simulation-calculation-controller">
+    <div class="mainpanel">
+        <div class="amp-main-panel">
+            <div class="amp-page-header">AMP PAAS Beta1.0 2016</div>
+            <div class="amp-content-header clearfix">
+                <div class="pull-left">
+                    <ul class="amp-breadcrumb">
+                        <li><a class="amp-nav-back"></a></li>
+                        <li><a>模拟测算</a></li>
+                        <li><a>{{caseName}}</a></li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <a class="user-guide-btn">使用说明</a>
+                </div>
+            </div>
+            <div class="amp-content-panel">
+            <div class="amp-content-panel-head"></div><!-- amp-content-panel-head -->
+            <div class="amp-content-panel-body">
+                <div class="block-left">
+                    <div class="section open">
+                        <div class="section-title">
+                            <span>投资收益的测试指标</span>
+                            <em>(自动生成)</em>
+                            <a class="collapse-btn"></a>
+                        </div><!-- section-title -->
+                        <div class="section-content">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>增值</th>
+                                        <th>净现值</th>
+                                        <th>IRR</th>
+                                        <th>税前现金流/权益</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr ng-repeat="item in testIndexRecords">
+                                        <td class="amp-font-weight-bold">第{{item.yearIndex}}年</td>
+                                        <td>{{item.appreciation|numberFormatDefault:0}}</td>
+                                        <td>{{item.netPresentValue|numberFormatDefault:0}}</td>
+                                        <td>{{item.irrPercent}}</td>
+                                        <td>{{item.rate}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- section-content -->
+                    </div><!-- section -->
+
+                    <div class="section">
+                        <div class="section-title">
+                            <span>参数</span>
+                            <em>(手动输入)</em>
+                            <a class="collapse-btn"></a>
+                        </div><!-- section-title -->
+                        <div class="section-content">
+                            <ul class="list-form-group">
+                                <li>
+                                    <em class="form-label">业主要求的收益率</em>
+                                    <div class="form-content">
+                                        <div class="nested-record">
+                                            <div class="amp-input amp-input-default amp-input-32 amp-input-long amp-multiple-input text-show" style="vertical-align: bottom;">
+                                                <div class="amp-input-display-span">{{parameterInfo.benefitRate|numberFormatDefault:2}}</div>
+                                                <input type="number" ng-model="parameterInfo.benefitRate"/>
+                                                <div class="error-msg"><span></span></div>
+                                            </div>
+                                            <span>%</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em class="form-label">销售成本</em>
+                                    <div class="form-content">
+                                        <div class="amp-input amp-input-default amp-input-32 amp-input-middle amp-multiple-input text-show" style="vertical-align: bottom;">
+                                            <div class="amp-input-display-span">{{parameterInfo.costValue|numberFormatDefault:0}}</div>
+                                            <input type="number" data-type-integer="" name="sale-cost-value" ng-model="parameterInfo.costValue"/>
+                                            <div class="error-msg"><span></span></div>
+                                        </div>
+                                        <span>销售成本</span>
+                                        <div class="amp-input amp-input-default amp-input-32 amp-input-short amp-multiple-input text-show" style="vertical-align: bottom;">
+                                            <div class="amp-input-display-span">{{parameterInfo.costPercent|numberFormatDefault:2}}</div>
+                                            <input type="number" name="sale-cost-percent" ng-model="parameterInfo.costPercent"/>
+                                            <div class="error-msg"><span></span></div>
+                                        </div>
+                                        <span>%</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em class="form-label">输出资本化率</em>
+                                    <div class="form-content">
+
+                                        <div class="nested-record"  ng-repeat="item in parameterInfo.outputCapitalizationRateList">
+                                            <span>第</span>
+                                            <span>{{item.year}}</span>
+                                            <span>年,</span>
+                                            <span>比率</span>
+                                            <div class="amp-input amp-input-default amp-input-32 amp-input-middle amp-multiple-input text-show" style="vertical-align: bottom;">
+                                                <div class="amp-input-display-span">{{item.rate|numberFormatDefault:2}}</div>
+                                                <input type="number" ng-model="item.rate" data-name="outputCapitalizationRate"/>
+                                                <div class="error-msg"><span></span></div>
+                                            </div>
+                                            <span>%</span>
+                                        </div><!-- nested-record -->
+
+                                    </div><!-- form-content -->
+                                </li>
+                            </ul><!-- list-form-group -->
+                        </div><!-- section-content -->
+                    </div><!-- section -->
+
+                </div><!-- block-left -->
+                <div class="block-right">
+                    <div class="amp-check-btn-group">
+                        <a class="amp-check-btn active" data-href=".initial-analysis">期初分析</a>
+                        <a class="amp-check-btn" data-href=".income-expenses-simulation">收支模拟</a>
+                        <a class="amp-check-btn" data-href=".pre-tax-cash-flow">税前现金流</a>
+                        <a class="amp-check-btn" data-href=".sale-income-analysis">销售所得分析</a>
+                        <a class="amp-check-btn" data-href=".loan-repayment-analysis">贷款分期还款</a>
+                    </div>
+
+                    <!-- 期初分析 -->
+                    <div class="initial-analysis">
+                        <div class="form-group">
+                            <label class="form-group-label">收购价</label>
+                            <div class="form-group-value">
+                                <div class="amp-input amp-input-default amp-input-40 amp-multiple-input text-show">
+                                    <div class="amp-input-display-span">{{initialAnalysis.purchasingPrice|numberFormatDefault:0}}</div>
+                                    <input data-type-integer type="number" ng-model="initialAnalysis.purchasingPrice" >
+                                    <div class="error-msg"><span></span></div>
+                                </div>
+                            </div>
+                        </div><!-- form-group -->
+
+                        <div class="form-group">
+                            <label class="form-group-label"><em class="amp-font-size-12 amp-font-color-support">加:</em>收购费用</label>
+                            <div class="form-group-value">
+                                <div class="amp-input amp-input-default amp-input-40 amp-multiple-input text-show">
+                                    <div class="amp-input-display-span">{{initialAnalysis.purchasingFee|numberFormatDefault:0}}</div>
+                                    <input data-type-integer type="number" ng-model="initialAnalysis.purchasingFee">
+                                    <div class="error-msg"><span></span></div>
+                                </div>
+                            </div>
+                        </div><!-- form-group -->
+
+                        <div class="form-group">
+                            <label class="form-group-label"><em class="amp-font-size-12 amp-font-color-support">加:</em>贷款费用</label>
+                            <div class="form-group-value">
+                                <div class="amp-input amp-input-default amp-input-40 amp-multiple-input text-show">
+                                    <div class="amp-input-display-span">{{initialAnalysis.loanFee|numberFormatDefault:0}}</div>
+                                    <input data-type-integer type="number" ng-model="initialAnalysis.loanFee">
+                                    <div class="error-msg"><span></span></div>
+                                </div>
+                            </div>
+                        </div><!-- form-group -->
+
+
+                        <div class="form-group">
+                            <label class="form-group-label amp-font-style-italic amp-font-weight-bold">原始基数</label>
+                            <div class="form-group-value amp-text-align-right"><span class="amp-font-color-main">{{initialAnalysis.originBase|numberFormatDefault:0}}</span></div>
+                        </div><!-- form-group -->
+
+                        <div class="form-group">
+                            <label class="form-group-label" style="padding-left:10px;"><em class="amp-font-size-12 amp-font-color-support">减:</em>贷款金额</label>
+                            <div class="form-group-value">
+                                <div class="amp-input amp-input-default amp-input-40 input-1 amp-multiple-input text-show">
+                                    <div class="amp-input-display-span">{{initialAnalysis.loan|numberFormatDefault:0}}</div>
+                                    <input data-type-integer type="number" ng-model="initialAnalysis.loan">
+                                    <div class="error-msg"><span></span></div>
+                                </div>
+
+                            </div>
+                        </div><!-- form-group -->
+
+                        <div class="form-group">
+                            <div class="form-group-value ">
+                                <span class="amp-font-color-support">贷款利率</span>
+                                <div class="amp-input amp-input-default amp-input-40  amp-multiple-input text-show" style="display:inline-block;width:80px;vertical-align: bottom;">
+                                    <div class="amp-input-display-span">{{initialAnalysis.loanRate|numberFormatDefault:2}}</div>
+                                    <input type="number" ng-model="initialAnalysis.loanRate">
+                                    <div class="error-msg"><span></span></div>
+                                </div>
+                                <span class="amp-font-color-support">%</span>
+                                <span class="amp-font-color-support">期限</span>
+                                <div class="amp-input amp-input-default amp-input-40  amp-multiple-input text-show" style="display:inline-block;width:63px;vertical-align: bottom;">
+                                    <div class="amp-input-display-span">{{initialAnalysis.loanYear|numberFormatDefault:0}}</div>
+                                    <input data-type-integer  type="number" ng-model="initialAnalysis.loanYear">
+                                    <div class="error-msg"><span></span></div>
+                                </div>
+                                <span class="amp-font-color-support">年</span>
+                            </div>
+                        </div><!-- form-group -->
+
+                        <div class="form-group">
+                            <label class="form-group-label amp-font-style-italic amp-font-weight-bold"  style="padding-left:10px;">初始权益</label>
+                            <div class="form-group-value amp-text-align-right"><span class="amp-font-color-main">{{initialAnalysis.initialBenefit|numberFormatDefault:0}}</span></div>
+                        </div><!-- form-group -->
+
+
+                    </div><!-- initial-analysis -->
+
+
+                    <!-- 收支模拟 -->
+                    <div class="income-expenses-simulation">
+                        <div class="table-group table-group-1">
+                            <div class="table-group-left">
+                                <ul class="record-list">
+                                    <li class="record-list-title">业态</li>
+                                </ul>
+                            </div><!-- table-group-left -->
+                            <div class="table-group-right">
+                                <div class="swiper-container" >
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide clearfix">
+                                            <ul class="record-list year-record-list"><li class="record-list-title">年增长率</li></ul>
+
+                                            <ul class="record-list" ng-repeat="item in incomeExpense.headers">
+                                                <li class="record-list-title">第{{item}}年</li>
+                                            </ul>
+
+                                            <ul class="record-list empty-record-list">
+                                                <li class="record-list-operation">
+                                                    <a class="record-list-add-btn"></a>
+                                                    <a class="record-list-remove-btn"></a>
+                                                </li>
+                                            </ul>
+                                        </div><!-- swiper-slide -->
+                                    </div><!-- swiper-wrapper -->
+                                </div><!-- swiper-container -->
+                            </div><!-- table-group-right -->
+                        </div><!-- table-group -->
+
+                        <div class="table-group table-group-2">
+                            <div class="table-group-left">
+                                <ul class="record-list">
+                                    <li data-group="1" class="amp-font-color-main amp-font-weight-bold record-group parent-group collapsed">收入<a></a></li>
+                                    <li data-group="1">租金</li>
+                                    <li data-group="1">物业管理费</li>
+                                    <li data-group="1">其他收入</li>
+                                    <li data-group="2" class="amp-font-color-main amp-font-weight-bold record-group parent-group collapsed">费用<a></a></li>
+                                    <li data-group="2">地租</li>
+                                    <li data-group="2">公共事业费（能耗）</li>
+
+                                    <li data-group="2">维护/维保</li>
+                                    <li data-group="2">总部管理费</li>
+                                    <li data-group="2">营销费用</li>
+                                    <li data-group="2">工资及相关费用</li>
+                                    <li data-group="2">管理费用</li>
+                                    <li data-group="2">计租/核销</li>
+                                    <li data-group="2">折旧</li>
+                                    <li data-group="2">其他</li>
+                                    <li data-group="3" class="amp-font-color-main amp-font-weight-bold record-group parent-group collapsed">税<a></a></li>
+                                    <li data-group="3">房产税</li>
+                                    <li data-group="3">营业税</li>
+                                    <!--<li data-group="3">其他</li>-->
+                                    <li class="amp-font-color-main amp-font-weight-bold">NOI</li>
+                                    <li>资本输出</li>
+                                </ul>
+                            </div><!-- table-group-left -->
+                            <div class="table-group-right">
+                                <div class="swiper-container" >
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide clearfix">
+                                            <ul class="record-list year-record-list">
+                                                <li data-group="1" class="amp-font-color-main amp-font-weight-bold parent-group">-</li>
+                                                <li data-group="1">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{incomeExpenseYearIncreaseRate.rentIncomeRate|numberFormatDefault:2}}</div>
+                                                        <input type="number" ng-model="incomeExpenseYearIncreaseRate.rentIncomeRate"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li data-group="1">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{incomeExpenseYearIncreaseRate.propertyFeeIncomeRate|numberFormatDefault:2}}</div>
+                                                        <input type="number" ng-model="incomeExpenseYearIncreaseRate.propertyFeeIncomeRate"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li data-group="1">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{incomeExpenseYearIncreaseRate.otherIncomeRate|numberFormatDefault:2}}</div>
+                                                        <input type="number" ng-model="incomeExpenseYearIncreaseRate.otherIncomeRate"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li data-group="2" class="amp-font-color-main amp-font-weight-bold parent-group">-</li>
+                                                <li data-group="2">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{incomeExpenseYearIncreaseRate.landValueTaxRate|numberFormatDefault:2}}</div>
+                                                        <input type="number" ng-model="incomeExpenseYearIncreaseRate.landValueTaxRate"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li data-group="2">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{incomeExpenseYearIncreaseRate.publicConsumptionFeeRate|numberFormatDefault:2}}</div>
+                                                        <input type="number" ng-model="incomeExpenseYearIncreaseRate.publicConsumptionFeeRate"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li data-group="2">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{incomeExpenseYearIncreaseRate.maintenanceFeeRate|numberFormatDefault:2}}</div>
+                                                        <input type="number" ng-model="incomeExpenseYearIncreaseRate.maintenanceFeeRate"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+
+                                                <li data-group="2">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{incomeExpenseYearIncreaseRate.generalMgtFeeRate|numberFormatDefault:2}}</div>
+                                                        <input type="number" ng-model="incomeExpenseYearIncreaseRate.generalMgtFeeRate"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+
+                                                <li data-group="2">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{incomeExpenseYearIncreaseRate.marketingExpenseRate|numberFormatDefault:2}}</div>
+                                                        <input type="number" ng-model="incomeExpenseYearIncreaseRate.marketingExpenseRate"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li data-group="2">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{incomeExpenseYearIncreaseRate.wagesRelatedCostRate|numberFormatDefault:2}}</div>
+                                                        <input type="number" ng-model="incomeExpenseYearIncreaseRate.wagesRelatedCostRate"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+
+                                                <li data-group="2">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{incomeExpenseYearIncreaseRate.mgtFeeRate|numberFormatDefault:2}}</div>
+                                                        <input type="number" ng-model="incomeExpenseYearIncreaseRate.mgtFeeRate"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+
+                                                <li data-group="2">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{incomeExpenseYearIncreaseRate.chargeOffRate|numberFormatDefault:2}}</div>
+                                                        <input type="number" ng-model="incomeExpenseYearIncreaseRate.chargeOffRate"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+
+                                                <li data-group="2">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{incomeExpenseYearIncreaseRate.depreciationRate|numberFormatDefault:2}}</div>
+                                                        <input type="number" ng-model="incomeExpenseYearIncreaseRate.depreciationRate"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li data-group="2">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{incomeExpenseYearIncreaseRate.otherFeeRate|numberFormatDefault:2}}</div>
+                                                        <input type="number" ng-model="incomeExpenseYearIncreaseRate.otherFeeRate"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li data-group="3" class="amp-font-color-main amp-font-weight-bold parent-group">-</li>
+                                                <li data-group="3">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{incomeExpenseYearIncreaseRate.housePropertyTaxRate|numberFormatDefault:2}}</div>
+                                                        <input type="number" ng-model="incomeExpenseYearIncreaseRate.housePropertyTaxRate"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li data-group="3">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{incomeExpenseYearIncreaseRate.businessTaxRate|numberFormatDefault:2}}</div>
+                                                        <input type="number" ng-model="incomeExpenseYearIncreaseRate.businessTaxRate"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li class="amp-font-color-main amp-font-weight-bold amp-font-style-italic"></li>
+                                                <li></li>
+                                            </ul><!-- record-list -->
+
+
+
+                                            <ul class="record-list" ng-repeat="item in incomeExpense.contents">
+                                                <li data-group="1" class="amp-font-color-main amp-font-weight-bold parent-group">{{item.totalIncome|numberFormatDefault:0}}</li>
+                                                <li data-group="1">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{item.rentIncome|numberFormatDefault:0}}</div>
+                                                        <input data-type-integer type="number" ng-model="item.rentIncome"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li data-group="1">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{item.propertyFeeIncome|numberFormatDefault:0}}</div>
+                                                        <input data-type-integer type="number" ng-model="item.propertyFeeIncome"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li data-group="1">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{item.otherIncome|numberFormatDefault:0}}</div>
+                                                        <input data-type-integer type="number" ng-model="item.otherIncome"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li data-group="2" class="amp-font-color-main amp-font-weight-bold parent-group">{{item.totalFee|numberFormatDefault:0}}</li>
+                                                <li data-group="2">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{item.landValueTax|numberFormatDefault:0}}</div>
+                                                        <input data-type-integer type="number" ng-model="item.landValueTax"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li data-group="2" >
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{item.publicConsumptionFee|numberFormatDefault:0}}</div>
+                                                        <input data-type-integer type="number" ng-model="item.publicConsumptionFee"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li data-group="2" >
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{item.maintenanceFee|numberFormatDefault:0}}</div>
+                                                        <input data-type-integer type="number" ng-model="item.maintenanceFee"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li data-group="2">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{item.generalMgtFee|numberFormatDefault:0}}</div>
+                                                        <input data-type-integer type="number" ng-model="item.generalMgtFee"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li data-group="2">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{item.marketingExpense|numberFormatDefault:0}}</div>
+                                                        <input data-type-integer type="number" ng-model="item.marketingExpense"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li data-group="2">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{item.wagesRelatedCost|numberFormatDefault:0}}</div>
+                                                        <input data-type-integer type="number" ng-model="item.wagesRelatedCost"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li data-group="2">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{item.mgtFee|numberFormatDefault:0}}</div>
+                                                        <input data-type-integer type="number" ng-model="item.mgtFee"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li data-group="2">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{item.chargeOff|numberFormatDefault:0}}</div>
+                                                        <input data-type-integer type="number" ng-model="item.chargeOff"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li data-group="2">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{item.depreciation|numberFormatDefault:0}}</div>
+                                                        <input data-type-integer type="number" ng-model="item.depreciation"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li data-group="2">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{item.otherFee|numberFormatDefault:0}}</div>
+                                                        <input data-type-integer type="number" ng-model="item.otherFee"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li data-group="3" class="amp-font-color-main amp-font-weight-bold parent-group">{{item.totalTax|numberFormatDefault:0}}</li>
+                                                <li data-group="3">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{item.housePropertyTax|numberFormatDefault:0}}</div>
+                                                        <input data-type-integer type="number" ng-model="item.housePropertyTax"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li data-group="3">
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{item.businessTax|numberFormatDefault:0}}</div>
+                                                        <input data-type-integer type="number" ng-model="item.businessTax"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                                <li class="amp-font-color-main amp-font-weight-bold amp-font-style-italic">{{item.noi|numberFormatDefault:0}}</li>
+                                                <li>
+                                                    <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
+                                                        <div class="amp-input-display-span">{{item.capitalExport|numberFormatDefault:0}}</div>
+                                                        <input data-type-integer type="number"  ng-model="item.capitalExport"/>
+                                                        <div class="error-msg"><span></span></div>
+                                                    </div>
+                                                </li>
+                                            </ul><!-- record-list -->
+
+
+
+
+
+                                            <ul class="record-list empty-record-list"><li></li></ul>
+
+                                        </div><!--div swiper-slide-->
+                                    </div><!--swiper-wrapper-->
+                                    <!-- Add Scroll Bar -->
+                                    <div class="swiper-scrollbar"></div>
+                                </div><!--swiper container-->
+
+                            </div><!-- table-group-left -->
+                        </div><!-- table-group -->
+                    </div><!-- income-expenses-simulation -->
+
+
+                    <!-- 税前现金流 -->
+                    <div class="pre-tax-cash-flow">
+                        <div class="table-group">
+                            <em class="table-group-head-bg"></em>
+                            <em class="table-group-line table-group-line-1"></em>
+                            <em class="table-group-line table-group-line-2"></em>
+                            <em class="table-group-line table-group-line-3"></em>
+                            <em class="table-group-line table-group-line-4"></em>
+                            <em class="table-group-line table-group-line-5"></em>
+
+                            <div class="table-group-left">
+                                <ul>
+                                   <li></li>
+                                   <li>净营业收入</li>
+                                   <li><em class="amp-font-color-support amp-font-size-12">减:</em>贷款本金</li>
+                                   <li><em class="amp-font-color-support amp-font-size-12">减:</em>贷款利息</li>
+                                   <li><em class="amp-font-color-support amp-font-size-12">减:</em>资本支出</li>
+                                   <li>税前现金流</li>
+                                </ul>
+                            </div><!-- table-group-left -->
+                            <div class="table-group-right clearfix">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide clearfix">
+                                            <ul ng-repeat="item in preTaxCashFlowRecords">
+                                                <li>第{{item.year}}年</li>
+                                                <li>{{item.income|numberFormatDefault:0}}</li>
+                                                <li>{{item.loanAmount|numberFormatDefault:0}}</li>
+                                                <li>{{item.loanInterest|numberFormatDefault:0}}</li>
+                                                <li>{{item.charges|numberFormatDefault:0}}</li>
+                                                <li>{{item.preTaxCashFlow|numberFormatDefault:0}}</li>
+                                            </ul>
+                                        </div><!-- swiper-slide -->
+                                    </div><!-- swiper-wrapper -->
+                                    <div class="swiper-scrollbar"></div>
+                                </div><!-- swiper-container -->
+                            </div><!-- table-group-right -->
+                        </div><!-- table-group -->
+                    </div><!-- pre-tax-cash-flow -->
+
+
+                    <!-- 销售所得分析 -->
+                    <div class="sale-income-analysis">
+                        <div class="table-group">
+                            <em class="table-group-head-bg"></em>
+                            <em class="table-group-line table-group-line-1"></em>
+                            <em class="table-group-line table-group-line-2"></em>
+                            <em class="table-group-line table-group-line-3"></em>
+                            <em class="table-group-line table-group-line-4"></em>
+
+                            <div class="table-group-left">
+                                <ul>
+                                    <li></li>
+                                    <li>销售价格</li>
+                                    <li><em class="amp-font-color-support amp-font-size-12">减</em>销售成本</li>
+                                    <li><em class="amp-font-color-support amp-font-size-12">减</em>贷款余额</li>
+                                    <li>净销售所得</li>
+                                </ul>
+                            </div><!-- table-group-left -->
+                            <div class="table-group-right clearfix">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide clearfix">
+                                            <ul ng-repeat="item in saleIncomeAnalysisRecords">
+                                                <li>第{{item.year}}年</li>
+                                                <li>{{item.salePrice|numberFormatDefault:0}}</li>
+                                                <li>{{item.saleCost|numberFormatDefault:0}}</li>
+                                                <li>{{item.loanBalance|numberFormatDefault:0}}</li>
+                                                <li>{{item.netSalesIncome|numberFormatDefault:0}}</li>
+                                            </ul>
+                                        </div><!-- swiper-slide -->
+                                    </div><!-- swiper-wrapper -->
+                                    <div class="swiper-scrollbar"></div>
+                                </div><!-- swiper-container -->
+                            </div><!-- table-group-right -->
+                        </div><!-- table-group -->
+                    </div><!-- sale-income-analysis -->
+
+                    <!-- 贷款还款 -->
+                    <div class="loan-repayment-analysis">
+                        <table class="amp-table-2">
+                            <colgroup>
+                                <col width="12%"/>
+                                <col width="22%"/>
+                                <col width="22%"/>
+                                <col width="22%"/>
+                                <col width="22%"/>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>还款额</th>
+                                    <th>本金</th>
+                                    <th>利息</th>
+                                    <th>剩余贷款本金</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <div class="table-wrapper">
+                            <table class="amp-table-2">
+                                <colgroup>
+                                    <col width="12%"/>
+                                    <col width="22%"/>
+                                    <col width="22%"/>
+                                    <col width="22%"/>
+                                    <col width="22%"/>
+                                </colgroup>
+
+                                <tbody>
+                                    <tr ng-repeat="item in loanRepaymentAnalysis">
+                                        <td>第{{item.year}}年</td>
+                                        <td>{{item.pmt|numberFormatDefault:0}}</td>
+                                        <td>{{item.ppmt|numberFormatDefault:0}}</td>
+                                        <td>{{item.ipmt|numberFormatDefault:0}}</td>
+                                        <td>{{item.leavePpmt|numberFormatDefault:0}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- table-wrapper -->
+
+                    </div><!-- loan-repayment-analysis -->
+
+                </div><!-- block-right -->
+
+            </div><!-- amp-content-panel-body -->
+            <div class="amp-content-panel-foot clearfix">
+
+                <a class="amp-btn amp-btn-green amp-btn-long pull-right save-case-btn ys-tips" title="保存方案12月6日开通"  data-toggle="tooltip" data-placement="top">保存</a>
+                <a class="amp-btn amp-btn-default pull-right reset-case-btn">重置</a>
+                <!--<a class="amp-btn amp-btn-default pull-right">取消</a>-->
+                <a class="amp-btn amp-btn-default  pull-right delete-case-btn">删除方案</a>
+            </div><!-- amp-content-panel-foot -->
+        </div><!-- amp-content-panel -->
+        </div><!-- amp-main-panel -->
+    </div><!-- mainpanel -->
+
+
+
+</div><!-- ys-amp -->
+
+
+<script src="../static/js/common/component.js"></script>
+
+</body>
+</html>

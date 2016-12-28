@@ -1,0 +1,55 @@
+#cost-enrolment{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:rgba(0,0,0,0.4);
+    z-index: 999;
+    padding-left:400px;
+}
+
+#cost-enrolment .contract-enrolment{
+    height:100%;
+    background-color:#fff;
+}
+
+/* ======================================== enrolment-title ======================================== */
+#cost-enrolment .enrolment-title{
+    position:relative;
+    height:44px;
+    line-height: 44px;
+    text-align: center;
+    background-color:#dae2e7;
+}
+#cost-enrolment .enrolment-title a.close-panel-btn{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    width:44px;
+    height:44px;
+    background:url(../../images/common/right-panel-title-close-icon.png) no-repeat center center;
+    margin:auto;
+    cursor: pointer;
+}
+
+/* ======================================== enrolment-form-container ======================================== */
+#cost-enrolment .enrolment-form-container>ul{padding-left:18px;}
+#cost-enrolment .enrolment-form-container>ul>li{
+    width:25%;
+    float:left;
+    padding:15px 18px 0 0 ;
+}
+#cost-enrolment .enrolment-form-container>ul>li>span{display:block;height:28px;line-height: 28px;color:#8592a2;}
+
+/* ======================================== amp-btn-group ======================================== */
+#cost-enrolment .amp-btn-group{
+    padding:20px 18px 0 0;
+}
+#cost-enrolment .amp-btn-group a{width:110px;padding:0;}
+#cost-enrolment .amp-btn-group .amp-btn-green{
+    width:110px;
+    margin-left:20px;
+}

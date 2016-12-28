@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="" lang="zh-cn"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>悦商AMP</title>
+    <meta name="description" content="">
+    <!--<meta name="viewport" content="width=1180, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+    <meta name="viewport" content="width=1180">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/dist/css/bootstrap.min.css">
+    <link href="../static/dist/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/dist/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../static/css/common/common.css">
+    <!--扩展 css-->
+    <link rel="stylesheet" href="../static/css/main/main.css">
+    <style type="text/css">
+        /* Good CSS */
+    </style>
+    <!-- JavaScript -->
+    <script src="../static/dist/js/jquery-1.11.3.min.js"></script>
+    <script src="../static/dist/js/angular.js"></script>
+    <script src="../static/dist/js/angular-animate.min.js"></script>
+    <script src="../static/dist/js/angular-ui-router.js"></script>
+
+    <script src="../static/dist/js/bootstrap.min.js"></script>
+    <script src="../static/dist/js/plugins.js"></script>
+    <script src="../static/dist/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../static/dist/js/bootstrap-datetimepicker.zh-CN.js"></script>
+
+    <script src="../static/js/main/main.js"></script>
+    <script src="../static/js/main/main_services.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#preloader').delay(350).fadeOut(function(){
+                //start
+            });
+        });
+    </script>
+</head>
+<body style="background-color:#eceff4;" ng-app="main" ng-controller="MainController">
+<!--[if lt IE 9]>
+<p class="updateBrowser">您的浏览器太旧了，请更新最新浏览器，以获得最佳效果.</p>
+<![endif]-->
+
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
+</div>
+<!-- Add your site or application content here -->
+<div ui-view="content" class="animated"
+     ng-class="{'view-back': state.back, 'view-to-home': state.toHome, 'view-exit': state.exit, 'fadeOut': state.exit,'fadeIn': state.enter, 'view-enter': state.enter, 'view-loading': state.loading}">
+</div>
+</body>
+</html>

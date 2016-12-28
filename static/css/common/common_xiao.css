@@ -1,0 +1,52 @@
+body { min-width: 1180px; /*padding-top: 70px; padding-bottom: 50px; */background-color:#eceff4;
+    font-size:16px;font-family: 'PingFang SC', 'Helvetica Neue',"STHeitiSC-Light","Microsoft YaHei",sans-serif;}
+/* Reset the container */
+.container { width: 1080px;!important; max-width: none !important; }
+*{box-sizing:border-box; /*    -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;*/}
+
+.no-select{ -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select:none; }
+a,button,.btn{ -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select:none;}
+a{text-decoration: none;}
+em,i,span,b,label{font-weight:normal;font-style: normal;}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-weight:normal;font-style: normal;}
+
+.no-outline,input{outline:0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);-moz-tap-highlight-color:rgba(0,0,0,0);-ms-tap-hightlight-color:rgba(0,0,0,0);tap-highlight-color:rgba(0,0,0,0);
+    -webkit-focus-ring-color: rgba(0,0,0,0);-moz-focus-ring-color:rgba(0,0,0,0);-ms-focus-ring-color:rgba(0,0,0,0);focus-ring-color:rgba(0,0,0,0);
+}
+
+.lt-ie9,.no-js{}
+.lt-ie9 .ys-amp, .no-js .ys-amp{display: none;}
+.lt-ie9 .updateBrowser{display: block;width:80%;margin:50px auto;padding:20px;font-size: 18px;color:#333;text-align: center;}
+
+.ys-amp{width:100%;height:100%;position: relative;}
+/* s-d */
+#preloader { position: fixed; /*display:none;*/ top: 0; left: 0; width: 100%; height: 100%; background-color: #e4e7ea; z-index: 10000; }
+#status { width: 30px; height: 30px; position: absolute; left: 50%; top: 50%; margin: -15px 0 0 -15px; font-size: 32px; }
+#preloader.hide{display: none;}
+
+/*backdrop && loading*/
+.ys-backdrop{ display:none; position:fixed; z-index:9; left:0; right:0; top:0; bottom:0; background-color:#333; opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+.ys-backdrop.active{display: block;opacity:0.58;}
+
+.loading{display:none;position: fixed;top:0;left:0;bottom:0;right:0;background-color: rgba(33,33,33,0);z-index:1999;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;}
+
+.loading.active{display: block; background-color: rgba(33,33,33,0.58);}
+.loading>.spin{display: block;position:absolute;top:50%;left:50%;margin-top:-33px;margin-left:-33px;width:66px;height:66px;}
+.loading>.spin>img{width:100%;}
+
+
+
+
+

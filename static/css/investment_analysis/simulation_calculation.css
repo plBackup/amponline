@@ -1,0 +1,535 @@
+body{
+    padding:0;
+}
+#simulation-calculation .amp-page-header{
+    height:44px;
+    line-height: 44px;
+    background:#dae2e7 url(../../images/common/amp-panel-logo-beta.png) no-repeat 24px center;
+    background-size:97px 24px;
+    text-align: right;
+    padding-right:24px;
+    color: #8592a3;
+    font-size:12px;
+}
+
+#simulation-calculation .amp-display-none{display:none!important;}
+#simulation-calculation .amp-content-header{padding:0 24px;}
+#simulation-calculation .amp-content-panel{overflow: auto;}
+#simulation-calculation .amp-content-panel-body{overflow: auto;}
+#simulation-calculation .table-group-2{overflow: auto;}
+
+
+#simulation-calculation .amp-input{display:inline-block;}
+#simulation-calculation .amp-input input{text-align: right;font-size:12px;}
+#simulation-calculation .amp-input-min-short{width:28px;}
+#simulation-calculation .amp-input-short{width:60px;}
+#simulation-calculation .amp-input-middle{width:98px;}
+#simulation-calculation .amp-input-long{width:222px;}
+
+/* ======================================== amp-content-header ======================================== */
+
+#simulation-calculation .user-guide-btn{
+    display:none;
+    height:44px;
+    line-height: 44px;
+    color:#737e8c;
+    padding-left:18px;
+    background:url(../../images/common/file-icon.png) no-repeat left center;
+    background-size:16px 16px;
+}
+
+/* ======================================== amp-content-panel-body ======================================== */
+#simulation-calculation  .amp-content-panel-body{padding-left:480px;}
+/* ======================================== block-left ======================================== */
+#simulation-calculation .block-left{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:480px;
+    height:100%;
+    padding:0 24px 20px 24px;
+    border-right:1px solid #dae2e7;
+    overflow: auto;
+
+}
+
+/* ---------------------------------------- section ---------------------------------------- */
+#simulation-calculation .section{
+    margin-top:24px;
+}
+#simulation-calculation .section:first-child{margin-top:0;}
+#simulation-calculation .section .section-title{
+    position: relative;
+    height:45px;
+    line-height: 44px;
+    border-bottom:1px solid #dae2e7;
+}
+
+#simulation-calculation .section.open .section-title{
+    height:44px;
+    border-bottom:none;
+}
+
+#simulation-calculation .section .section-title span{color:#5ab46e;}
+#simulation-calculation .section .section-title em{color:#8592a3;font-size:12px;}
+#simulation-calculation .section .section-title a.collapse-btn{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    width:17px;
+    height:17px;
+    background:url(../../images/common/collapse-down-btn-icon.png) no-repeat;
+    background-size:contain;
+    margin:auto;
+}
+
+#simulation-calculation .section.open .section-title a.collapse-btn{
+    background-image:url(../../images/common/collapse-up-btn-icon.png);
+}
+
+#simulation-calculation .section .section-content{display:none;}
+#simulation-calculation .section.open .section-content{display:block;}
+
+/*section-content table*/
+#simulation-calculation .section .section-content table{
+    width:100%;
+}
+
+#simulation-calculation .section .section-content table thead th{
+    height:28px;
+    background-color:#f2f5f7;
+    font-weight: normal;
+    text-align: right;
+    padding:0 6px;
+    border-top:1px solid #c2cdd7;
+    border-bottom:1px solid #c2cdd7;
+    color:#737e8c;
+    font-size:12px;
+}
+#simulation-calculation .section .section-content table thead th:first-child{
+    border-left:1px solid #c2cdd7;
+}
+#simulation-calculation .section .section-content table thead th:last-child{
+    border-right:1px solid #c2cdd7;
+}
+
+#simulation-calculation .section .section-content table tbody td{
+    height:64px;
+    text-align: right;
+    padding:0 6px;
+    border-bottom:1px solid #c2cdd7;
+}
+
+
+#simulation-calculation .section .section-content table tbody td:first-child{
+    border-left:1px solid #c2cdd7;
+}
+#simulation-calculation .section .section-content table tbody td:last-child{
+    border-right:1px solid #c2cdd7;
+}
+
+/*section-content list-form-group */
+#simulation-calculation .section .section-content .list-form-group{color:#8592a3;}
+#simulation-calculation .section .section-content .list-form-group{padding:20px 10px 10px 10px;border:1px solid #dae2e7;}
+#simulation-calculation .section .section-content .list-form-group li{
+    position:relative;
+    min-height:32px;
+    line-height: 32px;
+    margin-bottom:10px;
+    padding-left:113px;
+}
+
+#simulation-calculation .section .section-content .list-form-group li .form-label{
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+}
+
+#simulation-calculation .section .section-content .list-form-group li .form-content{text-align: right;padding-right:0;}
+
+#simulation-calculation .section .section-content .list-form-group li .nested-record{
+    position:relative;
+    height:32px;
+    line-height: 32px;
+    margin-bottom:10px;
+    padding-right:0;
+}
+
+
+/* ######################################## block-right ######################################## */
+#simulation-calculation .block-right{padding:20px 0;}
+#simulation-calculation .block-right .amp-check-btn-group{margin:0 20px 20px 20px;}
+
+/* ======================================== loan-repayment-analysis ======================================== */
+#simulation-calculation .loan-repayment-analysis{display:none;}
+#simulation-calculation .loan-repayment-analysis table th,
+#simulation-calculation .loan-repayment-analysis table td{
+    text-align: right;
+    padding:0 20px;
+}
+#simulation-calculation .loan-repayment-analysis .table-wrapper{overflow: auto;}
+#simulation-calculation .loan-repayment-analysis table th:first-child,
+#simulation-calculation .loan-repayment-analysis table td:first-child{
+    text-align: left;
+}
+
+/* ======================================== pre-tax-cash-flow ======================================== */
+#simulation-calculation .pre-tax-cash-flow{display:none;}
+
+
+/* ---------------------------------------- table-group ---------------------------------------- */
+#simulation-calculation .pre-tax-cash-flow .table-group{position:relative;padding-left:180px;}
+#simulation-calculation .pre-tax-cash-flow .table-group .table-group-head-bg{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 29px;
+    background-color: #f2f5f7;
+    border-bottom: 1px solid #c2cdd7;
+    z-index: 1;
+}
+
+#simulation-calculation .pre-tax-cash-flow .table-group .table-group-line {
+    position: absolute;
+    left:0;
+    right:0;
+    height:1px;
+    background-color:#f3f4f8;
+    z-index: 1;
+}
+#simulation-calculation .pre-tax-cash-flow .table-group .table-group-line-1{top:69px;}
+#simulation-calculation .pre-tax-cash-flow .table-group .table-group-line-2{top:109px;}
+#simulation-calculation .pre-tax-cash-flow .table-group .table-group-line-3{top:149px;}
+#simulation-calculation .pre-tax-cash-flow .table-group .table-group-line-4{top:189px;}
+#simulation-calculation .pre-tax-cash-flow .table-group .table-group-line-5{top:229px;}
+
+#simulation-calculation .pre-tax-cash-flow .table-group .table-group-right .swiper-slide{width:auto;}
+
+/*table-group-left*/
+#simulation-calculation .pre-tax-cash-flow .table-group-left{
+    position:absolute;
+    top:0;
+    left:0;
+    width:180px;
+    z-index: 999;
+}
+#simulation-calculation .pre-tax-cash-flow .table-group-left li{
+    height:40px;
+    line-height: 40px;
+    padding:0 10px 0 40px;
+}
+#simulation-calculation .pre-tax-cash-flow .table-group-left li:first-child{
+    height:28px;
+    line-height: 28px;
+    font-size:12px;
+    background-color: #f3f4f8;
+}
+#simulation-calculation .pre-tax-cash-flow .table-group-left li:last-child{font-weight: bold;font-style: italic;}
+/*table-group-right*/
+
+#simulation-calculation .pre-tax-cash-flow .table-group-right{
+    position:relative;
+    z-index: 999;
+}
+#simulation-calculation .pre-tax-cash-flow .table-group-right ul{width:180px;float:left;}
+#simulation-calculation .pre-tax-cash-flow .table-group-right li{
+    height:40px;
+    line-height: 40px;
+    padding:0 20px 0 40px;
+    text-align: right;
+    color:#737e8c;
+}
+#simulation-calculation .pre-tax-cash-flow .table-group-right li:first-child{
+    height:28px;
+    line-height: 28px;
+    font-size:12px;
+    background-color: #f3f4f8;
+}
+#simulation-calculation .pre-tax-cash-flow .table-group-right li:last-child{font-weight: bold;font-style: italic;}
+
+/* ======================================== sale-income-analysis ======================================== */
+#simulation-calculation .sale-income-analysis{display:none;}
+#simulation-calculation .sale-income-analysis .table-group{position:relative;padding-left:180px;}
+#simulation-calculation .sale-income-analysis .table-group .table-group-head-bg{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 29px;
+    background-color: #f2f5f7;
+    border-bottom: 1px solid #c2cdd7;
+    z-index: 1;
+}
+
+#simulation-calculation .sale-income-analysis .table-group .table-group-line {
+    position: absolute;
+    left:0;
+    right:0;
+    height:1px;
+    background-color:#f3f4f8;
+    z-index: 1;
+}
+#simulation-calculation .sale-income-analysis .table-group .table-group-line-1{top:69px;}
+#simulation-calculation .sale-income-analysis .table-group .table-group-line-2{top:109px;}
+#simulation-calculation .sale-income-analysis .table-group .table-group-line-3{top:149px;}
+#simulation-calculation .sale-income-analysis .table-group .table-group-line-4{top:189px;}
+
+#simulation-calculation .sale-income-analysis .table-group .table-group-right .swiper-slide{width:auto;}
+
+/*table-group-left*/
+#simulation-calculation .sale-income-analysis .table-group-left{
+    position:absolute;
+    top:0;
+    left:0;
+    width:180px;
+    z-index: 999;
+}
+#simulation-calculation .sale-income-analysis .table-group-left li{
+    height:40px;
+    line-height: 40px;
+    padding:0 10px 0 40px;
+}
+#simulation-calculation .sale-income-analysis .table-group-left li:first-child{
+    height:28px;
+    line-height: 28px;
+    font-size:12px;
+    background-color: #f3f4f8;
+}
+#simulation-calculation .sale-income-analysis .table-group-left li:last-child{font-weight: bold;font-style: italic;}
+/*table-group-right*/
+
+#simulation-calculation .sale-income-analysis .table-group-right{
+    position:relative;
+    z-index: 999;
+}
+#simulation-calculation .sale-income-analysis .table-group-right ul{width:180px;float:left;}
+#simulation-calculation .sale-income-analysis .table-group-right li{
+    height:40px;
+    line-height: 40px;
+    padding:0 20px 0 40px;
+    text-align: right;
+    color:#737e8c;
+}
+#simulation-calculation .sale-income-analysis .table-group-right li:first-child{
+    height:28px;
+    line-height: 28px;
+    font-size:12px;
+    background-color: #f3f4f8;
+}
+#simulation-calculation .sale-income-analysis .table-group-right li:last-child{font-weight: bold;font-style: italic;}
+
+/* ======================================== initial-analysis ======================================== */
+#simulation-calculation .initial-analysis{
+    padding:20px 24px;
+    margin:0 20px;
+    border-top:1px solid #ececec;
+}
+#simulation-calculation .initial-analysis .form-group{
+    position: relative;
+    height:40px;
+    margin:20px 0 0 0;
+
+    padding-left:180px;
+}
+#simulation-calculation .initial-analysis .form-group:first-child{margin-top:0;}
+#simulation-calculation .initial-analysis .form-group .form-group-label{
+    position:absolute;
+    left:0;
+    top:0;
+    width:180px;
+    height:40px;
+    line-height: 40px;
+    margin:0;
+}
+
+#simulation-calculation .initial-analysis .form-group .form-group-value{
+    position:relative;
+    width:275px;
+    height:40px;
+    line-height: 40px;
+}
+#simulation-calculation .initial-analysis .form-group .form-group-value .amp-input{width:100%;}
+#simulation-calculation .initial-analysis .form-group .form-group-value input{
+    /*display:block;*/
+    padding:0 10px;
+}
+
+#simulation-calculation .initial-analysis .form-group .form-group-value input.non-input{
+    background-color:#dae2e7;
+    border:none;
+    color:#737e8c;
+}
+#simulation-calculation .initial-analysis .form-group .form-group-value input.middle-input{
+    position:absolute;
+    left:0;
+    top:0;
+    width:95px;
+}
+#simulation-calculation .initial-analysis .form-group .form-group-value input.short-input{
+    position:absolute;
+    right:0;
+    top:0;
+    width:60px;
+}
+
+#simulation-calculation .initial-analysis .form-group .form-group-value-multiple{position:relative;padding:0 100px 0 106px;text-align: right;}
+#simulation-calculation .initial-analysis .form-group .form-group-value-multiple em{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:-18px;
+}
+
+#simulation-calculation .initial-analysis .form-group .form-group-value-multiple .input-1{
+    position:absolute;top:0;left:0;width:106px;
+}
+#simulation-calculation .initial-analysis .form-group .form-group-value-multiple .input-2{
+    position:absolute;top:0;right:0;width:85px;
+}
+
+/* ======================================== income-expenses-simulation ======================================== */
+#simulation-calculation .income-expenses-simulation {
+    position: relative;
+    display:none;
+}
+#simulation-calculation .income-expenses-simulation:after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    height:29px;
+    background-color:#f2f5f7;
+    border-bottom:1px solid #c2cdd7;
+}
+#simulation-calculation .income-expenses-simulation .table-group{
+    position:relative;
+    padding-left:180px;
+    z-index: 999;
+}
+
+#simulation-calculation .income-expenses-simulation .table-group .record-list{
+    float:left;
+    padding-right:20px;
+}
+
+#simulation-calculation .income-expenses-simulation .table-group .record-list li{
+    position:relative;
+    width:90px;
+    height:40px;
+    line-height: 40px;
+    text-align: right;
+    padding:0 10px;
+    color:#8592a3;
+}
+#simulation-calculation .income-expenses-simulation .table-group .record-list li.record-list-title{
+    height:28px;
+    line-height: 28px;
+    color: #737e8c;
+    font-size:12px;
+}
+
+#simulation-calculation .income-expenses-simulation .table-group .record-list li.parent-group{cursor:pointer;}
+
+#simulation-calculation .income-expenses-simulation .table-group .record-list li.sub-record-group a,
+#simulation-calculation .income-expenses-simulation .table-group .record-list li.record-group a{
+    display:inline-block;
+    width:17px;
+    height:17px;
+    background:url(../../images/common/collapse-down-btn-icon.png) no-repeat;
+    background-size:contain;
+    vertical-align: -4px;
+    margin-left:8px;
+    cursor: pointer;
+}
+#simulation-calculation .income-expenses-simulation .table-group .record-list li.sub-record-group.collapsed a,
+#simulation-calculation .income-expenses-simulation .table-group .record-list li.record-group.collapsed  a{
+    background-image:url(../../images/common/collapse-up-btn-icon.png);
+}
+
+#simulation-calculation .income-expenses-simulation .table-group .record-list li.record-list-operation{
+    position:relative;
+    height:28px;
+}
+
+#simulation-calculation .income-expenses-simulation .table-group .record-list li.record-list-operation a{
+    display:inline-block;
+    width:24px;
+    height:28px;
+    background:no-repeat center center;
+    background-size:17px 17px;
+}
+
+#simulation-calculation .income-expenses-simulation .table-group .record-list li.record-list-operation .record-list-add-btn{
+    background-image:url(../../images/common/plus-icon.png);
+}
+
+#simulation-calculation .income-expenses-simulation .table-group .record-list li.record-list-operation .record-list-remove-btn{
+    background-image:url(../../images/common/subtract-icon.png);
+}
+
+#simulation-calculation .income-expenses-simulation .table-group .record-list li .amp-input {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 4px;
+    right: 0;
+    display: block;
+    width: auto;
+    margin: auto;
+
+}
+#simulation-calculation .income-expenses-simulation .table-group .record-list li .amp-input input{
+    padding:0 10px;
+    line-height: 24px;
+}
+
+
+
+#simulation-calculation .income-expenses-simulation .table-group-left{
+    position:absolute;
+    left:0;
+    top:0;
+    width:180px;
+    z-index: 999;
+}
+#simulation-calculation .income-expenses-simulation .table-group-left .record-list li{
+    width: 100%;
+    text-align: left;
+    padding-left:24px;
+}
+
+
+
+#simulation-calculation .income-expenses-simulation .table-group-left .record-list li.padding-left-36{
+    padding-left:36px;
+}
+
+
+#simulation-calculation .income-expenses-simulation .table-group-right{position: relative;z-index: 999;}
+#simulation-calculation .income-expenses-simulation .table-group-right .swiper-slide{width:auto;}
+#simulation-calculation .income-expenses-simulation .table-group-2{padding-bottom:20px;}
+
+
+
+/* ======================================== amp-content-panel-foot ======================================== */
+#simulation-calculation .amp-content-panel-foot{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:20px 24px;
+    z-index: 999;
+    border-top:1px solid #c2ced7;
+    background-color:#f3f4f8;
+}
+
+#simulation-calculation .amp-content-panel-foot a{
+    margin-left:10px;
+}

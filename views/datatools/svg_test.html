@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<div class="amp-content-panel" id="datatool-sim">
+    <div class="amp-content-header clearfix">
+        <!-- Breadcrumb / Summary info-->
+        <ul class="header-nav-sub clearfix">
+            <li><a href="#" id="tri-0-1-0" class="header-subnav-item active" target="#page-frame">推演模拟</a></li>
+        </ul>
+    </div><!--amp-content-header-->
+    <div class="ys-block">
+        <div class="clearfix">
+            <div class="col-xs-6">
+                <div class="swiper-container" style="width:100%;" id="datatool-sim-floor-table">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="ys-mainpanel-inner">
+                                <!--svg here-->
+                                <svg version="1.1" id="ys-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="1800px" viewBox="0 0 600 1800" preserveAspectRetio="xMidYMid meet">
+
+                                </svg>
+                                <!--svg here-->
+
+                            </div>
+                        </div><!--swiper slide-->
+                    </div><!--swiper wrapper-->
+                </div><!--swiper container-->
+                <div class="amp-svg-opt">
+                    <h5>铺位</h5>
+                    <div class="opt-block">
+                        <span class="opt-item"><em>1F 001</em><em class="ys-icon ys-icon-cancel"></em></span>
+                        <span class="opt-item"><em>1F 001</em><em class="ys-icon ys-icon-cancel"></em></span>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button class="btn btn-default amp-btn amp-btn-sm amp-btn-grey" id="shop-split">拆分</button>
+                        <button class="btn btn-default amp-btn amp-btn-sm" id="shop-compressed">合并</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="swiper-container" style="width:100%;" id="datatool-sim-main-table">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <table class="table table-no-bordered amp-table">
+                                <tbody>
+                                <tr>
+                                    <th>铺位号</th>
+                                    <td>
+                                        <div class="td-input-wrapper padding-r-15 text-input" >
+                                            <input type="text" placeholder="/" value="">
+                                            <!--<span class="number-format"></span>%-->
+                                        </div>
+                                    </td>
+                                    <td>套内面积:56m&sup2</td>
+                                </tr>
+                                <tr>
+                                    <th>业态</th>
+                                    <td>
+                                        <div class="td-input-wrapper padding-r-15 select-input" >
+                                            <input type="text" placeholder="/" value="" hidden>
+                                            <!--<span class="number-format"></span>%-->
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                    <em>业态</em><span class="ys-icon ys-icon-dropdown"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">业态A</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">业态B</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">业态C</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">业态D</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-no-bordered amp-table">
+                                <thead>
+                                <th></th>
+                                <th>租金包(元/m&sup2)/月</th>
+                                <th>物业管理费</th>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th>2016</th>
+                                    <td>
+                                        <div class="td-input-wrapper padding-r-15 num-input">
+                                            <input type="text" placeholder="/" value="">
+                                            <span class="number-format"></span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper padding-r-15 num-input">
+                                            <input type="text" placeholder="/" value="">
+                                            <span class="number-format"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>2017</th>
+                                    <td>
+                                        <div class="td-input-wrapper padding-r-15 num-input">
+                                            <input type="text" placeholder="/" value="">
+                                            <span class="number-format"></span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper padding-r-15 num-input">
+                                            <input type="text" placeholder="/" value="">
+                                            <span class="number-format"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>2018</th>
+                                    <td>
+                                        <div class="td-input-wrapper padding-r-15 num-input" >
+                                            <input type="text" placeholder="/" value="">
+                                            <span class="number-format"></span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper padding-r-15 num-input" >
+                                            <input type="text" placeholder="/" value="">
+                                            <span class="number-format"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>2019</th>
+                                    <td>
+                                        <div class="td-input-wrapper padding-r-15 num-input" >
+                                            <input type="text" placeholder="/" value="">
+                                            <span class="number-format"></span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper padding-r-15 num-input" >
+                                            <input type="text" placeholder="/" value="">
+                                            <span class="number-format"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>2020</th>
+                                    <td>
+                                        <div class="td-input-wrapper padding-r-15 num-input" >
+                                            <input type="text" placeholder="/" value="">
+                                            <span class="number-format"></span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper padding-r-15 num-input" >
+                                            <input type="text" placeholder="/" value="">
+                                            <span class="number-format"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-no-bordered amp-table">
+                                <tbody>
+                                <tr>
+                                    <th>商家</th>
+                                    <td colspan="2">
+                                        <div class="td-input-wrapper padding-r-15 text-input" >
+                                            <input type="text" placeholder="/" value="">
+                                            <!--<span class="number-format"></span>%-->
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr class="tr-date-range">
+                                    <th>合同开始</th>
+                                    <td>
+                                        <div class="td-input-wrapper padding-r-15 date-input" >
+                                            <input type="text" placeholder="/" value="" id="date-start" readonly>
+                                            <!--<span class="number-format"></span>%-->
+                                        </div>
+                                    </td>
+                                    <th>结束时间</th>
+                                    <td>
+                                        <div class="td-input-wrapper padding-r-15 date-input" >
+                                            <input type="text" placeholder="/" value="" id="date-end" readonly>
+                                            <!--<span class="number-format"></span>%-->
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>平均租金(元/m&sup2/月)</th>
+                                    <td>
+                                        <div class="td-input-wrapper padding-r-15 num-input" >
+                                            <input type="text" placeholder="/" value="">
+                                            <span class="number-format"></span>
+                                        </div>
+                                    </td>
+                                    <th>免租期(月)</th>
+                                    <td>
+                                        <div class="td-input-wrapper padding-r-15 text-input" >
+                                            <input type="text" placeholder="/" value="" readonly>
+                                            <!--<span class="number-format"></span>%-->
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>租金总计(元)</th>
+                                    <td>
+                                        <div class="td-input-wrapper padding-r-15 num-input" >
+                                            <input type="text" placeholder="/" value="">
+                                            <span class="number-format"></span>
+                                        </div>
+                                    </td>
+                                    <th>物管费总计(元)</th>
+                                    <td>
+                                        <div class="td-input-wrapper padding-r-15 num-input" >
+                                            <input type="text" placeholder="/" value="">
+                                            <span class="number-format"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>租金起记日期</th>
+                                    <td>
+                                        <div class="td-input-wrapper padding-r-15 date-input" >
+                                            <input type="text" placeholder="/" value="" id="date-rent" readonly>
+                                            <!--<span class="number-format"></span>%-->
+                                        </div>
+                                    </td>
+                                    <th>月销售额</th>
+                                    <td>
+                                        <div class="td-input-wrapper padding-r-15 num-input" >
+                                            <input type="text" placeholder="/" value="">
+                                            <span class="number-format"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>工程改造预算</th>
+                                    <td>
+                                        <div class="td-input-wrapper padding-r-15 num-input" >
+                                            <input type="text" placeholder="/" value="">
+                                            <span class="number-format"></span>
+                                        </div>
+                                    </td>
+                                    <th>租金方式</th>
+                                    <td>
+                                        <div class="td-input-wrapper padding-r-15 select-input" >
+                                            <input type="text" placeholder="/" value="" hidden>
+                                            <!--<span class="number-format"></span>%-->
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                    <em>租金方式</em><span class="ys-icon ys-icon-dropdown"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">租金方式A</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">租金方式B</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">租金方式C</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">租金方式D</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>付款时间</th>
+                                    <td>
+                                        <div class="td-input-wrapper padding-r-15 select-input" >
+                                            <input type="text" placeholder="/" value="" hidden>
+                                            <!--<span class="number-format"></span>%-->
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                    <em>付款时间</em><span class="ys-icon ys-icon-dropdown"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">月付</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">年付</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+
+                        </div><!--swiper slide-->
+                    </div><!--swiper wrapper-->
+                </div><!--swiper container-->
+            </div>
+        </div>
+    </div><!--ys-block-->
+    <div class="block bottom-block bottom-block-fixed clearfix">
+        <div class="btn-wrapper pull-right">
+            <a href="javascript:void(0)" class="btn btn-default amp-btn amp-btn-reverse" id="btn-dismiss">解约</a>
+            <a href="javascript:void(0)" class="btn btn-default amp-btn" id="btn-go">查看回报</a>
+        </div>
+    </div>
+</div><!-- contentpanel -->
+
+<script>
+    $(document).ready(function(){
+        $.get("floors.svg",function(data,status){
+           // $("#ys-svg").html(data);
+            var importedSVGRootElement = document.importNode(data.documentElement,true);
+            $("#ys-svg").append(importedSVGRootElement);
+        });
+       alert("...")
+    })
+</script>
+</body>
+</html>

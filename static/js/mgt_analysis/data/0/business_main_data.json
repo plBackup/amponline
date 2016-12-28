@@ -1,0 +1,193 @@
+{
+  "rentData": [
+    {
+      "hasCollapseBtn": true,
+      "dataGroup": 1,
+      "calOfficialReceipts": "0",
+      "rate": "-",
+      "calReceivable": "5",
+      "curBalance": "-5",
+      "commercialType": "主力店",
+      "calBalance": "-5",
+      "curOfficialReceipts": "0",
+      "curReceivable": "5"
+    },
+    {
+      "hide": true,
+      "dataGroup": 1,
+      "calOfficialReceipts": "0",
+      "rate": "0%",
+      "calReceivable": "5",
+      "curBalance": "-5",
+      "commercialType": "影院",
+      "calBalance": "-5",
+      "curOfficialReceipts": "0",
+      "curReceivable": "5"
+    },
+    {
+      "dataGroup": 2,
+      "hasCollapseBtn": true,
+      "calOfficialReceipts": "232.53140200000001",
+      "rate": "-",
+      "calReceivable": "238.11321400000003",
+      "curBalance": "-5.1091839999999991",
+      "commercialType": "非主力店",
+      "calBalance": "-5.5818120000000135",
+      "curOfficialReceipts": "148.998694",
+      "curReceivable": "154.107878"
+    },
+    {
+      "hide": true,
+      "dataGroup": 2,
+      "calOfficialReceipts": "166.179202",
+      "rate": "99%",
+      "calReceivable": "167.16125700000001",
+      "curBalance": "-1.0572120000000069",
+      "commercialType": "餐饮",
+      "calBalance": "-0.98205500000000256",
+      "curOfficialReceipts": "103.294494",
+      "curReceivable": "104.35170600000001"
+    },
+    {
+      "hide": true,
+      "dataGroup": 2,
+      "calOfficialReceipts": "7.8607449999999996",
+      "rate": "100%",
+      "calReceivable": "7.8607449999999996",
+      "curBalance": "0",
+      "commercialType": "儿童",
+      "calBalance": "0",
+      "curOfficialReceipts": "6.8282449999999999",
+      "curReceivable": "6.8282449999999999"
+    },
+    {
+      "hide": true,
+      "dataGroup": 2,
+      "calOfficialReceipts": "0",
+      "rate": "0%",
+      "calReceivable": "0",
+      "curBalance": "0",
+      "commercialType": "服装",
+      "calBalance": "0",
+      "curOfficialReceipts": "0",
+      "curReceivable": "0"
+    },
+    {
+      "hide": true,
+      "dataGroup": 2,
+      "calOfficialReceipts": "58.491455000000002",
+      "rate": "90%",
+      "calReceivable": "63.091211999999999",
+      "curBalance": "-4.0519720000000063",
+      "commercialType": "配套",
+      "calBalance": "-4.5997569999999968",
+      "curOfficialReceipts": "38.875954999999998",
+      "curReceivable": "42.927927000000004"
+    },
+    {
+      "calOfficialReceipts": "232.53140200000001",
+      "rate": "-",
+      "calReceivable": "243.113214",
+      "curBalance": "-10.109183999999999",
+      "commercialType": "合计",
+      "calBalance": "-10.581811999999985",
+      "curOfficialReceipts": "148.998694",
+      "curReceivable": "159.107878"
+    }
+  ],
+  "propertyData": [
+    {
+      "hasCollapseBtn": true,
+      "dataGroup": 1,
+      "calOfficialReceipts": "3.900525",
+      "calReceivable": "3.900525",
+      "curBalance": "0",
+      "commercialType": "主力店",
+      "calBalance": "0",
+      "curOfficialReceipts": "1.9833180000000001",
+      "curReceivable": "1.9833180000000001"
+    },
+    {
+      "dataGroup": 1,
+      "hide": true,
+      "calOfficialReceipts": "3.900525",
+      "rate": "100%",
+      "calReceivable": "3.900525",
+      "curBalance": "0",
+      "commercialType": "影院",
+      "calBalance": "0",
+      "curOfficialReceipts": "1.9833180000000001",
+      "curReceivable": "1.9833180000000001"
+    },
+    {
+      "hasCollapseBtn": true,
+      "dataGroup": 2,
+      "calOfficialReceipts": "365.13291200000003",
+      "rate": "-",
+      "calReceivable": "409.22085899999996",
+      "curBalance": "-31.723765999999998",
+      "commercialType": "非主力店",
+      "calBalance": "-44.087946999999971",
+      "curOfficialReceipts": "179.882319",
+      "curReceivable": "211.60608500000001"
+    },
+    {
+      "dataGroup": 2,
+      "hide": true,
+      "calOfficialReceipts": "182.974602",
+      "rate": "90%",
+      "calReceivable": "196.509536",
+      "curBalance": "-10.873041999999993",
+      "commercialType": "餐饮",
+      "calBalance": "-13.534934000000009",
+      "curOfficialReceipts": "91.446228000000005",
+      "curReceivable": "102.31926999999999"
+    },
+    {
+      "dataGroup": 2,
+      "hide": true,
+      "calOfficialReceipts": "46.598822999999996",
+      "rate": "76%",
+      "calReceivable": "58.499536999999997",
+      "curBalance": "-7.5978400000000024",
+      "commercialType": "儿童",
+      "calBalance": "-11.900714000000001",
+      "curOfficialReceipts": "24.684975000000001",
+      "curReceivable": "32.282814999999999"
+    },
+    {
+      "dataGroup": 2,
+      "hide": true,
+      "calOfficialReceipts": "56.141279000000004",
+      "rate": "83%",
+      "calReceivable": "62.798106000000004",
+      "curBalance": "-4.8621309999999998",
+      "commercialType": "服装",
+      "calBalance": "-6.6568270000000016",
+      "curOfficialReceipts": "24.525548999999998",
+      "curReceivable": "29.38768"
+    },
+    {
+      "dataGroup": 2,
+      "hide": true,
+      "calOfficialReceipts": "79.418207999999993",
+      "rate": "82%",
+      "calReceivable": "91.413679999999999",
+      "curBalance": "-8.3907530000000037",
+      "commercialType": "配套",
+      "calBalance": "-11.995471999999998",
+      "curOfficialReceipts": "39.225566999999998",
+      "curReceivable": "47.616320000000002"
+    },
+    {
+      "calOfficialReceipts": "369.03343699999999",
+      "rate": "-",
+      "calReceivable": "413.12138399999998",
+      "curBalance": "-31.723765999999998",
+      "commercialType": "合计",
+      "calBalance": "-44.087946999999971",
+      "curOfficialReceipts": "181.86563699999999",
+      "curReceivable": "213.58940300000003"
+    }
+  ]
+}

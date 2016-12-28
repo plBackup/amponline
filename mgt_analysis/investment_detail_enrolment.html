@@ -1,0 +1,44 @@
+<link href="../static/css/mgt_analysis/investment_detail_enrolment.css" rel="stylesheet">
+
+<div class="amp-right-panel amp-display-hide"  id="investment-detail-enrolment">
+    <div class="contract-enrolment">
+        <div class="enrolment-title"><a class="close-panel-btn"></a>录入</div>	
+        <div class="enrolment-body">
+            <table>
+                <colgroup>
+                    <col width="25%"/>
+                    <col width="25%"/>
+                   <col width="25%"/>
+                    <col width="25%"/>                   
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span>项目</span>
+                            <div class="amp-input amp-input-default amp-input-32"><input ng-model="record.projectItemName" type="text"/></div>
+                        </td>
+                        <td>
+                            <span>预算(㎡)</span>
+                            <div class="amp-input amp-input-default amp-input-32"><input ng-model="record.budget" type="number"/></div>
+                        </td>
+                        <td>
+                            <span>实际(㎡)</span>
+                            <div class="amp-input amp-input-default amp-input-32"><input ng-model="record.real" type="number"/></div>
+                        </td>
+                       <td>
+                            <span>完成率(㎡</span>
+                            <div class="input-span">{{(record.real/record.budget)*100|number:2|stringFormat:"%":"-"}}</div>
+                       </td>                                    
+                    </tr>
+                </tbody>
+            </table>
+            <div class="amp-btn-group clearfix">
+                <a class="amp-btn amp-btn-green pull-right save-btn">保存</a>
+            	<a class="amp-btn amp-btn-default pull-right continue-save-btn">继续录入</a>
+            </div>
+			
+        </div><!-- enrolment-form-container -->
+
+    </div><!-- contract-enrolment -->
+
+</div><!-- amp-main-panel -->

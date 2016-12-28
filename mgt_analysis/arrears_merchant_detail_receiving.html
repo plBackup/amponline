@@ -1,0 +1,44 @@
+<link href="../static/css/mgt_analysis/arrears_merchant_detail_receiving.css" rel="stylesheet">
+
+<div class="amp-right-panel amp-display-hide" id="arrears-merchant-detail-receiving">
+    <div class="contract-enrolment">
+        <div class="enrolment-title"><a class="close-panel-btn"></a>确认已收</div>
+        <div class="amp-content-header clearfix">
+            <div class="pull-left">
+                <strong>{{merchantName}}</strong>
+            </div>
+        </div>
+
+        <div class="amp-content-panel">
+
+            <table class="amp-table-1">
+                <colgroup>
+                    <col width="20%">
+                    <col width="20%">
+                    <col width="60%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>欠费类型</th>
+                        <th>金额</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in records">
+                        <td>{{item.arrearsType}}</td>
+                        <td>{{item.arrearsAmount|number}}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- amp-amp-table-1 -->
+            <div class="clearfix btn-wrapper">
+                <a class="amp-btn amp-btn-green receive-btn pull-right">确认已收</a>
+            </div>
+        </div><!-- enrolment-form-container -->
+
+
+    </div><!-- contract-enrolment -->
+
+</div><!-- amp-main-panel -->

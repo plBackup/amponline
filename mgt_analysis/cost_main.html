@@ -1,0 +1,76 @@
+<link href="../static/css/mgt_analysis/cost_main.css" rel="stylesheet">
+
+<div class="amp-main-panel"  id="cost-main">
+    <div class="amp-content-header clearfix">
+        <ul class="amp-tab-menu-list pull-left">
+            <li class="amp-tab-menu-item"><a class="active">成本</a></li>
+        </ul><!-- amp-tab-menu-list -->
+    </div>
+    <div class="amp-content-panel">
+        <!-- 租金 -->
+        <div class="amp-chart-group clearfix">
+            <div class="amp-chart pull-left">
+                <div class="amp-chart-content" id="cost-stack-bar-chart"></div>
+            </div>
+            <div class="amp-chart-legend  pull-left">
+                <ul>
+                    <li>工程(改造、装修、报修)</li>
+                    <li>管理(采购、外包等小项目)</li>
+                    <li>人工(含劳务费)</li>
+                    <li>营销(企划、招商、推广)</li>
+                </ul>
+            </div>
+        </div><!-- amp-chart-group -->
+
+
+        <div class="amp-table-block">
+            <div class="amp-collapse-table">
+                <div class="amp-thead">
+                    <div class="amp-table-row">
+                        <ul class="amp-table-row-content">
+                            <li class="amp-table-cell">月份</li>
+                            <li class="amp-table-cell">营销(万元)</li>
+                            <li class="amp-table-cell">人工(万元)</li>
+                            <li class="amp-table-cell">管理费(万元)</li>
+                            <li class="amp-table-cell">工程(万元)</li>
+                            <li class="amp-table-cell">合计(万元)</li>
+                        </ul>
+                    </div>
+                </div><!-- amp-thead -->
+
+                <div class="amp-tbody">
+
+                    <div class="amp-table-row" ng-if="item.month>=8&&item.month<=10"  ng-repeat="item in records">
+                        <ul class="amp-table-row-content" >
+                            <li class="amp-table-cell">
+                                <div class="amp-font-weight-bold">{{item.month}}月</div>
+                            </li>
+                            <li class="amp-table-cell">
+                                <div>{{item.businessReal|numberFormatDefault:2}}/{{item.businessBudget|numberFormatDefault:2}}</div>
+                                <em>{{item.businessPercent}}</em>
+                            </li>
+                            <li class="amp-table-cell">
+                                <div>{{item.manualWorkReal|numberFormatDefault:2}}/{{item.manualWorkBudget|numberFormatDefault:2}}</div>
+                                <em>{{item.manualWorkPercent}}</em>
+                            </li>
+                            <li class="amp-table-cell">
+                                <div>{{item.mgtFeeReal|numberFormatDefault:2}}/{{item.mgtFeeBudget|numberFormatDefault:2}}</div>
+                                <em>{{item.mgtFeePercent}}</em>
+                            </li>
+                            <li class="amp-table-cell">
+                                <div>{{item.projectReal|numberFormatDefault:2}}/{{item.projectBudget|numberFormatDefault:2}}</div>
+                                <em>{{item.projectPercent}}</em>
+                            </li>
+                            <li class="amp-table-cell">
+                                <div class="amp-font-weight-bold">{{item.totalReal|numberFormatDefault:2}}/{{item.totalBudget|numberFormatDefault:2}}</div>
+                                <em>{{item.totalPercent}}</em>
+                            </li>
+                        </ul>
+                    </div><!-- amp-table-row -->
+                </div><!-- amp-tbody -->
+
+            </div><!-- amp-table-collapse -->
+        </div><!-- amp-table-block -->
+
+    </div><!-- amp-content-panel -->
+</div><!-- amp-main-panel -->

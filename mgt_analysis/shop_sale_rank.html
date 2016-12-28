@@ -1,0 +1,82 @@
+<link href="../static/css/mgt_analysis/shop_sale_rank.css" rel="stylesheet">
+
+<div class="amp-main-panel"  id="shop-sale-rank">
+    <div class="amp-content-header clearfix">
+        <ul class="amp-breadcrumb">
+            <li><a href="#/rent_main">租赁分析</a></li>
+            <li><a href="#/merchant_sale_main">商户销售</a></li>
+            <li><a>排名</a></li>
+        </ul>
+    </div>
+
+
+
+    <div class="amp-content-panel">
+
+        <div class="amp-section-title clearfix">
+            <span class="pull-left">排名</span>
+            <ul class="commercial-item-list pull-right clearfix">
+                <li class="commercial-item"><a class="active" data-href="all">整场</a></li>
+                <li class="commercial-item"><a data-href="catering">餐饮</a></li>
+                <li class="commercial-item"><a data-href="children">儿童</a></li>
+                <li class="commercial-item"><a data-href="clothing">服装</a></li>
+                <li class="commercial-item"><a data-href="mating">配套</a></li>
+            </ul>
+        </div><!-- amp-section-title -->
+
+        <div class="amp-table-block">
+            <table class="amp-table-2">
+                <thead>
+                    <tr>
+                        <th colspan="2">销售额(元)</th>
+                        <th colspan="2">平效</th>
+                        <th colspan="2">租售比</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="amp-font-color-tooltip">前十</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr ng-repeat="item in records.top">
+                        <td class="index-column"><span>{{item.orderNo}}</span>{{item.saleMerchantName}}</td>
+                        <td>{{item.saleAmount|number}}</td>
+                        <td class="index-column"><span>{{item.orderNo}}</span>{{item.performanceMerchantName}}</td>
+                        <td>{{item.performanceAmount|number}}</td>
+                        <td class="index-column"><span>{{item.orderNo}}</span>{{item.rentSaleMerchantName}}</td>
+                        <td>{{item.rentSaleRate}}</td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td class="amp-font-color-tooltip">后十</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr ng-repeat="item in records.bottom">
+                        <td class="index-column"><span>{{item.orderNo}}</span>{{item.saleMerchantName}}</td>
+                        <td>{{item.saleAmount|number}}</td>
+                        <td class="index-column"><span>{{item.orderNo}}</span>{{item.performanceMerchantName}}</td>
+                        <td>{{item.performanceAmount|number}}</td>
+                        <td class="index-column"><span>{{item.orderNo}}</span>{{item.rentSaleMerchantName}}</td>
+                        <td>{{item.rentSaleRate}}</td>
+                    </tr>
+                </tbody>
+            </table><!-- amp-amp-table-2 -->
+
+        </div><!-- amp-table-block -->
+
+    </div><!-- amp-content-panel -->
+
+</div><!-- amp-main-panel -->
+

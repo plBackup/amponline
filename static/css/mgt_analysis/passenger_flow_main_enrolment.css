@@ -1,0 +1,25 @@
+#passenger-flow-main-enrolment{background-color:#fff;}
+
+#passenger-flow-main-enrolment .amp-content-panel{padding:20px 0 20px 0;}
+/* ======================================== amp-content-header ======================================== */
+#passenger-flow-main-enrolment .amp-content-header{padding: 0 24px;margin:0;}
+/* ======================================== ys-table-block ======================================== */
+#passenger-flow-main-enrolment .ys-table-block .amp-pagination-toolbar-wrapper{padding:20px 12px;}
+#passenger-flow-main-enrolment table th{border-bottom: 1px solid #c2cdd7;}
+#passenger-flow-main-enrolment table th,
+#passenger-flow-main-enrolment table td{padding-left:24px;text-align: right;}
+
+#passenger-flow-main-enrolment table th:nth-child(1),
+#passenger-flow-main-enrolment table td:nth-child(1){
+    text-align: left;
+}
+#passenger-flow-main-enrolment table th:nth-child(2),
+#passenger-flow-main-enrolment table th:nth-child(3){padding-right:20px;}
+
+#passenger-flow-main-enrolment table .amp-input input{text-align: right;}
+
+#passenger-flow-main-enrolment table tr:first-child td{height:44px;padding-top:4px;}
+
+#passenger-flow-main-enrolment .btn-group-wrapper{padding-top:20px;padding-right:20px;}
+
+#passenger-flow-main-enrolment .btn-group-wrapper a{margin-left:10px;}

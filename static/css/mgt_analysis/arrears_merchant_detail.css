@@ -1,0 +1,17 @@
+#arrears-merchant-detail{background-color:#fff;}
+#arrears-merchant-detail .amp-content-header{margin:0;}
+#arrears-merchant-detail .amp-content-panel{padding:20px 0 20px 0;}
+/* ======================================== amp-content-header ======================================== */
+#arrears-merchant-detail .amp-content-header{padding: 0 24px;}
+/* ======================================== ys-table-block ======================================== */
+#arrears-merchant-detail .ys-table-block .amp-table-cell{width:15%;}
+#arrears-merchant-detail .ys-table-block .amp-pagination-toolbar-wrapper{padding:20px 12px;}
+
+#arrears-merchant-detail .amp-table-cell:nth-child(2),
+#arrears-merchant-detail .amp-table-cell:nth-child(3){
+    text-align: right;
+}
+
+#arrears-merchant-detail .amp-table-row-content .amp-table-cell{cursor: default;}
+
+#arrears-merchant-detail .amp-checkbox{vertical-align: -2px;}

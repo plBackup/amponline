@@ -1,0 +1,49 @@
+#arrears-enrolment{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:rgba(0,0,0,0.4);
+    z-index: 999;
+    padding-left:400px;
+}
+
+#arrears-enrolment .contract-enrolment{
+    height:100%;
+    background-color:#fff;
+}
+
+/* ======================================== enrolment-title ======================================== */
+#arrears-enrolment .enrolment-title{
+    position:relative;
+    height:44px;
+    line-height: 44px;
+    text-align: center;
+    background-color:#dae2e7;
+}
+#arrears-enrolment .enrolment-title a.close-panel-btn{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    width:44px;
+    height:44px;
+    background:url(../../images/common/right-panel-title-close-icon.png) no-repeat center center;
+    margin:auto;
+    cursor: pointer;
+}
+/* ======================================== amp-content-header======================================== */
+
+#arrears-enrolment .contract-enrolment table{width: 100%;}
+#arrears-enrolment .contract-enrolment table td{padding: 10px 12px 0 12px;}
+#arrears-enrolment .contract-enrolment table td>span{    display: block;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    color: #8592a2;}
+#arrears-enrolment .contract-enrolment table td div{height: 32px;}
+#arrears-enrolment .contract-enrolment .enrolment-body .amp-btn-group{padding: 20px 12px 0 0;}
+#arrears-enrolment .contract-enrolment .enrolment-body .amp-btn-group .amp-btn-default{margin-right: 10px;}
+#arrears-enrolment .contract-enrolment .amp-btn{width:110px;padding:0;text-align: center;}
