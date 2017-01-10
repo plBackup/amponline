@@ -680,8 +680,6 @@ dataTool.controller("dataRightController",['$rootScope', '$scope',
 
         amp_main.leftPanel_update();
 
-        $(".ys-tips").tooltip();
-
     }]);
 
 dataTool.controller("dataSetController",['$rootScope', '$scope','$timeout',"rpgSetData","rpgresultData",
@@ -1277,7 +1275,6 @@ dataTool.controller("irrPlanController",['$rootScope', '$scope',"irrPlanData","$
         irr_plan.init();
         self.count();
         amp_main.leftPanel_update();
-        $(".ys-tips").tooltip();
         $scope.$on("$destroy", function() {
             irr_plan.destroy();
         });
@@ -1577,7 +1574,7 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
 
             $(".col-xs-6").css({
                 "overflow-y":"hidden",
-                "height":(h-88-54)+"px"
+                "height":(h-88)+"px"
             });
 
             var datasim_floor_scroll = new IScroll('#datatool-sim-floor-table', {
@@ -1596,7 +1593,7 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
 
                 $(".col-xs-6").css({
                     "overflow-y":"hidden",
-                    "height":(h-88-54)+"px"
+                    "height":(h-88)+"px"
                 });
 
                 datasim_floor_scroll.refresh();
@@ -1687,7 +1684,7 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
         $scope.$on("$destroy", function() {
             amp_datePicker.destroy();
         });
-        $(".ys-tips").tooltip();
+
         amp_main.leftPanel_update();
     }]);
 
