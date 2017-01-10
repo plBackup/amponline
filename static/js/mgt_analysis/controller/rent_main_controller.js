@@ -47,6 +47,10 @@ ampApp.controller("rent-main-controller",["$scope","$http","$rootScope",function
             });
         }
 
+        // 设置浮动条宽度
+        var deptTableHeadWidth = $(container).find(".dept-table-head").css("width");
+        $(container).find(".dept-table-head").css("width",deptTableHeadWidth);
+
 
         createSalePercentPie();
         createMerchantPercentPie();

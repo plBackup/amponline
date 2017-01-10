@@ -47,11 +47,25 @@ var irr_plan=(function($,irr_plan){
 
         var defer=null;
         function _swiperUpdate(){
-            /* irr_plan_head_swiper.update();
-             irr_plan_main_swiper.update();*/
+            var s_width=parseInt($("#irr-plan-main-table").css("width"));
+            var t_width=parseInt($("#irr-plan-table-head").css("width"));
+            console.log("t----"+t_width);
+            console.log("s----"+s_width);
+            if(t_width>s_width){
+
+                irr_plan.destroy();
+            }else{
+                irr_plan.destroy();
+                irr_plan.irr_plan_swiper_reset();
+            }
+            irr_plan.swipers.irr_plan_head_swiper.update();
+             irr_plan.swipers.irr_plan_main_swiper.update();
             pin.refresh();
+
+
         };
         $(window).resize(function(){
+            console.log("window.resize----------");
             if(!defer){
 
                 defer=setTimeout(function(){
@@ -844,6 +858,8 @@ dataTool.controller("irrPlanController",['$rootScope', '$scope',"irrPlanData","$
                 }
                 $(".swiper-wrapper table").css("width",irr_width+"px");
 
+
+
               /*  $timeout(function(){
                     irr_plan.destroy();
                    irr_plan.irr_plan_swiper_reset();
@@ -853,6 +869,8 @@ dataTool.controller("irrPlanController",['$rootScope', '$scope',"irrPlanData","$
             //更改表头
             if(curQuitYear!==self.quitYear){
                  _updateTableHead(self.quitYear);
+                console.log("window.resize");
+                $(window).resize();
              }
 
 

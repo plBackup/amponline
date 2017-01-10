@@ -102,7 +102,7 @@ var menu_list={
             name:"管理工具",
             index:"main-4",
             icon:"ys-icon-data",
-            links:"rpgindex",
+            links:"irrplan",
             target:"#page-frame",
             show_sub_menu:false,
             re_locate:true,//点击一级目录直接跳转

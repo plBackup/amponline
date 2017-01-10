@@ -165,7 +165,7 @@ ampApp.controller("business-main-controller",["$scope","$filter","$http","$rootS
         var myChart = echarts.init($(container).find(".deduct-rent-store-rate-block .chart-block")[0]);
 
         var labels = ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"];
-        var data1 = [350,200,300,200,200,300,220,330,300,300,900,550];
+        var data1 = [300,200,300,200,200,300,220,330,300,300,900,550];
         var data2 = [350,200,300,200,200,300,220,330,300,300,900,550];
         var data3 = [];
         var minValue = data1[0];
@@ -190,9 +190,9 @@ ampApp.controller("business-main-controller",["$scope","$filter","$http","$rootS
                 bottom: "20",
                 containLabel: true
             },
-            tooltip:{show:true,formatter:function(params){
-                return params.name+" : "+$filter("numberFormatDefault")(params.value,2);
-            }},
+            tooltip:{
+                show:true
+            },
             xAxis: [
                 {
                     axisLabel:{textStyle:{color:"#8592a3"}},
@@ -254,6 +254,7 @@ ampApp.controller("business-main-controller",["$scope","$filter","$http","$rootS
                     name:"合成",
                     type:"bar",
                     barWidth:34,
+                    silent:true,
                     label:{
                         normal:{
                             show:true,

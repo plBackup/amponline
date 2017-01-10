@@ -940,28 +940,28 @@ ampApp.nav_list={
     "rpgindex":{
         sideNav:"#main-4",
         headerBar:"#header-tabs-4",
-        headerItem:"#nav-tabs-item-4-0"
+        headerItem:"#nav-tabs-item-4-1"
     },
     "rpgset":{
         sideNav:"#main-4",
         headerBar:"#header-tabs-4",
-        headerItem:"#nav-tabs-item-4-0"
+        headerItem:"#nav-tabs-item-4-1"
     },
     "managefee":{
         sideNav:"#main-4",
         headerBar:"#header-tabs-4",
-        headerItem:"#nav-tabs-item-4-0"
+        headerItem:"#nav-tabs-item-4-1"
     },
     "datasim":{
         sideNav:"#main-4",
         headerBar:"#header-tabs-4",
-        headerItem:"#nav-tabs-item-4-1"
+        headerItem:"#nav-tabs-item-4-2"
     },
 
     "irrplan":{
         sideNav:"#main-4",
         headerBar:"#header-tabs-4",
-        headerItem:"#nav-tabs-item-4-2"
+        headerItem:"#nav-tabs-item-4-0"
     },
     "business_merchant_list":{
         sideNav:"#main-2",

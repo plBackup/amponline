@@ -450,7 +450,7 @@ angular.module('noi').service('noiService', function($rootScope,$http) {
                     tooltip:{
                         show:true,
                         showContent:true,
-                        formatter:"{a}:<br/>{b}年-{c}万",
+                        formatter:"{a}:<br/>{b}-{c}万",
                         textStyle:{
                             fontSize:12,
                             color:"#fff"
@@ -719,7 +719,7 @@ angular.module('noi').service('noiService', function($rootScope,$http) {
                     tooltip:{
                         show:true,
                         showContent:true,
-                        formatter:"{a}:<br/>{b}年-{c}万",
+                        formatter:"{a}:<br/>{b}-{c}万",
                         textStyle:{
                             fontSize:12,
                             color:"#fff"
@@ -873,7 +873,7 @@ angular.module('noi').service('noiService', function($rootScope,$http) {
                         axisPointer: {            // 坐标轴指示器，坐标轴触发有效
                             type: 'line'        // 默认为直线，可选为：'line' | 'shadow'
                         },*/
-                        formatter:"{a}:<br/>{b}年-{c}万",
+                        formatter:"{a}:<br/>{b}-{c}万",
                         textStyle:{
                             fontSize:12,
                             color:"#fff"

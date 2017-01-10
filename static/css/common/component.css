@@ -369,7 +369,7 @@ table.amp-table-2 tbody td{
     text-decoration: none;
 }
 .amp-pagination-toolbar .pagination-nav-group>a:hover{
-    background-color:#f2f5f7;
+    background-color:#f3f4f8;
 }
 .amp-pagination-toolbar .pagination-nav-group>input{
     display:block;
@@ -404,7 +404,7 @@ table.amp-table-2 tbody td{
     height:100%;
     border:1px solid #dae2e7;
     padding:0 10px;
-    background-color:#f2f5f7;
+    background-color:#f3f4f8;
     font-size:14px;
     color:#737e8c;
     cursor: pointer;
@@ -466,7 +466,7 @@ table.amp-table-2 tbody td{
     display:none;
     width:100%;
     border: 1px solid #dae2e7;
-    background-color: #f2f5f7;
+    background-color: #f3f4f8;
     padding:0 10px;
     font-size:12px;
     overflow: hidden;
@@ -592,7 +592,7 @@ table.amp-table-2 tbody td{
 /* ======================================== amp-select-default ======================================== */
 .amp-select-default>input{
     border:1px solid #dbdede;
-    background-color:#f2f5f7;
+    background-color:#f3f4f8;
     color:#737e8c;
 }
 
@@ -722,7 +722,7 @@ table.amp-table-2 tbody td{
 .amp-datetimepicker-default>input.form-control{
     color:#373c42;
     border: 1px solid #dae2e7;
-    background-color: #f2f5f7;
+    background-color: #f3f4f8;
 }
 
 
