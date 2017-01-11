@@ -182,7 +182,7 @@ ampApp.controller("business-main-controller",["$scope","$filter","$http","$rootS
 
         // 指定图表的配置项和数据
         var option = {
-            color:["#00b1f0","#627d9b","transparent"],
+            color:["#627d9b","#00b1f0","transparent"],
             grid: {
                 top:"30",
                 left: "50",
@@ -223,19 +223,7 @@ ampApp.controller("business-main-controller",["$scope","$filter","$http","$rootS
                 }
             ],
             series: [
-                {
-                    stack:"租金",
-                    name:"提成租金",
-                    type:"bar",
-                    barWidth:34,
-                    label:{
-                        normal:{
-                            show:true,
-                            position:"insideTop"
-                        }
-                    },
-                    data:data1
-                },
+
                 {
                     stack:"租金",
                     name:"保底租金",
@@ -244,10 +232,23 @@ ampApp.controller("business-main-controller",["$scope","$filter","$http","$rootS
                     label:{
                         normal:{
                             show:true,
-                            position:"insideBottom"
+                            position:"insideTop"
                         }
                     },
                     data:data2
+                },
+                {
+                    stack:"租金",
+                    name:"提成租金",
+                    type:"bar",
+                    barWidth:34,
+                    label:{
+                        normal:{
+                            show:true,
+                            position:"insideBottom"
+                        }
+                    },
+                    data:data1
                 },
                 {
                     stack:"租金",

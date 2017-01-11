@@ -515,7 +515,7 @@ angular.module('noi').service('noiService', function($rootScope,$http) {
                                     show:true,
                                     color:"#69ce80",
                                     width:2,
-                                    type:"dashed",
+                                   //type:"dashed",
                                 }
                             },
                             data:[],
@@ -530,7 +530,7 @@ angular.module('noi').service('noiService', function($rootScope,$http) {
                             lineStyle:{
                                 normal:{
                                     show:true,
-                                    color:"#a6ed6b",
+                                    color:"#feb739",
                                     width:2,
                                     type:"solid",
                                 }
@@ -714,7 +714,7 @@ angular.module('noi').service('noiService', function($rootScope,$http) {
 
                         },
                     ],
-                    color:['#69ce80','#69ce80', '#a6ec67', '#bcc5aa', '#91c7ae','#749f83',  '#ca8622', '#bda29a','#6e7074', '#546570', '#c4ccd3'],
+                    color:['#69ce80','#feb739', '#feb739', '#bcc5aa', '#91c7ae','#749f83',  '#ca8622', '#bda29a','#6e7074', '#546570', '#c4ccd3'],
                     backgroundColor:"transparent",
                     tooltip:{
                         show:true,
