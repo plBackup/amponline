@@ -64,7 +64,7 @@
 									<td class="text-grey padright">差异</td>
 								</tr>
 			                   <tr ng-click="collapseTable(item) " ng-class="{ 'record-group':item.hasCollapseBtn, 'amp-display-none':item.hide, 'collapsed':item.collapsed} " data-group="{{item.dataGroup}} " ng-repeat="item in cost[costType]">
-									<td ng-class='setFont(item.textbold)'  class="border-right text-left">{{item.name}}</td>
+									<td ng-class='setFont(item.textbold)'  class="border-right text-left">{{item.name}}<em>&#40;平方/元&#41;</em></td>
 	  								<td  ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'>{{item.ActualMonth|number:2}} <i></i></td> 
 	  								<td class="">{{item.ReferMonth|number:2}}</td> 
 	  								<td class="border-right padright"  ng-class='setStyleText(item.ActualYear-item.ReferYear)'>{{(item.ActualMonth-item.ReferMonth)|number:2}}</td>
@@ -201,7 +201,7 @@
 									<td class="text-grey "><span>参考</span></td>
 								</tr>
 			                   	<tr ng-click="collapseTable(item) " ng-class="{ 'record-group':item.hasCollapseBtn, 'amp-display-none':item.hide, 'collapsed':item.collapsed} " data-group="{{item.dataGroup}} "  ng-repeat="item in efficient[efficientType]">
-									<td ng-class='setFont(item.textbold)'   ng-class='setFont(item.textbold)'  class="border-right text-left">{{item.name}}</td>
+									<td ng-class='setFont(item.textbold)'   ng-class='setFont(item.textbold)'  class="border-right text-left">{{item.name}}<em>&#40;万元&#41;</em></td>
 	  								<td ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'><span>{{item.ActualMonth|number:2}} <i></i></span></td> 
 	  								<td class="border-right"><span>{{item.ReferMonth|number:2}}</span></td> 
 	  								<td ng-class='setStyleIcon(item.ActualYear,item.ReferYear)'><span>{{item.ActualYear|number:2}} <i></i></span></td> 
@@ -246,7 +246,7 @@
 									<td class="text-grey "><span>参考</span></td>
 								</tr>
 			                   <tr ng-repeat="item in investment[investmentType]">
-									<td class="border-right text-left">{{item.name}}</td>
+									<td class="border-right text-left">{{item.name}} <em>&#40;m&sup2;&#41;</em></td>
 	  								<td  ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'><span>{{item.ActualMonth|number:2}} <i></i></span></td> 
 	  								<td  class="border-right"><span>{{item.ReferMonth|number:2}}</span></td> 
 	  								<td  ng-class='setStyleIcon(item.ActualYear,item.ReferYear)'><span>{{item.ActualYear|number:2}} <i></i></span></td> 

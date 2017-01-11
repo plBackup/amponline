@@ -226,66 +226,40 @@ td {
 	padding-bottom: 10px;
 }
 
-/*#riskctrl-detail .risk-detail-content-panel .return-rate-table>div:nth-child(1) table tbody tr:nth-child(7) td {
-	padding-bottom: 50px;
-	    padding-top: 10px;
-}*/
 
-
-
-#riskctrl-detail .risk-detail-content-panel .return-rate-table>div:nth-child(1) table tbody tr:nth-child(8) td:nth-child(1):after {
-	content: "（平方/元）";
+#riskctrl-detail .risk-detail-content-panel .return-rate-table>div:nth-child(1) table tbody  tr td em{
+	display: none;
+}
+#riskctrl-detail .risk-detail-content-panel .return-rate-table>div:nth-child(1) table tbody tr:nth-child(8) td:nth-child(1) em {
+	
 	display: inline-block;
 	bottom: 0;
 	font-size: 12px;
 	color: #737e8c;
+	font-weight: 700;
 
 }
-
-#riskctrl-detail .risk-detail-content-panel .return-rate-table>div:nth-child(4) table tbody tr:nth-child(2) td:first-child:before {
-	width: 100%;
-	text-align: left;
-	padding-left: 53px;
-	content: "（万元）";
-	display: block;
-	position: absolute;
-	right: 0;
-	top: 0;
-	line-height: 40px;
+#riskctrl-detail .risk-detail-content-panel .return-rate-table>div:nth-child(4) table tbody tr td em{
+	display: none;
+}
+#riskctrl-detail .risk-detail-content-panel .return-rate-table>div:nth-child(4) table tbody tr:nth-child(2) td:first-child em{
+	
+	display: inline-block;
 	bottom: 0;
 	font-size: 12px;
 	color: #737e8c;
+	font-weight: 700;
 }
-
-#riskctrl-detail .risk-detail-content-panel .return-rate-table>div:nth-child(5) table tbody tr:nth-child(2) td:first-child:after {
-	width: 100%;
-	text-align: left;
-	padding-left: 53px;
-	content: "（m²）";
-	display: block;
-	position: absolute;
-	right: 0;
-	top: 0;
-	line-height: 40px;
+#riskctrl-detail .risk-detail-content-panel .return-rate-table>div:nth-child(5) table tbody tr td em {display: none;}
+#riskctrl-detail .risk-detail-content-panel .return-rate-table>div:nth-child(5) table tbody tr:nth-child(2) td:first-child em,#riskctrl-detail .risk-detail-content-panel .return-rate-table>div:nth-child(5) table tbody tr:nth-child(4) td:first-child em {
+	display: inline-block;
 	bottom: 0;
 	font-size: 12px;
 	color: #737e8c;
+	font-weight: 700;
 }
 
-#riskctrl-detail .risk-detail-content-panel .return-rate-table>div:nth-child(5) table tbody tr:nth-child(4) td:first-child:after {
-	width: 100%;
-	text-align: left;
-	padding-left: 96px;
-	content: "（m²）";
-	display: block;
-	position: absolute;
-	right: 0;
-	top: 0;
-	line-height: 40px;
-	bottom: 0;
-	font-size: 12px;
-	color: #737e8c;
-}
+
 
 
 
@@ -334,9 +308,7 @@ td {
 	margin-left: 8px;
 	vertical-align: -5px;
 }
-#riskctrl-detail #efficient .risk-detail-table-2 tbody tr:nth-child(2) td:first-child:after {
-	margin-left: 45px;
-}
+
 
 #riskctrl-detail .risk-detail-table-2 tbody tr:first-child td:nth-child(2),
 #riskctrl-detail .risk-detail-table-2 tbody tr:first-child td:nth-child(4)
