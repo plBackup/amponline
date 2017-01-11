@@ -488,7 +488,7 @@ angular.module('noi').service('noiService', function($rootScope,$http) {
                     datasets: [
                         {
                             type:"bar",
-                            name:"销售",
+                            name:"销售(万元)",
                             xAxisIndex:0,
                             yAxisIndex:0,
 
