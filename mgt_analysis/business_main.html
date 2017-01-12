@@ -105,7 +105,7 @@
 				<table class="amp-table-2">
 					<thead>
 					<tr>
-						<th>商家</th>
+						<th>租金类型</th>
 						<th>商户数</th>
 						<th>占比</th>
 						<th>租金总额</th>
@@ -113,11 +113,11 @@
 					</tr>
 					</thead>
 					<tbody>
-						<tr ng-repeat="item in deductRentStoreRateTable">
-							<td>{{item.type}}</td>
-							<td>{{item.storeNo|number}}</td>
+						<tr ng-class="{'parent-record':item.mainRecord,'amp-display-hide':item.hide}" data-group="{{item.dataGroup}}" ng-repeat="item in deductRentStoreRateTable">
+							<td>{{item.type}}<a ng-if="item.hasCollapseBtn" class="collapse-btn ng-scope" data-group="{{item.dataGroup}}"></a></td>
+							<td>{{item.storeNo|number:0}}</td>
 							<td>{{item.storeRate}}</td>
-							<td>{{item.rentTotal|number}}</td>
+							<td>{{item.rentTotal|number:2}}</td>
 							<td>{{item.rentRate}}</td>
 						</tr>
 					</tbody>

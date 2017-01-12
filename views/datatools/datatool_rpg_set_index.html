@@ -152,8 +152,8 @@
                                     <td ng-repeat="value in floor.yearly track by $index" class="text-right">{{value|number:2}}</td>
                                 </tr>
                                 <tr>
-                                    <td class="td-sum text-right"><span>{{sCtrl.getColAvg("avg","floorsAvg") | number:2}}</span></td>
-                                    <td ng-repeat="value in sCtrl.rpgResultData.floors[0].yearly track by $index" class="td-sum text-right">{{sCtrl.getColAvg($index,"floorsAvg") | number:2}}</td>
+                                    <td class="td-sum text-right"><span>{{sCtrl.getColAvg("avg","floorsAvg")/6 | number:2}}</span></td>
+                                    <td ng-repeat="value in sCtrl.rpgResultData.floors[0].yearly track by $index" class="td-sum text-right">{{sCtrl.getColAvg($index,"floorsAvg")/6 | number:2}}</td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -268,8 +268,8 @@
                                     <td ng-repeat="value in form.yearly track by $index" class="text-right">{{value|number:2}}</td>
                                 </tr>
                                 <tr>
-                                    <td class="td-sum text-right"><span>{{sCtrl.getColAvg("avg","formAvg") | number:2}}</span></td>
-                                    <td ng-repeat="value in sCtrl.rpgResultData.form[0].yearly track by $index" class="td-sum text-right">{{sCtrl.getColAvg($index,"formAvg") | number:2}}</td>
+                                    <td class="td-sum text-right"><span>{{sCtrl.getColAvg("avg","formAvg")/6 | number:2}}</span></td>
+                                    <td ng-repeat="value in sCtrl.rpgResultData.form[0].yearly track by $index" class="td-sum text-right">{{sCtrl.getColAvg($index,"formAvg")/6 | number:2}}</td>
                                 </tr>
                                 </tbody>
                             </table>

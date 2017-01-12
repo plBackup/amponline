@@ -165,11 +165,12 @@ ampApp.controller("business-main-controller",["$scope","$filter","$http","$rootS
         var myChart = echarts.init($(container).find(".deduct-rent-store-rate-block .chart-block")[0]);
 
         var labels = ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"];
-        var data1 = [300,200,300,200,200,300,220,330,300,300,900,550];
-        var data2 = [350,200,300,200,200,300,220,330,300,300,900,550];
+        var data1 = [0,0,7,0,0,2,2,2,2,3,3,17];
+        var data2 = [19,19,12,19,19,17,17,17,17,16,16,4];
         var data3 = [];
         var minValue = data1[0];
         for(var i=0;i<12;i++){
+
             data3.push(data1[i]+data2[i]);
 
             if(data1[i]<minValue){
@@ -179,6 +180,8 @@ ampApp.controller("business-main-controller",["$scope","$filter","$http","$rootS
                 minValue = data2[i];
             }
         }
+
+        minValue=2;
 
         // 指定图表的配置项和数据
         var option = {
