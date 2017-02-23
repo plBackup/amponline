@@ -42,15 +42,15 @@
                     <div class="amp-table-row" ng-repeat="item in paginationInfo.records">
                         <ul class="amp-table-row-content" data-merchant-name="{{item.merchantName}}" data-arrears-total-amount="{{item.arrearsTotalAmount}}" data-deposit="{{item.deposit}}">
                             <li class="amp-table-cell">{{item.merchantName}}</li>
-                            <li class="amp-table-cell">{{item.arrearsTotalAmount|numberFormatDefault}}</li>
-                            <li class="amp-table-cell">{{item.deposit|numberFormatDefault}}</li>
+                            <li class="amp-table-cell">{{item.arrearsTotalAmount|numberFormatDefault:2}}</li>
+                            <li class="amp-table-cell">{{item.deposit|numberFormatDefault:2}}</li>
                             <li class="amp-table-cell">{{item.depositRate}}</li>
                             <li class="amp-table-cell">{{item.crashStoreRate|numberFormatDefault}}</li>
-                            <li class="amp-table-cell">{{item.dateItem1|numberFormatDefault}}</li>
-                            <li class="amp-table-cell">{{item.dateItem2|numberFormatDefault}}</li>
-                            <li class="amp-table-cell">{{item.dateItem3|numberFormatDefault}}</li>
-                            <li class="amp-table-cell">{{item.dateItem4|numberFormatDefault}}</li>
-                            <li class="amp-table-cell">{{item.rentAmount|numberFormatDefault}}</li>
+                            <li class="amp-table-cell">{{item.dateItem1|numberFormatDefault:2}}</li>
+                            <li class="amp-table-cell">{{item.dateItem2|numberFormatDefault:2}}</li>
+                            <li class="amp-table-cell">{{item.dateItem3|numberFormatDefault:2}}</li>
+                            <li class="amp-table-cell">{{item.dateItem4|numberFormatDefault:2}}</li>
+                            <li class="amp-table-cell">{{item.rentAmount|numberFormatDefault:2}}</li>
                             <li class="amp-table-cell">{{item.contractLeaveMonth|numberFormatDefault}}</li>
                         </ul>
                     </div><!-- amp-table-collapse-row -->

@@ -46,7 +46,7 @@
 						<tr ng-repeat="item in paginationInfo.records">
 							<td>{{item.month}}</td>
 							<td>{{item.projectItemName}}</td>
-							<td>{{item.amount|number}}</td>
+							<td>{{item.amount|number:2}}</td>
 							<td>{{item.chargeDate}}</td>
 						</tr>
 	                </tbody>

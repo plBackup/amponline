@@ -48,8 +48,21 @@ ampApp.controller("shop-sale-type-list-controller",["$scope","getPaginationResul
 
     /* ======================================== 初始化页面 ======================================== */
     var container = null;
+    var pin = null;
     function initPageView(){
         container = $("#shop-sale-type-list");
+
+        var width = $(container).find(".amp-thead").outerWidth();
+        $(container).find(".amp-thead").css("width",width+"px");
+
+        pin = $(container).find(".amp-thead").pin({
+            containerSelector: $(container).find(".amp-collapse-table"),
+            padding: {top: 44, bottom: 0}
+        });
+
+        setTimeout(function(){
+            pin.refresh();
+        },500);
     }
 
     /* ======================================== 绑定事件 ======================================== */

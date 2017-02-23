@@ -352,6 +352,7 @@
 .td-input-wrapper.date-input:after{display: block;position:absolute;width:16px;height:16px;background-position:-480px -198px; }
 
 .td-input-wrapper.select-input .dropdown-menu{margin-top: 0;background-color:#fff;border:solid 1px #dae1e7;color:#373c42;font-size:14px;    border-radius: 0;
+    overflow-y: auto;max-height:320px;
  }
 
 .td-input-wrapper.select-input  .dropdown-menu>li>a{line-height: 24px;}
@@ -398,12 +399,16 @@ tr>td.change .td-input-wrapper span{background-color:#d8e8db;color:#3a4153;}
 /**/
 span.number-format{text-align: right;}
 tr>td span.number-format{display: block;width:100%;}
-.rightpanel .amp-table .dropdown-menu{width:100%;border-radius:0;}
+.rightpanel .amp-table .dropdown-menu{width:100%;border-radius:0;max-height:320px;overflow-y: auto;}
 
 .rightpanel .item-select-filter .dropdown-menu>li>a:focus,.rightpanel .dropdown-menu>li>a:hover,.rightpanel .dropdown-menu>li.active>a {
-    color: #373c32;
+    padding: 4px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 24px;
     text-decoration: none;
-    background-color: #f3f4f8;
+    background-color: #dae1e7;
+    color: #373c32;
     outline: none;
 }
 
@@ -552,7 +557,8 @@ tr>td span.number-format{display: block;width:100%;}
     font-size: 13px;
 }
 
-#rgp-set-index .amp-table>tbody>tr>th,#rgp-set-index .amp-table>tbody>tr>td,#rgp-set-index .amp-table>tfoot>tr>th, .amp-table>tfoot>tr>td{
+#rgp-set-index .amp-table>tbody>tr>th,#rgp-set-index .amp-table>tbody>tr>td,
+#rgp-set-index .amp-table>tfoot>tr>th, #rgp-set-index  .amp-table>tfoot>tr>td{
     border-bottom:0;border-top:0;
 }
 #manage-fee  .amp-table-wrapper .table{margin-bottom:0;}

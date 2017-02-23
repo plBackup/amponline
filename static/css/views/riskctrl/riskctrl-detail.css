@@ -16,11 +16,11 @@
 	line-height: 1;
 	padding-top: 5px;
 }
-
+/*
 #riskctrl-detail .rate-detail-title {
 	margin-left: 28px;
 	margin-right: 28px;
-}
+}*/
 #riskctrl-detail .amp-section-title{height: 44px; line-height: 44px;}
 #riskctrl-detail .riskctrl-btn {
 	padding-left: 65px;
@@ -212,6 +212,11 @@
 	display: inline-block;
 	
 }
+#riskctrl-detail #efficient table tbody tr:nth-child(9)~tr td span b:after{
+	content: "%";
+	display: inline-block;
+	
+}
 td {
 	position: relative;
 }
@@ -319,7 +324,7 @@ td {
 #riskctrl-detail .risk-detail-table-1 tbody tr:first-child td:nth-child(5) {
 	padding-right: 32px;
 }
-#riskctrl-detail  table tbody td.padding-right{padding-right: 27px;}
+#riskctrl-detail  table tbody td.padding-right{padding-right:45px;}
 #riskctrl-detail .risk-detail-content-panel .return-rate-table #collectionrate table tbody tr:nth-child(3) td:first-child span{
 	font-weight: 700;
 }
@@ -336,3 +341,7 @@ padding-left: 28px;
  #riskctrl-detail #lease table thead td{padding: 0 10px;}
 #riskctrl-detail #lease  table td:last-child{padding-right: 28px;}
 #riskctrl-detail #lease #leasechart{padding: 0 28px;height: 325px; }
+
+#riskctrl-detail .return-rate-table>div{
+	padding: 0 28px;
+}

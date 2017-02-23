@@ -67,11 +67,11 @@
                     <tbody>
                         <tr ng-class="{'parent-record':item.hasCollapseBtn,'amp-display-hide':item.hide}" data-group="{{item.dataGroup}}" ng-repeat="item in records">
                             <td data-type="{{item.commercialTypeName}}">{{item.commercialTypeName}}<a ng-if="item.hasCollapseBtn" class="collapse-btn"  data-group="{{item.dataGroup}}"></a></td>
-                            <td>{{item.curSaleCount|numberFormatDefault:0}}</td>
-                            <td>{{item.curPerformance|numberFormatDefault:0}}</td>
+                            <td>{{item.curSaleCount|numberFormatDefault:2}}</td>
+                            <td>{{item.curPerformance|numberFormatDefault:2}}</td>
                             <td>{{item.curRentSaleRate}}</td>
-                            <td>{{item.calSaleCount|numberFormatDefault:0}}</td>
-                            <td>{{item.calPerformance|numberFormatDefault:0}}</td>
+                            <td>{{item.calSaleCount|numberFormatDefault:2}}</td>
+                            <td>{{item.calPerformance|numberFormatDefault:2}}</td>
                             <td>{{item.calRentSaleRate}}</td>
                         </tr>
                     </tbody>

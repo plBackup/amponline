@@ -1,4 +1,4 @@
-ampApp.controller("rent-main-controller",["$scope","$http","$rootScope",function($scope,$http,$rootScope){
+ampApp.controller("rent-main-controller",["$scope","$http","$rootScope","$filter",function($scope,$http,$rootScope,$filter){
     $scope.records = [];
 
     $scope.saleRatePie = [];
@@ -40,12 +40,17 @@ ampApp.controller("rent-main-controller",["$scope","$http","$rootScope",function
     function initPageView(){
         container = $("#rent-main");
 
-        if(isPC()){
-            pin = $(container).find(".dept-table-head").pin({
-                containerSelector: $(container).find(".rent-main-pin-wrapper"),
-                padding: {top: 44, bottom: 50}
-            });
-        }
+        var width = $(container).find(".dept-table-head").outerWidth();
+        $(container).find(".dept-table-head").css("width",width+"px");
+        
+        pin = $(container).find(".dept-table-head").pin({
+            containerSelector: $(container).find(".rent-main-pin-wrapper"),
+            padding: {top: 44, bottom: 0}
+        });
+
+        setTimeout(function(){
+            pin.refresh();
+        },500);
 
         // 设置浮动条宽度
         var deptTableHeadWidth = $(container).find(".dept-table-head").css("width");
@@ -214,14 +219,19 @@ ampApp.controller("rent-main-controller",["$scope","$http","$rootScope",function
             ],
             series: [
                 {
-                    label:{normal:{show:true,position:"top",textStyle:{color:"#373c42"}}},
+                    label:{normal:{show:true,position:"top",textStyle:{color:"#373c42"},formatter:function(params){
+                        return $filter("number")(params.value);
+                    }}},
                     name:"租金",
                     type:"bar",
+                    barGap:"40%",
                     barWidth:20,
                     data:[parseInt(1777/10000),parseInt(157771/10000),parseInt(5248804/10000),parseInt(18017489/10000),parseInt(38174069/10000),parseInt(17235143/10000)]
                 },
                 {
-                    label:{normal:{show:true,position:"top",textStyle:{color:"#373c42"}}},
+                    label:{normal:{show:true,position:"top",textStyle:{color:"#373c42"},formatter:function(params){
+                        return $filter("number")(params.value);
+                    }}},
                     name:"面积",
                     type:"bar",
                     barWidth:20,

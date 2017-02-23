@@ -1,0 +1,47 @@
+<form name="popoverForm">
+    <table class='table table-no-bordered'>
+        <tbody>
+        <tr>
+            <th>面积(m&sup2)</th>
+            <td>
+                <div class="td-input-wrapper num-input" >
+                    <input type="number" placeholder="/" data-date="" value="">
+                    <span class="number-format"></span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th>业态</th>
+            <td>
+                <div class="td-input-wrapper select-input col-xs-4" >
+                    <input type="text" value="" hidden ng-model="rfCtrl.shopInfo.form"/>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                            <em>....</em><span class="ys-icon ys-icon-dropdown"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                            <li ng-class="{'active':rfCtrl.isActive(menu,rfCtrl.shopInfo.form)}"
+                                ng-repeat="menu in rfCtrl.form_menu.form"><a role="menuitem" ng-click="rfCtrl.setModel('form',menu)">{{menu}}</a></li>
+                        </ul>
+                    </div>
+                </div><!--select-input 业态-->
+            </td>
+        </tr>
+        <tr>
+            <th>店家数(个)</th>
+            <td>
+                <div class="td-input-wrapper num-input" >
+                    <input type="number" placeholder="/" data-date="" value="">
+                    <span class="number-format"></span>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="popover-footer">
+        <div class="btn-wrapper pull-right">
+            <a ng-disabled="popoverForm.$invalid" class="btn btn-default amp-btn amp-btn-reverse"  style="margin-left:20px;">取消</a>
+            <a ng-disabled="popoverForm.$invalid" class="btn btn-default amp-btn" id="btn-save" style="">确定</a>
+        </div>
+    </div>
+</form>

@@ -1524,7 +1524,7 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
         }else{
             self.chartData=simChartData["chart"];
             self.shops=simData.slice(1);
-            self.index=0;
+            self.index=null;
         }
 
         self.form_menu={
@@ -1553,6 +1553,11 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
 
         self.setModel=function(type,menu){
             self.shopInfo[type]=menu;
+            if(type=="form"){
+                console.log("menu----------------");
+                console.log(menu);
+                _render_svg_color(menu);
+            }
         };
 
         self.isActive=function(menu,model){
@@ -1659,6 +1664,56 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
 
         };
 
+        function _render_svg_color(form){
+            function get_cur_legend(form){
+                var cur_legend_class;
+                switch(form){
+                    case "超市":
+                        cur_legend_class="super-market";
+                        break;
+                    case "影院":
+                        cur_legend_class="cinema";
+                        break;
+                    case "服饰":
+                        cur_legend_class="suit";
+                        break;
+                    case "餐饮":
+                        cur_legend_class="food";
+                        break;
+                    case "配套":
+                        cur_legend_class="mating";
+                        break;
+                    case "娱乐":
+                        cur_legend_class="playful";
+                        break;
+                    case "儿童":
+                        cur_legend_class="children";
+                        break;
+                    case "其他":
+                        cur_legend_class="others";
+                        break;
+                    default:
+                        //未签署
+                        cur_legend_class="default";
+                }
+                return cur_legend_class;
+            };
+
+            //为当前cur_select增加legend标记
+            var cur_legend=get_cur_legend(form);
+
+            var $cur_select=$(".cur-select");
+            if($cur_select.length>0){
+                $cur_select.each(function(i,e){
+                    var old_legend=$(this).attr("data-legend");
+                    if(old_legend){
+                        this.classList.remove(old_legend);
+                    }
+                    this.classList.add(cur_legend);
+                    $(this).attr("data-legend",cur_legend);
+                });
+            }
+        }
         function _svgCallback(shopData){
             if(typeof shopData !=="undefined" && shopData["shop_id"]!==""){
                 $scope.$apply(function() {
@@ -1666,6 +1721,23 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
                     $scope.dataSimForm.$setUntouched();
                 });
                 self.setShopInfo(shopData["shop_id"]);
+                console.log(".cur-select");
+                console.log("========shopInfo");
+                console.log(self.shopInfo);
+                var legend_form=self.shopInfo.form;
+                _render_svg_color(legend_form);
+                /*labels:[
+                    {"name":"未签署", "class":"default",  "color":"#a4b5bd"},
+                    {"name":"超市", "class":"super-market",  "color":"#f1dcbd"},
+                    {"name":"影院", "class":"cinema",  "color":"#f1dcbd"},
+                    {"name":"服饰", "class":"suit",  "color":"#ffabd4"},
+                    {"name":"配套", "class":"mating",  "color":"#b56d00"},
+                    {"name":"餐饮", "class":"food",  "color":"#ffe700"},
+                    {"name":"娱乐", "class":"playful",  "color":"#f1dcbd"},
+                    {"name":"儿童", "class":"children",  "color":"#f1dcbd"},
+                    {"name":"其他", "class":"others",  "color":"#f1dcbd"},
+                ]
+                */
 
             }else{
                 $scope.$apply(function() {

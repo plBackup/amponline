@@ -16,12 +16,17 @@ ampApp.controller("cost-main-controller",["$scope","$http","$rootScope",function
     function initPageView(){
         container = $("#cost-main");
 
-        if(isPC()){
-            pin = $(container).find(".amp-thead").pin({
-                containerSelector: $(container).find(".amp-collapse-table"),
-                padding: {top: 44, bottom: 50}
-            });
-        }
+        var width = $(container).find(".amp-thead").outerWidth();
+        $(container).find(".amp-thead").css("width",width+"px");
+
+        pin = $(container).find(".amp-thead").pin({
+            containerSelector: $(container).find(".amp-collapse-table"),
+            padding: {top: 44, bottom: 0}
+        });
+
+        setTimeout(function(){
+            pin.refresh();
+        },500);
 
 
         createCostStackBarChart();

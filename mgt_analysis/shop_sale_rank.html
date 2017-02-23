@@ -45,9 +45,9 @@
 
                     <tr ng-repeat="item in records.top">
                         <td class="index-column"><span>{{item.orderNo}}</span>{{item.saleMerchantName}}</td>
-                        <td>{{item.saleAmount|number}}</td>
+                        <td>{{item.saleAmount|number:2}}</td>
                         <td class="index-column"><span>{{item.orderNo}}</span>{{item.performanceMerchantName}}</td>
-                        <td>{{item.performanceAmount|number}}</td>
+                        <td>{{item.performanceAmount|number:2}}</td>
                         <td class="index-column"><span>{{item.orderNo}}</span>{{item.rentSaleMerchantName}}</td>
                         <td>{{item.rentSaleRate}}</td>
                     </tr>
@@ -65,9 +65,9 @@
 
                     <tr ng-repeat="item in records.bottom">
                         <td class="index-column"><span>{{item.orderNo}}</span>{{item.saleMerchantName}}</td>
-                        <td>{{item.saleAmount|number}}</td>
+                        <td>{{item.saleAmount|number:2}}</td>
                         <td class="index-column"><span>{{item.orderNo}}</span>{{item.performanceMerchantName}}</td>
-                        <td>{{item.performanceAmount|number}}</td>
+                        <td>{{item.performanceAmount|number:2}}</td>
                         <td class="index-column"><span>{{item.orderNo}}</span>{{item.rentSaleMerchantName}}</td>
                         <td>{{item.rentSaleRate}}</td>
                     </tr>

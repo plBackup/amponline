@@ -16,8 +16,9 @@
 						<li  ng-repeat="item in records" class="label-group">
 							<em>{{item.title}}</em>
 							<div><!--{{item.data|number}}-->
-							<span  ng-if="$index==0||$index==1||$index==2||$index==7">{{item.data|number:2}}</span>
-							<span ng-if="$index==3||$index==4||$index==5||$index==6||$index==8||$index==9">{{item.data|number:0}}</span>
+							<span  ng-if="$index==0||$index==2||$index==7">{{item.data|number:2}}</span>
+							<span ng-if="$index==1">{{item.data}}</span>
+							<span ng-if="$index==3||$index==4||$index==5||$index==6||$index==8">{{item.data|number:0}}</span>
 						</div>
 						</li>
                   </ul>
@@ -28,9 +29,9 @@
 		   	 		<div class="rate-detail-title">
 		   	 			<div class="amp-section-title"><span>收入&经营费用</span>   	 				
 		   	 				<div class="riskctrl-btn label-group">
-			   	 				<em class="pull-left" ng-click="setType('onYearBasis','cost')" ng-class="{'btn-active':costType=='onYearBasis'}">同比</em>
-			   	 				<em class="pull-left"  ng-click="setType('LinkRelativeRatio','cost')" ng-class="{'btn-active':costType=='LinkRelativeRatio'}">环比</em>
-			   	 				<em class="pull-left btn-active" ng-click="setType('Budget','cost')" ng-class="{'btn-active':costType=='Budget'}">预算</em>
+			   	 				<em class="pull-left" ng-class="{'btn-active':costType=='onYearBasis'}">同比</em> <!--ng-click="setType('onYearBasis','cost')"-->
+			   	 				<em class="pull-left" ng-class="{'btn-active':costType=='LinkRelativeRatio'}"><!-- ng-click="setType('LinkRelativeRatio','cost')"--> 环比</em>
+			   	 				<em class="pull-left btn-active"ng-class="{'btn-active':costType=='Budget'}"> <!--ng-click="setType('Budget','cost')"--> 预算</em>
 			   	 				<!--<em class="btn-right">显示所有月份</em>-->
 		   	 				</div>
 		   	 			</div>
@@ -49,7 +50,7 @@
 				        	<thead>
 				        		<tr>
 									<td class="border-right"></td>
-		                            <td  colspan="3"  class=" border-right"><2016-10（万元）</td>
+		                            <td  colspan="3"  class=" border-right">2016-10（万元）</td>
 		                            <td  colspan="3" >全年累计（万元）</td> 
 								</tr>
 				        	</thead>
@@ -67,10 +68,10 @@
 									<td ng-class='setFont(item.textbold)'  class="border-right text-left">{{item.name}}<em>&#40;平方/元&#41;</em></td>
 	  								<td  ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'>{{item.ActualMonth|number:2}} <i></i></td> 
 	  								<td class="">{{item.ReferMonth|number:2}}</td> 
-	  								<td class="border-right padright"  ng-class='setStyleText(item.ActualYear-item.ReferYear)'>{{(item.ActualMonth-item.ReferMonth)|number:2}}</td>
+	  								<td class="border-right padright"  ng-class='setStyleText(item.ActualMonth-item.ReferMonth)'>{{(item.ActualMonth-item.ReferMonth)|number:2}}</td>
 	  								<td  ng-class='setStyleIcon(item.ActualYear,item.ReferYear)'>{{item.ActualYear|number:2}} <i></i></td> 
 	  								<td class="">{{item.ReferYear|number:2}}</td> 
-	  								<td  ng-class='Text(item.ActualYear-item.ReferYear)' class="padright">{{(item.ActualYear-item.ReferYear)|number:2}}</td> 
+	  								<td  ng-class='setStyleText(item.ActualYear-item.ReferYear)' class="padright">{{(item.ActualYear-item.ReferYear)|number:2}}</td> 
 								</tr>
 			                </tbody>
 						</table>
@@ -80,9 +81,9 @@
 		   	 		<div class="rate-detail-title">
 		   	 			<div class="amp-section-title"><span>收缴率</span>   	 				
 		   	 				<div class="riskctrl-btn label-group">
-			   	 				<em class="pull-left" ng-click="setType('onYearBasis','collectionrate')"  ng-class="{'btn-active':collectType=='onYearBasis'}">同比</em>
-			   	 				<em class="pull-left"  ng-click="setType('LinkRelativeRatio','collectionrate')"  ng-class="{'btn-active':collectType=='LinkRelativeRatio'}">环比</em>
-			   	 				<em class="pull-left btn-active" ng-click="setType('Budget','collectionrate')"   ng-class="{'btn-active':collectType=='Budget'}">预算</em>
+			   	 				<em class="pull-left"   ng-class="{'btn-active':collectType=='onYearBasis'}">同比</em><!--ng-click="setType('onYearBasis','collectionrate')"-->
+			   	 				<em class="pull-left" ng-class="{'btn-active':collectType=='LinkRelativeRatio'}">环比</em> <!-- ng-click="setType('LinkRelativeRatio','collectionrate')" -->
+			   	 				<em class="pull-left btn-active"  ng-class="{'btn-active':collectType=='Budget'}">预算</em><!--ng-click="setType('Budget','collectionrate')"-->  
 		   	 				</div>
 		   	 			</div>
 		   	 		</div>   	 		
@@ -98,7 +99,7 @@
 				        	<thead>
 				        		<tr>
 									<td class="border-right"></td>
-		                            <td  colspan="2"  class="border-right"><2016-10</td>
+		                            <td  colspan="2"  class="border-right">2016-10</td>
 		                            <td  colspan="2" >全年累计</td> 
 								</tr>
 				        	</thead>
@@ -113,9 +114,9 @@
 								<tr ng-repeat="item in collectionrate[collectType]">
 									<td  ng-class='setFont(item.textbold)'  class="border-right text-left">{{item.name}}</td>
 	  								<td  ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)' class="percentage"><span><span>{{item.ActualMonth|number:2}} </span><i></i></span></td> 
-	  								<td  class="border-right percentage"><span>{{item.ReferMonth|number:2}}</span></td> 
+	  								<td  class="border-right percentage"><span> <span>{{item.ReferMonth|number:2}}</span></span></td> 
 	  								<td  ng-class='setStyleIcon(item.ActualYear,item.ReferYear)' class="percentage"><span> <span>{{item.ActualYear|number:2}}</span> <i></i></span></td> 
-	  								<td class="percentage"><span>{{item.ReferYear|number:2}}</span></td> 
+	  								<td class="percentage"><span><span>{{item.ReferYear|number:2}}</span></span></td> 
 								</tr>								
 			                </tbody>
 						</table>
@@ -125,9 +126,9 @@
 		   	 		<div class="rate-detail-title">
 		   	 			<div class="amp-section-title"><span>销售额</span>   	 				
 		   	 				<div class="riskctrl-btn label-group">
-								<em class="pull-left" ng-click="setType('onYearBasis','salesvolume')"  ng-class="{'btn-active':saleType=='onYearBasis'}">同比</em>
-			   	 				<em class="pull-left"  ng-click="setType('LinkRelativeRatio','salesvolume')" ng-class="{'btn-active':saleType=='LinkRelativeRatio'}">环比</em>
-			   	 				<em class="pull-left btn-active" ng-click="setType('Budget','salesvolume')" ng-class="{'btn-active':saleType=='Budget'}">预算</em>
+								<em class="pull-left"  ng-class="{'btn-active':saleType=='onYearBasis'}">同比</em><!--ng-click="setType('onYearBasis','salesvolume')" -->
+			   	 				<em class="pull-left" ng-class="{'btn-active':saleType=='LinkRelativeRatio'}">环比</em> <!--ng-click="setType('LinkRelativeRatio','salesvolume')"--> 
+			   	 				<em class="pull-left btn-active" ng-class="{'btn-active':saleType=='Budget'}">预算</em><!--ng-click="setType('Budget','salesvolume')"--> 
 		   	 				</div>
 		   	 			</div>
 		   	 		</div>   	 		
@@ -143,7 +144,7 @@
 				        	<thead>
 				        		<tr>
 									<td class="border-right"></td>
-		                            <td  colspan="2"  class="border-right"><2016-10</td>
+		                            <td  colspan="2"  class="border-right">2016-10</td>
 		                            <td  colspan="2" >全年累计</td> 
 								</tr>
 				        	</thead>
@@ -170,9 +171,9 @@
 		   	 		<div class="rate-detail-title">
 		   	 			<div class="amp-section-title"><span>坪效&租售比</span>   	 				
 		   	 				<div class="riskctrl-btn label-group">
-			   	 				<em class="pull-left" ng-click="setType('onYearBasis','efficient')"  ng-class="{'btn-active':efficientType=='onYearBasis'}">同比</em>
-			   	 				<em class="pull-left"  ng-click="setType('LinkRelativeRatio','efficient')"  ng-class="{'btn-active':efficientType=='LinkRelativeRatio'}">环比</em>
-			   	 				<em class="pull-left btn-active" ng-click="setType('Budget','efficient')"  ng-class="{'btn-active':efficientType=='Budget'}">预算</em>
+			   	 				<em class="pull-left" ng-class="{'btn-active':efficientType=='onYearBasis'}">同比</em> <!--ng-click="setType('onYearBasis','efficient')"--> 
+			   	 				<em class="pull-left"  ng-class="{'btn-active':efficientType=='LinkRelativeRatio'}">环比</em><!-- ng-click="setType('LinkRelativeRatio','efficient')"--> 
+			   	 				<em class="pull-left btn-active"   ng-class="{'btn-active':efficientType=='Budget'}">预算</em><!--ng-click="setType('Budget','efficient')"-->
 		   	 				</div>
 		   	 			</div>
 		   	 		</div>   	 		
@@ -188,7 +189,7 @@
 				        	<thead>
 				        		<tr>
 									<td class="border-right"></td>
-		                            <td  colspan="2"  class="border-right"><2016-10</td>
+		                            <td  colspan="2"  class="border-right">2016-10</td>
 		                            <td  colspan="2" >全年累计</td> 
 								</tr>
 				        	</thead>
@@ -202,10 +203,10 @@
 								</tr>
 			                   	<tr ng-click="collapseTable(item) " ng-class="{ 'record-group':item.hasCollapseBtn, 'amp-display-none':item.hide, 'collapsed':item.collapsed} " data-group="{{item.dataGroup}} "  ng-repeat="item in efficient[efficientType]">
 									<td ng-class='setFont(item.textbold)'   ng-class='setFont(item.textbold)'  class="border-right text-left">{{item.name}}<em>&#40;万元&#41;</em></td>
-	  								<td ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'><span>{{item.ActualMonth|number:2}} <i></i></span></td> 
-	  								<td class="border-right"><span>{{item.ReferMonth|number:2}}</span></td> 
-	  								<td ng-class='setStyleIcon(item.ActualYear,item.ReferYear)'><span>{{item.ActualYear|number:2}} <i></i></span></td> 
-	  								<td class=""><span>{{item.ReferYear|number:2}}</span></td> 
+	  								<td ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'><span><b>{{item.ActualMonth|number:2}} </b><i></i></span></td> 
+	  								<td class="border-right"><span><b>{{item.ReferMonth|number:2}}</b></span></td> 
+	  								<td ng-class='setStyleIcon(item.ActualYear,item.ReferYear)'><span><b>{{item.ActualYear|number:2}}</b> <i></i></span></td> 
+	  								<td class=""><span><b>{{item.ReferYear|number:2}}</b></span></td> 
 								</tr>
 			                </tbody>
 						</table>
@@ -215,9 +216,9 @@
 		   	 		<div class="rate-detail-title">
 		   	 			<div class="amp-section-title"><span>招商</span>   	 				
 		   	 				<div class="riskctrl-btn label-group">
-			   	 				<em class="pull-left" ng-click="setType('onYearBasis','investment')"  ng-class="{'btn-active':investmentType=='onYearBasis'}">同比</em>
-			   	 				<em class="pull-left"  ng-click="setType('LinkRelativeRatio','investment')"  ng-class="{'btn-active':investmentType=='LinkRelativeRatio'}">环比</em>
-			   	 				<em class="pull-left btn-active" ng-click="setType('Budget','investment')" ng-class="{'btn-active':investmentType=='Budget'}">预算</em>
+			   	 				<em class="pull-left"ng-class="{'btn-active':investmentType=='onYearBasis'}">同比</em> <!--ng-click="setType('onYearBasis','investment')" --> 
+			   	 				<em class="pull-left"  ng-class="{'btn-active':investmentType=='LinkRelativeRatio'}">环比</em> <!--ng-click="setType('LinkRelativeRatio','investment')"--> 
+			   	 				<em class="pull-left btn-active" ng-class="{'btn-active':investmentType=='Budget'}">预算</em><!--ng-click="setType('Budget','investment')"--> 
 		   	 				</div>
 		   	 			</div>
 		   	 		</div>   	 		
@@ -232,8 +233,8 @@
 				        	</colgroup>
 				        	<thead>
 				        		<tr>
-									<td  class="border-right"></td>
-		                            <td  colspan="2"  class="border-right"><2016-10</td>
+									<td class="border-right"></td>
+		                            <td  colspan="2"  class="border-right">2016-10</td>
 		                            <td  colspan="2" >全年累计</td> 
 								</tr>
 				        	</thead>
@@ -261,9 +262,9 @@
 		   	 		<div class="rate-detail-title">
 		   	 			<div class="amp-section-title"><span>客流</span>   	 				
 		   	 				<div class="riskctrl-btn label-group">
-			   	 				<em class="pull-left" ng-click="setType('onYearBasis','passenger')" ng-class="{'btn-active':passengerType=='onYearBasis'}">同比</em>
-			   	 				<em class="pull-left"  ng-click="setType('LinkRelativeRatio','passenger')"  ng-class="{'btn-active':passengerType=='LinkRelativeRatio'}">环比</em>
-			   	 				<em class="pull-left btn-active" ng-click="setType('Budget','passenger')"  ng-class="{'btn-active':passengerType=='Budget'}">预算</em>
+			   	 				<em class="pull-left" ng-class="{'btn-active':passengerType=='onYearBasis'}">同比</em> <!--ng-click="setType('onYearBasis','passenger')"-->
+			   	 				<em class="pull-left"  ng-class="{'btn-active':passengerType=='LinkRelativeRatio'}">环比</em> <!--ng-click="setType('LinkRelativeRatio','passenger')"--> 
+			   	 				<em class="pull-left btn-active" ng-class="{'btn-active':passengerType=='Budget'}">预算</em><!--ng-click="setType('Budget','passenger')" --> 
 		   	 				</div>
 		   	 			</div>
 		   	 		</div>   	 		
@@ -279,13 +280,13 @@
 				        	<thead>
 				        		<tr>
 									<td class="border-right"></td>
-		                            <td  colspan="2"  class="border-right"><2016-10</td>
+		                            <td  colspan="2"  class="border-right">2016-10</td>
 		                            <td  colspan="2" >全年累计</td> 
 								</tr>
 				        	</thead>
 							<tbody>
 								<tr>
-										<td class="border-right"></td>
+									<td class="border-right"></td>
 									<td class="text-grey"><span>实际</span></td>
 									<td class="text-grey border-right"><span>参考</span></td>
 									<td class="text-grey"><span>实际</span></td>
@@ -339,13 +340,13 @@
 								
 			                   <tr ng-repeat="item in lease">
 	  								<td><span>{{item.time}} </span></td> 
-	  								<td><span>{{item.rent|number:2}}</span></td> 
-	  								<td><span>{{item.rentaccount|number:2}}</span></td> 
-	  								<td><span>{{item.averagerent|number:2}}</span></td> 
-	  								<td><span>{{item.acreage|number:2}}</span></td> 
-	  								<td><span>{{item.acreageaccount|number:2}}</span></td> 
-	  								<td><span>{{item.leases|number:2}}</span></td> 
-	  								<td><span>{{item.leasesaccount|number:2}}</span></td> 
+	  								<td><span>{{item.rent|number}}</span></td> 
+	  								<td><span>{{item.rentaccount}}</span></td> 
+	  								<td><span>{{item.averagerent|number}}</span></td> 
+	  								<td><span>{{item.acreage|number}}</span></td> 
+	  								<td><span>{{item.acreageaccount}}</span></td> 
+	  								<td><span>{{item.leases}}</span></td> 
+	  								<td><span>{{item.leasesaccount}}</span></td> 
 	  								
 								</tr>
 			                </tbody>

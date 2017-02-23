@@ -33,6 +33,7 @@ ampAppSolo.config(function($stateProvider,$urlRouterProvider) {
                 },
                 data: ['$q','$timeout', function($q,$timeout){
                     var defer = $q.defer();
+
                     $timeout(function(){
                         defer.resolve();
                         amp_main.loading_hide();
@@ -62,6 +63,7 @@ ampAppSolo.config(function($stateProvider,$urlRouterProvider) {
                     return dataResultService.getData();
                 },
                 data: ['$q','$timeout', function($q,$timeout){
+
                     var defer = $q.defer();
                     $timeout(function(){
                         defer.resolve();
@@ -70,6 +72,38 @@ ampAppSolo.config(function($stateProvider,$urlRouterProvider) {
                     return defer.promise;
                 }]
             }
+        }, //state
+        {
+            name: 'rpgforecast',
+            url: '/rpgforecast',
+            views:{
+                'content': {
+                    templateUrl: '../views/rpgforecast/rpg_forecast.html',
+                    controller:"rpgForecastController",
+                    controllerAs:"rfCtrl"
+                },
+                "right":{
+                    templateUrl: '../views/blank_right.html',
+                }
+            },
+            resolve: {
+                rpgForecastData:function(rpgForecastService){
+                    return rpgForecastService.getData();
+                },
+               /* rpgForecastData:function(rpgForecastService){
+                    return rpgForecastService.getData();
+                },*/
+                data: ['$q','$timeout', function($q,$timeout){
+                    var defer = $q.defer();
+
+                    $timeout(function(){
+                        defer.resolve();
+                        amp_main.loading_hide();
+                    }, 300);
+                    return defer.promise;
+                }]
+            }
+
         }, //state
     ];
 
@@ -90,6 +124,8 @@ ampAppSolo.controller('MainController', function($rootScope, $scope) {
     $rootScope.curProject=curProject;
 
     $rootScope.homePageIsShown = true;
+
+    $rootScope.rentFuncName="";
     $scope.state = {};
     $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState) {
 
@@ -107,6 +143,8 @@ ampAppSolo.controller('MainController', function($rootScope, $scope) {
             $scope.state.enter=true;
             $scope.state.exit=false;
             $scope.state.loading=false;
+
+            //$rootScope.showNav=true;
             $rootScope.shownav=(toState.name==="rpgresult");
             ////console.log("prev:"+fromState.name);
         });

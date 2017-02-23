@@ -11,6 +11,7 @@
 
 /* ======================================== ys-table-block ======================================== */
 #noi-enrolment .table-title{height:50px;line-height: 38px;padding-top:12px;padding-left:24px;}
+#noi-enrolment .table-block{margin:0 24px;}
 #noi-enrolment .ys-table-block .amp-pagination-toolbar-wrapper{padding:20px 12px;}
 #noi-enrolment table th{border-bottom: 1px solid #c2cdd7;}
 #noi-enrolment table th,

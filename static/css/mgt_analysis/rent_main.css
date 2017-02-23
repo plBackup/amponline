@@ -78,6 +78,7 @@
 
 
 /* ======================================== table-block ======================================== */
+#rent-main .table-block{margin:0 24px;}
 #rent-main .table-block table thead th{text-align: right;padding:0 24px;}
 #rent-main .table-block table thead th:first-child{text-align: left;}
 

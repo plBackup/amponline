@@ -82,11 +82,11 @@
                                 {{item.projectName}}
                                 <a class="collapse-btn" ng-if="item.hasChildren" ></a>
                             </td>
-                            <td ng-class="{'amp-font-weight-bold':!item.parentId}">{{item.totalRentSquare|numberFormatDefault}}</td>
-                            <td ng-class="{'amp-font-weight-bold':!item.parentId}">{{item.rentSquare|numberFormatDefault}}</td>
+                            <td ng-class="{'amp-font-weight-bold':!item.parentId}">{{item.totalRentSquare|numberFormatDefault:2}}</td>
+                            <td ng-class="{'amp-font-weight-bold':!item.parentId}">{{item.rentSquare|numberFormatDefault:2}}</td>
                             <td ng-class="{'amp-font-weight-bold':!item.parentId}">{{item.rentRate}}</td>
                             <td ng-class="{'amp-font-weight-bold':!item.parentId}">{{item.rentCount|numberFormatDefault}}</td>
-                            <td ng-class="{'amp-font-weight-bold':!item.parentId}">{{item.rentPriceAvg|numberFormatDefault}}</td>
+                            <td ng-class="{'amp-font-weight-bold':!item.parentId}">{{item.rentPriceAvg|numberFormatDefault:2}}</td>
                         </tr>
                     </tbody>
            		</table>
@@ -122,10 +122,10 @@
                 <tbody>
                     <tr ng-repeat="item in rentList">
                         <td>{{item.dateItem}}</td>
-                        <td>{{item.rentIncome|numberFormatDefault}}</td>
+                        <td>{{item.rentIncome|numberFormatDefault:2}}</td>
                         <td>{{item.rentIncomeRate}}</td>
-                        <td>{{item.rentIncomeAvg|numberFormatDefault}}</td>
-                        <td>{{item.square|numberFormatDefault}}</td>
+                        <td>{{item.rentIncomeAvg|numberFormatDefault:2}}</td>
+                        <td>{{item.square|numberFormatDefault:2}}</td>
                         <td>{{item.squareRate}}</td>
                         <td>{{item.rentCount}}</td>
                         <td>{{item.rentCountRate}}</td>
@@ -154,8 +154,8 @@
                 <tbody>
                     <tr ng-repeat="item in investmentList">
                         <td>{{item.itemLabel}}</td>
-                        <td>{{item.budget|number}}</td>
-                        <td>{{item.real|number}}</td>
+                        <td>{{item.budget|number:2}}</td>
+                        <td>{{item.real|number:2}}</td>
                         <td>{{item.finishRate}}</td>
                     </tr>
                 </tbody>

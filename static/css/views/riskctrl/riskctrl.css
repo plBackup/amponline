@@ -183,10 +183,10 @@
 	margin-top: 50px;
 }
 
-#riskctrl .risk-roi>div:first-child .amp-section-title,
+/*#riskctrl .risk-roi>div:first-child .amp-section-title,
 #riskctrl .risk-roi>div:last-child .amp-section-title {
 	margin-left: 28px;
-}
+}*/
 
 #riskctrl .risk-roi tbody td {
 	text-align: right;
@@ -257,3 +257,16 @@ td{border: 1px solid blue;}*/
 #riskctrl  .amp-roe td:last-child{padding-right: 30px;}
 #riskctrl  .amp-roi {margin-right: 4%;}
 #riskctrl  .amp-roi td:last-child,#riskctrl  .amp-forecast td:last-child{padding-right: 27px;}
+.risk-roi table td span b:after{
+	content: "%";
+	    display: inline-block;
+}
+#riskctrl  .risk-noi{
+	padding: 0 28px;
+}
+#riskctrl .amp-roi .risk-table {
+    /*width: calc(100% - 28px);*/
+}
+#riskctrl .risk-roi{
+	padding: 0 28px;
+}

@@ -22,13 +22,17 @@ ampApp.controller("merchant-sale-main-controller",["$scope","$filter","$http","$
         createSalePercentPie();
         createMerchantPercentPie();
 
-        if(isPC()){
-            pin = $(container).find(".dept-table-head").pin({
-                containerSelector: $(container).find(".cost-manual-work-pin-wrapper"),
-                padding: {top: 44, bottom: 50}
-            });
-        }
+        var width = $(container).find(".dept-table-head").outerWidth();
+        $(container).find(".dept-table-head").css("width",width+"px");
 
+        pin = $(container).find(".dept-table-head").pin({
+            containerSelector: $(container).find(".cost-manual-work-pin-wrapper"),
+            padding: {top: 44, bottom: 0}
+        });
+
+        setTimeout(function(){
+            pin.refresh();
+        },500);
     }
 
     /* ======================================== 绑定事件 ======================================== */
@@ -79,10 +83,9 @@ ampApp.controller("merchant-sale-main-controller",["$scope","$filter","$http","$
         var myChart = echarts.init(document.getElementById(id));
         var option = {
             color:["#5ab46e","#d9dedf"],
-            tooltip:{show:true,formatter:"{d}%"},
+            tooltip:{show:true,formatter:"{b}:{d}%"},
             series: [
                 {
-                    name:"销售",
                     type:"pie",
                     radius: ["70px", "100px"],
                     avoidLabelOverlap: false,
@@ -90,7 +93,7 @@ ampApp.controller("merchant-sale-main-controller",["$scope","$filter","$http","$
                         normal: {show: false}
                     },
                     startAngle:90,
-                    data:[16251462.38,17696209.62],
+                    data:[{name:"排名前10%的商家销售占比",value:16251462.38},{name:"其他商家",value:17696209.62}],
                     silent: false,
                     hoverAnimation:false
                 }
@@ -107,7 +110,7 @@ ampApp.controller("merchant-sale-main-controller",["$scope","$filter","$http","$
         var myChart = echarts.init(document.getElementById(id));
         var option = {
             color:["#5ab46e","#d9dedf"],
-            tooltip:{show:true,formatter:"{d}%"},
+            tooltip:{show:true,formatter:"{b}:{d}%"},
             series: [
                 {
                     type:"pie",
@@ -117,7 +120,7 @@ ampApp.controller("merchant-sale-main-controller",["$scope","$filter","$http","$
                         normal: {show: false}
                     },
                     startAngle:90,
-                    data:[ 93,117],
+                    data:[{name:"90%销售贡献的商家占比",value:93},{name:"10%销售贡献的商家占比",value:117}],
                     silent: false,
                     hoverAnimation:false
                 }

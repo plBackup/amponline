@@ -136,7 +136,15 @@
 
                     <tr class="sub-record amp-display-hide records-separator-line" data-group="1"><td colspan="5"></td></tr>
 
-                    <tr ng-repeat="item in data.others">
+                    <tr ng-repeat="item in data.others_1">
+                        <td>{{item.deptName}}</td>
+                        <td>{{item.lastReal|numberFormatDefault:2}}</td>
+                        <td>{{item.curReal|numberFormatDefault:2}}</td>
+                        <td>{{item.curBudget|numberFormatDefault:2}}</td>
+                        <td>{{item.emptyNo|numberFormatDefault:2}}</td>
+                    </tr>
+
+                    <tr ng-repeat="item in data.others_2">
                         <td>{{item.deptName}}</td>
                         <td>{{item.lastReal|numberFormatDefault}}</td>
                         <td>{{item.curReal|numberFormatDefault}}</td>

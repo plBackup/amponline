@@ -50,7 +50,7 @@
 <div class="ys-amp" id="simulation-calculation" ng-controller="simulation-calculation-controller">
     <div class="mainpanel">
         <div class="amp-main-panel">
-            <div class="amp-page-header">AMP PAAS Beta1.0 2016</div>
+            <div class="amp-page-header">AMP PAAS V1.0 2016</div>
             <div class="amp-content-header clearfix">
                 <div class="pull-left">
                     <ul class="amp-breadcrumb">
@@ -88,8 +88,8 @@
 
                                     <tr ng-repeat="item in testIndexRecords">
                                         <td class="amp-font-weight-bold">第{{item.yearIndex}}年</td>
-                                        <td>{{item.appreciation|numberFormatDefault:0}}</td>
-                                        <td>{{item.netPresentValue|numberFormatDefault:0}}</td>
+                                        <td>{{item.appreciation|numberFormatDefault:2}}</td>
+                                        <td>{{item.netPresentValue|numberFormatDefault:2}}</td>
                                         <td>{{item.irrPercent}}</td>
                                         <td>{{item.rate}}</td>
                                     </tr>
@@ -123,7 +123,7 @@
                                     <em class="form-label">销售成本</em>
                                     <div class="form-content">
                                         <div class="amp-input amp-input-default amp-input-32 amp-input-middle amp-multiple-input text-show" style="vertical-align: bottom;">
-                                            <div class="amp-input-display-span">{{parameterInfo.costValue|numberFormatDefault:0}}</div>
+                                            <div class="amp-input-display-span">{{parameterInfo.costValue|numberFormatDefault:2}}</div>
                                             <input type="number" data-type-integer="" name="sale-cost-value" ng-model="parameterInfo.costValue"/>
                                             <div class="error-msg"><span></span></div>
                                         </div>
@@ -175,7 +175,7 @@
                             <label class="form-group-label">收购价</label>
                             <div class="form-group-value">
                                 <div class="amp-input amp-input-default amp-input-40 amp-multiple-input text-show">
-                                    <div class="amp-input-display-span">{{initialAnalysis.purchasingPrice|numberFormatDefault:0}}</div>
+                                    <div class="amp-input-display-span">{{initialAnalysis.purchasingPrice|numberFormatDefault:2}}</div>
                                     <input data-type-integer type="number" ng-model="initialAnalysis.purchasingPrice" >
                                     <div class="error-msg"><span></span></div>
                                 </div>
@@ -186,7 +186,7 @@
                             <label class="form-group-label"><em class="amp-font-size-12 amp-font-color-support">加:</em>收购费用</label>
                             <div class="form-group-value">
                                 <div class="amp-input amp-input-default amp-input-40 amp-multiple-input text-show">
-                                    <div class="amp-input-display-span">{{initialAnalysis.purchasingFee|numberFormatDefault:0}}</div>
+                                    <div class="amp-input-display-span">{{initialAnalysis.purchasingFee|numberFormatDefault:2}}</div>
                                     <input data-type-integer type="number" ng-model="initialAnalysis.purchasingFee">
                                     <div class="error-msg"><span></span></div>
                                 </div>
@@ -197,7 +197,7 @@
                             <label class="form-group-label"><em class="amp-font-size-12 amp-font-color-support">加:</em>贷款费用</label>
                             <div class="form-group-value">
                                 <div class="amp-input amp-input-default amp-input-40 amp-multiple-input text-show">
-                                    <div class="amp-input-display-span">{{initialAnalysis.loanFee|numberFormatDefault:0}}</div>
+                                    <div class="amp-input-display-span">{{initialAnalysis.loanFee|numberFormatDefault:2}}</div>
                                     <input data-type-integer type="number" ng-model="initialAnalysis.loanFee">
                                     <div class="error-msg"><span></span></div>
                                 </div>
@@ -207,14 +207,14 @@
 
                         <div class="form-group">
                             <label class="form-group-label amp-font-style-italic amp-font-weight-bold">原始基数</label>
-                            <div class="form-group-value amp-text-align-right"><span class="amp-font-color-main">{{initialAnalysis.originBase|numberFormatDefault:0}}</span></div>
+                            <div class="form-group-value amp-text-align-right"><span class="amp-font-color-main">{{initialAnalysis.originBase|numberFormatDefault:2}}</span></div>
                         </div><!-- form-group -->
 
                         <div class="form-group">
                             <label class="form-group-label" style="padding-left:10px;"><em class="amp-font-size-12 amp-font-color-support">减:</em>贷款金额</label>
                             <div class="form-group-value">
                                 <div class="amp-input amp-input-default amp-input-40 input-1 amp-multiple-input text-show">
-                                    <div class="amp-input-display-span">{{initialAnalysis.loan|numberFormatDefault:0}}</div>
+                                    <div class="amp-input-display-span">{{initialAnalysis.loan|numberFormatDefault:2}}</div>
                                     <input data-type-integer type="number" ng-model="initialAnalysis.loan">
                                     <div class="error-msg"><span></span></div>
                                 </div>
@@ -243,7 +243,7 @@
 
                         <div class="form-group">
                             <label class="form-group-label amp-font-style-italic amp-font-weight-bold"  style="padding-left:10px;">初始权益</label>
-                            <div class="form-group-value amp-text-align-right"><span class="amp-font-color-main">{{initialAnalysis.initialBenefit|numberFormatDefault:0}}</span></div>
+                            <div class="form-group-value amp-text-align-right"><span class="amp-font-color-main">{{initialAnalysis.initialBenefit|numberFormatDefault:2}}</span></div>
                         </div><!-- form-group -->
 
 
@@ -432,118 +432,118 @@
 
 
                                             <ul class="record-list" ng-repeat="item in incomeExpense.contents">
-                                                <li data-group="1" class="amp-font-color-main amp-font-weight-bold parent-group">{{item.totalIncome|numberFormatDefault:0}}</li>
+                                                <li data-group="1" class="amp-font-color-main amp-font-weight-bold parent-group">{{item.totalIncome|numberFormatDefault:2}}</li>
                                                 <li data-group="1">
                                                     <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
-                                                        <div class="amp-input-display-span">{{item.rentIncome|numberFormatDefault:0}}</div>
+                                                        <div class="amp-input-display-span">{{item.rentIncome|numberFormatDefault:2}}</div>
                                                         <input data-type-integer type="number" ng-model="item.rentIncome"/>
                                                         <div class="error-msg"><span></span></div>
                                                     </div>
                                                 </li>
                                                 <li data-group="1">
                                                     <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
-                                                        <div class="amp-input-display-span">{{item.propertyFeeIncome|numberFormatDefault:0}}</div>
+                                                        <div class="amp-input-display-span">{{item.propertyFeeIncome|numberFormatDefault:2}}</div>
                                                         <input data-type-integer type="number" ng-model="item.propertyFeeIncome"/>
                                                         <div class="error-msg"><span></span></div>
                                                     </div>
                                                 </li>
                                                 <li data-group="1">
                                                     <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
-                                                        <div class="amp-input-display-span">{{item.otherIncome|numberFormatDefault:0}}</div>
+                                                        <div class="amp-input-display-span">{{item.otherIncome|numberFormatDefault:2}}</div>
                                                         <input data-type-integer type="number" ng-model="item.otherIncome"/>
                                                         <div class="error-msg"><span></span></div>
                                                     </div>
                                                 </li>
-                                                <li data-group="2" class="amp-font-color-main amp-font-weight-bold parent-group">{{item.totalFee|numberFormatDefault:0}}</li>
+                                                <li data-group="2" class="amp-font-color-main amp-font-weight-bold parent-group">{{item.totalFee|numberFormatDefault:2}}</li>
                                                 <li data-group="2">
                                                     <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
-                                                        <div class="amp-input-display-span">{{item.landValueTax|numberFormatDefault:0}}</div>
+                                                        <div class="amp-input-display-span">{{item.landValueTax|numberFormatDefault:2}}</div>
                                                         <input data-type-integer type="number" ng-model="item.landValueTax"/>
                                                         <div class="error-msg"><span></span></div>
                                                     </div>
                                                 </li>
                                                 <li data-group="2" >
                                                     <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
-                                                        <div class="amp-input-display-span">{{item.publicConsumptionFee|numberFormatDefault:0}}</div>
+                                                        <div class="amp-input-display-span">{{item.publicConsumptionFee|numberFormatDefault:2}}</div>
                                                         <input data-type-integer type="number" ng-model="item.publicConsumptionFee"/>
                                                         <div class="error-msg"><span></span></div>
                                                     </div>
                                                 </li>
                                                 <li data-group="2" >
                                                     <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
-                                                        <div class="amp-input-display-span">{{item.maintenanceFee|numberFormatDefault:0}}</div>
+                                                        <div class="amp-input-display-span">{{item.maintenanceFee|numberFormatDefault:2}}</div>
                                                         <input data-type-integer type="number" ng-model="item.maintenanceFee"/>
                                                         <div class="error-msg"><span></span></div>
                                                     </div>
                                                 </li>
                                                 <li data-group="2">
                                                     <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
-                                                        <div class="amp-input-display-span">{{item.generalMgtFee|numberFormatDefault:0}}</div>
+                                                        <div class="amp-input-display-span">{{item.generalMgtFee|numberFormatDefault:2}}</div>
                                                         <input data-type-integer type="number" ng-model="item.generalMgtFee"/>
                                                         <div class="error-msg"><span></span></div>
                                                     </div>
                                                 </li>
                                                 <li data-group="2">
                                                     <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
-                                                        <div class="amp-input-display-span">{{item.marketingExpense|numberFormatDefault:0}}</div>
+                                                        <div class="amp-input-display-span">{{item.marketingExpense|numberFormatDefault:2}}</div>
                                                         <input data-type-integer type="number" ng-model="item.marketingExpense"/>
                                                         <div class="error-msg"><span></span></div>
                                                     </div>
                                                 </li>
                                                 <li data-group="2">
                                                     <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
-                                                        <div class="amp-input-display-span">{{item.wagesRelatedCost|numberFormatDefault:0}}</div>
+                                                        <div class="amp-input-display-span">{{item.wagesRelatedCost|numberFormatDefault:2}}</div>
                                                         <input data-type-integer type="number" ng-model="item.wagesRelatedCost"/>
                                                         <div class="error-msg"><span></span></div>
                                                     </div>
                                                 </li>
                                                 <li data-group="2">
                                                     <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
-                                                        <div class="amp-input-display-span">{{item.mgtFee|numberFormatDefault:0}}</div>
+                                                        <div class="amp-input-display-span">{{item.mgtFee|numberFormatDefault:2}}</div>
                                                         <input data-type-integer type="number" ng-model="item.mgtFee"/>
                                                         <div class="error-msg"><span></span></div>
                                                     </div>
                                                 </li>
                                                 <li data-group="2">
                                                     <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
-                                                        <div class="amp-input-display-span">{{item.chargeOff|numberFormatDefault:0}}</div>
+                                                        <div class="amp-input-display-span">{{item.chargeOff|numberFormatDefault:2}}</div>
                                                         <input data-type-integer type="number" ng-model="item.chargeOff"/>
                                                         <div class="error-msg"><span></span></div>
                                                     </div>
                                                 </li>
                                                 <li data-group="2">
                                                     <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
-                                                        <div class="amp-input-display-span">{{item.depreciation|numberFormatDefault:0}}</div>
+                                                        <div class="amp-input-display-span">{{item.depreciation|numberFormatDefault:2}}</div>
                                                         <input data-type-integer type="number" ng-model="item.depreciation"/>
                                                         <div class="error-msg"><span></span></div>
                                                     </div>
                                                 </li>
                                                 <li data-group="2">
                                                     <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
-                                                        <div class="amp-input-display-span">{{item.otherFee|numberFormatDefault:0}}</div>
+                                                        <div class="amp-input-display-span">{{item.otherFee|numberFormatDefault:2}}</div>
                                                         <input data-type-integer type="number" ng-model="item.otherFee"/>
                                                         <div class="error-msg"><span></span></div>
                                                     </div>
                                                 </li>
-                                                <li data-group="3" class="amp-font-color-main amp-font-weight-bold parent-group">{{item.totalTax|numberFormatDefault:0}}</li>
+                                                <li data-group="3" class="amp-font-color-main amp-font-weight-bold parent-group">{{item.totalTax|numberFormatDefault:2}}</li>
                                                 <li data-group="3">
                                                     <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
-                                                        <div class="amp-input-display-span">{{item.housePropertyTax|numberFormatDefault:0}}</div>
+                                                        <div class="amp-input-display-span">{{item.housePropertyTax|numberFormatDefault:2}}</div>
                                                         <input data-type-integer type="number" ng-model="item.housePropertyTax"/>
                                                         <div class="error-msg"><span></span></div>
                                                     </div>
                                                 </li>
                                                 <li data-group="3">
                                                     <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
-                                                        <div class="amp-input-display-span">{{item.businessTax|numberFormatDefault:0}}</div>
+                                                        <div class="amp-input-display-span">{{item.businessTax|numberFormatDefault:2}}</div>
                                                         <input data-type-integer type="number" ng-model="item.businessTax"/>
                                                         <div class="error-msg"><span></span></div>
                                                     </div>
                                                 </li>
-                                                <li class="amp-font-color-main amp-font-weight-bold amp-font-style-italic">{{item.noi|numberFormatDefault:0}}</li>
+                                                <li class="amp-font-color-main amp-font-weight-bold amp-font-style-italic">{{item.noi|numberFormatDefault:2}}</li>
                                                 <li>
                                                     <div class="amp-input amp-input-default amp-input-26 amp-multiple-input text-show">
-                                                        <div class="amp-input-display-span">{{item.capitalExport|numberFormatDefault:0}}</div>
+                                                        <div class="amp-input-display-span">{{item.capitalExport|numberFormatDefault:2}}</div>
                                                         <input data-type-integer type="number"  ng-model="item.capitalExport"/>
                                                         <div class="error-msg"><span></span></div>
                                                     </div>
@@ -593,11 +593,11 @@
                                         <div class="swiper-slide clearfix">
                                             <ul ng-repeat="item in preTaxCashFlowRecords">
                                                 <li>第{{item.year}}年</li>
-                                                <li>{{item.income|numberFormatDefault:0}}</li>
-                                                <li>{{item.loanAmount|numberFormatDefault:0}}</li>
-                                                <li>{{item.loanInterest|numberFormatDefault:0}}</li>
-                                                <li>{{item.charges|numberFormatDefault:0}}</li>
-                                                <li>{{item.preTaxCashFlow|numberFormatDefault:0}}</li>
+                                                <li>{{item.income|numberFormatDefault:2}}</li>
+                                                <li>{{item.loanAmount|numberFormatDefault:2}}</li>
+                                                <li>{{item.loanInterest|numberFormatDefault:2}}</li>
+                                                <li>{{item.charges|numberFormatDefault:2}}</li>
+                                                <li>{{item.preTaxCashFlow|numberFormatDefault:2}}</li>
                                             </ul>
                                         </div><!-- swiper-slide -->
                                     </div><!-- swiper-wrapper -->
@@ -632,10 +632,10 @@
                                         <div class="swiper-slide clearfix">
                                             <ul ng-repeat="item in saleIncomeAnalysisRecords">
                                                 <li>第{{item.year}}年</li>
-                                                <li>{{item.salePrice|numberFormatDefault:0}}</li>
-                                                <li>{{item.saleCost|numberFormatDefault:0}}</li>
-                                                <li>{{item.loanBalance|numberFormatDefault:0}}</li>
-                                                <li>{{item.netSalesIncome|numberFormatDefault:0}}</li>
+                                                <li>{{item.salePrice|numberFormatDefault:2}}</li>
+                                                <li>{{item.saleCost|numberFormatDefault:2}}</li>
+                                                <li>{{item.loanBalance|numberFormatDefault:2}}</li>
+                                                <li>{{item.netSalesIncome|numberFormatDefault:2}}</li>
                                             </ul>
                                         </div><!-- swiper-slide -->
                                     </div><!-- swiper-wrapper -->
@@ -678,10 +678,10 @@
                                 <tbody>
                                     <tr ng-repeat="item in loanRepaymentAnalysis">
                                         <td>第{{item.year}}年</td>
-                                        <td>{{item.pmt|numberFormatDefault:0}}</td>
-                                        <td>{{item.ppmt|numberFormatDefault:0}}</td>
-                                        <td>{{item.ipmt|numberFormatDefault:0}}</td>
-                                        <td>{{item.leavePpmt|numberFormatDefault:0}}</td>
+                                        <td>{{item.pmt|numberFormatDefault:2}}</td>
+                                        <td>{{item.ppmt|numberFormatDefault:2}}</td>
+                                        <td>{{item.ipmt|numberFormatDefault:2}}</td>
+                                        <td>{{item.leavePpmt|numberFormatDefault:2}}</td>
                                     </tr>
                                 </tbody>
                             </table>

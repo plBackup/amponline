@@ -1,0 +1,569 @@
+<div class="amp-content-panel" id="rgp-forecast">
+    <form name="rpgForecastForm">
+
+        <div class="amp-block-pd clearfix">
+            <div class="amp-block-left">
+                <div class="amp-section amp-section-1">
+                    <div class="amp-section-title">
+                        <h3>参考租金</h3>
+                    </div><!--amp-section-title-->
+
+                    <div class="amp-section-content">
+                        <table class="table amp-table ampt-table-no-bordered">
+                            <colgroup>
+                                <col width="22%">
+                                <col width="78%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th><span>租金基准</span></th>
+                                    <td>
+                                        <div>
+                                            <div class="td-input-wrapper select-input col-xs-4" >
+                                                <input type="text" value="" hidden ng-model="rfCtrl.shopInfo.form"/>
+                                                <div class="dropdown">
+                                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                        <em>{{rfCtrl.shopInfo.floor | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                                        <li ng-class="{'active':rfCtrl.isActive(menu,rfCtrl.shopInfo.floor)}" role="presentation"
+                                                            ng-repeat="menu in rfCtrl.form_menu.floors"><a role="menuitem" ng-click="rfCtrl.setModel('floor',menu)">{{menu}}</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div><!--select-input 楼层-->
+
+                                            <div class="td-input-wrapper select-input col-xs-4" >
+                                                <input type="text" value="" hidden ng-model="rfCtrl.shopInfo.form"/>
+                                                <div class="dropdown">
+                                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                        <em>{{rfCtrl.shopInfo.type | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                                        <li ng-class="{'active':rfCtrl.isActive(menu,rfCtrl.shopInfo.type)}"
+                                                            ng-repeat="menu in rfCtrl.form_menu.type"><a role="menuitem" ng-click="rfCtrl.setModel('type',menu)">{{menu}}</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div><!--select-input 类型-->
+
+                                            <div class="td-input-wrapper select-input col-xs-4" >
+                                                <input type="text" value="" hidden ng-model="rfCtrl.shopInfo.form"/>
+                                                <div class="dropdown">
+                                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                        <em>{{rfCtrl.shopInfo.form | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                                        <li ng-class="{'active':rfCtrl.isActive(menu,rfCtrl.shopInfo.form)}"
+                                                            ng-repeat="menu in rfCtrl.form_menu.form"><a role="menuitem" ng-click="rfCtrl.setModel('form',menu)">{{menu}}</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div><!--select-input 业态-->
+
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td>
+                                        <div class="td-input-wrapper num-input" >
+                                            <input type="number" placeholder="/" data-date="" value="">
+                                            <span class="number-format">{{fee.areaRangeEnd | number:2}}</span>
+                                        </div>
+                                        <span class="td-addon">元/平米/天</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!--amp-section-content-->
+                </div><!---amp-section －1  参考租金-->
+
+
+                <div class="amp-section amp-section-2">
+                    <div class="amp-section-title">
+                        <h3>建筑面积</h3>
+                    </div><!--amp-section-title-->
+
+                    <div class="amp-section-content">
+                        <table class="table amp-table ampt-table-no-bordered">
+                            <colgroup>
+                                <col width="42%">
+                                <col width="36%">
+                                <col width="22%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th><span>地上楼层经营面积(GFA)</span></th>
+                                    <td>
+                                        <div class="td-input-wrapper num-input" >
+                                            <input type="number" placeholder="/" data-date="" value="">
+                                            <span class="number-format">{{fee.areaRangeEnd | number:2}}</span>
+                                        </div>
+                                        <span class="td-range-addon">m&sup2</span>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper select-input col-xs-4" >
+                                            <input type="text" value="" hidden ng-model="rfCtrl.shopInfo.form"/>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                    <em>{{rfCtrl.shopInfo.floor | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                                    <li ng-class="{'active':rfCtrl.isActive(menu,rfCtrl.shopInfo.floor)}"
+                                                        ng-repeat="menu in rfCtrl.form_menu.floors"><a role="menuitem" ng-click="rfCtrl.setModel('floor',menu)">{{menu}}</a></li>
+                                                </ul>
+                                            </div>
+                                        </div><!--select-input 楼层-->
+                                    </td>
+                                </tr><!--tr-->
+
+                                <tr>
+                                    <th><span>地下楼层经营面积(GFA)</span></th>
+                                    <td>
+                                        <div class="td-input-wrapper num-input" >
+                                            <input type="number" placeholder="/" data-date="" value="">
+                                            <span class="number-format">{{fee.areaRangeEnd | number:2}}</span>
+                                        </div>
+                                        <span class="td-addon">m&sup2</span>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper select-input col-xs-4" >
+                                            <input type="text" value="" hidden ng-model="rfCtrl.shopInfo.form"/>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                    <em>{{rfCtrl.shopInfo.floor | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                                    <li ng-class="{'active':rfCtrl.isActive(menu,rfCtrl.shopInfo.floor)}"
+                                                        ng-repeat="menu in rfCtrl.form_menu.floors"><a role="menuitem" ng-click="rfCtrl.setModel('floor',menu)">{{menu}}</a></li>
+                                                </ul>
+                                            </div>
+                                        </div><!--select-input 楼层-->
+                                    </td>
+                                </tr><!--tr-->
+
+                                <tr>
+                                    <th><span>停车场面积</span></th>
+                                    <td>
+                                        <div class="td-input-wrapper num-input" >
+                                            <input type="number" placeholder="/" data-date="" value="">
+                                            <span class="number-format">{{fee.areaRangeEnd | number:2}}</span>
+                                        </div>
+                                        <span class="td-range-addon">m&sup2</span>
+                                    </td>
+                                    <td>
+                                        <div class="td-input-wrapper select-input col-xs-4" >
+                                            <input type="text" value="" hidden ng-model="rfCtrl.shopInfo.form"/>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                    <em>{{rfCtrl.shopInfo.floor | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                                    <li ng-class="{'active':rfCtrl.isActive(menu,rfCtrl.shopInfo.floor)}"
+                                                        ng-repeat="menu in rfCtrl.form_menu.floors"><a role="menuitem" ng-click="rfCtrl.setModel('floor',menu)">{{menu}}</a></li>
+                                                </ul>
+                                            </div>
+                                        </div><!--select-input 楼层-->
+                                    </td>
+                                </tr><!--tr-->
+
+                                <tr>
+                                    <th><span>总经营建筑面积</span></th>
+                                    <td>
+                                        <div class="td-input-wrapper num-input" >
+                                            <input type="number" placeholder="/" data-date="" value="" hidden>
+                                            <span class="number-format">{{fee.areaRangeEnd | number:2}}</span>
+                                        </div>
+                                        <span class="td-addon">m&sup2</span>
+                                    </td>
+                                    <td></td>
+                                </tr><!--tr-->
+
+                                <tr>
+                                    <th><span>使用率</span></th>
+                                    <td colspan="2">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 75%;">
+                                            </div>
+                                        </div>
+                                        <span class="td-addon">75%</span>
+                                    </td>
+                                </tr><!--tr-->
+
+                                <tr>
+                                    <th><span>可租赁面积</span></th>
+                                    <td>
+                                        <div class="td-input-wrapper num-input" >
+                                            <input type="number" placeholder="/" data-date="" value="" hidden>
+                                            <span class="number-format">{{fee.areaRangeEnd | number:2}}</span>
+                                        </div>
+                                        <span class="td-range-addon">m&sup2</span>
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                </tr><!--tr-->
+                            </tbody>
+                        </table>
+                    </div><!--amp-section-content-->
+                </div><!---amp-section －2  建筑面积-->
+
+                <div class="amp-section">
+                    <div class="amp-section-title">
+                        <h3>商铺划分</h3>
+                    </div><!--amp-section-title-->
+
+                    <div class="amp-section-content">
+                        <div class="amp-sub">
+                            <div class="amp-sub-title">
+                                <h5>租户类型比列</h5>
+                            </div>
+                            <div class="amp-sub-content">
+                                <table class="table amp-table ampt-table-no-bordered">
+                                    <colgroup>
+                                        <col width="20%">
+                                        <col width="80%">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <th><span>主力店</span></th>
+                                        <td>
+                                            <div class="td-input-wrapper num-input" >
+                                                <input type="number" placeholder="/" data-date="" value="">
+                                                <span class="number-format">{{fee.areaRangeEnd | number:2}}</span>
+                                            </div>
+                                            <span class="td-range-addon">m&sup2</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span>次主力店</span></th>
+                                        <td>
+                                            <div class="td-input-wrapper num-input" >
+                                                <input type="number" placeholder="/" data-date="" value="">
+                                                <span class="number-format">{{fee.areaRangeEnd | number:2}}</span>
+                                            </div>
+                                            <span class="td-range-addon">m&sup2</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span>大租户</span></th>
+                                        <td>
+                                            <div class="td-input-wrapper num-input" >
+                                                <input type="number" placeholder="/" data-date="" value="">
+                                                <span class="number-format">{{fee.areaRangeEnd | number:2}}</span>
+                                            </div>
+                                            <span class="td-range-addon">m&sup2</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span>中租户</span></th>
+                                        <td>
+                                            <div class="td-input-wrapper num-input" >
+                                                <input type="number" placeholder="/" data-date="" value="">
+                                                <span class="number-format">{{fee.areaRangeEnd | number:2}}</span>
+                                            </div>
+                                            <span class="td-range-addon">m&sup2</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span>小租户</span></th>
+                                        <td>
+                                            <div class="td-input-wrapper num-input" >
+                                                <input type="number" placeholder="/" data-date="" value="">
+                                                <span class="number-format">{{fee.areaRangeEnd | number:2}}</span>
+                                            </div>
+                                            <span class="td-range-addon">m&sup2</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span>其他</span></th>
+                                        <td>
+                                            <div class="td-input-wrapper num-input" >
+                                                <input type="number" placeholder="/" data-date="" value="">
+                                                <span class="number-format">{{fee.areaRangeEnd | number:2}}</span>
+                                            </div>
+                                            <span class="td-range-addon">m&sup2</span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div><!--amp-sub-->
+
+                        <div class="amp-sub">
+                            <div class="amp-sub-title">
+                                <h5>租户面积分类</h5>
+                            </div>
+                            <div class="amp-sub-content">
+                                <div id="rent-types">
+                                    <table id="rent-type-range" width="100%" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td><em class="rent-type-label">主力店</em></td>
+                                            <td><em class="rent-type-label">次主力店</em></td>
+                                            <td><em class="rent-type-label">大租户</em></td>
+                                            <td><em class="rent-type-label">中租户</em></td>
+                                            <td><em class="rent-type-label">小租户</em></td>
+                                            <td><em class="rent-type-label">其他</em></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div><!--amp-sub-->
+                    </div><!--amp-section-content-->
+                </div><!---amp-section －3  商铺划分-->
+
+                <div class="amp-section">
+                    <div class="amp-section-title">
+                        <h3>商铺分配</h3>
+                    </div><!--amp-section-title-->
+
+                    <div class="amp-section-content">
+                        <div class="panel-group" id="accordion-area-range" role="tablist" >
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="area-range-headingOne">
+                                    <div class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion-area-range" href="#area-range-collapseOne" >
+                                            <h5>主力店<i>60%</i><em class="ys-icon icon-menu-down"></em></h5>
+                                            <span>范围(>=<i>3500</i>sqm)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="area-range-collapseOne" class="panel-collapse collapse in" role="tabpanel">
+                                    <div class="panel-body">
+                                        <table class="table amp-table ampt-table-no-bordered">
+                                            <colgroup>
+                                                <col width="30%">
+                                                <col width="30%">
+                                                <col width="30%">
+                                                <col width="10%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>租户组合</th>
+                                                    <th>面积(m&sup2)</th>
+                                                    <th>楼层</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="td-input-wrapper select-input" >
+                                                            <input type="text" value="" hidden ng-model="rfCtrl.shopInfo.form"/>
+                                                            <div class="dropdown">
+                                                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                                    <em>{{rfCtrl.shopInfo.form | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+                                                                </button>
+                                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                                                    <li ng-class="{'active':rfCtrl.isActive(menu,rfCtrl.shopInfo.form)}"
+                                                                        ng-repeat="menu in rfCtrl.form_menu.form"><a role="menuitem" ng-click="rfCtrl.setModel('form',menu)">{{menu}}</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div><!--select-input 业态-->
+
+                                                    </td>
+                                                    <td>
+                                                        <div class="td-input-wrapper num-input" >
+                                                            <input type="number" placeholder="/" data-date="" value="">
+                                                            <span class="number-format">{{fee.areaRangeEnd | number:2}}</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="td-input-wrapper select-input" >
+                                                            <input type="text" value="" hidden ng-model="rfCtrl.shopInfo.form"/>
+                                                            <div class="dropdown">
+                                                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                                    <em>{{rfCtrl.shopInfo.floor | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+                                                                </button>
+                                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                                                    <li ng-class="{'active':rfCtrl.isActive(menu,rfCtrl.shopInfo.floor)}"
+                                                                        ng-repeat="menu in rfCtrl.form_menu.floors"><a role="menuitem" ng-click="rfCtrl.setModel('floor',menu)">{{menu}}</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div><!--select-input 楼层-->
+                                                    </td>
+                                                    <td>
+                                                        <div class="td-opt clearfix" ng-if="$index==(rfCtrl.mainShop.areaRanges.length-1)" >
+                                                            <button class="td-opt-add" ng-click="rfCtrl.add('mainShop')"><em class="ys-icon ys-icon-add"></em></button>
+                                                            <button class="td-opt-remove" ng-click="rfCtrl.remove('mainShop')"><em class="ys-icon ys-icon-remove"></em></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <th>面积小计</th>
+                                                    <td>-</td>
+                                                    <td>60%</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>所分配面积</th>
+                                                    <td>-</td>
+                                                    <td>0%</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>差异</th>
+                                                    <td>-</td>
+                                                    <td></td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div><!--panel-collapse-->
+                            </div><!--panel-->
+
+                        </div><!--panel-group-->
+                    </div><!--amp-section-content-->
+                </div><!---amp-section －4 商铺分配-->
+
+                <div class="amp-section">
+                    <div class="amp-section-title">
+                        <h3>租金系数</h3>
+                    </div><!--amp-section-title-->
+
+                    <div class="amp-section-content">
+                        <div class="panel-group" id="accordion-rent-rate" role="tablist" >
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="rent-rate-headingOne">
+                                    <div class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion-area-range" href="#rent-rate-collapseOne" >
+                                            <h5>楼层系数<em class="ys-icon icon-menu-down"></em></h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="rent-rate-collapseOne" class="panel-collapse collapse in" role="tabpanel">
+                                    <div class="panel-body">
+                                        <table class="table amp-table ampt-table-no-bordered">
+                                            <colgroup>
+                                                <col width="50%">
+                                                <col width="50%">
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th>楼层</th>
+                                                <th>系数</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td><span>L3</span></td>
+                                                <td>
+                                                    <div class="td-input-wrapper num-input" >
+                                                        <input type="number" placeholder="/" data-date="" value="">
+                                                        <span class="number-format">{{fee.areaRangeEnd | number:2}}</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div><!--panel-collapse-->
+                            </div><!--panel-->
+
+                        </div><!--panel-group-->
+                    </div><!--amp-section-content-->
+                </div><!---amp-section －5 租金系数-->
+
+                <div class="amp-section">
+                    <div class="amp-section-title">
+                        <h3>续约租金</h3>
+                    </div><!--amp-section-title-->
+
+                    <div class="amp-section-content">
+                        <table class="table amp-table ampt-table-no-bordered">
+                            <colgroup>
+                                <col width="50%">
+                                <col width="50%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th><span>主力店</span></th>
+                                    <td>
+                                        <div class="td-input-wrapper select-input col-xs-4" >
+                                            <input type="text" value="" hidden ng-model="rfCtrl.shopInfo.form"/>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                    <em>{{rfCtrl.shopInfo.floor | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                                    <li ng-class="{'active':rfCtrl.isActive(menu,rfCtrl.shopInfo.floor)}"
+                                                        ng-repeat="menu in rfCtrl.form_menu.floors"><a role="menuitem" ng-click="rfCtrl.setModel('floor',menu)">{{menu}}</a></li>
+                                                </ul>
+                                            </div>
+                                        </div><!--select-input 楼层-->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!--amp-section-content-->
+                </div><!---amp-section －5 续约租金-->
+            </div><!--amp-block-left-->
+            <div class="amp-block-right">
+                <div class="amp-section amp-section-1">
+                    <div class="amp-section-title">
+                        <h3>目标租金</h3>
+                        <div class="btn-group pull-right" role="group">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default">租金折扣/溢价</button>
+                            </div>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default">开发成本</button>
+                            </div>
+                        </div>
+                    </div><!--amp-section-title-->
+
+                    <div class="amp-section-content">
+                        <table class="table amp-table ampt-table-no-bordered">
+                            <colgroup>
+                                <col width="12%">
+                                <col width="38%">
+                                <col width="50%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th><span>目标租金</span></th>
+                                    <td>
+                                        <div class="td-input-wrapper num-input" >
+                                            <input type="number" placeholder="/" data-date="" value="">
+                                            <span class="number-format">{{fee.areaRangeEnd | number:2}}</span>
+                                        </div>
+                                        <span class="td-range-addon">元/平米/天</span>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                           </tbody>
+                        </table>
+                    </div>
+                </div><!--amp-section-1 目标租金-->
+
+
+                <div class="amp-section">
+                    <div class="amp-section-title">
+                        <h3>空间分配</h3>
+                    </div><!--amp-section-title-->
+
+                    <div class="amp-section-content">
+
+                    </div><!--amp-section-content-->
+                </div><!---amp-section －2 空间分配-->
+
+                <div class="amp-section">
+                    <div class="amp-section-title">
+                        <h3>租户组合</h3>
+                    </div><!--amp-section-title-->
+
+                    <div class="amp-section-content">
+
+                    </div><!--amp-section-content-->
+                </div><!---amp-section －3 租户组合-->
+
+                <div class="amp-section amp-section-opt">
+                    <div class="amp-section-content">
+                        <div class="btn-wrapper pull-right">
+                            <a ng-disabled="rpgSetForm.$invalid" class="btn btn-default amp-btn amp-btn-reverse" id="btn-reset"  style="float:right;margin-left:20px;">重置</a>
+                            <a ng-disabled="rpgSetForm.$invalid" class="btn btn-default amp-btn amp-btn-reverse" id="btn-cancel"  style="float:right;margin-left:20px;">取消</a>
+                            <a ng-disabled="rpgSetForm.$invalid" class="btn btn-default amp-btn" id="btn-save" ng-click="rfCtrl.setData()" style="float:right;">保存</a>
+                        </div>
+                    </div><!--amp-section-content-->
+                </div><!---amp-section －4 opt-->
+            </div><!--amp-block-right-->
+        </div><!--amp-block-pd-->
+    </form>
+</div>

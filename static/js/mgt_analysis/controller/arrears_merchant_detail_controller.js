@@ -82,6 +82,18 @@ ampApp.controller("arrears-merchant-detail-controller",["$scope","getPaginationR
     function initPageView(){
         container = $("#arrears-merchant-detail");
 
+        var width = $(container).find(".amp-thead").outerWidth();
+        $(container).find(".amp-thead").css("width",width+"px");
+
+        pin = $(container).find(".amp-thead").pin({
+            containerSelector: $(container).find(".amp-collapse-table"),
+            padding: {top: 44, bottom: 0}
+        });
+
+        setTimeout(function(){
+            pin.refresh();
+        },500);
+
     }
 
     /* ======================================== 绑定事件 ======================================== */

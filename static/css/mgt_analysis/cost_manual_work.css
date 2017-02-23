@@ -27,8 +27,7 @@
 
 
 
-
-
+#cost-manual-work .cost-manual-work-pin-wrapper{padding:0 24px;}
 #cost-manual-work .assets-table tbody .body-title{
     color:#8592a3;
     font-size:12px;
@@ -86,4 +85,4 @@
     margin:auto;
 }
 
-#cost-manual-work .dept-table-head{right:0;left:0;z-index: 9;}
+#cost-manual-work .dept-table-head{right:24px;left:24px;z-index: 9;}

@@ -58,12 +58,12 @@
 
 /* ======================================== amp-table-block ======================================== */
 #cost-main .amp-table-block .amp-table-cell{
-    width:16%;
+    width:18%;
     text-align: right;
 }
 
-#cost-main .amp-table-block .amp-table-cell:first-child{text-align: left;}
-#cost-main .amp-table-block .amp-table-cell:last-child{width:20%;}
+#cost-main .amp-table-block .amp-table-cell:first-child{width:10%;text-align: left;}
+#cost-main .amp-table-block .amp-table-cell:last-child{}
 
 #cost-main .amp-table-block .amp-tbody .amp-table-cell{
     height:75px;

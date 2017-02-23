@@ -515,9 +515,13 @@ var svg_editor = (function (sv){
     sv.addStyle=function(style){
         var $container= $("#ys-svg");
         var $style=$container.find("style");
+        console.log("/*--------style------*/");
+        console.log($style);
         if($style.length==0){
             $container.find("defs").last().prepend(style);
         }else{
+            console.log("=======style=======");
+            console.log(style);
             $style.last().after(style);
         }
     };
@@ -869,10 +873,12 @@ svg_editor.init=function(_svgCallback){
             alert("请先输入合铺ID");
             return;
         }
+
         if(cur_select_set.length <=1){
             alert("至少选择两个独立店铺进行合铺");
             return;
         }
+
         $(".cur-select").each(function(i,e){
             if($(this).attr("data-compressed")){
                 var cur_compressed_class="compressed-"+$(this).attr("data-compressed");
@@ -884,7 +890,6 @@ svg_editor.init=function(_svgCallback){
             curClassList.add("compressed-"+set_class);
             curClassList.remove("cur-select");
         });
-
         //合铺id input 归零
         $("#compressed-info input").val("");
     });
@@ -903,7 +908,10 @@ svg_editor.refresh=function(){
     $(rootGroup).each(function(i,e){
         e.classList.add("rootGroup");
     });
+
+
     //svg加载后，再加入class，要么可能存在样式权限的问题
+    svg_editor.legend_init();
     svg_editor.addStyle(svg_editor.legendStyle);
     //切换至view mod
     $("#svg-viewer").trigger("click");
@@ -912,8 +920,6 @@ svg_editor.refresh=function(){
 //菜单操作－－与svgeditor的curMode绑定，以实现不同的操作；
 /*
 $(document).ready(function(){
-
-
 
 });
 */

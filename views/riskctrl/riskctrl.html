@@ -14,7 +14,7 @@
    	 	<div class="risk-content-panel">
    	 		<div class="return-rate clearfix">
    	 			<div class="pull-left return-rate-chart">
-   	 				<div class="label-group"><em>业主要求的收益率</em><div>111</div></div>
+   	 				<div class="label-group"><em>业主要求的收益率</em><div>6.00%</div></div>
    	 				<!--<div class="return-rate-chart-title">退出率</div>
    	 				<div class="rate-chart">
    	 					<div ng-class="{progress: true, 'progress-striped': vm.striped}" class="return-rate-bar">
@@ -27,16 +27,24 @@
 	   			</div>
 	   			<div class="pull-left return-rate-data">
 	   				<ul class="clearfix">
-						<li ng-repeat="item in records" class="label-group"><em>{{item.title}}</em><div>{{item.data|number:2}}</div></li>
+						<li ng-repeat="item in records" class="label-group">
+							<em>{{item.title}}</em>
+							<div>
+								<span  ng-if="$index==0||$index==1">{{item.data|number:2}}</span>
+								<span ng-if="$index==2||$index==3">{{item.data}}</span>
+							
+							</div>
+						
+						</li>
                    </ul>
 	   			</div>
    	 		</div>
    	 		<div class="rate-noi-title">
    	 			<div class="amp-section-title"><span>NOI</span>   	 				
    	 				<div class="rate-noi-btn label-group">
-	   	 				<em class="pull-left" ng-click="setType('NoionYearBasis','noi')"  ng-class="{'btn-active':noiType=='NoionYearBasis'}">同比</em>
-	   	 				<em class="pull-left"  ng-click="setType('NoiLinkRelativeRatio','noi')" ng-class="{'btn-active':noiType=='NoiLinkRelativeRatio'}">环比</em>
-	   	 				<em class="pull-left btn-active"  ng-click="setType('NoiBudget','noi')" ng-class="{'btn-active':noiType=='NoiBudget'}">预算</em>
+	   	 				<em class="pull-left"  ng-class="{'btn-active':noiType=='NoionYearBasis'}">同比</em><!--ng-click="setType('NoionYearBasis','noi')" -->
+	   	 				<em class="pull-left"   ng-class="{'btn-active':noiType=='NoiLinkRelativeRatio'}">环比</em> <!-- ng-click="setType('NoiLinkRelativeRatio','noi')"-->
+	   	 				<em class="pull-left btn-active" ng-class="{'btn-active':noiType=='NoiBudget'}">预算</em><!-- ng-click="setType('NoiBudget','noi')"--> 
 	   	 				<!--<em class="btn-right">显示所有月份</em>-->
    	 				</div>
    	 			</div>
@@ -54,7 +62,7 @@
 		        	<thead>
 		        		<tr>
 							<td class="border-right"></td>
-                            <td  colspan="2"  class=" border-right"><2016-10（万元）</td>
+                            <td  colspan="2"  class=" border-right">2016-10（万元）</td>
                             <td  colspan="3" >全年累计（万元）</td> 
 						</tr>
 		        	</thead>
@@ -97,8 +105,8 @@
 						<tbody>
 							<tr ng-repeat="item in roi">
 								<td class="border-right text-left">{{item.name}}</td>
-  								<td ng-class='setStyleIcon(item.roiActual,item.roiRefer)'><span>{{item.roiActual|number:2}} <em></em></span></td> 
-  								<td ><span>{{item.roiRefer|number:2}}</span></td> 
+  								<td ng-class='setStyleIcon(item.roiActual,item.roiRefer)'><span><b>{{item.roiActual|number:2}}</b> <em></em></span></td> 
+  								<td ><span><b>{{item.roiRefer|number:2}}</b></span></td> 
 							</tr>
 		                </tbody>
 					</table>
@@ -122,8 +130,8 @@
 						<tbody>
 							<tr ng-repeat="item in roe">
 								<td class="border-right text-left">{{item.name}}</td>
-  								<td ng-class='setStyleIcon(item.roeActual,item.roeRefer)'><span>{{item.roeActual|number:2}} <em></em></span></td> 
-  								<td ><span>{{item.roeRefer|number:2}}</span></td> 
+  								<td ng-class='setStyleIcon(item.roeActual,item.roeRefer)'><span><b>{{item.roeActual|number:2}} </b><em></em></span></td> 
+  								<td ><span><b>{{item.roeRefer|number:2}}</b></span></td> 
 							</tr>
 		                    
 							

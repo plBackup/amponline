@@ -293,6 +293,7 @@ svg_viewer.legend_init=function(url){
         console.log(legend_data);
         legend.render_style(legend_data.labels);
     });
+
 };
 
 $(document).ready(function(){

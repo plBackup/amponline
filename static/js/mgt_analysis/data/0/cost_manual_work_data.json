@@ -56,9 +56,11 @@
     {"deptName":"","positionName":"综合维修","lastReal":0,"curReal":7,"curBudget":6,"emptyNo":-1},
     {"deptName":"","positionName":"暖通","lastReal":0,"curReal":6,"curBudget":6,"emptyNo":0}
   ],
-  "others":[
-    {"deptName":"人均管理面积（㎡/人）","lastReal":0,"curReal":976,"curBudget":1016,"emptyNo":"-"},
-    {"deptName":"HR费用（元/人/月）","lastReal":0,"curReal":839.59,"curBudget":12271.23,"emptyNo":"-"},
+  "others_1":[
+    {"deptName":"人均管理面积（㎡/人）","lastReal":0.00,"curReal":976.00,"curBudget":1016.00,"emptyNo":"-"},
+    {"deptName":"HR费用（元/人/月）","lastReal":0.00,"curReal":839.59,"curBudget":12271.23,"emptyNo":"-"}
+  ],
+  "others_2":[
     {"deptName":"保安","lastReal":0,"curReal":25,"curBudget":30,"emptyNo":5},
     {"deptName":"保洁","lastReal":0,"curReal":29,"curBudget":40,"emptyNo":11}
   ]

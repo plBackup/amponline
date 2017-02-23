@@ -1,6 +1,18 @@
 /**
  * Created by limeiting on 16/11/15.
  */
+
+Number.prototype.formatMoney = function(c, d, t){
+    var n = this,
+        c = isNaN(c = Math.abs(c)) ? 2 : c,
+        d = d == undefined ? "." : d,
+        t = t == undefined ? "," : t,
+        s = n < 0 ? "-" : "",
+        i = String(parseInt(n = Math.abs(Number(n) || 0).toFixed(c))),
+        j = (j = i.length) > 3 ? j % 3 : 0;
+    return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+};
+
 angular.module('noi').service('noiService', function($rootScope,$http) {
 
     var service = {
@@ -202,7 +214,13 @@ angular.module('noi').service('noiService', function($rootScope,$http) {
                     tooltip:{
                         show:true,
                         showContent:true,
-                        formatter:"{a}:<br/>{b}年-{c}万",
+                        //formatter:"{a}:<br/>{b}年:{c}万",
+                        formatter: function (params, ticket, callback) {
+
+                            //if(parmase.seriesName=""){}
+                            var value=parseFloat(params.data).formatMoney(2,".",",");
+                            return params.seriesName+"<br/>"+params.name+" : "+value;
+                        },
                         textStyle:{
                             fontSize:12,
                             color:"#fff"
@@ -450,7 +468,7 @@ angular.module('noi').service('noiService', function($rootScope,$http) {
                     tooltip:{
                         show:true,
                         showContent:true,
-                        formatter:"{a}:<br/>{b}-{c}万",
+                        formatter:"{a}:<br/>{b}:{c}万",
                         textStyle:{
                             fontSize:12,
                             color:"#fff"
@@ -719,7 +737,7 @@ angular.module('noi').service('noiService', function($rootScope,$http) {
                     tooltip:{
                         show:true,
                         showContent:true,
-                        formatter:"{a}:<br/>{b}-{c}",
+                        formatter:"{a}:<br/>{b}:{c}",
                         textStyle:{
                             fontSize:12,
                             color:"#fff"
@@ -873,7 +891,12 @@ angular.module('noi').service('noiService', function($rootScope,$http) {
                         axisPointer: {            // 坐标轴指示器，坐标轴触发有效
                             type: 'line'        // 默认为直线，可选为：'line' | 'shadow'
                         },*/
-                        formatter:"{a}:<br/>{b}-{c}万",
+                        //formatter:"{a}:<br/>{b}:{c}万",
+                        formatter: function (params, ticket, callback) {
+                            console.log(params);
+                            var value=parseFloat(params.data).formatMoney(2,".",",");
+                           return params.seriesName+"<br/>"+params.name+" : "+value;
+                        },
                         textStyle:{
                             fontSize:12,
                             color:"#fff"
@@ -994,7 +1017,7 @@ angular.module('noi').service('noiService', function($rootScope,$http) {
                             name: '',
                             type: 'pie',
                             radius : ['60%','86%'],
-                            center: ['70%', '50%'],
+                            center: ['62%', '50%'],
                             selectedOffset:0,
                             data:[
                             ],
@@ -1033,7 +1056,7 @@ angular.module('noi').service('noiService', function($rootScope,$http) {
                             name: '',
                             type: 'pie',
                             radius : ['60%','86%'],
-                            center: ['70%', '50%'],
+                            center: ['62%', '50%'],
                             selectedOffset:0,
                             data:[
                             ],

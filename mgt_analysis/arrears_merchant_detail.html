@@ -12,7 +12,7 @@
         </div>
        <ul class="amp-status-item-list pull-right">
        		<li class="amp-status-item"><span>欠费总额</span><em>{{arrearsTotalAmount|number:2}}</em></li>
-        	<li class="amp-status-item"><span>押金</span><em>{{deposit|number}}</em></li>
+        	<li class="amp-status-item"><span>押金</span><em>{{deposit|number:2}}</em></li>
         	<li class="amp-status-item"><span>欠费笔数</span><em>{{arrearsCount|number}}</em></li>
         	<li class="amp-status-item"><span>累计欠费次数</span><em>{{arrearsCount|number}}</em></li>
   		</ul>
@@ -41,7 +41,7 @@
                                 <em class="amp-checkbox"></em>
                                 <span>{{item.arrearsType}}</span>
                             </li>
-                            <li class="amp-table-cell" data-value="{{item.arrearsAmount}}">{{item.arrearsAmount|number}}</li>
+                            <li class="amp-table-cell" data-value="{{item.arrearsAmount}}">{{item.arrearsAmount|number:2}}</li>
                             <li class="amp-table-cell">{{item.arrearsDayCount|number}}</li>
                         </ul>
                     </div><!-- amp-table-row -->

@@ -104,12 +104,13 @@ ampApp.controller("contract-main-controller",["$scope","$filter","$http","$rootS
     function initPageView(){
         container = $("#contract-main");
 
-        if(isPC()){
-            pin = $(container).find(".amp-thead").pin({
-                containerSelector: $(container).find(".amp-collapse-table"),
-                padding: {top: 44, bottom: 50}
-            });
-        }
+
+        //var width = $(container).find(".amp-thead").outerWidth();
+        //$(container).find(".amp-thead").css("width",width+"px");
+        //pin = $(container).find(".amp-thead").pin({
+        //    containerSelector: $(container).find(".amp-collapse-table"),
+        //    padding: {top: 44, bottom: 50}
+        //});
 
     }
 
@@ -151,11 +152,11 @@ ampApp.controller("contract-main-controller",["$scope","$filter","$http","$rootS
                 });
             }
 
-            if(isPC()){
-                setTimeout(function(){
-                    pin.refresh();
-                },1000);
-            }
+            //if(isPC()){
+            //    setTimeout(function(){
+            //        pin.refresh();
+            //    },1000);
+            //}
         });
 
         container.on("click","a.cancel-btn,a.ok-btn",function(e){
@@ -168,13 +169,13 @@ ampApp.controller("contract-main-controller",["$scope","$filter","$http","$rootS
             e.stopPropagation();
             e.preventDefault();
             var val = $(this).val().replace( /,/g,"");
-            $(this).val(val);
+            $(this).val(parseFloat(val).toFixed(2));
         });
 
         container.on("blur","[data-type=number]",function(e){
             e.stopPropagation();
             e.preventDefault();
-            var val =$filter("number")($(this).val());
+            var val =$filter("number")($(this).val(),"2");
             $(this).val(val)
         });
     }

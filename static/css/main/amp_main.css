@@ -1,5 +1,5 @@
 html,body{/*position:relative;*/width:100%;height:inherit;overflow: auto;min-height:620px;}
-.page-main{padding-left:200px;/*overflow: hidden;*/border-left:solid 2px #eceff4;}
+.page-main{padding-left:200px;/*overflow: hidden;border-left:solid 2px #eceff4;*/}
 .page-sub{padding-left:0;}
 .ys-icon{display: block;/*background-size: contain;background-position: center center;*/background-repeat: no-repeat;}
 .ys-icon-spirit{display: block;background-image: url(../../images/main/menu_icon.png);content: " ";}
@@ -101,7 +101,7 @@ a.system-item:hover .ys-icon-systoggle{background-position: -74px -254px;}
 
 /***** MAIN PANEL *****/
 
-.mainpanel { margin-left:0; position: relative;width:100%;height:100%;padding-top:44px;padding-bottom:0;min-height: 100vh;background: #fff; /*min-height: 1000px; */border-right:solid 2px #e4e7ea;}
+.mainpanel { margin-left:0; position: relative;width:100%;height:100%;padding-top:44px;padding-bottom:0;min-height: 100vh;background: #fff; /*min-height: 1000px; */border-right:solid 2px #f3f3f3;}
 .pageheader { display:none;position: relative;padding: 0;height:44px;line-height: 44px; border-bottom: 0; border-top: 0; background: #f3f4f8;overflow-y: hidden;  }
 .pageheader.active{/*display: block;*/display: none;}
 .pageheader h2 { font-size: 28px; color: #1D2939; letter-spacing: -0.5px; margin: 0; }
@@ -342,8 +342,34 @@ span#countdown .countdown-lastDay~em.unit{display: none;}
 #ys-logout:hover:before{background-position:-111px -290px;}
 
 /*patch by cheng test for noi*/
-#noi-main-table-head{max-width:918px;margin:0;}
+#noi-main-table-head{max-width:888px;margin:0;}
 .leftpanel-collapsed #noi-main-table-head{max-width:1065px;margin:0;}
 
-#irr-plan-table-head{max-width:701px;margin:0;}
+#irr-plan-table-head{max-width:746px;margin:0;}
 .leftpanel-collapsed #irr-plan-table-head{max-width:850px;margin:0;}
+
+/*patch by cheng 2017-02-08*/
+.dropdown-menu>li>a {
+    display: block;
+    padding: 4px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 24px;
+    color: #333;
+    white-space: nowrap;
+}
+.td-input-wrapper .dropdown-menu>li>a:focus, .td-input-wrapper .dropdown-menu>li>a:hover, .td-input-wrapper .dropdown-menu>li.active>a {
+    background-color: #dae1e7;
+    color: #373c32;
+}
+
+.ys-icon-prev,.ys-icon-next{  display: inline-block;margin-left:10px;margin-right:10px;
+    width:20px;height:20px;vertical-align: bottom; background-repeat: no-repeat;cursor:pointer;}
+.ys-icon-prev{background-position:-206px -288px ;}
+.ys-icon-prev:hover{background-position:-169px -288px;}
+.ys-icon-next{background-position:-206px -321px;}
+.ys-icon-next:hover{background-position:-169px -321px ;}
+
+
+
+

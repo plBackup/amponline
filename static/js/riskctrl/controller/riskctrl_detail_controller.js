@@ -62,7 +62,7 @@ ampApp.controller("ctrl-detail",["$scope","$http","$rootScope",function($scope,$
 
     // 指定图表的配置项和数据 
         var option = {
-            color: ["#5AB46E", "#5CD3F5", "#038BD9"],
+            color: ["#5AB46E", "#5CD3F5"],
             tooltip:{show:true},
             legend: {
                 orient: 'horizontal', // 'vertical'
@@ -100,16 +100,18 @@ ampApp.controller("ctrl-detail",["$scope","$http","$rootScope",function($scope,$
         	
         },
         series: [{
+        	 label:{normal:{show:true,position:"top",textStyle:{color:"#373c42"}}},
             barWidth:"20",
             name: '租金（万元）',
             type: 'bar',
-            data:[5, 20, 36, 10, 10, 20]
+            data:[parseInt(1777/10000),parseInt(157771/10000),parseInt(5248804/10000),parseInt(18017489/10000),parseInt(38174069/10000),parseInt(17235143/10000)]
         },
         {
+        	label:{normal:{show:true,position:"top",textStyle:{color:"#373c42"}}},
             barWidth:"20",
             name: '面积（m²）',
             type: 'bar',
-            data: [5, 20, 36, 10, 10, 20]
+            data: [ 2029,47,2343,9149,24203,17467 ]
         }
         
         ]
@@ -183,7 +185,7 @@ ampApp.controller("ctrl-detail",["$scope","$http","$rootScope",function($scope,$
     			return;
     	}
     }
-    $scope.setStyleText = function(a){
+       $scope.setStyleText = function(a){
             if(a>=0){
                 return 'text-red'
             }else{

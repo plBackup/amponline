@@ -1,10 +1,6 @@
 var ctrl_module=(function($,cm){
 	var ctrl_module=cm;
-	ctrl_module.init=function(){
-//		var bodywidth=parseInt($("#riskctrl").css("width"));
-//		var tablewidth=(bodywidth-40)/2;
-//		$(".risk-roi>div").css("width",tablewidth+"px");
-          
+	ctrl_module.init=function(){          
 	}
 	return ctrl_module;
 })(jQuery,ctrl_module||{})

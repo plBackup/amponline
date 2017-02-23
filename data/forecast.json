@@ -1,0 +1,162 @@
+{
+  "presets": {
+    "floors": ["L1","L2","L3"],
+    "floorsNum":["无",1,2,3,4,5,6,7,8,9,10],
+    "types": ["主力店","次主力店","大租户","中租户","小租户","其他"],
+    "forms": ["服装","餐饮","娱乐","配套","儿童","其他"],
+    "colors":["#0282c3","#1dc8f3","#4bd7b0","#bcdf2d","#ffd751","#ffa851","#676887"]
+  },
+  "area_mainInfo": {
+      "overground":{
+          "area":0,
+          "floors":12
+      },
+      "underground":{
+        "area":0,
+        "floors":2
+      },
+      "parkingLot":{
+        "area":0,
+        "floors":2
+      },
+      "total":{
+        "area":0
+      },
+      "rentableArea":0,
+      "usefulRate":75
+  },
+
+  "area_floors":{
+      "L3":2700,
+      "L2":2800,
+      "L1":2400
+  },
+  "area_arrange": {
+    "L3":{
+     "forms":{
+       "mainShops": {
+         "name": "主力店",
+         "index": "mainShop",
+         "area": 1200,
+         "forms": {
+           "children": {
+             "name": "儿童",
+             "num": 2,
+             "area": 600
+           },
+           "suits": {
+             "name": "服装",
+             "num": 3,
+             "area": 600
+           }
+         }
+       },
+       "subShops": {
+         "name": "次主力店",
+         "index": "mainShop",
+         "area": 600,
+         "forms": {
+           "children": {
+             "name": "儿童",
+             "num": 2,
+             "area": 300
+           },
+           "suits": {
+             "name": "服装",
+             "num": 3,
+             "area": 300
+           }
+         }
+       }
+     },
+     "counts":{
+       "area":0,
+       "rate":"75%"
+     }
+  },
+    "L2":{
+      "forms":{
+        "mainShops": {
+          "name": "主力店",
+          "index": "mainShop",
+          "area": 1200,
+          "forms": {
+            "children": {
+              "name": "儿童",
+              "num": 2,
+              "area": 600
+            },
+            "suits": {
+              "name": "服装",
+              "num": 3,
+              "area": 600
+            }
+          }
+        },
+        "subShops": {
+          "name": "次主力店",
+          "index": "mainShop",
+          "area": 600,
+          "forms": {
+            "children": {
+              "name": "儿童",
+              "num": 2,
+              "area": 300
+            },
+            "suits": {
+              "name": "服装",
+              "num": 3,
+              "area": 300
+            }
+          }
+        }
+      },
+      "counts":{
+        "area":0,
+        "rate":"75%"
+      }
+    },
+    "L1":{
+      "forms":{
+        "mainShops": {
+          "name": "主力店",
+          "index": "mainShop",
+          "area": 1200,
+          "forms": {
+            "children": {
+              "name": "儿童",
+              "num": 2,
+              "area": 600
+            },
+            "suits": {
+              "name": "服装",
+              "num": 3,
+              "area": 600
+            }
+          }
+        },
+        "subShops": {
+          "name": "次主力店",
+          "index": "mainShop",
+          "area": 600,
+          "forms": {
+            "children": {
+              "name": "儿童",
+              "num": 2,
+              "area": 300
+            },
+            "suits": {
+              "name": "服装",
+              "num": 3,
+              "area": 300
+            }
+          }
+        }
+      },
+      "counts":{
+        "area":0,
+        "rate":"75%"
+      }
+    }
+  }
+}

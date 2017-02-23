@@ -240,6 +240,7 @@ var dataSet=angular.module("dataSet",[]);
 dataSet.controller("dataSetController",['$rootScope', '$scope',"$location","rpgSetData",
     function($rootScope, $scope,$location,rpgSetData) {
         var self=this;
+        $rootScope.rentFuncName="设定";
         self.rpgSetData=rpgSetData[0];
         //self.setData=rpgSetData[0].values;
         self.setSave=function(){
@@ -575,3 +576,17 @@ dataSet.controller("dataResultController",['$rootScope', '$scope',"rpgResultData
     }]);
 
 
+//租金包预算
+dataSet.controller("rpgForecastController",['$rootScope', '$scope',"$location","rpgForecastData",
+    function($rootScope, $scope,$location,rpgForecastData) {
+        var self=this;
+        $rootScope.rentFuncName="租金包预算";
+        self.rpgForecastData=rpgForecastData;
+
+        self.name="租金包预算";
+        console.log(self.name);
+
+        $scope.$on("$destroy", function() {
+
+        })
+    }]);

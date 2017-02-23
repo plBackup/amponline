@@ -23,7 +23,6 @@ angular.module('dataTool').service('dataSetService', ["$rootScope","$http",funct
         },
     };
     return service;
-
 }]);
 
 angular.module('dataTool').service('dataSetResultService', ["$rootScope","$http",function($rootScope,$http) {
@@ -36,8 +35,8 @@ angular.module('dataTool').service('dataSetResultService', ["$rootScope","$http"
         },
     };
     return service;
-
 }]);
+
 angular.module('dataTool').service('manageFeeService', ["$rootScope","$http",function($rootScope,$http) {
     var service = {
         getSetData: function () {

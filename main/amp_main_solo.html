@@ -25,9 +25,11 @@
     <link href="../components/toolbar/filter.css" rel="stylesheet">
     <link href="../static/css/views/noi.css" rel="stylesheet">
     <link href="../static/css/views/datatools.css" rel="stylesheet">
+    <link href="../static/css/views/rpgforecast/rpgforecast.css" rel="stylesheet">
 
     <script src="../static/dist/js/jquery-1.11.3.min.js"></script>
-
+    <script src="../static/dist/js/jquery-ui.min.js"></script>
+    <script src="../static/dist/js/spin.min.js"></script>
     <script src="../static/dist/js/angular.js"></script>
     <script src="../static/dist/js/angular-animate.min.js"></script>
     <script src="../static/dist/js/angular-ui-router.js"></script>
@@ -46,18 +48,18 @@
             };
             return amp_main;
         })(jQuery,amp_main||{});
-
-
     </script>
+
     <script src="../static/dist/js/bootstrap.min.js"></script>
     <script src="../static/dist/js/swiper.jquery.min.js"></script>
     <script src="../static/dist/js/jquery.pin.js"></script>
-
     <script src="../static/js/main/amp_ag_solo.js"></script>
     <script src="../static/js/views/datatools/dataset_controller.js"></script>
     <script src="../static/js/views/datatools/dataset_service.js"></script>
     <script src="../static/js/views/datatools/dataset_directive.js"></script>
     <script src="../static/js/views/datatools/dataset_filters.js"></script>
+    <script src="../static/js/views/rpgforecast/rpgforecast-service.js"></script>
+    <script src="../static/js/views/rpgforecast/rpgforecast_controller.js"></script>
     <script>
 
 
@@ -94,7 +96,7 @@
         <div class="headerbar">
             <div class="head-main-menu">
                 <em class="ys-icon ys-icon-amp-s"></em>
-                <span id="beta">AMP PAAS V1.0 2016</span>
+                <span id="beta">AMP PAAS V1.0</span>
             </div>
             <div class="pageheader clearfix active">
                 <a href="#" class="amp-solo-close"></a>
@@ -116,7 +118,7 @@
                     <ol class="breadcrumb">
                         <li><a ui-sref="rpgindex" href="#/rpgindex"  target="_parent">数据工具</a></li>
                         <li><a ui-sref="rpgindex" href="#/rpgindex"  target="_parent">租金包</a></li>
-                        <li class="active">设定</li>
+                        <li class="active">{{rentFuncName}}</li>
                     </ol>
 
                 </div>

@@ -17,13 +17,17 @@ ampApp.controller("cost-manual-work-controller",["$scope","$http","$rootScope",f
     function initPageView(){
         container = $("#cost-manual-work");
 
-        if(isPC()){
-            pin = $(container).find(".dept-table-head").pin({
-                containerSelector: $(container).find(".cost-manual-work-pin-wrapper"),
-                padding: {top: 44, bottom: 50}
-            });
-        }
+        var width = $(container).find(".dept-table-head").outerWidth();
+        $(container).find(".dept-table-head").css("width",width+"px");
 
+        pin = $(container).find(".dept-table-head").pin({
+            containerSelector: $(container).find(".cost-manual-work-pin-wrapper"),
+            padding: {top: 44, bottom: 0}
+        });
+
+        setTimeout(function(){
+            pin.refresh();
+        },500);
 
     }
 

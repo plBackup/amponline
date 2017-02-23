@@ -41,7 +41,7 @@
 							<li class="amp-table-cell">{{item.contractEndTime}}</li>
 							<li class="amp-table-cell">{{item.period|number:0}}</li>
 							<li class="amp-table-cell">{{item.rentFreePeriod|number:0}}</li>
-							<li class="amp-table-cell">{{item.square|number}}</li>
+							<li class="amp-table-cell">{{item.square|number:2}}</li>
 							<li class="amp-table-cell">{{item.rentType}}</li>
                         </ul>
                         <div class="amp-table-row-collapse">
@@ -100,7 +100,7 @@
                                     </td>
                                     <td>
                                         <span>面积</span>
-                                        <div class="amp-input amp-input-default amp-input-32"><input value="{{item.square}}"/></div>
+                                        <div class="amp-input amp-input-default amp-input-32"><input value="{{item.square|number:2}}"/></div>
                                     </td>
                                     <td>
                                         <span>业态</span>
@@ -133,7 +133,7 @@
                                     </td>
                                     <td>
                                         <span>租金总额</span>
-                                        <div class="amp-input amp-input-default amp-input-32"><input data-type="number" value="{{item.rentTotal|number}}"/></div>
+                                        <div class="amp-input amp-input-default amp-input-32"><input data-type="number" value="{{item.rentTotal|number:2}}"/></div>
                                     </td>
                                     <td>
                                         <span>提成百分比</span>
@@ -141,7 +141,7 @@
                                     </td>
                                     <td>
                                         <span>物管费总额</span>
-                                        <div class="amp-input amp-input-default amp-input-32"><input data-type="number" value="{{item.propertyFeeTotal|number}}"/></div>
+                                        <div class="amp-input amp-input-default amp-input-32"><input data-type="number" value="{{item.propertyFeeTotal|number:2}}"/></div>
                                     </td>
                                     <td>
                                         <span>付款方式</span>

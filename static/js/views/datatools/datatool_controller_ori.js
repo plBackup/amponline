@@ -254,7 +254,7 @@ var amp_datePicker=(function($,amp_datePicker){
         amp_datePicker.dp_Array=[];
     };
     return amp_datePicker;
-})(jQuery,amp_datePicker||{})
+})(jQuery,amp_datePicker||{});
 var dataTool=angular.module("dataTool",[]);
 dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData","paginatorService","$timeout","$location","$filter",
     function($rootScope, $scope,dataIndexData,paginatorService,$timeout,$location,$filter) {
@@ -867,9 +867,14 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
         };
         self.setModel=function(type,menu){
             self.shopInfo[type]=menu;
+            if(type=="form"){
+                console.log("menu----------------");
+                console.log(menu);
+            }
         };
 
         self.isActive=function(menu,model){
+
             return menu==model;
         };
 

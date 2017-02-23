@@ -211,6 +211,7 @@ simulationApp.controller("simulation-calculation-controller",["$scope","$filter"
                 scrollbar: ".income-expenses-simulation .table-group-2 .swiper-scrollbar",
                 slidesPerView:"auto",
                 freeMode: true,
+                scrollbarHide:false,
                 resistanceRatio : 0
             });
 
@@ -218,6 +219,7 @@ simulationApp.controller("simulation-calculation-controller",["$scope","$filter"
                 scrollbar: ".pre-tax-cash-flow .table-group-right .swiper-scrollbar",
                 slidesPerView:"auto",
                 freeMode: true,
+                scrollbarHide:false,
                 resistanceRatio : 0
             });
 
@@ -225,10 +227,13 @@ simulationApp.controller("simulation-calculation-controller",["$scope","$filter"
                 scrollbar: ".sale-income-analysis .table-group-right .swiper-scrollbar",
                 slidesPerView:"auto",
                 freeMode: true,
+                scrollbarHide:false,
                 resistanceRatio : 0
             });
             swiper_1.params.control = swiper_2;//需要在Swiper2初始化后，Swiper1控制Swiper2
             swiper_2.params.control = swiper_1;//需要在Swiper1初始化后，Swiper2控制Swiper1
+
+
         }
         $("#preloader").fadeOut("fast");
     }

@@ -10,8 +10,8 @@
             </ul>
         </div>
        <ul class="amp-status-item-list pull-right">
-        	<li class="amp-status-item"><span>销售额</span><em>{{commercialTypeSummary.saleAmount|numberFormatDefault}}</em></li>
-        	<li class="amp-status-item"><span>平效</span><em>{{commercialTypeSummary.performanceValue|numberFormatDefault}}</em></li>
+        	<li class="amp-status-item"><span>销售额</span><em>{{commercialTypeSummary.saleAmount|numberFormatDefault:2}}</em></li>
+        	<li class="amp-status-item"><span>平效</span><em>{{commercialTypeSummary.performanceValue|numberFormatDefault:2}}</em></li>
         	<li class="amp-status-item"><span>租售比</span><em>{{commercialTypeSummary.rentSaleRate|numberFormatDefault}}</em></li>
   		</ul>
     </div>
@@ -35,8 +35,8 @@
                     <div class="amp-table-row" ng-repeat="item in paginationInfo.records">
                         <ul class="amp-table-row-content">
                             <li class="amp-table-cell">{{item.brandName}}</li>
-                            <li class="amp-table-cell">{{item.saleAmount|number}}</li>
-                            <li class="amp-table-cell">{{item.performanceValue|number:0}}</li>
+                            <li class="amp-table-cell">{{item.saleAmount|number:2}}</li>
+                            <li class="amp-table-cell">{{item.performanceValue|number:2}}</li>
                             <li class="amp-table-cell">{{item.rentSaleRate}}</li>
                         </ul>
                     </div><!-- amp-table-collapse-row -->

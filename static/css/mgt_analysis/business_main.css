@@ -106,13 +106,14 @@
 #business-main .table-block .dept-table-head  .body-title td{text-align: center;}
 #business-main .table-block .dept-table-head  .empty-record {background: #fff; font-size:12px;color:#8592a3;}
 #business-main .assets-table{width: 100%;}
-#business-main .dept-table-head {right: 0;left: 0;z-index: 9;}
+#business-main .dept-table-head {right: 24px;left: 24px;z-index: 9;}
 #business-main .assets-table  .body-title {color: #8592a3;font-size: 12px;background-color: #f3f4f8;  border-bottom: 1px solid #d9dde0;}
 
 #business-main .assets-table  .body-title  td{height: 28px;}
 #business-main .body-title td:nth-child(2){border-right: 1px solid #dae1e7;}
 
 
+#business-main .table-block{margin:0 24px;}
 /* ======================================== deduct-rent-store-rate-block ======================================== */
 #business-main .deduct-rent-store-rate-block{padding:44px 0 0 0;}
 

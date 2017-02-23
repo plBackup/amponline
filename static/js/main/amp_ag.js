@@ -220,6 +220,40 @@ ampApp.config(["$stateProvider","$urlRouterProvider",function($stateProvider,$ur
                     return defer.promise;
                 }]
             }
+        }, //state
+        {
+            name: 'rpgestimate',
+            url: '/rpgestimate',
+            views:{
+                'toolbar': {
+                    templateUrl: '../components/toolbar/blank_filter.html'
+                },
+                'content': {
+                    templateUrl: '../views/rpgforecast/rpg_estimate.html',
+                    controller:'rpgEstimateController',
+                    controllerAs:"sCtrl"
+                },
+                "right":{
+                    templateUrl: '../views/blank_right.html'
+                }
+            },
+            controller:"page",
+            resolve: {
+                rpgSetData: function(dataSetService) {
+                    return dataSetService.getSetData();
+                },
+                rpgresultData: function(dataSetResultService) {
+                    return dataSetResultService.getSetData();
+                },
+                data: ['$q','$timeout', function($q,$timeout){
+                    var defer = $q.defer();
+                    $timeout(function(){
+                        defer.resolve();
+                        amp_main.loading_hide();
+                    }, 300);
+                    return defer.promise;
+                }]
+            }
         } //state
     ];
 
@@ -952,6 +986,12 @@ ampApp.nav_list={
         headerBar:"#header-tabs-4",
         headerItem:"#nav-tabs-item-4-1"
     },
+    "rpgestimate":{
+        sideNav:"#main-4",
+        headerBar:"#header-tabs-4",
+        headerItem:"#nav-tabs-item-4-1"
+    },
+
     "datasim":{
         sideNav:"#main-4",
         headerBar:"#header-tabs-4",

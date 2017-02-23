@@ -44,15 +44,21 @@ ampApp.controller("business-merchant-list-controller",["$scope","$filter","$http
 
     /* ======================================== 初始化页面 ======================================== */
     var container = null;
+    var pin = null;
     function initPageView(){
         container = $("#business-merchant-list");
 
-        if(isPC()){
-            $(container).find(".amp-thead").pin({
-                containerSelector: $(container).find(".amp-collapse-table"),
-                padding: {top: 44, bottom: 50}
-            });
-        }
+        var width = $(container).find(".amp-thead").outerWidth();
+        $(container).find(".amp-thead").css("width",width+"px");
+
+        pin = $(container).find(".amp-thead").pin({
+            containerSelector: $(container).find(".amp-collapse-table"),
+            padding: {top: 44, bottom: 0}
+        });
+
+        setTimeout(function(){
+            pin.refresh();
+        },500);
 
     }
 

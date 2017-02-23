@@ -26,6 +26,14 @@ $("body").on("click",".amp-collapse-table .amp-tbody .amp-table-row-content",fun
 $("body").on("click",".amp-select:not(.amp-select-disabled)",function(e){
     e.stopPropagation();
     e.preventDefault();
+    var that = this;
+    $(".amp-select").each(function(){
+        if(that===this){
+            return;
+        }
+        $(this).removeClass("open");
+
+    });
     $(this).toggleClass("open");
 });
 

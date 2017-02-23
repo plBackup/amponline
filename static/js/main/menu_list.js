@@ -108,7 +108,7 @@ var menu_list={
             re_locate:true,//点击一级目录直接跳转
             sub_menu:[
                 {
-                    name:"回报计划",
+                    name:"投资测算",
                     index:"sub-4",
                     links:"irrplan",
                     target:"#page-frame",

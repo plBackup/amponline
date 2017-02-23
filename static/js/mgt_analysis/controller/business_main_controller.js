@@ -43,12 +43,18 @@ ampApp.controller("business-main-controller",["$scope","$filter","$http","$rootS
         container = $("#business-main");
         createRentIncomeBarChart();
         createDeductRentStoreRateChart();
-        if(isPC()){
-            pin = $(container).find(".dept-table-head").pin({
-                containerSelector: $(container).find(".cost-manual-work-pin-wrapper"),
-                padding: {top: 44, bottom: 50}
-            });
-        }
+
+        var width = $(container).find(".dept-table-head").outerWidth();
+        $(container).find(".dept-table-head").css("width",width+"px");
+
+        pin = $(container).find(".dept-table-head").pin({
+            containerSelector: $(container).find(".cost-manual-work-pin-wrapper"),
+            padding: {top: 44, bottom: 0}
+        });
+
+        setTimeout(function(){
+            pin.refresh();
+        },500);
     }
 
     /* ======================================== 绑定事件 ======================================== */
@@ -229,7 +235,7 @@ ampApp.controller("business-main-controller",["$scope","$filter","$http","$rootS
 
                 {
                     stack:"租金",
-                    name:"保底租金",
+                    name:"取到提成的提成租金商家数",
                     type:"bar",
                     barWidth:34,
                     label:{
@@ -242,7 +248,7 @@ ampApp.controller("business-main-controller",["$scope","$filter","$http","$rootS
                 },
                 {
                     stack:"租金",
-                    name:"提成租金",
+                    name:"保底租金",
                     type:"bar",
                     barWidth:34,
                     label:{

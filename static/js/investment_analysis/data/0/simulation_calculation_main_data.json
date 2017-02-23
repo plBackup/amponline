@@ -2,19 +2,19 @@
   {
     "caseId":"case1",
     "caseName":"方案1",
-    "irrPercent":"-",
-    "netPresentValue":"-100898.99",
-    "appreciation":"-118042.30",
+    "irrPercent":"16.19%",
+    "netPresentValue":"71857",
+    "appreciation":"1958",
     "purchasingPrice":"90000",
-    "loan":"57838.04",
+    "loan":"57838",
     "yearCount":"10"
   },
   {
     "caseId":"case2",
     "caseName":"方案2",
-    "irrPercent":"-",
-    "netPresentValue":"-39282.97",
-    "appreciation":"-42848.26",
+    "irrPercent":"6.39%",
+    "netPresentValue":"902",
+    "appreciation":"-42848",
     "purchasingPrice":"37521",
     "loan":"24080",
     "yearCount":"10"
